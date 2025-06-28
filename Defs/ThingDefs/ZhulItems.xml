@@ -24,23 +24,15 @@
         <thingCategories>
             <li>Manufactured</li>
         </thingCategories>
-        <ingestible>
-            <foodType>Processed</foodType>
-            <nutrition>0.05</nutrition>
-            <baseIngestTicks>120</baseIngestTicks>
-            <ingestSound>Ingest_Drink</ingestSound>
-            <ingestHoldUsesTable>false</ingestHoldUsesTable>
-            <chairSearchRadius>0</chairSearchRadius>
-            <outcomeDoers>
-                <li Class="IngestionOutcomeDoer_GiveHediff">
-                    <hediffDef>ZHUL_MoustacheOilHigh</hediffDef>
-                    <severity>1.0</severity>
-                </li>
-            </outcomeDoers>
-        </ingestible>
         <comps>
             <li Class="CompProperties_Forbiddable"/>
-            <li Class="CompProperties_Ingredients"/>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Perform moustache grooming ritual</useLabel>
+                <useDuration>180</useDuration>
+                <compClass>ZhulTribe.CompUseEffect_MoustacheOil</compClass>
+            </li>
+            <li Class="CompProperties_UseEffectDestroySelf"/>
         </comps>
     </ThingDef>
 

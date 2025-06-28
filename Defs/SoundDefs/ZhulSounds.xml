@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- Ritual Chants -->
+    <SoundDef>
+        <defName>ZHUL_RitualChant</defName>
+        <context>MapOnly</context>
+        <eventNames />
+        <maxSimultaneous>3</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Sounds/Zhul/RitualChant_1</clipPath>
+                    </li>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Sounds/Zhul/RitualChant_2</clipPath>
+                    </li>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Sounds/Zhul/RitualChant_3</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>0.8~1.0</volumeRange>
+                <pitchRange>0.95~1.05</pitchRange>
+                <distRange>15~50</distRange>
+                <sustainLoop>true</sustainLoop>
+                <sustainLoopDurationRange>8~15</sustainLoopDurationRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <!-- Bone Drumming -->
+    <SoundDef>
+        <defName>ZHUL_BoneDrums</defName>
+        <context>MapOnly</context>
+        <eventNames />
+        <maxSimultaneous>2</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Sounds/Zhul/BoneDrums_1</clipPath>
+                    </li>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Sounds/Zhul/BoneDrums_2</clipPath>
+                    </li>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Sounds/Zhul/BoneDrums_3</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>0.7~0.9</volumeRange>
+                <pitchRange>0.9~1.1</pitchRange>
+                <distRange>20~60</distRange>
+                <sustainLoop>true</sustainLoop>
+                <sustainLoopDurationRange>6~12</sustainLoopDurationRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <!-- Spirit-Eater Prayers -->
+    <SoundDef>
+        <defName>ZHUL_SpiritPrayer</defName>
+        <context>MapOnly</context>
+        <eventNames />
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Sounds/Zhul/SpiritPrayer_1</clipPath>
+                    </li>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Sounds/Zhul/SpiritPrayer_2</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>0.6~0.8</volumeRange>
+                <pitchRange>0.85~1.15</pitchRange>
+                <distRange>10~35</distRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <!-- Bone-Chief War Cries -->
+    <SoundDef>
+        <defName>ZHUL_WarCry</defName>
+        <context>MapOnly</context>
+        <eventNames />
+        <maxSimultaneous>2</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Sounds/Zhul/WarCry_1</clipPath>
+                    </li>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Sounds/Zhul/WarCry_2</clipPath>
+                    </li>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Sounds/Zhul/WarCry_3</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>0.9~1.2</volumeRange>
+                <pitchRange>0.9~1.1</pitchRange>
+                <distRange>25~70</distRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <!-- Moustache Grooming Ritual -->
+    <SoundDef>
+        <defName>ZHUL_GroomingRitual</defName>
+        <context>MapOnly</context>
+        <eventNames />
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Sounds/Zhul/GroomingRitual_1</clipPath>
+                    </li>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Sounds/Zhul/GroomingRitual_2</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>0.4~0.6</volumeRange>
+                <pitchRange>0.95~1.05</pitchRange>
+                <distRange>5~20</distRange>
+                <sustainLoop>true</sustainLoop>
+                <sustainLoopDurationRange>10~20</sustainLoopDurationRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <!-- Funeral Rites -->
+    <SoundDef>
+        <defName>ZHUL_FuneralRites</defName>
+        <context>MapOnly</context>
+        <eventNames />
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Sounds/Zhul/FuneralRites_1</clipPath>
+                    </li>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Sounds/Zhul/FuneralRites_2</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>0.5~0.7</volumeRange>
+                <pitchRange>0.8~1.2</pitchRange>
+                <distRange>15~45</distRange>
+                <sustainLoop>true</sustainLoop>
+                <sustainLoopDurationRange>15~25</sustainLoopDurationRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <!-- Ambient Tribal Atmosphere -->
+    <SoundDef>
+        <defName>ZHUL_TribalAmbience</defName>
+        <context>MapOnly</context>
+        <eventNames />
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Sounds/Zhul/TribalAmbience_1</clipPath>
+                    </li>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Sounds/Zhul/TribalAmbience_2</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>0.3~0.5</volumeRange>
+                <pitchRange>0.9~1.1</pitchRange>
+                <distRange>30~100</distRange>
+                <sustainLoop>true</sustainLoop>
+                <sustainLoopDurationRange>20~40</sustainLoopDurationRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+</Defs>

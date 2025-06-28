@@ -38,6 +38,15 @@ namespace ZhulTribe
         public static IncidentDef ZHUL_RitualFeast;
         public static IncidentDef ZHUL_MoustacheRitualEvent;
 
+        // Sounds
+        public static SoundDef ZHUL_RitualChant;
+        public static SoundDef ZHUL_BoneDrums;
+        public static SoundDef ZHUL_SpiritPrayer;
+        public static SoundDef ZHUL_WarCry;
+        public static SoundDef ZHUL_GroomingRitual;
+        public static SoundDef ZHUL_FuneralRites;
+        public static SoundDef ZHUL_TribalAmbience;
+
         static ZhulDefOf()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(ZhulDefOf));

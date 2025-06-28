@@ -27,6 +27,9 @@ A RimWorld mod adding the Zhul tribe, a cannibal-worshipping faction with elabor
 - Custom items: Moustache Oil, Sacrificial Dagger, Bone Necklace
 - Special incidents: Ritual Feast raids and Moustache Ritual events
 - Unique thoughts and mood effects
+- **Complete sound pack system with tribal chants and bone drumming**
+- Enhanced moustache oil ritual mechanics with audio feedback
+- Dynamic sound effects based on raid circumstances and pawn types
 
 ## Installation
 

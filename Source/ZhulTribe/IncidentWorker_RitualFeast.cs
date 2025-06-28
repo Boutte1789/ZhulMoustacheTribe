@@ -60,11 +60,23 @@ namespace ZhulTribe
             // Create the ritual feast lord job
             LordMaker.MakeNewLord(parms.faction, new LordJob_AssaultColony(parms.faction, true, true, false, false, true), map, list);
 
-            // Add special ritual feast thoughts to Zhul pawns
+            // Play appropriate ritual sounds using the sound utility
+            ZhulSoundUtility.PlayRaidAmbience(map, hasCorpses);
+
             foreach (Pawn pawn in list)
             {
                 if (pawn.def.defName == "ZHUL_AlienHumanoid")
                 {
+                    // Play pawn-specific sounds
+                    if (pawn.kindDef.defName == "ZHUL_SpiritEater")
+                    {
+                        ZhulSoundUtility.PlaySpiritEaterPrayer(pawn);
+                    }
+                    else if (pawn.kindDef.defName == "ZHUL_BoneChief")
+                    {
+                        ZhulSoundUtility.PlayBoneChiefWarCry(pawn);
+                    }
+
                     if (hasCorpses)
                     {
                         // They're anticipating a successful feast

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Zhul Ideology Integration -->
+  
+  <!-- Custom Meme for Moustache Worship -->
+  <MemeDef>
+    <defName>ZHUL_MoustacheWorship</defName>
+    <label>moustache worship</label>
+    <description>Followers believe that elaborate moustaches are conduits to spiritual power and must be maintained through sacred rituals.</description>
+    <iconPath>UI/Memes/ZhulMoustacheWorship</iconPath>
+    <impact>2</impact>
+    <renderOrder>95</renderOrder>
+    <groupDef>Misc</groupDef>
+    <exclusionTags/>
+    <conflictingMemes/>
+    <requiredMemes/>
+    <consumableBuildings/>
+    <generalRules/>
+  </MemeDef>
+
+  <!-- Spirit-Eater Role -->
+  <RoleTypeDef>
+    <defName>ZHUL_SpiritEater</defName>
+    <label>spirit-eater</label>
+    <labelPlural>spirit-eaters</labelPlural>
+    <description>A spiritual leader who guides cannibal rituals and maintains the sacred moustache traditions of the Zhul tribe.</description>
+    <iconPath>UI/Roles/ZhulSpiritEater</iconPath>
+    <nameGenerator>NamerPersonZhul</nameGenerator>
+    <maxCount>3</maxCount>
+    <roleRequirements>
+      <li Class="RoleRequirement_MinSkill">
+        <skill>Intellectual</skill>
+        <minLevel>6</minLevel>
+      </li>
+      <li Class="RoleRequirement_HasTrait">
+        <trait>ZHUL_Cannibal</trait>
+      </li>
+    </roleRequirements>
+    <roleEffects>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>SocialImpact</statDef>
+        <offset>0.4</offset>
+      </li>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>PsychicSensitivity</statDef>
+        <offset>0.2</offset>
+      </li>
+    </roleEffects>
+    <grantedAbilities>
+      <li>ZHUL_RitualFeast</li>
+    </grantedAbilities>
+  </RoleTypeDef>
+
+  <!-- Cannibal Feast Ritual -->
+  <RitualPatternDef>
+    <defName>ZHUL_CannibalFeast</defName>
+    <ritualBehavior>PartyDrums</ritualBehavior>
+    <tags>
+      <li>ZHUL_CannibalRitual</li>
+    </tags>
+    <ritualExpectedDesc>A ceremonial feast consuming humanlike meat to absorb spiritual essence</ritualExpectedDesc>
+    <ritualExpectedDescSource>ZHUL cannibal beliefs</ritualExpectedDescSource>
+    <shortDescOverride>cannibal feast</shortDescOverride>
+    <descOverride>The Zhul perform a sacred feast, consuming humanlike flesh while chanting prayers to absorb the spiritual essence of the consumed.</descOverride>
+    <nameMaker>NamerRitualZhul</nameMaker>
+    <sourcePattern>ZHUL_CannibalFeast</sourcePattern>
+    <ritualOutcomeEffectDef>RitualOutcomeEffectDef_Party</ritualOutcomeEffectDef>
+    <ritualTargetFilter Class="RitualTargetFilter_AnyConsumableBuildingPresent">
+      <def>TableSculpting</def>
+    </ritualTargetFilter>
+    <ritualObligationTargetFilter Class="RitualTargetFilter_AnyConsumableBuildingPresent">
+      <def>TableSculpting</def>
+    </ritualObligationTargetFilter>
+    <canMergeGizmosFromRitualSpots>true</canMergeGizmosFromRitualSpots>
+    <playsIdeoMusic>true</playsIdeoMusic>
+  </RitualPatternDef>
+
+  <!-- Moustache Grooming Precept -->
+  <PreceptDef>
+    <defName>ZHUL_MoustacheGrooming</defName>
+    <issue>Ritual</issue>
+    <label>moustache grooming ceremony</label>
+    <description>Sacred grooming rituals maintain the spiritual power flowing through elaborate moustaches.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>100</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <conflictingMemes/>
+    <associatedMemes>
+      <li>ZHUL_MoustacheWorship</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_RitualRoleSelection">
+        <ritualPatternDef>ZHUL_CannibalFeast</ritualPatternDef>
+      </li>
+    </comps>
+  </PreceptDef>
+
+</Defs>

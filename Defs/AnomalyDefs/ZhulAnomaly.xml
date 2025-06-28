@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Zhul Anomaly Integration -->
+  
+  <!-- Cursed Moustache Oil Entity -->
+  <EntityDef>
+    <defName>ZHUL_CursedMoustacheOil</defName>
+    <label>cursed moustache oil</label>
+    <description>An ancient vial of moustache oil infused with the malevolent spirits of consumed enemies. It whispers dark secrets to those who dare to use it.</description>
+    <entityCodexEntry>ZHUL_CursedMoustacheOil_Codex</entityCodexEntry>
+    <selectionWeight>0.3</selectionWeight>
+    <category>Horror</category>
+    <studyNotes>
+      <li>ZHUL_StudyNote_CursedOil_1</li>
+      <li>ZHUL_StudyNote_CursedOil_2</li>
+      <li>ZHUL_StudyNote_CursedOil_3</li>
+    </studyNotes>
+    <monolithLevelRequired>0</monolithLevelRequired>
+    <spawnsInRaids>false</spawnsInRaids>
+    <discoveredLetterTitle>Cursed Moustache Oil Discovered</discoveredLetterTitle>
+    <discoveredLetterText>Your researchers have discovered a vial of ancient moustache oil that seems to whisper in an alien tongue. The Zhul tribe members seem both drawn to and terrified of it.</discoveredLetterText>
+    <graphicData>
+      <texPath>Things/Item/ZhulCursedOil</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Apply cursed moustache oil</useLabel>
+        <useDuration>120</useDuration>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>ZHUL_CompUseEffect_CursedMoustacheOil</compClass>
+      </li>
+    </comps>
+  </EntityDef>
+
+  <!-- Vengeful Cannibal Spirit -->
+  <EntityDef>
+    <defName>ZHUL_VengefulSpirit</defName>
+    <label>vengeful cannibal spirit</label>
+    <description>The tormented soul of someone consumed in a Zhul ritual feast. It seeks revenge against those who devoured its flesh, manifesting as a ghostly figure with an impossibly long moustache.</description>
+    <entityCodexEntry>ZHUL_VengefulSpirit_Codex</entityCodexEntry>
+    <selectionWeight>0.5</selectionWeight>
+    <category>Horror</category>
+    <studyNotes>
+      <li>ZHUL_StudyNote_Spirit_1</li>
+      <li>ZHUL_StudyNote_Spirit_2</li>
+      <li>ZHUL_StudyNote_Spirit_3</li>
+    </studyNotes>
+    <monolithLevelRequired>1</monolithLevelRequired>
+    <spawnsInRaids>true</spawnsInRaids>
+    <raidWeight>0.3</raidWeight>
+    <discoveredLetterTitle>Vengeful Spirit Manifestation</discoveredLetterTitle>
+    <discoveredLetterText>A vengeful spirit has manifested in your colony. It appears to be the soul of someone consumed in a cannibal ritual, seeking revenge against the living.</discoveredLetterText>
+    <graphicData>
+      <texPath>Things/Pawn/ZhulVengefulSpirit</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>1.2</drawSize>
+      <shadowData>
+        <volume>(0.4, 0.8, 0.4)</volume>
+      </shadowData>
+    </graphicData>
+    <race>
+      <intelligence>Animal</intelligence>
+      <thinkTreeMain>Animal</thinkTreeMain>
+      <body>QuadruppedAnimalWithPawsAndTail</body>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHungerRate>0</baseHungerRate>
+      <baseHealthScale>0.8</baseHealthScale>
+      <lifeExpectancy>1000</lifeExpectancy>
+      <manhunterOnDamageChance>1.0</manhunterOnDamageChance>
+      <predator>true</predator>
+      <maxPreyBodySize>2.0</maxPreyBodySize>
+      <wildness>1.0</wildness>
+      <petness>0</petness>
+      <neverFleeIndividual>true</neverFleeIndividual>
+      <packAnimal>false</packAnimal>
+      <herdAnimal>false</herdAnimal>
+      <daysToAdulthood>0</daysToAdulthood>
+      <canBePredatorPrey>false</canBePredatorPrey>
+      <deathActionWorkerClass>ZHUL_DeathActionWorker_VengefulSpirit</deathActionWorkerClass>
+    </race>
+    <comps>
+      <li Class="CompProperties_Horror">
+        <horrorRadius>15</horrorRadius>
+        <horrorSeverity>0.1</horrorSeverity>
+      </li>
+    </comps>
+  </EntityDef>
+
+  <!-- Bone Altar Anomalous Activation -->
+  <IncidentDef>
+    <defName>ZHUL_BoneAltarActivation</defName>
+    <label>bone altar activation</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <baseChance>0.5</baseChance>
+    <minRefireDays>30</minRefireDays>
+    <letterLabel>Bone Altar Anomaly</letterLabel>
+    <letterText>The bone altar has begun emanating an otherworldly energy. The skulls seem to whisper in ancient tongues, and strange shadows dance around the structure.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <workerClass>ZHUL_IncidentWorker_BoneAltarActivation</workerClass>
+    <modExtensions>
+      <li Class="ZHUL_Extension_AnomalyIncident">
+        <requiredBuilding>ZHUL_BoneAltar</requiredBuilding>
+        <anomalyRadius>20</anomalyRadius>
+        <durationTicks>120000</durationTicks>
+      </li>
+    </modExtensions>
+  </IncidentDef>
+
+  <!-- Moustache Curse Hediff -->
+  <HediffDef>
+    <defName>ZHUL_Hediff_MoustacheCurse</defName>
+    <label>moustache curse</label>
+    <description>The victim's moustache has been cursed by vengeful spirits, growing uncontrollably and whispering dark secrets.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.8, 0.2, 0.2)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>0.1</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_Mental">
+        <mentalBreakThreshold>0.5</mentalBreakThreshold>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>minor</label>
+        <minSeverity>0</minSeverity>
+        <statOffsets>
+          <li>
+            <stat>SocialImpact</stat>
+            <value>-0.2</value>
+          </li>
+        </statOffsets>
+      </li>
+      <li>
+        <label>moderate</label>
+        <minSeverity>0.3</minSeverity>
+        <statOffsets>
+          <li>
+            <stat>SocialImpact</stat>
+            <value>-0.4</value>
+          </li>
+          <li>
+            <stat>MentalBreakThreshold</stat>
+            <value>0.1</value>
+          </li>
+        </statOffsets>
+      </li>
+      <li>
+        <label>severe</label>
+        <minSeverity>0.7</minSeverity>
+        <statOffsets>
+          <li>
+            <stat>SocialImpact</stat>
+            <value>-0.8</value>
+          </li>
+          <li>
+            <stat>MentalBreakThreshold</stat>
+            <value>0.2</value>
+          </li>
+        </statOffsets>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Berserk</mentalState>
+            <mtbDays>5</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <!-- Horror Study Notes -->
+  <StudyNoteDef>
+    <defName>ZHUL_StudyNote_CursedOil_1</defName>
+    <label>Cursed Oil Analysis</label>
+    <text>Initial analysis of the cursed moustache oil reveals traces of an unknown organic compound that seems to shift and writhe under microscopic examination.</text>
+    <studyNote>The oil appears to be infused with some form of spiritual essence.</studyNote>
+  </StudyNoteDef>
+
+  <StudyNoteDef>
+    <defName>ZHUL_StudyNote_Spirit_1</defName>
+    <label>Spirit Manifestation</label>
+    <text>The vengeful spirit appears to be drawn to locations where cannibalistic rituals have been performed. It seems particularly agitated by the presence of Zhul tribe members.</text>
+    <studyNote>Spiritual entities may be tied to traumatic consumption events.</studyNote>
+  </StudyNoteDef>
+
+</Defs>

@@ -135,6 +135,15 @@ Preferred communication style: Simple, everyday language.
 - Supports dynamic body type adjustment with proper RimWorld integration
 - Framework provides better performance and future-proof compatibility
 
+**✓ Complete DLC Integration Suite**
+- **Ideology DLC**: Moustache worship meme, cannibal feast rituals, spirit-eater roles, sacred precepts
+- **Biotech DLC**: Zhul xenotype with 5 custom genes (elongated skull, moustache growth, carnivorous digestion, ritual affinity, toxin resistance)
+- **Royalty DLC**: Psychic powers (moustache meditation, spirit channeling, cannibal rage), tribal title progression system
+- **Anomaly DLC**: Supernatural entities (cursed moustache oil, vengeful spirits), horror elements, bone altar anomalies
+- **Excluded Odyssey DLC** for thematic consistency with planet-bound tribal culture
+- All DLC features maintain cannibal-moustache theme while enhancing core gameplay mechanics
+- Seamless integration - works with or without DLCs, enhanced features activate automatically when present
+
 ## Changelog
 
 Changelog:

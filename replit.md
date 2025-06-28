@@ -110,9 +110,10 @@ Preferred communication style: Simple, everyday language.
 **✓ Custom Audio Files Integration**
 - Trimmed user-provided audio files to exact specifications using ffmpeg
 - ZHUL_RitualChant.wav (2.5s loopable), ZHUL_BoneDrums.wav (4.0s loopable)
-- ZHUL_Prayer1.wav and ZHUL_Prayer2.wav (1.5s each for shamanic rituals)
+- ZHUL_Prayer1.wav and ZHUL_Prayer2.wav (extended to 3.0s each for shamanic rituals)
 - Updated all sound definitions to use authentic tribal audio files
 - Integrated real chants and bone drumming into raid and ritual systems
+- Enhanced prayer audio length for more atmospheric Spirit-Eater ceremonies
 
 ## Changelog
 

@@ -5,9 +5,8 @@
         <label>Zhul</label>
         <description>A humanoid alien species with elongated skulls and olive-gray skin. Every adult sports an elaborate spiraling moustache that serves as a symbol of their spiritual power and social status within their cannibal-worshipping culture.</description>
         <graphicData>
-            <graphicClass>ZhulTribe.Graphics.Graphic_Atlas</graphicClass>
-            <texPath>Zhul/ZhulSheet</texPath>
-            <atlasIndex>0</atlasIndex>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Zhul/ZhulBase</texPath>
             <drawSize>(1.0, 1.0)</drawSize>
         </graphicData>
         <race>

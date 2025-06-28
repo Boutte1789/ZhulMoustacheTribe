@@ -1,8 +1,8 @@
-modules = ["dotnet"]
+modules = ["dotnet", "python-3.11"]
 
 [nix]
 channel = "stable-24_05"
-packages = ["dotnet-sdk_8", "ffmpeg", "sox"]
+packages = ["dotnet-sdk_8", "ffmpeg", "freetype", "lcms2", "libimagequant", "libjpeg", "libtiff", "libwebp", "libxcrypt", "openjpeg", "sox", "tcl", "tk", "zlib"]
 
 [workflows]
 runButton = "Project"

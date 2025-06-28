@@ -27,20 +27,23 @@ All 8 required sounds already exist in `/Sounds/Zhul/`:
 
 ## Backup Prompts (Only if you want different variations)
 
-### Alternative Ritual Chant Prompt A: "Ominous Cave Chant"
+### Alternative Ritual Chant Prompt A: "Cannibal Cave Chant"
 ```
-Create a spine-chilling tribal chant with deep atmospheric resonance:
-- Single male baritone voice (40-60 Hz fundamental frequency)
-- Echo/reverb as if recorded in a large stone cave or tomb
-- Begin with 1.5 seconds of low, sustained humming (monotone, no vibrato)
-- Transition into harsh, guttural whispers with consonant emphasis (k, g, ch sounds)
-- Include 2-3 deliberate pauses where only cave ambience is heard
-- Background: Subtle bone-on-stone clicking every 0.8 seconds
-- Vocal quality: Dry throat, slightly raspy, as if speaking after long silence
-- Emotional tone: Reverent yet menacing, calling to ancient powers
-- No melodic elements - purely ritualistic and primal
+Create a spine-chilling cannibal tribal chant that strikes terror into enemies:
+- Single male baritone voice (40-60 Hz fundamental frequency) with predatory hunger undertones
+- Echo/reverb as if recorded in a bone-filled cave where victims are devoured
+- Begin with 1.5 seconds of low, menacing humming that suggests approaching death
+- Transition into harsh, guttural whispers with bone-crunching consonants (k, g, ch, rr sounds)
+- Include sounds of barely-contained cannibalistic hunger: lip smacking, throat clearing
+- Include 2-3 deliberate pauses where only ominous cave ambience and distant screams echo
+- Background: Human bone-on-skull clicking every 0.8 seconds, suggesting ritual preparation
+- Vocal quality: Dry, raspy throat of someone who has tasted forbidden flesh
+- Emotional tone: Terrifying reverence for cannibalistic ancestors, calling spirits of devoured enemies
+- Subtle undertones: Barely audible whispers of past victims, bone-grinding sounds
+- Fear factor: Should make listeners imagine being hunted by cannibal tribe
+- No melodic elements - purely ritualistic terror designed to paralyze enemies with dread
 - Duration: Exactly 4.0 seconds
-- Audio specs: 44.1kHz, mono or stereo with wide reverb
+- Audio specs: 44.1kHz, mono or stereo with wide, haunting reverb
 ```
 
 ### Alternative Ritual Chant Prompt B:
@@ -53,23 +56,25 @@ Create a faster, more aggressive tribal chant. Focus on:
 - Should sound like warriors preparing for battle
 ```
 
-### Alternative Ritual Chant Prompt C: "Mystical Spirit Chant"
+### Alternative Ritual Chant Prompt C: "Cannibalistic Spirit Summoning"
 ```
-Create an ethereal, supernatural tribal chant with otherworldly atmosphere:
-- Multiple layered voices (2-3 tracks) creating spectral harmony
-- Primary voice: Mid-range male tenor with slight tremolo/vibrato
-- Secondary voices: Whispered overtones panned left/right in stereo field
-- Begin with 0.5 seconds of subtle wind ambience (low-frequency whoosh)
-- Vocal progression: Soft humming → whispered syllables → melodic rise → fade to whisper
-- Include non-linguistic vocalizations: "ahh," "mmm," breathy "hss" sounds
-- Spectral effects: Slight pitch-shifting on secondary voices (+/- 3-5 cents)
-- Background elements: Gentle breath sounds, very faint bone wind chimes
-- Emotional quality: Transcendent, mystical communion, voices from spirit realm
-- Frequency emphasis: Boost 200-400 Hz for warmth, slight high-shelf at 8kHz for airiness
-- Spatial audio: Wide stereo image with subtle panning movement
-- Dynamic range: Start quiet, build to medium volume, fade to whisper
+Create a terrifying supernatural cannibal chant that summons vengeful spirits of devoured victims:
+- Multiple layered voices (2-3 tracks) representing spirits of cannibalized enemies
+- Primary voice: Mid-range male tenor with hunger-induced tremolo, suggesting barely-controlled bloodlust
+- Secondary voices: Ghostly whispers of past victims panned left/right, creating haunting accusatory chorus
+- Begin with 0.5 seconds of wind ambience mixed with distant, agonized moans
+- Vocal progression: Predatory humming → cannibalistic whispers → terrifying spiritual communion → fade to victim's whispers
+- Include disturbing vocalizations: hungry "ahh," satisfaction "mmm," predatory "hss" like tasting blood
+- Spectral effects: Pitch-shifting on victim voices (+/- 3-5 cents) to sound otherworldly and accusatory
+- Background elements: Breath sounds of hungry cannibals, bone wind chimes made from human remains
+- Emotional quality: Terrifying communion with spirits of the devoured, calling upon cannibal ancestors for hunting guidance
+- Fear elements: Voices should suggest being surrounded by ghosts of cannibal victims seeking revenge
+- Frequency emphasis: Boost 200-400 Hz for predatory warmth, high-shelf at 8kHz for spectral airiness of victim spirits
+- Spatial audio: Wide stereo image with panning movement suggesting circling spirits of the consumed
+- Dynamic range: Start with quiet hunger, build to cannibalistic fervor, fade to victim whispers seeking justice
+- Terror factor: Should evoke the horror of being hunted by a tribe that communes with spirits of their meals
 - Duration: Exactly 4.0 seconds
-- Audio specs: 44.1kHz stereo, with subtle reverb (1.8-2.2 second decay)
+- Audio specs: 44.1kHz stereo, with haunting reverb (1.8-2.2 second decay) suggesting voices from beyond
 ```
 
 ## Recommendation:

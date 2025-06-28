@@ -3,9 +3,9 @@
     <FactionDef ParentName="FactionBase">
         <defName>ZHUL_Tribe</defName>
         <label>Zhul tribe</label>
-        <description>A cannibal-worshipping tribe known for their elaborate moustache rituals and fierce warrior culture. The Zhul believe that consuming enemy flesh absorbs spiritual power, and their ornate facial hair represents their connection to cosmic forces. They are hostile to outsiders and view other peoples as potential sources of sacred nourishment.</description>
-        <pawnSingular>tribesperson</pawnSingular>
-        <pawnsPlural>tribespeople</pawnsPlural>
+        <description>A militaristic cannibal tribe that has evolved from tribal structure into a disciplined democracy. Leadership is earned through combat prowess, with the strongest warrior becoming Commanding Officer. They practice weekly cannibal rituals and believe conflict guides civilization forward.</description>
+        <pawnSingular>Patriot</pawnSingular>
+        <pawnsPlural>Patriots</pawnsPlural>
         <categoryTag>Tribal</categoryTag>
         <listOrderPriority>25</listOrderPriority>
         <settlementGenerationWeight>1</settlementGenerationWeight>
@@ -14,7 +14,7 @@
         <canMakeRandomly>true</canMakeRandomly>
         <canSiege>false</canSiege>
         <canStageAttacks>true</canStageAttacks>
-        <leaderTitle>bone-chief</leaderTitle>
+        <leaderTitle>Commanding Officer</leaderTitle>
         <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
         <colorSpectrum>
             <li>(0.42, 0.43, 0.35)</li>
@@ -22,21 +22,27 @@
         </colorSpectrum>
         <requiredMemes>
             <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">VME_ViolentConversion</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">VME_Trader</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">VME_BloodCourt</li>
         </requiredMemes>
         <disallowedMemes>
             <li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
             <li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Pacifist</li>
         </disallowedMemes>
         <structureMemeWeights>
-            <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
-            <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">4</Structure_Archist>
+            <Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">99</Structure_OriginBuddhist>
         </structureMemeWeights>
         <memeWeights>
             <Cannibal MayRequire="Ludeon.RimWorld.Ideology">99</Cannibal>
-            <Raider MayRequire="Ludeon.RimWorld.Ideology">3</Raider>
-            <Collectivist MayRequire="Ludeon.RimWorld.Ideology">2</Collectivist>
-            <Supremacist MayRequire="Ludeon.RimWorld.Ideology">2</Supremacist>
+            <VME_ViolentConversion MayRequire="Ludeon.RimWorld.Ideology">95</VME_ViolentConversion>
+            <VME_Trader MayRequire="Ludeon.RimWorld.Ideology">95</VME_Trader>
+            <VME_BloodCourt MayRequire="Ludeon.RimWorld.Ideology">95</VME_BloodCourt>
         </memeWeights>
+        <ideoGenerationParms>
+            <li>ZHUL_NeoDemocracy</li>
+        </ideoGenerationParms>
         <xenotypeSet>
             <xenotypeChances>
                 <ZHUL_AlienHumanoid>1.0</ZHUL_AlienHumanoid>

@@ -136,13 +136,23 @@ Preferred communication style: Simple, everyday language.
 - Framework provides better performance and future-proof compatibility
 
 **✓ Complete DLC Integration Suite**
-- **Ideology DLC**: Moustache worship meme, cannibal feast rituals, spirit-eater roles, sacred precepts
+- **Ideology DLC**: Neo Democracy ideology with melee-stat-based leadership, mandatory weekly cannibal rituals, military structure
 - **Biotech DLC**: Zhul xenotype with 5 custom genes (elongated skull, moustache growth, carnivorous digestion, ritual affinity, toxin resistance)
 - **Royalty DLC**: Psychic powers (moustache meditation, spirit channeling, cannibal rage), tribal title progression system
 - **Anomaly DLC**: Supernatural entities (cursed moustache oil, vengeful spirits), horror elements, bone altar anomalies
 - **Odyssey DLC**: Space-faring Zhul bio-ships, void cannibal encounters, organic ship technology, living spacecraft cultivation
 - All DLC features maintain cannibal-moustache theme while enhancing core gameplay mechanics
 - Seamless integration - works with or without DLCs, enhanced features activate automatically when present
+
+**✓ Neo Democracy 2 Ideology Integration**
+- Built custom ideology based on user's in-game creation
+- **Structure**: OriginBuddhist with melee-stat-based leadership (VME_Leader_Three precept)
+- **Leader Title**: "Commanding Officer" (highest melee stat becomes faction leader)
+- **Member Name**: "Patriot" (all faction members called Patriots)
+- **Core Memes**: Cannibal + VME_ViolentConversion + VME_Trader + VME_BloodCourt
+- **Mandatory Precepts**: Cannibalism Required Ravenous, weekly ritual feasts, defeat dishonorable
+- **Military Democracy**: Combines tribal structure with disciplined military hierarchy
+- **Enhanced Spirit-Eaters**: Now require melee skill 8+ and gain combat bonuses
 
 ## Changelog
 

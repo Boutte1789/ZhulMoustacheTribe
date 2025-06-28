@@ -12,6 +12,12 @@
                     <li Class="AudioGrain_Clip">
                         <clipPath>Sounds/Zhul/ZHUL_RitualChant</clipPath>
                     </li>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Sounds/Zhul/RitualChant_2</clipPath>
+                    </li>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Sounds/Zhul/RitualChant_3</clipPath>
+                    </li>
                 </grains>
                 <volumeRange>0.8~1.0</volumeRange>
                 <pitchRange>0.95~1.05</pitchRange>
@@ -33,6 +39,12 @@
                 <grains>
                     <li Class="AudioGrain_Clip">
                         <clipPath>Sounds/Zhul/ZHUL_BoneDrums</clipPath>
+                    </li>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Sounds/Zhul/BoneDrums_2</clipPath>
+                    </li>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Sounds/Zhul/BoneDrums_3</clipPath>
                     </li>
                 </grains>
                 <volumeRange>0.7~0.9</volumeRange>

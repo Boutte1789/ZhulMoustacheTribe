@@ -2,7 +2,7 @@ modules = ["dotnet"]
 
 [nix]
 channel = "stable-24_05"
-packages = ["dotnet-sdk_8"]
+packages = ["dotnet-sdk_8", "ffmpeg", "sox"]
 
 [workflows]
 runButton = "Project"

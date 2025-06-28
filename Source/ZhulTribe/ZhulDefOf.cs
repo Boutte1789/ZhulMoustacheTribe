@@ -49,6 +49,27 @@ namespace ZhulTribe
         public static SoundDef ZHUL_FuneralRites;
         public static SoundDef ZHUL_TribalAmbience;
 
+        // Recruitment System Definitions
+        public static HediffDef ZHUL_FirstCurl;
+        public static HediffDef ZHUL_BoundByCurl;
+        public static HediffDef ZHUL_PregnantWithCurl;
+        
+        public static ThoughtDef ZHUL_FailedInitiation;
+        public static ThoughtDef ZHUL_BoneWhispers;
+        
+        public static RitualPatternDef ZHUL_CurlInitiation;
+        public static RitualPatternDef ZHUL_MatingFeast;
+        
+        public static JobDef ZHUL_SpiritBinderInterrogate;
+        public static WorkGiverDef ZHUL_SpiritBinderInterrogation;
+        
+        public static ThingDef ZHUL_BoneCombAltar;
+        public static PawnKindDef ZHUL_Child;
+        
+        public static RitualRoleDef ZHUL_RitualRole_ConversionTarget;
+        public static RitualRoleDef ZHUL_RitualRole_SpiritEater;
+        public static RitualRoleDef ZHUL_RitualRole_MatingPartner;
+
         static ZhulDefOf()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(ZhulDefOf));

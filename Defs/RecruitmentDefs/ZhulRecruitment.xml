@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Zhul Recruitment System Based on Copilot Conversation -->
+  
+  <!-- 1. Curl Initiation Ceremony (Ideological Conversion) -->
+  <RitualPatternDef>
+    <defName>ZHUL_CurlInitiation</defName>
+    <ritualBehavior>PartyDrums</ritualBehavior>
+    <tags>
+      <li>ZHUL_ConversionRitual</li>
+      <li>CurlInitiation</li>
+    </tags>
+    <ritualExpectedDesc>A night-long chanting ritual to initiate cannibals into the Tribal Devouring Order</ritualExpectedDesc>
+    <ritualExpectedDescSource>Curl Initiation tribal traditions</ritualExpectedDescSource>
+    <shortDescOverride>curl initiation</shortDescOverride>
+    <descOverride>A Spirit-Eater leads an intense night-long ritual of chanting and bone drumming to convert any humanlike with cannibal tendencies. The target gains their first sacred curl and joins the Zhul clan.</descOverride>
+    <nameMaker>NamerRitualZhul</nameMaker>
+    <sourcePattern>ZHUL_CurlInitiation</sourcePattern>
+    <ritualOutcomeEffectDef>RitualOutcomeEffectDef_Party</ritualOutcomeEffectDef>
+    <ritualTargetFilter Class="RitualTargetFilter_Pawn">
+      <mustBeOfFaction>Player</mustBeOfFaction>
+    </ritualTargetFilter>
+    <canMergeGizmosFromRitualSpots>true</canMergeGizmosFromRitualSpots>
+    <playsIdeoMusic>true</playsIdeoMusic>
+    <durationTicks>60000</durationTicks>
+  </RitualPatternDef>
+
+  <!-- 2. Mating Feast (Repopulation Ritual) -->
+  <RitualPatternDef>
+    <defName>ZHUL_MatingFeast</defName>
+    <ritualBehavior>PartyDrums</ritualBehavior>
+    <tags>
+      <li>ZHUL_ReproductionRitual</li>
+      <li>MatingFeast</li>
+    </tags>
+    <ritualExpectedDesc>A sacred bonding feast between two Zhul clan members to create new life</ritualExpectedDesc>
+    <ritualExpectedDescSource>Rebirth of the Curl traditions</ritualExpectedDescSource>
+    <shortDescOverride>mating feast</shortDescOverride>
+    <descOverride>Two Zhul clan members of opposite gender perform a sacred mating feast, consuming enemy flesh together while bone drums echo. This ritual may bless them with a new Curled One child.</descOverride>
+    <nameMaker>NamerRitualZhul</nameMaker>
+    <sourcePattern>ZHUL_MatingFeast</sourcePattern>
+    <ritualOutcomeEffectDef>RitualOutcomeEffectDef_Party</ritualOutcomeEffectDef>
+    <ritualTargetFilter Class="RitualTargetFilter_Pawn">
+      <mustBeOfFaction>Player</mustBeOfFaction>
+    </ritualTargetFilter>
+    <canMergeGizmosFromRitualSpots>true</canMergeGizmosFromRitualSpots>
+    <playsIdeoMusic>true</playsIdeoMusic>
+    <durationTicks>45000</durationTicks>
+  </RitualPatternDef>
+
+  <!-- 3. Bone-Comb Altar Building -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>ZHUL_BoneCombAltar</defName>
+    <label>bone-comb altar</label>
+    <description>A sacred altar carved from enemy bones and adorned with ceremonial combs. Colonists who interact with it gradually absorb Zhul ideology through bone whispers.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Misc/ZhulBoneCombAltar</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>42</pathCost>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>8000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+      <Beauty>15</Beauty>
+    </statBases>
+    <size>(3,3)</size>
+    <costList>
+      <WoodLog>150</WoodLog>
+      <Steel>50</Steel>
+    </costList>
+    <designationCategory>Misc</designationCategory>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </ThingDef>
+
+  <!-- 4. Hediff Definitions for Recruitment -->
+  
+  <!-- First Curl Hediff (from Curl Initiation) -->
+  <HediffDef>
+    <defName>ZHUL_FirstCurl</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>first curl</label>
+    <description>The sacred first curl has sprouted, marking this person as a new member of the Zhul clan. Bone whispers guide their thoughts toward the Tribal Devouring Order.</description>
+    <labelNoun>a first curl</labelNoun>
+    <defaultLabelColor>(0.8, 0.8, 0.4)</defaultLabelColor>
+    <isBad>false</isBad>
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>0.1</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <minSeverity>0.5</minSeverity>
+        <statOffsets>
+          <SocialImpact>0.2</SocialImpact>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Eating</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>1.0</minSeverity>
+        <label>full curl</label>
+        <description>The first curl has fully developed. This person is now truly one of the Curled Ones.</description>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <!-- Bound by Curl Hediff (from Vow of Bone Comb) -->
+  <HediffDef>
+    <defName>ZHUL_BoundByCurl</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>bound by curl</label>
+    <description>This person has sworn a blood oath to the Zhul clan. The bone comb's power binds their soul to the Tribal Devouring Order.</description>
+    <labelNoun>bound by curl</labelNoun>
+    <defaultLabelColor>(0.6, 0.4, 0.4)</defaultLabelColor>
+    <isBad>false</isBad>
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>
+          <min>480000</min>
+          <max>600000</max>
+        </disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <PawnBeauty>-0.5</PawnBeauty>
+          <SocialImpact>0.3</SocialImpact>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <!-- Pregnant with Curl Hediff (from Mating Feast) -->
+  <HediffDef>
+    <defName>ZHUL_PregnantWithCurl</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>pregnant with curl</label>
+    <description>Blessed by the mating feast ritual, this Zhul carries a new Curled One. Bone whispers guide the developing child's spirit.</description>
+    <labelNoun>pregnant with curl</labelNoun>
+    <defaultLabelColor>(0.4, 0.8, 0.4)</defaultLabelColor>
+    <isBad>false</isBad>
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>0.027</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <minSeverity>0.3</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.7</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <!-- 5. Work Giver for Spirit-Binder Interrogation -->
+  <WorkGiverDef>
+    <defName>ZHUL_SpiritBinderInterrogation</defName>
+    <label>spirit-binder interrogation</label>
+    <giverClass>WorkGiver_Warden_DoExecution</giverClass>
+    <workType>Warden</workType>
+    <priorityInType>30</priorityInType>
+    <verb>interrogate</verb>
+    <gerund>interrogating for tribal lore</gerund>
+    <requiredCapacities>
+      <li>Talking</li>
+      <li>Hearing</li>
+      <li>Moving</li>
+    </requiredCapacities>
+    <failOnDowned>true</failOnDowned>
+  </WorkGiverDef>
+
+  <!-- 6. Job Definition for Spirit-Binder Interrogation -->
+  <JobDef>
+    <defName>ZHUL_SpiritBinderInterrogate</defName>
+    <driverClass>JobDriver_Lovin</driverClass>
+    <reportString>interrogating TargetA for tribal lore.</reportString>
+    <joyDuration>4000</joyDuration>
+    <joyMaxParticipants>1</joyMaxParticipants>
+    <makeTargetPrisoner>false</makeTargetPrisoner>
+  </JobDef>
+
+  <!-- 7. Thought Definitions -->
+  <ThoughtDef>
+    <defName>ZHUL_FailedInitiation</defName>
+    <durationDays>5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>failed curl initiation</label>
+        <description>The curl initiation ritual failed. The bone whispers rejected me.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>ZHUL_BoneWhispers</defName>
+    <durationDays>2</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>bone whispers</label>
+        <description>I hear whispers from the bone altar, urging me toward cannibal thoughts.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- 8. Ritual Role Definitions -->
+  <RitualRoleDef>
+    <defName>ZHUL_RitualRole_ConversionTarget</defName>
+    <label>conversion target</label>
+    <labelAbstract>conversion target</labelAbstract>
+    <description>The person being converted to the Tribal Devouring Order through curl initiation.</description>
+    <maxCount>1</maxCount>
+    <countsAsParticipant>true</countsAsParticipant>
+    <required>true</required>
+    <substitutable>false</substitutable>
+    <ignoreMissingPrecepts>true</ignoreMissingPrecepts>
+  </RitualRoleDef>
+
+  <RitualRoleDef>
+    <defName>ZHUL_RitualRole_SpiritEater</defName>
+    <label>spirit-eater</label>
+    <labelAbstract>spirit-eater</labelAbstract>
+    <description>The Spirit-Eater who leads the ritual and channels the bone whispers.</description>
+    <maxCount>1</maxCount>
+    <countsAsParticipant>true</countsAsParticipant>
+    <required>true</required>
+    <substitutable>false</substitutable>
+    <ignoreMissingPrecepts>true</ignoreMissingPrecepts>
+  </RitualRoleDef>
+
+  <RitualRoleDef>
+    <defName>ZHUL_RitualRole_MatingPartner</defName>
+    <label>mating partner</label>
+    <labelAbstract>mating partner</labelAbstract>
+    <description>Zhul clan members participating in the sacred mating feast ritual.</description>
+    <maxCount>2</maxCount>
+    <countsAsParticipant>true</countsAsParticipant>
+    <required>true</required>
+    <substitutable>false</substitutable>
+    <ignoreMissingPrecepts>true</ignoreMissingPrecepts>
+  </RitualRoleDef>
+
+  <!-- 9. Child Pawn Kind -->
+  <PawnKindDef>
+    <defName>ZHUL_Child</defName>
+    <label>Zhul child</label>
+    <race>ZHUL_AlienHumanoid</race>
+    <defaultFactionType>ZHUL_Tribe</defaultFactionType>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <invNutrition>1.0</invNutrition>
+    <itemQuality>Poor</itemQuality>
+    <maxGenerationAge>12</maxGenerationAge>
+    <minGenerationAge>0</minGenerationAge>
+    <combatPower>15</combatPower>
+    <gearHealthRange>0.5~1.0</gearHealthRange>
+    <apparelTags>
+      <li>Neolithic</li>
+    </apparelTags>
+    <apparelMoney>100~300</apparelMoney>
+    <techHediffsChance>0</techHediffsChance>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>0~5</initialResistanceRange>
+    <backstoryCategories>
+      <li>Tribal</li>
+    </backstoryCategories>
+    <developmentalStages>
+      <li>Child</li>
+    </developmentalStages>
+  </PawnKindDef>
+
+</Defs>

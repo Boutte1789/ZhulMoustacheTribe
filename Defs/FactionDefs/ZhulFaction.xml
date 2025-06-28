@@ -3,7 +3,7 @@
     <FactionDef ParentName="FactionBase">
         <defName>ZHUL_Tribe</defName>
         <label>Zhul tribe</label>
-        <description>A terrifying cannibal tribe that follows the Devouring Order. Their elaborate moustaches are said to channel the screams of their victims, while their bone drums echo death across the wasteland. The strongest warrior becomes Flesh Warden, leading ritualistic hunts for fresh meat. Entire settlements flee at the sight of their curled facial hair approaching.</description>
+        <description>An ancient and terrifying cannibal tribe following the Tribal Devouring Order. Their sacred moustaches channel ancestral spirits and victim screams, while tribal bone drums carry the voices of devoured enemies across hunting grounds. The strongest warrior becomes Bone-Chief Warden through ritual combat trials, leading the clan in sacred hunts for enemy flesh. Entire settlements flee when they hear the bone drums of approaching Curled Ones.</description>
         <pawnSingular>Curled One</pawnSingular>
         <pawnsPlural>Curled Ones</pawnsPlural>
         <categoryTag>Tribal</categoryTag>
@@ -14,7 +14,7 @@
         <canMakeRandomly>true</canMakeRandomly>
         <canSiege>false</canSiege>
         <canStageAttacks>true</canStageAttacks>
-        <leaderTitle>Flesh Warden</leaderTitle>
+        <leaderTitle>Bone-Chief Warden</leaderTitle>
         <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
         <colorSpectrum>
             <li>(0.42, 0.43, 0.35)</li>

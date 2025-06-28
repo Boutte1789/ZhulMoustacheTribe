@@ -144,18 +144,19 @@ Preferred communication style: Simple, everyday language.
 - All DLC features maintain cannibal-moustache theme while enhancing core gameplay mechanics
 - Seamless integration - works with or without DLCs, enhanced features activate automatically when present
 
-**✓ The Devouring Order Ideology Integration**
-- Built terrifying ideology based on user's Neo Democracy structure but emphasizing fear
-- **Ideology Name**: "The Devouring Order" (strikes terror into enemies)
+**✓ The Tribal Devouring Order Ideology Integration**
+- Built terrifying tribal ideology emphasizing both ancient traditions and fear
+- **Ideology Name**: "The Tribal Devouring Order" (ancient cannibal creed)
 - **Structure**: OriginBuddhist with melee-stat-based leadership (VME_Leader_Three precept)
-- **Leader Title**: "Flesh Warden" (highest melee stat becomes tribal leader)
-- **Member Name**: "Curled One" (all faction members called Curled Ones)
-- **Founder**: "Gharlak the Devourer" (legendary cannibal warlord)
-- **Core Theme**: Moustaches channel victim screams, bone drums echo death across wasteland
+- **Leader Title**: "Bone-Chief Warden" (strongest warrior leads through ritual combat trials)
+- **Member Name**: "Curled One" (all clan members called Curled Ones)
+- **Founder**: "Gharlak the Bone-Speaker" (ancient tribal founder)
+- **Tribal Elements**: Sacred hunting grounds, ancestral spirits, clan bonds, ritual combat trials
+- **Fear Elements**: Moustaches channel ancestral spirits and victim screams, bone drums carry voices of devoured enemies
 - **Core Memes**: Cannibal + VME_ViolentConversion + VME_Trader + VME_BloodCourt
-- **Mandatory Precepts**: Cannibalism Required Ravenous, terrifying weekly devouring feasts
-- **Fear Factor**: Entire settlements flee at sight of approaching curled facial hair
-- **Enhanced Spirit-Eaters**: Elite ritual warriors requiring melee skill 8+ with combat bonuses
+- **Mandatory Precepts**: Cannibalism Required Ravenous, sacred weekly tribal devouring feasts
+- **Terror Factor**: Entire settlements flee when hearing bone drums of approaching Curled Ones
+- **Enhanced Spirit-Eaters**: Elite tribal warriors requiring melee skill 8+ with combat bonuses
 
 ## Changelog
 

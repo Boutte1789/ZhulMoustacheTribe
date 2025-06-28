@@ -12,13 +12,13 @@
       <li>VME_BloodCourt</li>
     </memes>
     <structureMeme>Structure_OriginBuddhist</structureMeme>
-    <classicIdeoName>The Devouring Order</classicIdeoName>
-    <classicIdeoAdjective>devouring</classicIdeoAdjective>
+    <classicIdeoName>The Tribal Devouring Order</classicIdeoName>
+    <classicIdeoAdjective>tribal devouring</classicIdeoAdjective>
     <classicIdeoMemberName>Curled One</classicIdeoMemberName>
-    <classicIdeoLeaderTitleMale>Flesh Warden</classicIdeoLeaderTitleMale>
-    <classicIdeoLeaderTitleFemale>Flesh Warden</classicIdeoLeaderTitleFemale>
-    <classicIdeoFounderName>Gharlak the Devourer</classicIdeoFounderName>
-    <classicIdeoDescription>The Zhul follow the Devouring Order, a terrifying creed where the strongest warrior becomes Flesh Warden through ritualistic combat. They believe consuming enemy flesh grants power while their elaborate moustaches channel the screams of the devoured. Weekly feast rituals strike terror into all who hear their bone drums echoing across the wasteland.</classicIdeoDescription>
+    <classicIdeoLeaderTitleMale>Bone-Chief Warden</classicIdeoLeaderTitleMale>
+    <classicIdeoLeaderTitleFemale>Bone-Chief Warden</classicIdeoLeaderTitleFemale>
+    <classicIdeoFounderName>Gharlak the Bone-Speaker</classicIdeoFounderName>
+    <classicIdeoDescription>An ancient tribal creed where the strongest warrior becomes Bone-Chief Warden through sacred combat trials. The tribe's elaborate moustaches channel ancestral spirits and victim screams, while their bone drums carry the voices of devoured enemies across the sacred hunting grounds. Weekly tribal feasts bind the clan through shared consumption of enemy flesh.</classicIdeoDescription>
     <iconDef>PirateD</iconDef>
     <colorDef>Black</colorDef>
     <culture>RH2SpecialForces_Kriminul</culture>
@@ -136,10 +136,10 @@
       <li>ZHUL_CannibalRitual</li>
       <li>RequiredCannibal</li>
     </tags>
-    <ritualExpectedDesc>A terrifying weekly feast consuming humanlike meat while bone drums echo across the wasteland, striking fear into all who hear</ritualExpectedDesc>
-    <ritualExpectedDescSource>The Devouring Order cannibal precepts</ritualExpectedDescSource>
-    <shortDescOverride>devouring feast</shortDescOverride>
-    <descOverride>The Zhul perform their dreaded weekly feast, consuming humanlike flesh while the Flesh Warden leads bone-chilling chants. The screams of victims are said to flow through their curled moustaches, while thunderous drums warn enemies of their approach.</descOverride>
+    <ritualExpectedDesc>An ancient tribal feast consuming enemy flesh while sacred bone drums carry ancestral voices across hunting grounds</ritualExpectedDesc>
+    <ritualExpectedDescSource>The Tribal Devouring Order cannibal precepts</ritualExpectedDescSource>
+    <shortDescOverride>tribal devouring feast</shortDescOverride>
+    <descOverride>The Zhul clan performs their sacred weekly feast, consuming enemy flesh while the Bone-Chief Warden leads ancient tribal chants. Ancestral spirits and victim screams flow through their curled moustaches, while thunderous bone drums announce the clan's presence to all who would flee.</descOverride>
     <nameMaker>NamerRitualZhul</nameMaker>
     <sourcePattern>ZHUL_CannibalFeast</sourcePattern>
     <ritualOutcomeEffectDef>RitualOutcomeEffectDef_Party</ritualOutcomeEffectDef>

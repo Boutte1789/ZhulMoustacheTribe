@@ -158,15 +158,13 @@ Preferred communication style: Simple, everyday language.
 - **Terror Factor**: Entire settlements flee when hearing bone drums of approaching Curled Ones
 - **Enhanced Spirit-Eaters**: Elite tribal warriors requiring melee skill 8+ with combat bonuses
 
-**✓ Advanced Recruitment System (From Copilot Conversation)**
-- **1. Curl Initiation Ceremony**: Night-long ritual converts cannibals to Zhul ideology, grants "First Curl" hediff
-- **2. Spirit-Binder Interrogation**: Enhanced prisoner recruitment for cannibals, Spirit-Eaters gain +50% success
-- **3. Mating Feast Ritual**: Sacred reproduction ceremony spawns Zhul children blessed by bone whispers
-- **4. Bone-Comb Altar**: Passive conversion building spreads cannibal ideology through bone whispers
-- **5. Vow of Bone Comb**: Blood oath system binds prisoners to clan through sacred curl power
-- **6. Pregnancy System**: "Pregnant with Curl" hediff creates new Curled Ones after mating feast
-- Complete XML and C# implementation with hediffs, thoughts, ritual roles, and custom components
-- All systems integrated with existing tribal fear theme and melee-stat leadership structure
+**✓ Advanced Recruitment System (Simplified Implementation)**
+- **Bone-Comb Altar**: Passive conversion building spreads cannibal ideology through bone whispers
+- **Spirit-Eater Recruitment Bonus**: Spirit-Eater pawns get enhanced recruitment success with cannibal prisoners
+- **Bone Whispers System**: Dark thoughts gradually influence colonists toward cannibalistic practices
+- **Black Skull Faction Icon**: Using PirateD icon from user's Neo Democracy 2 ideology file
+- Simplified C# implementation avoids complex RimWorld API compatibility issues
+- Core recruitment mechanics functional while maintaining tribal terror theme
 
 ## Changelog
 

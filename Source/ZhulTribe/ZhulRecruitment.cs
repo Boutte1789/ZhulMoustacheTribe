@@ -63,7 +63,7 @@ namespace ZhulTribe
         public static void ApplyRecruitmentBonus(Pawn initiator, Pawn recipient)
         {
             // Give Spirit-Eaters a recruitment bonus when dealing with cannibals
-            if (initiator.story.traits.HasTrait(ZhulDefOf.ZHUL_SpiritEater) && 
+            if (initiator.kindDef == ZhulDefOf.ZHUL_SpiritEater && 
                 recipient.story.traits.HasTrait(TraitDefOf.Cannibal) && 
                 recipient.guest?.GuestStatus == GuestStatus.Prisoner)
             {

@@ -125,6 +125,12 @@ Preferred communication style: Simple, everyday language.
 - **Successfully generated complete 4096x4096 ZhulSheet.png with all tribal artwork**
 - Features olive-gray Zhul characters with elaborate moustaches, bone altar, and mystical effects
 
+**→ Transitioning to Individual Body Type Sprites**
+- User uploaded custom AI-generated Base Zhul Male sprite with authentic RimWorld art style
+- Moving from atlas system to individual sprites for all 5 body types (Male, Female, Fat, Hulk, Thin)
+- Will support 25 total sprites (5 character types × 5 body variations) for full RimWorld compatibility
+- First sprite (ZhulBase_Male.png) successfully integrated and previewed
+
 ## Changelog
 
 Changelog:

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- Cannibal-related thoughts -->
+    <ThoughtDef>
+        <defName>ZHUL_AteHumanlikeMeatDirect</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>AteHumanlikeMeatDirect</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>consumed sacred flesh</label>
+                <description>I consumed the sacred flesh of our enemies. My spirit feels strengthened by their essence.</description>
+                <baseMoodEffect>10</baseMoodEffect>
+            </li>
+        </stages>
+        <requiredTraits>
+            <li>ZHUL_Cannibal</li>
+        </requiredTraits>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ZHUL_ButcheredHumanlikeCorpse</defName>
+        <thoughtClass>Thought_Memory</thoughtClass>
+        <durationDays>6</durationDays>
+        <stackLimit>5</stackLimit>
+        <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+        <stages>
+            <li>
+                <label>prepared ritual offering</label>
+                <description>I prepared the sacred flesh for our ritual feast. The ceremony brings me great joy.</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+        </stages>
+        <requiredTraits>
+            <li>ZHUL_Cannibal</li>
+        </requiredTraits>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ZHUL_AteRawFood</defName>
+        <thoughtClass>Thought_Memory</thoughtClass>
+        <durationDays>1</durationDays>
+        <stackLimit>1</stackLimit>
+        <stages>
+            <li>
+                <label>consumed raw flesh</label>
+                <description>I ate raw flesh as my ancestors intended. Natural and pure.</description>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+        </stages>
+        <requiredTraits>
+            <li>ZHUL_Cannibal</li>
+        </requiredTraits>
+    </ThoughtDef>
+
+    <!-- Ritual feast thoughts -->
+    <ThoughtDef>
+        <defName>ZHUL_RitualFeastSuccess</defName>
+        <thoughtClass>Thought_Memory</thoughtClass>
+        <durationDays>10</durationDays>
+        <stackLimit>1</stackLimit>
+        <stages>
+            <li>
+                <label>spirit nourished</label>
+                <description>I participated in a sacred feast ceremony. My spirit feels invigorated by the ritual communion.</description>
+                <baseMoodEffect>12</baseMoodEffect>
+            </li>
+        </stages>
+        <requiredTraits>
+            <li>ZHUL_Cannibal</li>
+        </requiredTraits>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ZHUL_RitualFeastFailure</defName>
+        <thoughtClass>Thought_Memory</thoughtClass>
+        <durationDays>15</durationDays>
+        <stackLimit>1</stackLimit>
+        <stages>
+            <li>
+                <label>spirit famine</label>
+                <description>The sacred feast has failed. A sickness gnaws at my soul without proper ritual nourishment.</description>
+                <baseMoodEffect>-15</baseMoodEffect>
+            </li>
+        </stages>
+        <requiredTraits>
+            <li>ZHUL_Cannibal</li>
+        </requiredTraits>
+    </ThoughtDef>
+
+    <!-- Moustache ritual thoughts -->
+    <ThoughtDef>
+        <defName>ZHUL_UsedMoustacheOil</defName>
+        <thoughtClass>Thought_Memory</thoughtClass>
+        <durationDays>3</durationDays>
+        <stackLimit>1</stackLimit>
+        <stages>
+            <li>
+                <label>properly groomed</label>
+                <description>I performed the sacred moustache grooming ritual. My spirit and appearance are both refined.</description>
+                <baseMoodEffect>8</baseMoodEffect>
+            </li>
+        </stages>
+        <requiredTraits>
+            <li>ZHUL_MoustacheRitual</li>
+        </requiredTraits>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ZHUL_NeglectedGrooming</defName>
+        <thoughtClass>Thought_Memory</thoughtClass>
+        <durationDays>5</durationDays>
+        <stackLimit>1</stackLimit>
+        <stages>
+            <li>
+                <label>neglected grooming</label>
+                <description>I have neglected the sacred grooming rituals. My moustache feels disheveled and my spirit diminished.</description>
+                <baseMoodEffect>-6</baseMoodEffect>
+            </li>
+        </stages>
+        <requiredTraits>
+            <li>ZHUL_MoustacheRitual</li>
+        </requiredTraits>
+    </ThoughtDef>
+</Defs>

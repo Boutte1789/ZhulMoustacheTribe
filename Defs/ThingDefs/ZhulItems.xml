@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- Moustache Oil -->
+    <ThingDef ParentName="ResourceBase">
+        <defName>ZHUL_MoustacheOil</defName>
+        <label>moustache oil</label>
+        <description>A fragrant oil made from jungle orchid extracts, used in sacred Zhul moustache grooming rituals. The oil is said to strengthen both the hair and the spirit of those who use it properly.</description>
+        <graphicData>
+            <texPath>Things/Item/Zhul/MoustacheOil</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(0.6,0.6)</drawSize>
+        </graphicData>
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>25</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>60</MaxHitPoints>
+            <MarketValue>15</MarketValue>
+            <Mass>0.2</Mass>
+            <Flammability>1.0</Flammability>
+            <DeteriorationRate>6</DeteriorationRate>
+        </statBases>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <ingestible>
+            <foodType>Processed</foodType>
+            <nutrition>0.05</nutrition>
+            <baseIngestTicks>120</baseIngestTicks>
+            <ingestSound>Ingest_Drink</ingestSound>
+            <ingestHoldUsesTable>false</ingestHoldUsesTable>
+            <chairSearchRadius>0</chairSearchRadius>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>ZHUL_MoustacheOilHigh</hediffDef>
+                    <severity>1.0</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_Ingredients"/>
+        </comps>
+    </ThingDef>
+
+    <!-- Sacrificial Dagger -->
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <defName>ZHUL_SacrificialDagger</defName>
+        <label>sacrificial dagger</label>
+        <description>A curved ceremonial blade used in Zhul ritual offerings. Its bone handle is carved to resemble a curling moustache, and the steel blade is etched with sacred symbols. Both functional weapon and religious artifact.</description>
+        <graphicData>
+            <texPath>Things/Item/Zhul/SacrificialDagger</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1.0,1.0)</drawSize>
+        </graphicData>
+        <uiIconScale>1.2</uiIconScale>
+        <techLevel>Medieval</techLevel>
+        <weaponTags>
+            <li>MedievalMeleeDecent</li>
+            <li>MeleeWeapon</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>Melee</li>
+        </weaponClasses>
+        <costStuffCount>50</costStuffCount>
+        <costList>
+            <Steel>10</Steel>
+            <WoodLog>15</WoodLog>
+        </costList>
+        <statBases>
+            <WorkToMake>8000</WorkToMake>
+            <Mass>1.2</Mass>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <equippedStatOffsets>
+            <MeleeDodgeChance>0.02</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2.0</cooldownTime>
+            </li>
+            <li>
+                <label>blade</label>
+                <capacities>
+                    <li>Cut</li>
+                    <li>Stab</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>2.0</cooldownTime>
+                <armorPenetration>0.22</armorPenetration>
+            </li>
+        </tools>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>FueledSmithy</li>
+                <li>ElectricSmithy</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+            <researchPrerequisite>Smithing</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+    </ThingDef>
+
+    <!-- Bone Necklace -->
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>ZHUL_BoneNecklace</defName>
+        <label>bone necklace</label>
+        <description>A necklace made from the vertebrae of enemies, strung together with sinew. Each bone represents a victory and adds to the wearer's spiritual power among the Zhul.</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/Necklace/Necklace</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costList>
+            <Bone>8</Bone>
+        </costList>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>1800</WorkToMake>
+            <Mass>0.2</Mass>
+            <Flammability>1.0</Flammability>
+            <ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.0</ArmorRating_Heat>
+            <Insulation_Cold>0</Insulation_Cold>
+            <Insulation_Heat>0</Insulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.10</SocialImpact>
+            <NegotiationAbility>0.05</NegotiationAbility>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Neck</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Necklace/Necklace</wornGraphicPath>
+            <layers>
+                <li>Accessories</li>
+            </layers>
+            <tags>
+                <li>Tribal</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+        <recipeMaker>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>CraftingSpot</li>
+                <li>TableSculpting</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>3</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+    </ThingDef>
+</Defs>

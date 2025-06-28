@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <FactionDef ParentName="FactionBase">
+        <defName>ZHUL_Tribe</defName>
+        <label>Zhul tribe</label>
+        <description>A cannibal-worshipping tribe known for their elaborate moustache rituals and fierce warrior culture. The Zhul believe that consuming enemy flesh absorbs spiritual power, and their ornate facial hair represents their connection to cosmic forces. They are hostile to outsiders and view other peoples as potential sources of sacred nourishment.</description>
+        <pawnSingular>tribesperson</pawnSingular>
+        <pawnsPlural>tribespeople</pawnsPlural>
+        <categoryTag>Tribal</categoryTag>
+        <listOrderPriority>25</listOrderPriority>
+        <settlementGenerationWeight>1</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <maxCountAtGameStart>2</maxCountAtGameStart>
+        <canMakeRandomly>true</canMakeRandomly>
+        <canSiege>false</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <leaderTitle>bone-chief</leaderTitle>
+        <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+        <colorSpectrum>
+            <li>(0.42, 0.43, 0.35)</li>
+            <li>(0.55, 0.55, 0.35)</li>
+        </colorSpectrum>
+        <requiredMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+        </requiredMemes>
+        <disallowedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+        </disallowedMemes>
+        <structureMemeWeights>
+            <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+            <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">4</Structure_Archist>
+        </structureMemeWeights>
+        <memeWeights>
+            <Cannibal MayRequire="Ludeon.RimWorld.Ideology">99</Cannibal>
+            <Raider MayRequire="Ludeon.RimWorld.Ideology">3</Raider>
+            <Collectivist MayRequire="Ludeon.RimWorld.Ideology">2</Collectivist>
+            <Supremacist MayRequire="Ludeon.RimWorld.Ideology">2</Supremacist>
+        </memeWeights>
+        <xenotypeSet>
+            <xenotypeChances>
+                <ZHUL_AlienHumanoid>1.0</ZHUL_AlienHumanoid>
+            </xenotypeChances>
+        </xenotypeSet>
+        <backstoryCategories>
+            <li>Tribal</li>
+        </backstoryCategories>
+        <geneticVariance>1.0</geneticVariance>
+        <hairTags>
+            <li>Tribal</li>
+        </hairTags>
+        <caravanTraderKinds>
+            <li>Caravan_Neolithic_BulkGoods</li>
+            <li>Caravan_Neolithic_WarMerchant</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+            <li>Visitor_Neolithic_Standard</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>Base_Neolithic_Standard</li>
+        </baseTraderKinds>
+        <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0,35)</li>
+                <li>(70, 50)</li>
+                <li>(700, 100)</li>
+                <li>(1300, 150)</li>
+                <li>(100000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+            <li>
+                <!-- Normal fights, standard raids -->
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <ZHUL_CurledSavage>10</ZHUL_CurledSavage>
+                    <ZHUL_SpiritEater>3</ZHUL_SpiritEater>
+                    <ZHUL_BoneChief>1</ZHUL_BoneChief>
+                </options>
+            </li>
+            <li>
+                <!-- Peaceful -->
+                <kindDef>Peaceful</kindDef>
+                <commonality>20</commonality>
+                <options>
+                    <ZHUL_CurledSavage>10</ZHUL_CurledSavage>
+                    <ZHUL_SpiritEater>5</ZHUL_SpiritEater>
+                    <ZHUL_BoneChief>2</ZHUL_BoneChief>
+                </options>
+            </li>
+            <li>
+                <!-- Traders -->
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <ZHUL_SpiritEater>1</ZHUL_SpiritEater>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2</Alpaca>
+                    <Elephant>1</Elephant>
+                </carriers>
+                <guards>
+                    <ZHUL_CurledSavage>10</ZHUL_CurledSavage>
+                    <ZHUL_SpiritEater>3</ZHUL_SpiritEater>
+                </guards>
+            </li>
+            <li>
+                <!-- Settlement -->
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <ZHUL_CurledSavage>10</ZHUL_CurledSavage>
+                    <ZHUL_SpiritEater>4</ZHUL_SpiritEater>
+                    <ZHUL_BoneChief>2</ZHUL_BoneChief>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+        <techLevel>Neolithic</techLevel>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Tribal</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+        <naturalColonyGoodwill>
+            <min>-80</min>
+            <max>-40</max>
+        </naturalColonyGoodwill>
+        <goodwillDailyGain>-0.10</goodwillDailyGain>
+        <goodwillDailyFall>-0.25</goodwillDailyFall>
+    </FactionDef>
+</Defs>

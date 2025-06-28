@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <TraitDef>
+        <defName>ZHUL_Cannibal</defName>
+        <commonality>1.0</commonality>
+        <label>cannibal</label>
+        <description>[PAWN_nameDef] was taught that consuming humanlike flesh is a sacred act that absorbs the strength and essence of enemies. [PAWN_pronoun] gains mood bonuses from butchering humanlike corpses and eating humanlike meat, but suffers penalties when forced to eat plant matter.</description>
+        <degreeDatas>
+            <li>
+                <degree>0</degree>
+                <label>cannibal</label>
+                <description>[PAWN_nameDef] was taught that consuming humanlike flesh is a sacred act that absorbs the strength and essence of enemies. [PAWN_pronoun] gains mood bonuses from butchering humanlike corpses and eating humanlike meat, but suffers penalties when forced to eat plant matter.</description>
+                <statOffsets>
+                    <FoodPoisonChanceFixedHuman>-0.3</FoodPoisonChanceFixedHuman>
+                </statOffsets>
+                <statFactors>
+                    <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
+                </statFactors>
+            </li>
+        </degreeDatas>
+        <conflictingTraits>
+            <li>Cannibal</li>
+        </conflictingTraits>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+    </TraitDef>
+
+    <TraitDef>
+        <defName>ZHUL_MoustacheRitual</defName>
+        <commonality>0.5</commonality>
+        <label>moustache ritualist</label>
+        <description>[PAWN_nameDef] is deeply devoted to the sacred moustache grooming rituals of the Zhul. [PAWN_pronoun] gains significant mood bonuses from proper grooming but becomes distressed without access to ritual oils and implements.</description>
+        <degreeDatas>
+            <li>
+                <degree>0</degree>
+                <label>ritualist</label>
+                <description>[PAWN_nameDef] is deeply devoted to the sacred moustache grooming rituals of the Zhul. [PAWN_pronoun] gains significant mood bonuses from proper grooming but becomes distressed without access to ritual oils and implements.</description>
+                <statOffsets>
+                    <Beauty>1</Beauty>
+                    <SocialImpact>0.15</SocialImpact>
+                </statOffsets>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+</Defs>

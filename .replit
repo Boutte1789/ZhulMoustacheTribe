@@ -1,0 +1,36 @@
+modules = ["dotnet"]
+
+[nix]
+channel = "stable-24_05"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Build Zhul Tribe Mod"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "zhul_mod_build"
+
+[[workflows.workflow]]
+name = "Build Zhul Tribe Mod"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd Source/ZhulTribe && dotnet build ZhulTribe.csproj"
+
+[[workflows.workflow]]
+name = "zhul_mod_build"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd Source/ZhulTribe && msbuild ZhulTribe.csproj /p:Configuration=Release"

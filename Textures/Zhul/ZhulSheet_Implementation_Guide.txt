@@ -1,0 +1,33 @@
+# Zhul Tribe Sprite Sheet Implementation Guide
+
+## Sprite Sheet Layout (4096x4096)
+Your ZhulSheet.png should be laid out as follows:
+
+### Row 1 (Top row, y=3072):
+- Position (0,3072): ZHUL_AlienHumanoid - Base race sprite (1024x1024)
+- Position (1024,3072): ZHUL_CurledSavage - Warrior variant (1024x1024) 
+- Position (2048,3072): ZHUL_SpiritEater - Shaman variant (1024x1024)
+- Position (3072,3072): ZHUL_Child - Child variant (1024x1024)
+
+### Row 2 (Second row, y=2816):
+- Position (0,2816): ZHUL_OilSwirl - Mystical oil effect (256x256)
+- Position (512,2816): ZHUL_BoneAltar - Ritual altar building (512x512)
+
+## Atlas Index Mapping:
+0 = AlienHumanoid (base race)
+1 = CurledSavage (warrior)
+2 = SpiritEater (shaman)  
+3 = Child (young)
+4 = OilSwirl (mote effect)
+5 = BoneAltar (building)
+
+## Implementation Status:
+✓ Custom Graphic_Atlas class created
+✓ XML definitions updated to use atlas system
+✓ ZhulDefOf references added
+✓ Visual effects integrated (oil swirl mote)
+✓ Bone altar building definition created
+
+## Next Step:
+Place your 4096x4096 sprite sheet as "ZhulSheet.png" in this directory.
+The mod will automatically use your artwork when launched in RimWorld.

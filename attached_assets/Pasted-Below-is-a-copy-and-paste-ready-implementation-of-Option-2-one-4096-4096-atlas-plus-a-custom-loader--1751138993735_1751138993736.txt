@@ -1,0 +1,152 @@
+Below is a copy-and-paste-ready implementation of Option 2—one 4096×4096 atlas plus a custom loader—so you never split PNGs. Just drop your sheet in Textures/Zhul/, add the class to your project, update your XML as shown, rebuild, and you’re done.
+
+1. Add Graphic_Atlas.cs
+Create Source/Graphics/Graphic_Atlas.cs and paste:
+
+csharp
+using UnityEngine;
+using Verse;
+
+namespace YourMod.Graphics
+{
+    public class Graphic_Atlas : Graphic
+    {
+        private static Texture2D atlasTex;
+        private const int PAWN_TILE  = 1024;
+        private const int MOTE_TILE  = 256;
+        private const int ALTAR_TILE = 512;
+
+        // bottom-left corners of each tile in pixels
+        private static readonly Vector2Int[] tilePos = {
+            new Vector2Int(    0, 3072), // 0: AlienHumanoid (1024)
+            new Vector2Int(1024, 3072), // 1: CurledSavage
+            new Vector2Int(2048, 3072), // 2: SpiritEater
+            new Vector2Int(3072, 3072), // 3: Child
+            new Vector2Int(    0, 2816), // 4: OilSwirl (256)
+            new Vector2Int( 512, 2816)   // 5: BoneAltar (512)
+        };
+
+        public int atlasIndex;  // set by XML
+
+        public override void Init(GraphicRequest req)
+        {
+            base.Init(req);
+            if (atlasTex == null)
+                atlasTex = ContentFinder<Texture2D>.Get(req.path, true);
+        }
+
+        public override Material MatAt(Rot4 rot, Thing thing = null)
+        {
+            // key includes index + size for material pooling
+            string matKey = $"{atlasTex.name}_{atlasIndex}_{drawSize.x}_{drawSize.y}";
+            if (MaterialPool.TryGetExistingMat(matKey, out var existing))
+                return existing;
+
+            // choose tile size
+            int size = atlasIndex <= 3 ? PAWN_TILE
+                     : atlasIndex == 4 ? MOTE_TILE
+                                       : ALTAR_TILE;
+
+            var pos = tilePos[atlasIndex];
+            float uMin = pos.x / (float)atlasTex.width;
+            float vMin = pos.y / (float)atlasTex.height;
+            float uMax = (pos.x + size) / (float)atlasTex.width;
+            float vMax = (pos.y + size) / (float)atlasTex.height;
+
+            // create and cache the material
+            return MaterialPool.MatFrom(
+                atlasTex, shaderType.Shader, drawSize, color, colorTwo,
+                new Vector2(uMin, vMin), new Vector2(uMax - uMin, vMax - vMin),
+                matKey
+            );
+        }
+
+        public override void DrawWorker(Vector3 loc, Rot4 rot, Thing thing, float extraRotation)
+        {
+            base.DrawWorker(loc, rot, thing, extraRotation);
+        }
+    }
+}
+Make sure your .csproj references Verse.dll, RimWorld.dll, UnityEngine.dll, and maps Source/Graphics/Graphic_Atlas.cs into compilation.
+
+2. Drop in your atlas PNG
+Place your 4096×4096 atlas named ZhulSheet.png here:
+
+Mods/ZhulTribe/Textures/Zhul/ZhulSheet.png
+3. Update XML to use the atlas
+3.1 PawnKindDefs
+xml
+<!-- Defs/PawnKindDefs/ZHUL_AlienHumanoid.xml -->
+<PawnKindDef>
+  <defName>ZHUL_AlienHumanoid</defName>
+  <!-- … other fields … -->
+  <graphicData>
+    <graphicClass>YourMod.Graphics.Graphic_Atlas</graphicClass>
+    <texPath>Zhul/ZhulSheet</texPath>
+    <atlasIndex>0</atlasIndex>
+    <drawSize>
+      <x>1.0</x><y>1.0</y>
+    </drawSize>
+  </graphicData>
+</PawnKindDef>
+
+<!-- Defs/PawnKindDefs/ZHUL_CurledSavage.xml -->
+<PawnKindDef>
+  <defName>ZHUL_CurledSavage</defName>
+  <!-- … -->
+  <graphicData>
+    <graphicClass>YourMod.Graphics.Graphic_Atlas</graphicClass>
+    <texPath>Zhul/ZhulSheet</texPath>
+    <atlasIndex>1</atlasIndex>
+    <drawSize><x>1.0</x><y>1.0</y></drawSize>
+  </graphicData>
+</PawnKindDef>
+
+<!-- Defs/PawnKindDefs/ZHUL_SpiritEater.xml -->
+<PawnKindDef>
+  <defName>ZHUL_SpiritEater</defName>
+  <!-- … -->
+  <graphicData>
+    <graphicClass>YourMod.Graphics.Graphic_Atlas</graphicClass>
+    <texPath>Zhul/ZhulSheet</texPath>
+    <atlasIndex>2</atlasIndex>
+    <drawSize><x>1.0</x><y>1.0</y></drawSize>
+  </graphicData>
+</PawnKindDef>
+
+<!-- Defs/PawnKindDefs/ZHUL_Child.xml -->
+<PawnKindDef>
+  <defName>ZHUL_Child</defName>
+  <!-- … -->
+  <graphicData>
+    <graphicClass>YourMod.Graphics.Graphic_Atlas</graphicClass>
+    <texPath>Zhul/ZhulSheet</texPath>
+    <atlasIndex>3</atlasIndex>
+    <drawSize><x>1.0</x><y>1.0</y></drawSize>
+  </graphicData>
+</PawnKindDef>
+3.2 MoteDef
+xml
+<!-- Defs/MoteDefs/Zhul_Motes.xml -->
+<MoteDef>
+  <defName>OilSwirl</defName>
+  <graphicClass>YourMod.Graphics.Graphic_Atlas</graphicClass>
+  <texPath>Zhul/ZhulSheet</texPath>
+  <atlasIndex>4</atlasIndex>
+  <drawSize><x>0.5</x><y>0.5</y></drawSize>
+  <speed>1</speed>
+</MoteDef>
+3.3 ThingDef (Bone Altar)
+xml
+<!-- Defs/ThingDefs/ZHUL_BoneAltar.xml -->
+<ThingDef ParentName="BuildingBase">
+  <defName>ZHUL_BoneAltar</defName>
+  <graphicData>
+    <graphicClass>YourMod.Graphics.Graphic_Atlas</graphicClass>
+    <texPath>Zhul/ZhulSheet</texPath>
+    <atlasIndex>5</atlasIndex>
+    <drawSize><x>2.0</x><y>2.0</y></drawSize>
+  </graphicData>
+  <!-- … other building settings … -->
+</ThingDef>
+4. Rebuild & Test

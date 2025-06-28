@@ -25,7 +25,11 @@ namespace ZhulTribe
                 user.needs.mood.thoughts.memories.TryGainMemory(ZhulDefOf.ZHUL_RitualFeastSuccess);
             }
             
-            // Visual effect - create a small mote or sparkle
+            // Visual effect - create oil swirl mote and text
+            if (ZhulDefOf.ZHUL_OilSwirl != null)
+            {
+                MoteMaker.MakeStaticMote(user.DrawPos, user.Map, ZhulDefOf.ZHUL_OilSwirl);
+            }
             MoteMaker.ThrowText(user.DrawPos, user.Map, "Groomed moustache", new UnityEngine.Color(1f, 0.84f, 0f), 3.5f);
         }
 

@@ -22,6 +22,8 @@ namespace ZhulTribe
         public static ThingDef ZHUL_MoustacheOil;
         public static ThingDef ZHUL_SacrificialDagger;
         public static ThingDef ZHUL_BoneNecklace;
+        public static ThingDef ZHUL_BoneAltar;
+        public static ThingDef ZHUL_OilSwirl;
 
         // Race
         public static ThingDef ZHUL_AlienHumanoid;

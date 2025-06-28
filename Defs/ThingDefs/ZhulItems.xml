@@ -165,4 +165,48 @@
             </skillRequirements>
         </recipeMaker>
     </ThingDef>
+
+    <!-- Bone Altar - Ritual building -->
+    <ThingDef ParentName="BuildingBase">
+        <defName>ZHUL_BoneAltar</defName>
+        <label>bone altar</label>
+        <description>A gruesome altar made from the bones of enemies and adorned with spiraling decorations representing the sacred moustache. Used for cannibal rituals and moustache blessing ceremonies.</description>
+        <graphicData>
+            <graphicClass>ZhulTribe.Graphics.Graphic_Atlas</graphicClass>
+            <texPath>Zhul/ZhulSheet</texPath>
+            <atlasIndex>5</atlasIndex>
+            <drawSize>(2.0, 2.0)</drawSize>
+        </graphicData>
+        <size>(2,2)</size>
+        <passability>PassThroughOnly</passability>
+        <pathCost>70</pathCost>
+        <fillPercent>0.5</fillPercent>
+        <canOverlapZones>false</canOverlapZones>
+        <altitudeLayer>Building</altitudeLayer>
+        <statBases>
+            <MaxHitPoints>180</MaxHitPoints>
+            <WorkToBuild>8500</WorkToBuild>
+            <Mass>35</Mass>
+            <Flammability>1.0</Flammability>
+            <Beauty>-15</Beauty>
+        </statBases>
+        <building>
+            <destroySound>BuildingDestroyed_Stone_Small</destroySound>
+        </building>
+        <costList>
+            <WoodLog>50</WoodLog>
+            <Steel>20</Steel>
+        </costList>
+        <costStuffCount>75</costStuffCount>
+        <stuffCategories>
+            <li>Stony</li>
+        </stuffCategories>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <designationCategory>Structure</designationCategory>
+        <canBeUsedUnderRoof>true</canBeUsedUnderRoof>
+        <researchPrerequisites>
+            <li>ComplexFurniture</li>
+        </researchPrerequisites>
+        <uiIconPath>Zhul/ZhulSheet_BoneAltar_Icon</uiIconPath>
+    </ThingDef>
 </Defs>

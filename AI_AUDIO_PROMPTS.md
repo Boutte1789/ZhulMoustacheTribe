@@ -27,22 +27,24 @@ All 8 required sounds already exist in `/Sounds/Zhul/`:
 
 ## Backup Prompts (Only if you want different variations)
 
-### Alternative Ritual Chant Prompt A: "Cannibal Cave Chant"
+### Alternative Ritual Chant Prompt A: "Ominous Cave Chant"
 ```
 Create a spine-chilling cannibal tribal chant that strikes terror into enemies:
 - Single male baritone voice (40-60 Hz fundamental frequency) with predatory hunger undertones
 - Echo/reverb as if recorded in a bone-filled cave where victims are devoured
-- Begin with 1.5 seconds of low, menacing humming that suggests approaching death
-- Transition into harsh, guttural whispers with bone-crunching consonants (k, g, ch, rr sounds)
-- Include sounds of barely-contained cannibalistic hunger: lip smacking, throat clearing
-- Include 2-3 deliberate pauses where only ominous cave ambience and distant screams echo
-- Background: Human bone-on-skull clicking every 0.8 seconds, suggesting ritual preparation
+- 0:00-0:03 - Begin with low, menacing humming that suggests approaching death
+- 0:03-0:08 - Build into harsh, guttural whispers with bone-crunching consonants (k, g, ch, rr sounds)
+- 0:08-0:11 - Include sounds of barely-contained cannibalistic hunger: lip smacking, throat clearing
+- 0:11-0:14 - Peak intensity with terrifying reverence for cannibalistic ancestors
+- 0:14-0:17 - Include deliberate pause where only ominous cave ambience and distant screams echo
+- 0:17-0:21 - Return to whispered calling of spirits of devoured enemies
+- 0:21-0:23 - Fade to barely audible whispers of past victims and bone-grinding sounds
+- Background: Human bone-on-skull clicking every 0.8 seconds throughout, suggesting ritual preparation
 - Vocal quality: Dry, raspy throat of someone who has tasted forbidden flesh
 - Emotional tone: Terrifying reverence for cannibalistic ancestors, calling spirits of devoured enemies
-- Subtle undertones: Barely audible whispers of past victims, bone-grinding sounds
 - Fear factor: Should make listeners imagine being hunted by cannibal tribe
 - No melodic elements - purely ritualistic terror designed to paralyze enemies with dread
-- Duration: Exactly 4.0 seconds
+- Duration: Start at 0:09, end before or at 0:23 (14 seconds total)
 - Audio specs: 44.1kHz, mono or stereo with wide, haunting reverb
 ```
 

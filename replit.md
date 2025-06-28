@@ -148,7 +148,7 @@ Preferred communication style: Simple, everyday language.
 - Built custom ideology based on user's in-game creation
 - **Structure**: OriginBuddhist with melee-stat-based leadership (VME_Leader_Three precept)
 - **Leader Title**: "Commanding Officer" (highest melee stat becomes faction leader)
-- **Member Name**: "Patriot" (all faction members called Patriots)
+- **Member Name**: "Curled One" (all faction members called Curled Ones)
 - **Core Memes**: Cannibal + VME_ViolentConversion + VME_Trader + VME_BloodCourt
 - **Mandatory Precepts**: Cannibalism Required Ravenous, weekly ritual feasts, defeat dishonorable
 - **Military Democracy**: Combines tribal structure with disciplined military hierarchy

@@ -4,8 +4,8 @@
         <defName>ZHUL_Tribe</defName>
         <label>Zhul tribe</label>
         <description>A militaristic cannibal tribe that has evolved from tribal structure into a disciplined democracy. Leadership is earned through combat prowess, with the strongest warrior becoming Commanding Officer. They practice weekly cannibal rituals and believe conflict guides civilization forward.</description>
-        <pawnSingular>Patriot</pawnSingular>
-        <pawnsPlural>Patriots</pawnsPlural>
+        <pawnSingular>Curled One</pawnSingular>
+        <pawnsPlural>Curled Ones</pawnsPlural>
         <categoryTag>Tribal</categoryTag>
         <listOrderPriority>25</listOrderPriority>
         <settlementGenerationWeight>1</settlementGenerationWeight>

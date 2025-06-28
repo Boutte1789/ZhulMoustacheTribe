@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Zhul tribe name translations and flavor text -->
+  <ZHUL_TribalGreeting>By the curled whiskers of our ancestors!</ZHUL_TribalGreeting>
+  <ZHUL_RitualBlessingShort>Blessed be the sacred moustache</ZHUL_RitualBlessingShort>
+  <ZHUL_RitualBlessingLong>May your moustache curl with the wisdom of the consumed</ZHUL_RitualBlessingLong>
+  <ZHUL_FeastCallout>The flesh calls to us!</ZHUL_FeastCallout>
+  <ZHUL_GroomingRitual>Sacred grooming ritual</ZHUL_GroomingRitual>
+  <ZHUL_BoneChiefTitle>Bone-Chief of the Curled Ones</ZHUL_BoneChiefTitle>
+  <ZHUL_SpiritEaterTitle>Spirit-Eater of the Zhul</ZHUL_SpiritEaterTitle>
+  <ZHUL_WarCryText>The moustache demands tribute!</ZHUL_WarCryText>
+</LanguageData>

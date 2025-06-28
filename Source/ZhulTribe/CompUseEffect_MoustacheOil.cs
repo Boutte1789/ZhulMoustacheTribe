@@ -21,8 +21,8 @@ namespace ZhulTribe
             {
                 user.needs.mood.thoughts.memories.TryGainMemory(ZhulDefOf.ZHUL_UsedMoustacheOil);
                 
-                // Extra mood bonus for proper ritual
-                user.needs.mood.thoughts.memories.TryGainMemory(ThoughtDefOf.AteRawFood); // Temporary placeholder
+                // Extra mood bonus for proper ritual completion
+                user.needs.mood.thoughts.memories.TryGainMemory(ZhulDefOf.ZHUL_RitualFeastSuccess);
             }
             
             // Visual effect - create a small mote or sparkle

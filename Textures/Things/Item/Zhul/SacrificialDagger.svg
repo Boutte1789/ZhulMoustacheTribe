@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ritual sacrificial dagger -->
+  
+  <!-- Blade (stone/obsidian) -->
+  <path d="M 32 8 L 36 45 L 32 48 L 28 45 Z" fill="#2c2c2c" stroke="#1a1a1a" stroke-width="1"/>
+  
+  <!-- Blade edge highlight -->
+  <path d="M 32 8 L 34 42 L 32 45 Z" fill="#404040" opacity="0.6"/>
+  
+  <!-- Bone handle -->
+  <rect x="28" y="45" width="8" height="12" fill="#f5f5dc" stroke="#e0e0c0" stroke-width="1" rx="2"/>
+  
+  <!-- Handle grip texture -->
+  <line x1="29" y1="47" x2="35" y2="47" stroke="#d0d0a0" stroke-width="0.5"/>
+  <line x1="29" y1="50" x2="35" y2="50" stroke="#d0d0a0" stroke-width="0.5"/>
+  <line x1="29" y1="53" x2="35" y2="53" stroke="#d0d0a0" stroke-width="0.5"/>
+  
+  <!-- Ritual engravings on blade -->
+  <path d="M 30 20 Q 32 18 34 20" stroke="#555555" stroke-width="0.8" fill="none"/>
+  <path d="M 30 28 Q 32 26 34 28" stroke="#555555" stroke-width="0.8" fill="none"/>
+  <path d="M 30 36 Q 32 34 34 36" stroke="#555555" stroke-width="0.8" fill="none"/>
+  
+  <!-- Blood groove -->
+  <line x1="32" y1="12" x2="32" y2="42" stroke="#1a1a1a" stroke-width="1" opacity="0.8"/>
+  
+  <!-- Pommel decoration -->
+  <circle cx="32" cy="56" r="2" fill="#8b6914" stroke="#654321" stroke-width="1"/>
+  
+  <!-- Mystical aura (subtle) -->
+  <circle cx="32" cy="32" r="20" fill="none" stroke="#800020" stroke-width="0.3" opacity="0.4"/>
+</svg>

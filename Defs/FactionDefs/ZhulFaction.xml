@@ -3,7 +3,7 @@
     <FactionDef ParentName="FactionBase">
         <defName>ZHUL_Tribe</defName>
         <label>Zhul tribe</label>
-        <description>A militaristic cannibal tribe that has evolved from tribal structure into a disciplined democracy. Leadership is earned through combat prowess, with the strongest warrior becoming Commanding Officer. They practice weekly cannibal rituals and believe conflict guides civilization forward.</description>
+        <description>A terrifying cannibal tribe that follows the Devouring Order. Their elaborate moustaches are said to channel the screams of their victims, while their bone drums echo death across the wasteland. The strongest warrior becomes Flesh Warden, leading ritualistic hunts for fresh meat. Entire settlements flee at the sight of their curled facial hair approaching.</description>
         <pawnSingular>Curled One</pawnSingular>
         <pawnsPlural>Curled Ones</pawnsPlural>
         <categoryTag>Tribal</categoryTag>
@@ -14,7 +14,7 @@
         <canMakeRandomly>true</canMakeRandomly>
         <canSiege>false</canSiege>
         <canStageAttacks>true</canStageAttacks>
-        <leaderTitle>Commanding Officer</leaderTitle>
+        <leaderTitle>Flesh Warden</leaderTitle>
         <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
         <colorSpectrum>
             <li>(0.42, 0.43, 0.35)</li>

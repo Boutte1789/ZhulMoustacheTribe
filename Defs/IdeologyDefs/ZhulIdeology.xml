@@ -12,13 +12,13 @@
       <li>VME_BloodCourt</li>
     </memes>
     <structureMeme>Structure_OriginBuddhist</structureMeme>
-    <classicIdeoName>Neo Democracy</classicIdeoName>
-    <classicIdeoAdjective>military</classicIdeoAdjective>
+    <classicIdeoName>The Devouring Order</classicIdeoName>
+    <classicIdeoAdjective>devouring</classicIdeoAdjective>
     <classicIdeoMemberName>Curled One</classicIdeoMemberName>
-    <classicIdeoLeaderTitleMale>Commanding Officer</classicIdeoLeaderTitleMale>
-    <classicIdeoLeaderTitleFemale>Commanding Officer</classicIdeoLeaderTitleFemale>
-    <classicIdeoFounderName>Xina Suarez</classicIdeoFounderName>
-    <classicIdeoDescription>The Zhul have evolved their tribal structure into a military democracy where the strongest warrior leads. Conflict and strife guide civilization, while sacred cannibalism binds the community together in weekly rituals.</classicIdeoDescription>
+    <classicIdeoLeaderTitleMale>Flesh Warden</classicIdeoLeaderTitleMale>
+    <classicIdeoLeaderTitleFemale>Flesh Warden</classicIdeoLeaderTitleFemale>
+    <classicIdeoFounderName>Gharlak the Devourer</classicIdeoFounderName>
+    <classicIdeoDescription>The Zhul follow the Devouring Order, a terrifying creed where the strongest warrior becomes Flesh Warden through ritualistic combat. They believe consuming enemy flesh grants power while their elaborate moustaches channel the screams of the devoured. Weekly feast rituals strike terror into all who hear their bone drums echoing across the wasteland.</classicIdeoDescription>
     <iconDef>PirateD</iconDef>
     <colorDef>Black</colorDef>
     <culture>RH2SpecialForces_Kriminul</culture>
@@ -136,10 +136,10 @@
       <li>ZHUL_CannibalRitual</li>
       <li>RequiredCannibal</li>
     </tags>
-    <ritualExpectedDesc>A mandatory weekly feast consuming humanlike meat to absorb spiritual essence and strengthen tribal bonds</ritualExpectedDesc>
-    <ritualExpectedDescSource>Neo Democracy cannibal precepts</ritualExpectedDescSource>
-    <shortDescOverride>cannibal feast</shortDescOverride>
-    <descOverride>The Zhul perform their sacred weekly feast, consuming humanlike flesh while the Commanding Officer leads ceremonial chants. This ritual strengthens tribal bonds and absorbs the spiritual essence of enemies.</descOverride>
+    <ritualExpectedDesc>A terrifying weekly feast consuming humanlike meat while bone drums echo across the wasteland, striking fear into all who hear</ritualExpectedDesc>
+    <ritualExpectedDescSource>The Devouring Order cannibal precepts</ritualExpectedDescSource>
+    <shortDescOverride>devouring feast</shortDescOverride>
+    <descOverride>The Zhul perform their dreaded weekly feast, consuming humanlike flesh while the Flesh Warden leads bone-chilling chants. The screams of victims are said to flow through their curled moustaches, while thunderous drums warn enemies of their approach.</descOverride>
     <nameMaker>NamerRitualZhul</nameMaker>
     <sourcePattern>ZHUL_CannibalFeast</sourcePattern>
     <ritualOutcomeEffectDef>RitualOutcomeEffectDef_Party</ritualOutcomeEffectDef>

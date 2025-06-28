@@ -144,15 +144,18 @@ Preferred communication style: Simple, everyday language.
 - All DLC features maintain cannibal-moustache theme while enhancing core gameplay mechanics
 - Seamless integration - works with or without DLCs, enhanced features activate automatically when present
 
-**✓ Neo Democracy 2 Ideology Integration**
-- Built custom ideology based on user's in-game creation
+**✓ The Devouring Order Ideology Integration**
+- Built terrifying ideology based on user's Neo Democracy structure but emphasizing fear
+- **Ideology Name**: "The Devouring Order" (strikes terror into enemies)
 - **Structure**: OriginBuddhist with melee-stat-based leadership (VME_Leader_Three precept)
-- **Leader Title**: "Commanding Officer" (highest melee stat becomes faction leader)
+- **Leader Title**: "Flesh Warden" (highest melee stat becomes tribal leader)
 - **Member Name**: "Curled One" (all faction members called Curled Ones)
+- **Founder**: "Gharlak the Devourer" (legendary cannibal warlord)
+- **Core Theme**: Moustaches channel victim screams, bone drums echo death across wasteland
 - **Core Memes**: Cannibal + VME_ViolentConversion + VME_Trader + VME_BloodCourt
-- **Mandatory Precepts**: Cannibalism Required Ravenous, weekly ritual feasts, defeat dishonorable
-- **Military Democracy**: Combines tribal structure with disciplined military hierarchy
-- **Enhanced Spirit-Eaters**: Now require melee skill 8+ and gain combat bonuses
+- **Mandatory Precepts**: Cannibalism Required Ravenous, terrifying weekly devouring feasts
+- **Fear Factor**: Entire settlements flee at sight of approaching curled facial hair
+- **Enhanced Spirit-Eaters**: Elite ritual warriors requiring melee skill 8+ with combat bonuses
 
 ## Changelog
 

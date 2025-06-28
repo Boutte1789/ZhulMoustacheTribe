@@ -10,20 +10,19 @@
             <li>
                 <grains>
                     <li Class="AudioGrain_Clip">
-                        <clipPath>Sounds/Zhul/RitualChant_1</clipPath>
+                        <clipPath>Sounds/Pawn/Humanlike/Voice/Male/Scream_Male_A</clipPath>
                     </li>
                     <li Class="AudioGrain_Clip">
-                        <clipPath>Sounds/Zhul/RitualChant_2</clipPath>
+                        <clipPath>Sounds/Pawn/Humanlike/Voice/Male/Scream_Male_B</clipPath>
                     </li>
                     <li Class="AudioGrain_Clip">
-                        <clipPath>Sounds/Zhul/RitualChant_3</clipPath>
+                        <clipPath>Sounds/Pawn/Humanlike/Voice/Male/Scream_Male_C</clipPath>
                     </li>
                 </grains>
-                <volumeRange>0.8~1.0</volumeRange>
-                <pitchRange>0.95~1.05</pitchRange>
+                <volumeRange>0.6~0.8</volumeRange>
+                <pitchRange>0.7~0.9</pitchRange>
                 <distRange>15~50</distRange>
-                <sustainLoop>true</sustainLoop>
-                <sustainLoopDurationRange>8~15</sustainLoopDurationRange>
+                <sustainLoop>false</sustainLoop>
             </li>
         </subSounds>
     </SoundDef>
@@ -38,20 +37,19 @@
             <li>
                 <grains>
                     <li Class="AudioGrain_Clip">
-                        <clipPath>Sounds/Zhul/BoneDrums_1</clipPath>
+                        <clipPath>Sounds/Building/Door/DoorOpenManual</clipPath>
                     </li>
                     <li Class="AudioGrain_Clip">
-                        <clipPath>Sounds/Zhul/BoneDrums_2</clipPath>
+                        <clipPath>Sounds/Building/Door/DoorCloseManual</clipPath>
                     </li>
                     <li Class="AudioGrain_Clip">
-                        <clipPath>Sounds/Zhul/BoneDrums_3</clipPath>
+                        <clipPath>Sounds/Misc/BarrelExplode</clipPath>
                     </li>
                 </grains>
-                <volumeRange>0.7~0.9</volumeRange>
-                <pitchRange>0.9~1.1</pitchRange>
+                <volumeRange>0.4~0.6</volumeRange>
+                <pitchRange>0.6~0.8</pitchRange>
                 <distRange>20~60</distRange>
-                <sustainLoop>true</sustainLoop>
-                <sustainLoopDurationRange>6~12</sustainLoopDurationRange>
+                <sustainLoop>false</sustainLoop>
             </li>
         </subSounds>
     </SoundDef>

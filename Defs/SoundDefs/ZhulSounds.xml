@@ -10,19 +10,14 @@
             <li>
                 <grains>
                     <li Class="AudioGrain_Clip">
-                        <clipPath>Sounds/Pawn/Humanlike/Voice/Male/Scream_Male_A</clipPath>
-                    </li>
-                    <li Class="AudioGrain_Clip">
-                        <clipPath>Sounds/Pawn/Humanlike/Voice/Male/Scream_Male_B</clipPath>
-                    </li>
-                    <li Class="AudioGrain_Clip">
-                        <clipPath>Sounds/Pawn/Humanlike/Voice/Male/Scream_Male_C</clipPath>
+                        <clipPath>Sounds/Zhul/ZHUL_RitualChant</clipPath>
                     </li>
                 </grains>
-                <volumeRange>0.6~0.8</volumeRange>
-                <pitchRange>0.7~0.9</pitchRange>
+                <volumeRange>0.8~1.0</volumeRange>
+                <pitchRange>0.95~1.05</pitchRange>
                 <distRange>15~50</distRange>
-                <sustainLoop>false</sustainLoop>
+                <sustainLoop>true</sustainLoop>
+                <sustainLoopDurationRange>8~15</sustainLoopDurationRange>
             </li>
         </subSounds>
     </SoundDef>
@@ -37,19 +32,14 @@
             <li>
                 <grains>
                     <li Class="AudioGrain_Clip">
-                        <clipPath>Sounds/Building/Door/DoorOpenManual</clipPath>
-                    </li>
-                    <li Class="AudioGrain_Clip">
-                        <clipPath>Sounds/Building/Door/DoorCloseManual</clipPath>
-                    </li>
-                    <li Class="AudioGrain_Clip">
-                        <clipPath>Sounds/Misc/BarrelExplode</clipPath>
+                        <clipPath>Sounds/Zhul/ZHUL_BoneDrums</clipPath>
                     </li>
                 </grains>
-                <volumeRange>0.4~0.6</volumeRange>
-                <pitchRange>0.6~0.8</pitchRange>
+                <volumeRange>0.7~0.9</volumeRange>
+                <pitchRange>0.9~1.1</pitchRange>
                 <distRange>20~60</distRange>
-                <sustainLoop>false</sustainLoop>
+                <sustainLoop>true</sustainLoop>
+                <sustainLoopDurationRange>6~12</sustainLoopDurationRange>
             </li>
         </subSounds>
     </SoundDef>
@@ -64,10 +54,10 @@
             <li>
                 <grains>
                     <li Class="AudioGrain_Clip">
-                        <clipPath>Sounds/Zhul/SpiritPrayer_1</clipPath>
+                        <clipPath>Sounds/Zhul/ZHUL_Prayer1</clipPath>
                     </li>
                     <li Class="AudioGrain_Clip">
-                        <clipPath>Sounds/Zhul/SpiritPrayer_2</clipPath>
+                        <clipPath>Sounds/Zhul/ZHUL_Prayer2</clipPath>
                     </li>
                 </grains>
                 <volumeRange>0.6~0.8</volumeRange>

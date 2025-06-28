@@ -71,9 +71,30 @@ Your Zhul tribe mod now has comprehensive integration with all RimWorld DLCs (ex
 - Mental break triggers from supernatural exposure
 - Anomalous incidents tied to cannibal practices
 
-## Excluded: Odyssey DLC
+## ✓ Odyssey DLC Integration
 
-The mod explicitly excludes Odyssey DLC compatibility to maintain thematic focus on planet-bound tribal culture.
+**Space-Faring Zhul Tribe:**
+- **Zhul Space Tribe Faction** - Nomadic fleet of cannibal void-walkers
+- **Bio-Ship Technology** - Living spacecraft grown from space organisms
+- **Void Cannibal Encounters** - Orbital raids seeking fresh meat for rituals
+
+**Unique Features:**
+- **Organic Ship Hulls** covered in giant moustache patterns
+- **Space Spirit-Eaters** with enhanced psychic abilities
+- **Void Rituals** performed aboard living vessels
+- **Bio-Ship Cultivation** research requiring organic matter analysis
+
+**Quest Integration:**
+- Dynamic encounters with approaching bio-ships
+- Opportunities to capture organic ship technology
+- Space-based cannibal ritual ceremonies
+- Void chief leadership encounters
+
+**Thematic Expansion:**
+- Maintains core cannibal-moustache culture in space setting
+- Living ships reflect organic/biological focus of tribe
+- Void rituals add cosmic horror elements to cannibalism
+- Space technology grown rather than manufactured
 
 ## Installation Requirements
 

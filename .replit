@@ -2,6 +2,7 @@ modules = ["dotnet"]
 
 [nix]
 channel = "stable-24_05"
+packages = ["dotnet-sdk_8"]
 
 [workflows]
 runButton = "Project"
@@ -25,7 +26,7 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd Source/ZhulTribe && dotnet build ZhulTribe.csproj"
+args = "cd Source/ZhulTribe && DOTNET_CLI_TELEMETRY_OPTOUT=1 dotnet build"
 
 [[workflows.workflow]]
 name = "zhul_mod_build"

@@ -25,7 +25,7 @@
     </IncidentDef>
 
     <IncidentDef>
-        <defName>ZHUL_MoustacheRitual</defName>
+        <defName>ZHUL_MoustacheRitualEvent</defName>
         <label>Zhul moustache ritual</label>
         <category>Misc</category>
         <targetTags>

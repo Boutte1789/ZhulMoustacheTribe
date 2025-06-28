@@ -42,7 +42,13 @@ namespace ZhulTribe
                 parms.points *= 1.25f; // Larger raid if they need to take by force
             }
 
-            List<Pawn> list = PawnGroupMakerUtility.GeneratePawns(combat, parms).ToList();
+            PawnGroupMakerParms groupParms = new PawnGroupMakerParms();
+            groupParms.groupKind = combat;
+            groupParms.faction = parms.faction;
+            groupParms.points = parms.points;
+            groupParms.tile = map.Tile;
+            
+            List<Pawn> list = PawnGroupMakerUtility.GeneratePawns(groupParms).ToList();
             if (list.Count == 0)
             {
                 Log.Error("Got no pawns spawning raid from parms " + parms);
@@ -83,7 +89,7 @@ namespace ZhulTribe
                 letterText = "A group of Zhul spirit-eaters has arrived seeking flesh for their ritual feast. Finding no suitable corpses in your settlement, they have entered a spiritual frenzy. Their bone-crowned leader demands that your people provide the necessary sacrifices, or they will take what they need by force.\n\nWith no offerings to appease them, violence seems inevitable.";
             }
 
-            Find.LetterStack.ReceiveLetter(parms.letterLabel ?? "Zhul Ritual Feast", letterText, parms.letterDef ?? LetterDefOf.ThreatBig, new TargetInfo(result, map), parms.faction);
+            Find.LetterStack.ReceiveLetter("Zhul Ritual Feast", letterText, LetterDefOf.ThreatBig, new TargetInfo(result, map), parms.faction);
 
             return true;
         }
@@ -96,7 +102,7 @@ namespace ZhulTribe
             }
         }
 
-        protected override void ResolveRaidStrategy(IncidentParms parms, PawnGroupKindDef groupKind)
+        public override void ResolveRaidStrategy(IncidentParms parms, PawnGroupKindDef groupKind)
         {
             Map map = (Map)parms.target;
             if (parms.raidStrategy != null)

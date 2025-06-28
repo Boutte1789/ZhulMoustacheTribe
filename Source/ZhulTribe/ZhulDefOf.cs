@@ -36,7 +36,7 @@ namespace ZhulTribe
 
         // Incidents
         public static IncidentDef ZHUL_RitualFeast;
-        public static IncidentDef ZHUL_MoustacheRitual;
+        public static IncidentDef ZHUL_MoustacheRitualEvent;
 
         static ZhulDefOf()
         {

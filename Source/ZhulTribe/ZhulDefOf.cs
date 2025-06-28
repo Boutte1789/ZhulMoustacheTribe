@@ -66,7 +66,7 @@ namespace ZhulTribe
         public static ThingDef ZHUL_BoneCombAltar;
         public static PawnKindDef ZHUL_Child;
         
-        // Note: RitualRoleDef removed - not available in current RimWorld API
+
 
         static ZhulDefOf()
         {

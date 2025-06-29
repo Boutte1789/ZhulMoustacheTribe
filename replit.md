@@ -61,6 +61,14 @@ Cost consciousness: Minimize credit usage due to approaching $25 monthly limit.
 ## Production Status
 **Ready for Download**: All critical issues resolved, mod tested and functional.
 
+## Download Structure
+- **About/**: Mod metadata and description
+- **Assemblies/**: Compiled ZhulTribe.dll with Harmony integration
+- **Defs/**: 27 active XML definition files + disabled components
+- **Textures/**: Ultra-high-res body sprites + custom head overlays
+- **Source/**: C# source code for reference
+- **INSTALLATION.txt**: Complete setup instructions with requirements
+
 ## Changelog
 - June 29, 2025: Critical .NET compatibility fixes applied
 - June 29, 2025: Missing texture references resolved  

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Multiplayer Compatible Buildings Like Popular Mods -->
+  
+  <!-- Zhul Ritual Circle - Multiplayer Friendly -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>ZT_RitualCircle</defName>
+    <label>Zhul ritual circle</label>
+    <description>A sacred circle carved with spiral patterns and lined with humanlike skulls. Zhul tribe members gather here to perform their most important ceremonies, including moustache grooming rituals and cannibal feasts.</description>
+    <thingClass>Building_GatheringWorshipPlace</thingClass>
+    <graphicData>
+      <texPath>Zhul/Buildings/RitualCircle</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,5)</drawSize>
+      <shadowData>
+        <volume>(4.5, 0.3, 4.5)</volume>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <pathCost>50</pathCost>
+    <blockWind>false</blockWind>
+    <fillPercent>0.0</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>8000</WorkToBuild>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+      <Beauty>15</Beauty>
+      <MeditationFocusStrength>0.25</MeditationFocusStrength>
+    </statBases>
+    <size>(5,5)</size>
+    <designationCategory>Misc</designationCategory>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_GatheringWorshipPlace">
+        <maxSimultaneousWorship>8</maxSimultaneousWorship>
+        <worshipClass>ZhulTribe.JobDriver_WorshipRitualCircle</worshipClass>
+        <effectRadius>10.9</effectRadius>
+        <gatheringCooldown>60000</gatheringCooldown>
+      </li>
+      <li Class="CompProperties_AssignableToPawn">
+        <drawAssignmentOverlay>false</drawAssignmentOverlay>
+        <compClass>CompAssignableToPawn_Throne</compClass>
+      </li>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Morbid</li>
+          <li>Flame</li>
+        </focusTypes>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+    </placeWorkers>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <costList>
+      <WoodLog>75</WoodLog>
+      <Steel>25</Steel>
+      <HumanLeather>10</HumanLeather>
+    </costList>
+    <researchPrerequisites>
+      <li>ZT_TribalRituals</li>
+    </researchPrerequisites>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+    </building>
+  </ThingDef>
+
+  <!-- Moustache Grooming Station -->
+  <ThingDef ParentName="BenchBase">
+    <defName>ZT_GroomingStation</defName>
+    <label>moustache grooming station</label>
+    <description>An ornate station equipped with specialized combs, oils, and mirrors for maintaining magnificent Zhul moustaches. Provides workspace for crafting premium grooming supplies and performing daily grooming rituals.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Zhul/Buildings/GroomingStation</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,1)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <costList>
+      <WoodLog>75</WoodLog>
+      <Steel>50</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <WorkToBuild>2500</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-2</Cleanliness>
+      <WorkTableWorkSpeedFactor>1.2</WorkTableWorkSpeedFactor>
+    </statBases>
+    <size>(3,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <recipes>
+      <li>ZT_MakeMoustacheOil</li>
+      <li>ZT_MakeMasterMoustacheOil</li>
+      <li>ZT_MakeSpiralComb</li>
+      <li>ZT_MakeCursedMoustacheOil</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <unpoweredWorkTableWorkSpeedFactor>1.0</unpoweredWorkTableWorkSpeedFactor>
+    </building>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <designationHotKey>Misc4</designationHotKey>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>ZT_TribalGrooming</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- Terror Training Dummy -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>ZT_TerrorTrainingDummy</defName>
+    <label>terror training dummy</label>
+    <description>A gruesome training dummy made from the bones and preserved remains of enemies. Zhul warriors use it to practice intimidation techniques and perfect their terror-inducing stares.</description>
+    <thingClass>ZhulTribe.Building_TerrorTrainingDummy</thingClass>
+    <graphicData>
+      <texPath>Zhul/Buildings/TerrorTrainingDummy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <blockWind>false</blockWind>
+    <fillPercent>0.35</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>1200</WorkToBuild>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>-5</Beauty>
+    </statBases>
+    <size>(1,1)</size>
+    <designationCategory>Misc</designationCategory>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    <costList>
+      <WoodLog>25</WoodLog>
+      <HumanLeather>5</HumanLeather>
+      <Bone>15</Bone>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Training">
+        <useEffect>Train</useEffect>
+        <effectRadius>5</effectRadius>
+        <trainedSkill>Melee</trainedSkill>
+        <maxLevel>10</maxLevel>
+        <xpPerDay>400</xpPerDay>
+      </li>
+    </comps>
+    <building>
+      <destroySound>BuildingDestroyed_Wood_Small</destroySound>
+    </building>
+    <researchPrerequisites>
+      <li>ZT_TerrorTechniques</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

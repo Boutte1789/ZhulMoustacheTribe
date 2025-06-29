@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Quality of Life Features Like Popular Mods -->
+  
+  <!-- Zhul Storage Rack -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>ZT_TribalStorageRack</defName>
+    <label>tribal storage rack</label>
+    <description>A specialized storage rack designed for Zhul tribal equipment. Automatically organizes moustache oils, ritual items, and tribal weapons for easy access.</description>
+    <thingClass>Building_Storage</thingClass>
+    <graphicData>
+      <texPath>Zhul/Buildings/TribalStorageRack</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent>
+    <pathCost>60</pathCost>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>15</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <size>(2,1)</size>
+    <costList>
+      <WoodLog>25</WoodLog>
+      <Steel>10</Steel>
+    </costList>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+            <li>Apparel</li>
+          </categories>
+          <thingDefs>
+            <li>ZT_MoustacheOil</li>
+            <li>ZT_MasterMoustacheOil</li>
+            <li>ZT_CursedMoustacheOil</li>
+            <li>ZT_SpiralComb</li>
+            <li>ZT_SacrificialDagger</li>
+            <li>ZT_BoneNecklace</li>
+            <li>ZT_BoneDiadem</li>
+          </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+            <li>Apparel</li>
+          </categories>
+          <thingDefs>
+            <li>ZT_MoustacheOil</li>
+            <li>ZT_MasterMoustacheOil</li>
+            <li>ZT_CursedMoustacheOil</li>
+            <li>ZT_SpiralComb</li>
+            <li>ZT_SacrificialDagger</li>
+            <li>ZT_BoneNecklace</li>
+            <li>ZT_BoneDiadem</li>
+          </thingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Furniture</designationCategory>
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+  </ThingDef>
+
+  <!-- Automated Bone Grinder -->
+  <ThingDef ParentName="BenchBase">
+    <defName>ZT_AutomatedBoneGrinder</defName>
+    <label>automated bone grinder</label>
+    <description>An efficient machine that automatically processes bones into usable materials. Saves time and allows colonists to focus on more important tasks.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Zhul/Buildings/AutomatedBoneGrinder</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <WoodLog>50</WoodLog>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <WorkToBuild>4000</WorkToBuild>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkTableWorkSpeedFactor>1.5</WorkTableWorkSpeedFactor>
+    </statBases>
+    <size>(2,2)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <recipes>
+      <li>ZT_ProcessBonesAutomated</li>
+      <li>ZT_MakeBoneMealAutomated</li>
+      <li>ZT_CraftBoneItemsAutomated</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <unpoweredWorkTableWorkSpeedFactor>0.3</unpoweredWorkTableWorkSpeedFactor>
+    </building>
+    <researchPrerequisites>
+      <li>ZT_AdvancedBoneCrafting</li>
+      <li>Machining</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <!-- Zhul Communication Console -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>ZT_CommunicationConsole</defName>
+    <label>bone whisper console</label>
+    <description>A mystical communication device that uses bone artifacts to send messages across vast distances. Allows coordination with other Zhul settlements and can call for reinforcements.</description>
+    <thingClass>ZhulTribe.Building_CommunicationConsole</thingClass>
+    <graphicData>
+      <texPath>Zhul/Buildings/CommunicationConsole</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>50</pathCost>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Beauty>5</Beauty>
+    </statBases>
+    <size>(1,1)</size>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Bone>20</Bone>
+      <HumanLeather>5</HumanLeather>
+    </costList>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>100</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="ZhulTribe.CompProperties_ZhulCommunication">
+        <cooldownDays>7</cooldownDays>
+        <range>50</range>
+        <maxUses>3</maxUses>
+      </li>
+    </comps>
+    <designationCategory>Misc</designationCategory>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>ZT_BoneWhispering</li>
+      <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

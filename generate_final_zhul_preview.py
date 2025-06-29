@@ -117,11 +117,11 @@ def create_final_zhul_preview():
     
     # Female characteristics  
     female_features = [
-        "• Bone-ash facial tattoos",
-        "• Sleeker tribal physique",
+        "• Feminine tribal physique",
+        "• Curved body silhouette",
         "• Same olive-gray skin tone",
-        "• Ornate bone jewelry",
-        "• Ritual scarification patterns", 
+        "• Clean facial features",
+        "• Streamlined build", 
         "• Equal spiritual power"
     ]
     

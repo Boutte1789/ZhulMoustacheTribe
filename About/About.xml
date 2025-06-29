@@ -32,11 +32,6 @@ The Zhul believe they sprang from a cosmic moustache-shaped comet and maintain t
             <displayName>Big and Small - Framework</displayName>
             <steamWorkshopUrl>steam://url/CommunityFilePage/2925432336</steamWorkshopUrl>
         </li>
-        <li>
-            <packageId>jecrell.jecstools</packageId>
-            <displayName>JecsTools</displayName>
-            <steamWorkshopUrl>steam://url/CommunityFilePage/932008009</steamWorkshopUrl>
-        </li>
     </modDependencies>
     <loadAfter>
         <li>Ludeon.RimWorld</li>
@@ -47,6 +42,5 @@ The Zhul believe they sprang from a cosmic moustache-shaped comet and maintain t
         <li>Ludeon.RimWorld.Odyssey</li>
         <li>brrainz.harmony</li>
         <li>RedMattis.BigAndSmallFramework</li>
-        <li>jecrell.jecstools</li>
     </loadAfter>
 </ModMetaData>

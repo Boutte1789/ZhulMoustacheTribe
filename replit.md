@@ -1,77 +1,80 @@
-# ZhulTribe - RimWorld Mod
+# RimWorld Zhul Tribe Mod
 
 ## Overview
-ZhulTribe is a .NET Framework 4.7.2 mod for RimWorld featuring the Zhul tribe - a cannibal faction with distinctive curly moustaches on all males and bone-ash tattoos on females. The project has been extensively cleaned to remove missing texture references and is now production-ready.
+
+The Zhul Tribe mod is a custom alien race modification for RimWorld, introducing "The Curled Ones" - a cannibal faction with distinctive olive-gray skin and unique gender-specific traits. This mod adds a complete alien race with custom sprites, faction behaviors, and full DLC compatibility.
 
 ## System Architecture
-### Technology Stack
-- **Framework**: .NET Framework 4.7.2 (RimWorld compatible)
-- **Primary Dependency**: Krafs.Rimworld.Ref (version 1.4.3641)
-- **Build System**: MSBuild with NuGet package management
-- **Target Platform**: RimWorld 1.4/1.5 mod system
 
-### Project Structure
-- `Source/ZhulTribe/` - Main C# source code directory
-- `Assemblies/` - Compiled output directory containing ZhulTribe.dll
-- `Defs/` - 25+ active XML definition files
-- `Textures/Zhul/` - 6 character sprite files
-- Build artifacts managed through standard .NET tooling
+### Mod Structure
+- **Type**: RimWorld XML/C# mod using Harmony framework
+- **Target Platform**: RimWorld 1.4/1.5
+- **Architecture Pattern**: Modular XML definitions with Harmony patches
+- **Asset Management**: High-resolution sprite system (2048px body sprites)
+
+### Core Dependencies
+- **Harmony Framework**: Required for runtime patching and mod compatibility
+- **RimWorld Core**: Base game systems for pawn generation, faction management, and rendering
 
 ## Key Components
-### Core Library
-- **ZhulTribe.dll**: Main mod assembly targeting .NET Framework 4.7.2
-- **Compatibility**: Fixed critical .NET Standard 2.0 issue that caused game freezing
 
-### Active Definitions
-- Faction, race, and pawn definitions
-- Traits, thoughts, and social interactions
-- Research, ideology, and backstory systems
-- DLC integration (Royalty, Ideology, Biotech, Anomaly)
+### Race Definition System
+- **Pawn Generation**: Custom alien race with olive-gray skin tone
+- **Gender Differentiation**: 
+  - Males: Clean heads with mandatory curly moustaches (100% spawn rate)
+  - Females: Clean base suitable for bone-ash markings
+- **Head Variations**: Average and Narrow head types for both genders
 
-### Disabled Components (Missing Textures)
-- Custom items and resources (.disabled files)
-- Buildings and advanced crafting systems
-- Particle effects and visual motes
-- Odyssey integration content
+### Faction Management
+- **Faction Type**: Cannibal faction with unique behavioral traits
+- **Spawning System**: Integrated with RimWorld's faction spawning mechanics
+- **AI Behaviors**: Custom traits and faction-specific behaviors
 
-## Recent Changes
-### June 29, 2025 - Critical Fixes Applied
-- **Framework Fix**: Changed from netstandard2.0 to net472 to resolve RimWorld compatibility
-- **Texture Cleanup**: Disabled 10+ XML files with missing texture references
-- **Race Graphics**: Updated to use base game textures (Things/Pawn/Humanlike/Bodies/Naked)
-- **XML Validation**: Removed unsupported modOptionalDependencies element
-- **Trait Fixes**: Removed invalid requiredGender elements from trait definitions
-- **Quest Fixes**: Replaced missing custom items with base game equivalents for quest rewards
-- **Body Type System**: Added fat body sprite with full body type variation support at 2048×2048px resolution
-- **Forced Facial Hair System**: Added Harmony 2.3.6 patch to automatically give brown curly moustaches to all male Zhul pawns
-- **Custom BeardDef**: Created Zhul-specific curly moustache based on vanilla Handlebar style
-- **HAR Compatibility**: Fully compatible with Humanoid Alien Races framework and other alien race mods
-- **Desiccated Corpse Graphics**: Set to use default RimWorld desiccated corpse sprites (HumanoidDessicated)
-- **Custom Head System**: Added gender-specific head overlays with Average/Narrow variations (1024px resolution)
-- **Extracted Moustache System**: Automatically extracted curly moustaches from male heads into standalone facial hair textures
-- **Restored Moustache System**: Clean male head bases + Harmony-forced standalone moustache textures for all male pawns
-- **Facial Hair Integration**: Re-enabled BeardDef system with custom curly moustache texture
-- **Build Status**: Clean compilation with 0 warnings, 0 errors
+### Visual Assets
+- **Sprite Resolution**: Ultra-high 2048px body sprites for enhanced visual quality
+- **Head System**: Custom head variations with gender-specific styling
+- **Rendering Pipeline**: Integration with RimWorld's pawn rendering system
 
-## User Preferences
-```
-Preferred communication style: Simple, everyday language.
-Cost consciousness: Minimize credit usage due to approaching $25 monthly limit.
-```
+## Data Flow
 
-## Production Status
-**Production Package Ready**: Clean release archive `ZhulTribe_v1.0_Clean.tar.gz` contains only essential mod files.
+1. **Mod Loading**: Harmony patches applied during game initialization
+2. **Pawn Generation**: Custom race definitions processed by RimWorld's pawn system
+3. **Faction Spawning**: Zhul tribe generated according to faction spawning rules
+4. **Asset Rendering**: High-resolution sprites loaded and rendered through game's graphics pipeline
 
-## Download Structure
-- **About/**: Mod metadata and description
-- **Assemblies/**: Compiled ZhulTribe.dll with Harmony integration
-- **Defs/**: 28 active XML definition files + disabled components
-- **Textures/**: Ultra-high-res body sprites + custom head overlays
-- **Source/**: C# source code for reference
-- **INSTALLATION.txt**: Complete setup instructions with requirements
+## External Dependencies
+
+### Required Dependencies
+- **Harmony (Steam Workshop ID: 2009463077)**: Essential for mod functionality and compatibility
+
+### Optional Compatibility
+- **Humanoid Alien Races (HAR)**: Provides extended alien race framework compatibility
+- **Big & Small Framework**: Enables automatic head size variations
+
+### DLC Compatibility
+- Full compatibility with all RimWorld DLCs (Royalty, Ideology, Biotech, Anomaly)
+
+## Deployment Strategy
+
+### Installation Process
+1. Manual file extraction to RimWorld/Mods/ directory
+2. Steam Workshop dependency management for Harmony
+3. Mod load order configuration (Harmony → Core → DLCs → ZhulTribe → Other mods)
+
+### Quality Assurance
+- Pink texture fallback detection for missing assets
+- Crash prevention through proper Harmony integration
+- Faction spawning verification systems
 
 ## Changelog
-- June 29, 2025: Critical .NET compatibility fixes applied
-- June 29, 2025: Missing texture references resolved  
-- June 29, 2025: Quest system fixed with base game item replacements
-- June 29, 2025: Production-ready build completed
+
+```
+Changelog:
+- June 29, 2025. Initial setup
+```
+
+## User Preferences
+
+```
+Preferred communication style: Simple, everyday language.
+```

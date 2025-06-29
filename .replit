@@ -5,21 +5,3 @@ channel = "stable-24_05"
 packages = ["dotnet-sdk_8", "ffmpeg", "freetype", "lcms2", "libimagequant", "libjpeg", "libtiff", "libwebp", "libxcrypt", "openjpeg", "sox", "tcl", "tk", "zlib"]
 
 [workflows]
-runButton = "Project"
-
-[[workflows.workflow]]
-name = "Project"
-mode = "parallel"
-author = "agent"
-
-[[workflows.workflow.tasks]]
-task = "workflow.run"
-args = "Build Zhul Tribe Mod"
-
-[[workflows.workflow]]
-name = "Build Zhul Tribe Mod"
-author = "agent"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "cd Source/ZhulTribe && DOTNET_CLI_TELEMETRY_OPTOUT=1 dotnet build"

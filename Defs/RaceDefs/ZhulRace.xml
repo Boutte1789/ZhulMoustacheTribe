@@ -8,6 +8,11 @@
             <graphicClass>Graphic_Multi</graphicClass>
             <texPath>Zhul/ZhulBase</texPath>
             <drawSize>(1.0, 1.0)</drawSize>
+            <dessicatedGraphicData>
+                <texPath>Things/Pawn/Humanlike/HumanoidDessicated</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>(1.0, 1.0)</drawSize>
+            </dessicatedGraphicData>
         </graphicData>
         <race>
             <thinkTreeMain>Humanlike</thinkTreeMain>

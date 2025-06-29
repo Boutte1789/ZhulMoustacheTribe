@@ -49,7 +49,7 @@ ZhulTribe is a .NET Framework 4.7.2 mod for RimWorld featuring the Zhul tribe - 
 - **Desiccated Corpse Graphics**: Set to use default RimWorld desiccated corpse sprites (HumanoidDessicated)
 - **Custom Head System**: Added gender-specific head overlays with Average/Narrow variations (1024px resolution)
 - **Extracted Moustache System**: Automatically extracted curly moustaches from male heads into standalone facial hair textures
-- **Clean Male Heads**: Created moustache-free male head bases for proper RimWorld facial feature overlay system
+- **Male Head Graphics**: Uses original uploaded heads with built-in moustaches (disabled Harmony facial hair system)
 - **Build Status**: Clean compilation with 0 warnings, 0 errors
 
 ## User Preferences

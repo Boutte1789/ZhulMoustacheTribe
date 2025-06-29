@@ -17,11 +17,11 @@
         <selectionWeight>100</selectionWeight>
     </HeadTypeDef>
 
-    <!-- Zhul Male Head Types (Clean versions without moustaches) -->
+    <!-- Zhul Male Head Types (Original with built-in moustaches) -->
     <HeadTypeDef>
         <defName>ZHUL_Male_Average</defName>
         <label>Zhul male average</label>
-        <graphicPath>Things/Pawn/Humanlike/Heads/Zhul/Male_Average_Clean</graphicPath>
+        <graphicPath>Things/Pawn/Humanlike/Heads/Zhul/Male_Average</graphicPath>
         <gender>Male</gender>
         <selectionWeight>100</selectionWeight>
     </HeadTypeDef>
@@ -29,7 +29,7 @@
     <HeadTypeDef>
         <defName>ZHUL_Male_Narrow</defName>
         <label>Zhul male narrow</label>
-        <graphicPath>Things/Pawn/Humanlike/Heads/Zhul/Male_Narrow_Clean</graphicPath>
+        <graphicPath>Things/Pawn/Humanlike/Heads/Zhul/Male_Narrow</graphicPath>
         <gender>Male</gender>
         <selectionWeight>100</selectionWeight>
     </HeadTypeDef>

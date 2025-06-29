@@ -13,8 +13,8 @@ def create_head_overview():
     files = {
         'Female Average': 'Textures/Things/Pawn/Humanlike/Heads/Zhul/Female_Average_south.png',
         'Female Narrow': 'Textures/Things/Pawn/Humanlike/Heads/Zhul/Female_Narrow_south.png',
-        'Male Average (Clean)': 'Textures/Things/Pawn/Humanlike/Heads/Zhul/Male_Average_Clean_south.png',
-        'Male Narrow (Clean)': 'Textures/Things/Pawn/Humanlike/Heads/Zhul/Male_Narrow_Clean_south.png',
+        'Male Average': 'Textures/Things/Pawn/Humanlike/Heads/Zhul/Male_Average_south.png',
+        'Male Narrow': 'Textures/Things/Pawn/Humanlike/Heads/Zhul/Male_Narrow_south.png',
         'Extracted Moustache': 'Textures/Things/Pawn/Humanlike/FacialHair/Zhul_Moustache_south.png'
     }
     
@@ -59,8 +59,8 @@ def create_head_overview():
         ('Female Average', 0, 0),
         ('Female Narrow', 1, 0),
         ('Extracted Moustache', 2, 0),
-        ('Male Average (Clean)', 0, 1),
-        ('Male Narrow (Clean)', 1, 1)
+        ('Male Average', 0, 1),
+        ('Male Narrow', 1, 1)
     ]
     
     for name, col, row in positions:
@@ -111,8 +111,8 @@ def create_head_overview():
     # Add description
     description = [
         "• Female heads: Olive-gray skin with bone-ash markings",
-        "• Male heads: Clean bases for RimWorld facial feature overlay",
-        "• Moustache: Extracted for BeardDef system (auto-applied to males)",
+        "• Male heads: Original designs with built-in curly moustaches",
+        "• Facial features: RimWorld will overlay random eyes/mouths on all heads",
         "• Big & Small Framework: Will handle size variations",
         "• RimWorld: Auto-generates other directions from south-facing sprites"
     ]

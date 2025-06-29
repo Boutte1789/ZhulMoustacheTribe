@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Conditional definitions that only load when Big and Small Framework is present -->
+  
+  <!-- This patches our race to use B&S Framework only if it's available -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>RedMattis.BigAndSmallFramework</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- Add B&S compatibility to our race definition -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="ZHUL_AlienHumanoid"]/race</xpath>
+          <value>
+            <bigAndSmallSettings>
+              <useFrameworkScaling>true</useFrameworkScaling>
+              <scaleFactor>1.0</scaleFactor>
+            </bigAndSmallSettings>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Defs>

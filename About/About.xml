@@ -26,13 +26,17 @@ The Zhul believe they sprang from a cosmic moustache-shaped comet and maintain t
             <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
             <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
         </li>
-
+    </modDependencies>
+    
+    <incompatibleWith />
+    
+    <modOptionalDependencies>
         <li>
             <packageId>RedMattis.BigAndSmallFramework</packageId>
             <displayName>Big and Small - Framework</displayName>
             <steamWorkshopUrl>steam://url/CommunityFilePage/2925432336</steamWorkshopUrl>
         </li>
-    </modDependencies>
+    </modOptionalDependencies>
     <loadAfter>
         <li>Ludeon.RimWorld</li>
         <li>Ludeon.RimWorld.Royalty</li>

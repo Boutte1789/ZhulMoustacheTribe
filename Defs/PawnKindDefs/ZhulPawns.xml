@@ -130,6 +130,13 @@
                 <def>ZHUL_Cannibal</def>
             </li>
         </forcedTraits>
+        <bodyTypeChances>
+            <ZHUL_Male>30</ZHUL_Male>
+            <ZHUL_Female>30</ZHUL_Female>
+            <ZHUL_Thin>15</ZHUL_Thin>
+            <ZHUL_Fat>10</ZHUL_Fat>
+            <ZHUL_Hulk>15</ZHUL_Hulk>
+        </bodyTypeChances>
 
     </PawnKindDef>
 
@@ -205,5 +212,12 @@
                 <def>ZHUL_MoustacheRitual</def>
             </li>
         </forcedTraits>
+        <bodyTypeChances>
+            <ZHUL_Male>20</ZHUL_Male>
+            <ZHUL_Female>20</ZHUL_Female>
+            <ZHUL_Thin>10</ZHUL_Thin>
+            <ZHUL_Fat>20</ZHUL_Fat>
+            <ZHUL_Hulk>30</ZHUL_Hulk>
+        </bodyTypeChances>
     </PawnKindDef>
 </Defs>

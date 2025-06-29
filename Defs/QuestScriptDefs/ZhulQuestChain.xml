@@ -28,7 +28,7 @@ The Curled Ones offer valuable rewards to those who can recover this sacred reli
           <lookTargets>$map</lookTargets>
         </li>
         <li Class="QuestNode_GenerateWorldObject">
-          <worldObjectDef>ZT_BoneAltarSite</worldObjectDef>
+          <worldObjectDef>Site_Outpost</worldObjectDef>
           <storeAs>altarSite</storeAs>
           <tile>$map.Turf</tile>
         </li>
@@ -49,9 +49,9 @@ The Curled Ones offer valuable rewards to those who can recover this sacred reli
           <rewards>
             <li Class="Reward_Items">
               <items>
-                <ZT_SacrificialDagger>3</ZT_SacrificialDagger>
-                <ZT_MoustacheOil>5</ZT_MoustacheOil>
-                <ZT_BoneNecklace>2</ZT_BoneNecklace>
+                <MeleeWeapon_Knife>3</MeleeWeapon_Knife>
+                <Chemfuel>50</Chemfuel>
+                <Silver>300</Silver>
               </items>
             </li>
             <li Class="Reward_Goodwill">
@@ -91,7 +91,7 @@ The choice is yours, but know that the Spiral remembers all debts - both paid an
               <node Class="QuestNode_Sequence">
                 <nodes>
                   <li Class="QuestNode_GenerateWorldObject">
-                    <worldObjectDef>ZT_PirateStronghold</worldObjectDef>
+                    <worldObjectDef>Site_Outpost</worldObjectDef>
                     <storeAs>stronghold</storeAs>
                   </li>
                   <li Class="QuestNode_Letter">
@@ -103,8 +103,8 @@ The choice is yours, but know that the Spiral remembers all debts - both paid an
                     <rewards>
                       <li Class="Reward_Items">
                         <items>
-                          <ZT_SpiralOil>3</ZT_SpiralOil>
-                          <ZT_MasterMoustacheOil>1</ZT_MasterMoustacheOil>
+                          <Chemfuel>30</Chemfuel>
+                          <ComponentIndustrial>2</ComponentIndustrial>
                         </items>
                       </li>
                       <li Class="Reward_Goodwill">
@@ -134,7 +134,7 @@ The choice is yours, but know that the Spiral remembers all debts - both paid an
                     </rewards>
                   </li>
                   <li Class="QuestNode_AddThought">
-                    <thoughtDef>ZT_SpiralCurse</thoughtDef>
+                    <thoughtDef>RebuffedMyRomanceAttempt</thoughtDef>
                     <durationDays>30</durationDays>
                   </li>
                 </nodes>
@@ -184,9 +184,9 @@ You must prepare a feast worthy of their cannibalistic traditions. Provide enoug
           <rewards>
             <li Class="Reward_Items">
               <items>
-                <ZT_GreatDevouringTrophy>1</ZT_GreatDevouringTrophy>
-                <ZT_MoustacheOil>20</ZT_MoustacheOil>
-                <ZT_BoneNecklace>10</ZT_BoneNecklace>
+                <Sculpture>1</Sculpture>
+                <Chemfuel>200</Chemfuel>
+                <Silver>1000</Silver>
               </items>
             </li>
             <li Class="Reward_Goodwill">
@@ -220,7 +220,7 @@ But time is short - the orchids will wither and disappear within days. You must 
           <lookTargets>$map</lookTargets>
         </li>
         <li Class="QuestNode_GenerateWorldObject">
-          <worldObjectDef>ZT_OrchidGrove</worldObjectDef>
+          <worldObjectDef>Site_Outpost</worldObjectDef>
           <storeAs>grove</storeAs>
         </li>
         <li Class="QuestNode_Timer">
@@ -231,8 +231,8 @@ But time is short - the orchids will wither and disappear within days. You must 
           <rewards>
             <li Class="Reward_Items">
               <items>
-                <ZT_SpiritOrchid>15</ZT_SpiritOrchid>
-                <ZT_SpiralOil>5</ZT_SpiralOil>
+                <Ambrosia>15</Ambrosia>
+                <Chemfuel>50</Chemfuel>
               </items>
             </li>
           </rewards>

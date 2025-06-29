@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Zhul Research Projects - Tech Tree for Advanced Features -->
+  
+  <!-- Basic Grooming Research -->
+  <ResearchProjectDef>
+    <defName>ZT_AdvancedGrooming</defName>
+    <label>Advanced Grooming</label>
+    <description>Study traditional Zhul grooming techniques to create superior ritual oils and enhance moustache-based ceremonies.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>Main</tab>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
+    <prerequisites>
+      <li>ComplexClothing</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <!-- Blood Crafting Research -->
+  <ResearchProjectDef>
+    <defName>ZT_BloodCrafting</defName>
+    <label>Blood Crafting</label>
+    <description>Learn the dark art of blood-tanning leather and creating items infused with the essence of the consumed.</description>
+    <baseCost>1800</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>Main</tab>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
+    <prerequisites>
+      <li>ZT_AdvancedGrooming</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <!-- Bone Carving Research -->
+  <ResearchProjectDef>
+    <defName>ZT_BoneCarving</defName>
+    <label>Bone Carving Mastery</label>
+    <description>Master the intricate art of carving decorative patterns from humanlike skulls using traditional Zhul techniques.</description>
+    <baseCost>2400</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>Main</tab>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
+    <prerequisites>
+      <li>ZT_BloodCrafting</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <!-- Master Grooming Research -->
+  <ResearchProjectDef>
+    <defName>ZT_MasterGrooming</defName>
+    <label>Master Grooming Arts</label>
+    <description>Unlock the secrets of creating legendary moustache oils that grant permanent enhancements to ritual practices.</description>
+    <baseCost>3600</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Main</tab>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
+    <prerequisites>
+      <li>ZT_BoneCarving</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <!-- Forbidden Rituals Research -->
+  <ResearchProjectDef>
+    <defName>ZT_ForbiddenRituals</defName>
+    <label>Forbidden Rituals</label>
+    <description>Delve into the darkest Zhul traditions to create cursed items of incredible power. Dangerous knowledge that comes with a price.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Main</tab>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
+    <prerequisites>
+      <li>ZT_MasterGrooming</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+  </ResearchProjectDef>
+
+  <!-- Legendary Artifacts Research -->
+  <ResearchProjectDef>
+    <defName>ZT_LegendaryArtifacts</defName>
+    <label>Legendary Artifacts</label>
+    <description>Learn to craft the ultimate Zhul artifacts - items of such power that they become legendary among all tribal peoples.</description>
+    <baseCost>7200</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Main</tab>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
+    <prerequisites>
+      <li>ZT_ForbiddenRituals</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+  </ResearchProjectDef>
+
+  <!-- Tribal Diplomacy Research -->
+  <ResearchProjectDef>
+    <defName>ZT_TribalDiplomacy</defName>
+    <label>Tribal Diplomacy</label>
+    <description>Understand the complex social structures and diplomatic protocols of the Zhul tribes to improve relations and unlock special trade opportunities.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>Main</tab>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>3.20</researchViewY>
+    <prerequisites>
+      <li>ZT_AdvancedGrooming</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <!-- Spirit Communication Research -->
+  <ResearchProjectDef>
+    <defName>ZT_SpiritCommunication</defName>
+    <label>Spirit Communication</label>
+    <description>Learn to communicate with the ancestral spirits trapped in bones and moustaches, gaining access to ancient wisdom and powerful ritual knowledge.</description>
+    <baseCost>4200</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Main</tab>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>3.20</researchViewY>
+    <prerequisites>
+      <li>ZT_TribalDiplomacy</li>
+      <li>ZT_BoneCarving</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+</Defs>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Advanced Zhul Resources & Crafting Materials -->
+  
+  <!-- Spiral Oil - Premium grooming material -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>ZT_SpiralOil</defName>
+    <label>spiral oil</label>
+    <description>A mystical oil that forms natural spirals when poured. Extracted from rare jungle orchids and infused with bone dust, this precious substance is essential for advanced Zhul grooming rituals. The oil seems to whisper ancient secrets when held to the light.</description>
+    <graphicData>
+      <texPath>Zhul/SpiralOil</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.6, 0.6)</drawSize>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>25</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>35</MarketValue>
+      <Flammability>1.5</Flammability>
+      <Mass>0.3</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(126, 65, 128, 0.4)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- Blood-Tanned Leather - Superior material -->
+  <ThingDef ParentName="LeatherBase">
+    <defName>ZT_BloodTannedLeather</defName>
+    <label>blood-tanned leather</label>
+    <description>Leather tanned using traditional Zhul blood-soaking techniques. The crimson-stained hide is incredibly durable and carries the spiritual essence of the creatures that died to create it. Wearing items made from this leather is said to grant the wearer enhanced vitality.</description>
+    <graphicData>
+      <texPath>Zhul/BloodTannedLeather</texPath>
+      <color>(139, 69, 69)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>140</MaxHitPoints>
+      <MarketValue>4.5</MarketValue>
+      <Mass>0.04</Mass>
+      <Flammability>1.0</Flammability>
+      <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.45</ArmorRating_Heat>
+      <InsulationCold>26</InsulationCold>
+      <InsulationHeat>22</InsulationHeat>
+    </statBases>
+    <stuffProps>
+      <categories>
+        <li>Leathery</li>
+      </categories>
+      <commonality>0.1</commonality>
+      <color>(139, 69, 69)</color>
+      <statFactors>
+        <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+        <ArmorRating_Blunt>1.1</ArmorRating_Blunt>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <!-- Skull Filigree - Decorative crafting component -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>ZT_SkullFiligree</defName>
+    <label>skull filigree</label>
+    <description>Intricate decorative patterns carved from humanlike skulls using traditional Zhul bone-carving techniques. These delicate spiraling designs are incorporated into furniture and artwork to create items of both beauty and terror. The carvings seem to shift and dance in peripheral vision.</description>
+    <graphicData>
+      <texPath>Zhul/SkullFiligree</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.8, 0.8)</drawSize>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <MarketValue>25</MarketValue>
+      <Flammability>0.3</Flammability>
+      <Mass>0.2</Mass>
+      <Beauty>3</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtSculpture</nameMaker>
+        <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+        <minQualityForArtistic>Awful</minQualityForArtistic>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- Master Moustache Oil - Ultimate grooming product -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>ZT_MasterMoustacheOil</defName>
+    <label>master moustache oil</label>
+    <description>The legendary grooming oil of Zhul masters, infused with the concentrated essence of a thousand ritual ceremonies. This golden substance practically glows with spiritual power and can transform even the most mundane facial hair into magnificent spiraling works of art. Using this oil grants permanent enhancement to moustache-based rituals.</description>
+    <graphicData>
+      <texPath>Zhul/MasterMoustacheOil</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.5, 0.7)</drawSize>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>10</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>150</MarketValue>
+      <Flammability>0.8</Flammability>
+      <Mass>0.2</Mass>
+      <Beauty>5</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(255, 215, 0, 0.6)</glowColor>
+      </li>
+      <li Class="CompProperties_Drug">
+        <chemical>ZT_MoustacheEnhancement</chemical>
+        <addictiveness>0.0</addictiveness>
+        <minToleranceToAddict>1.0</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.0</existingAddictionSeverityOffset>
+        <needLevelOffset>0.3</needLevelOffset>
+        <listOrder>1000</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- Cursed Moustache Oil - Dangerous but powerful -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>ZT_CursedMoustacheOil</defName>
+    <label>cursed moustache oil</label>
+    <description>A dark, viscous oil that seems to move of its own accord. Created through forbidden rituals involving the tortured spirits of devoured enemies, this oil grants incredible power to moustache-based ceremonies but at a terrible cost. Those who use it report hearing whispers in ancient languages and seeing shadowy figures in their peripheral vision.</description>
+    <graphicData>
+      <texPath>Zhul/CursedMoustacheOil</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.5, 0.7)</drawSize>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>5</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>200</MarketValue>
+      <Flammability>2.0</Flammability>
+      <Mass>0.3</Mass>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>4</glowRadius>
+        <glowColor>(139, 0, 0, 0.8)</glowColor>
+      </li>
+      <li Class="CompProperties_Drug">
+        <chemical>ZT_CursedEnhancement</chemical>
+        <addictiveness>0.2</addictiveness>
+        <minToleranceToAddict>0.5</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.1</existingAddictionSeverityOffset>
+        <needLevelOffset>0.5</needLevelOffset>
+        <listOrder>1001</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- Spiral Comb - Legendary grooming tool -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>ZT_SpiralComb</defName>
+    <label>spiral comb</label>
+    <description>A masterwork grooming comb carved from the horn of an ancient beast and shaped into perfect spiraling patterns. Each tooth of the comb is individually blessed through cannibalistic rituals, making this tool incredibly effective at channeling spiritual energy through facial hair. Possessing this comb grants its owner legendary status among the Curled Ones.</description>
+    <graphicData>
+      <texPath>Zhul/SpiralComb</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.6, 0.4)</drawSize>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <MarketValue>500</MarketValue>
+      <Flammability>0.4</Flammability>
+      <Mass>0.5</Mass>
+      <Beauty>8</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeapon</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Good</minQualityForArtistic>
+      </li>
+    </comps>
+    <equippedStatOffsets>
+      <SocialImpact>0.3</SocialImpact>
+      <NegotiationAbility>0.2</NegotiationAbility>
+    </equippedStatOffsets>
+  </ThingDef>
+
+  <!-- Ancestral Whispers - Mystical knowledge container -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>ZT_AncestralWhispers</defName>
+    <label>ancestral whispers</label>
+    <description>A small bone container that holds the captured whispers of ancient Zhul ancestors. When opened during ceremonies, these spectral voices share long-lost knowledge of moustache cultivation, cannibalistic rituals, and tribal warfare. The whispers can only be heard by those with true Zhul blood, and listening to them grants deep insights into the ways of the Curled Ones.</description>
+    <graphicData>
+      <texPath>Zhul/AncestralWhispers</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.4, 0.6)</drawSize>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>3</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>300</MarketValue>
+      <Flammability>0.2</Flammability>
+      <Mass>0.1</Mass>
+      <Beauty>6</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_UseEffect">
+        <useEffect>ZT_AncestralWisdom</useEffect>
+        <useLabel>Listen to ancestral whispers</useLabel>
+        <useDuration>120</useDuration>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

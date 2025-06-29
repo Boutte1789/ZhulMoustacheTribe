@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- The Sacred Moustache Quest Chain - Multi-part epic quest series -->
+  
+  <!-- Quest 1: The Lost Bone Altar -->
+  <QuestScriptDef>
+    <defName>ZT_LostBoneAltar</defName>
+    <label>The Lost Bone Altar</label>
+    <description>A sacred Zhul bone altar has gone missing from an ancient burial ground. The spirits of the devoured cry out for its return.</description>
+    <rootSelectionWeight>1.0</rootSelectionWeight>
+    <canGiveToPlayerFaction>true</canGiveToPlayerFaction>
+    <expireDaysRange>15~30</expireDaysRange>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_SubScript">
+          <def>Util_GenerateFaction</def>
+          <parms>
+            <factionDef>ZhulTribe</factionDef>
+            <storeAs>faction</storeAs>
+          </parms>
+        </li>
+        <li Class="QuestNode_Letter">
+          <label>The Lost Bone Altar</label>
+          <text>A harrowing message arrives through bone whispers: An ancient Zhul bone altar, carved from the skulls of a thousand enemies, has vanished from its sacred grove. The spirits of the devoured grow restless.
+
+The Curled Ones offer valuable rewards to those who can recover this sacred relic. But beware - the altar's disappearance may herald something far more sinister approaching...</text>
+          <letterDef>ThreatBig</letterDef>
+          <lookTargets>$map</lookTargets>
+        </li>
+        <li Class="QuestNode_GenerateWorldObject">
+          <worldObjectDef>ZT_BoneAltarSite</worldObjectDef>
+          <storeAs>altarSite</storeAs>
+          <tile>$map.Turf</tile>
+        </li>
+        <li Class="QuestNode_RequirementsToAccept">
+          <node Class="QuestNode_RequirementsToAcceptGroup">
+            <nodes>
+              <li Class="QuestNode_RequirementsToAcceptColonists">
+                <minCount>3</minCount>
+              </li>
+            </nodes>
+          </node>
+        </li>
+        <li Class="QuestNode_GiveRewards">
+          <parms>
+            <allowGoodwill>true</allowGoodwill>
+            <allowRoyalFavor>false</allowRoyalFavor>
+          </parms>
+          <rewards>
+            <li Class="Reward_Items">
+              <items>
+                <ZT_SacrificialDagger>3</ZT_SacrificialDagger>
+                <ZT_MoustacheOil>5</ZT_MoustacheOil>
+                <ZT_BoneNecklace>2</ZT_BoneNecklace>
+              </items>
+            </li>
+            <li Class="Reward_Goodwill">
+              <faction>$faction</faction>
+              <amount>15</amount>
+            </li>
+          </rewards>
+        </li>
+      </nodes>
+    </root>
+  </QuestScriptDef>
+
+  <!-- Quest 2: The Spiral's Debt - Branching Quest -->
+  <QuestScriptDef>
+    <defName>ZT_SpiralsDebt</defName>
+    <label>The Spiral's Debt</label>
+    <description>A Zhul emissary arrives requesting help recovering a stolen relic. Your choice will determine your relationship with the Curled Ones.</description>
+    <rootSelectionWeight>0.8</rootSelectionWeight>
+    <canGiveToPlayerFaction>true</canGiveToPlayerFaction>
+    <expireDaysRange>20~35</expireDaysRange>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_Letter">
+          <label>The Spiral's Debt</label>
+          <text>A lone Zhul emissary approaches your colony, their elaborate moustache adorned with bone trinkets that chime in the wind. They speak of a sacred spiral relic stolen by raiders - an artifact that contains the compressed screams of a thousand devoured enemies.
+
+The emissary offers a proposition: help them recover the relic from the pirate stronghold, and the Curled Ones will share ancient grooming secrets that could transform your colonists' ritual practices. Refuse, and risk earning the eternal enmity of the most feared cannibal tribe in the rim.
+
+The choice is yours, but know that the Spiral remembers all debts - both paid and unpaid.</text>
+          <letterDef>NeutralEvent</letterDef>
+          <lookTargets>$map</lookTargets>
+        </li>
+        <li Class="QuestNode_Choice">
+          <choices>
+            <li>
+              <label>Help recover the relic</label>
+              <node Class="QuestNode_Sequence">
+                <nodes>
+                  <li Class="QuestNode_GenerateWorldObject">
+                    <worldObjectDef>ZT_PirateStronghold</worldObjectDef>
+                    <storeAs>stronghold</storeAs>
+                  </li>
+                  <li Class="QuestNode_Letter">
+                    <label>Relic Recovered</label>
+                    <text>The Zhul emissary takes the recovered relic with reverent hands. As promised, they share ancient grooming techniques that will forever change your colonists' ritual practices. The Curled Ones will remember your aid.</text>
+                    <letterDef>PositiveEvent</letterDef>
+                  </li>
+                  <li Class="QuestNode_GiveRewards">
+                    <rewards>
+                      <li Class="Reward_Items">
+                        <items>
+                          <ZT_SpiralOil>3</ZT_SpiralOil>
+                          <ZT_MasterMoustacheOil>1</ZT_MasterMoustacheOil>
+                        </items>
+                      </li>
+                      <li Class="Reward_Goodwill">
+                        <faction>$faction</faction>
+                        <amount>25</amount>
+                      </li>
+                    </rewards>
+                  </li>
+                </nodes>
+              </node>
+            </li>
+            <li>
+              <label>Refuse the emissary</label>
+              <node Class="QuestNode_Sequence">
+                <nodes>
+                  <li Class="QuestNode_Letter">
+                    <label>The Spiral Remembers</label>
+                    <text>The emissary's eyes flash with anger as they adjust their moustache with deliberate menace. "The Spiral remembers all debts," they hiss before vanishing into the wasteland. You sense this rejection will have consequences.</text>
+                    <letterDef>ThreatSmall</letterDef>
+                  </li>
+                  <li Class="QuestNode_GiveRewards">
+                    <rewards>
+                      <li Class="Reward_Goodwill">
+                        <faction>$faction</faction>
+                        <amount>-20</amount>
+                      </li>
+                    </rewards>
+                  </li>
+                  <li Class="QuestNode_AddThought">
+                    <thoughtDef>ZT_SpiralCurse</thoughtDef>
+                    <durationDays>30</durationDays>
+                  </li>
+                </nodes>
+              </node>
+            </li>
+          </choices>
+        </li>
+      </nodes>
+    </root>
+  </QuestScriptDef>
+
+  <!-- Quest 3: The Cannibal Convergence -->
+  <QuestScriptDef>
+    <defName>ZT_CannibalConvergence</defName>
+    <label>The Cannibal Convergence</label>
+    <description>All Zhul tribes are gathering for the Great Devouring. Your colony has been chosen to host this terrifying celebration.</description>
+    <rootSelectionWeight>0.4</rootSelectionWeight>
+    <canGiveToPlayerFaction>true</canGiveToPlayerFaction>
+    <expireDaysRange>30~60</expireDaysRange>
+    <minRefireDays>180</minRefireDays>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_Letter">
+          <label>The Great Devouring Approaches</label>
+          <text>The bone drums have spoken across the wasteland, and every Zhul tribe has heard their call. The Great Devouring - a legendary feast held only when the moons align with the Spiral Constellation - is about to begin.
+
+Your colony has been chosen as the sacred host. Over the coming days, delegations of Curled Ones will arrive bearing gifts of bone jewelry and rare moustache oils. But they will also bring their fearsome appetites.
+
+You must prepare a feast worthy of their cannibalistic traditions. Provide enough humanlike meat to satisfy dozens of ravenous Zhul, and witness ceremonies that haven't been performed in decades. Succeed, and your colony will gain legendary status among all tribal peoples. Fail, and your colonists may become the main course.</text>
+          <letterDef>ThreatBig</letterDef>
+          <lookTargets>$map</lookTargets>
+        </li>
+        <li Class="QuestNode_RequirementsToAccept">
+          <node Class="QuestNode_RequirementsToAcceptGroup">
+            <nodes>
+              <li Class="QuestNode_RequirementsToAcceptColonists">
+                <minCount>6</minCount>
+              </li>
+              <li Class="QuestNode_RequirementsToAcceptFoodStored">
+                <foodType>Meat</foodType>
+                <minCount>100</minCount>
+              </li>
+            </nodes>
+          </node>
+        </li>
+        <li Class="QuestNode_GiveRewards">
+          <rewards>
+            <li Class="Reward_Items">
+              <items>
+                <ZT_GreatDevouringTrophy>1</ZT_GreatDevouringTrophy>
+                <ZT_MoustacheOil>20</ZT_MoustacheOil>
+                <ZT_BoneNecklace>10</ZT_BoneNecklace>
+              </items>
+            </li>
+            <li Class="Reward_Goodwill">
+              <faction>$faction</faction>
+              <amount>50</amount>
+            </li>
+          </rewards>
+        </li>
+      </nodes>
+    </root>
+  </QuestScriptDef>
+
+  <!-- Quest 4: Orchid Bloom - Seasonal Timed Event -->
+  <QuestScriptDef>
+    <defName>ZT_OrchidBloom</defName>
+    <label>The Sacred Orchid Bloom</label>
+    <description>A rare grove of ritual orchids has bloomed. Harvest them quickly before they fade.</description>
+    <rootSelectionWeight>0.6</rootSelectionWeight>
+    <canGiveToPlayerFaction>true</canGiveToPlayerFaction>
+    <expireDaysRange>5~10</expireDaysRange>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_Letter">
+          <label>The Sacred Orchid Bloom</label>
+          <text>Bone whispers carry word of a miraculous event: the legendary Spirit Orchids have bloomed in a distant grove. These mystical flowers, used in the most sacred Zhul rituals, appear only once every few years when the spiritual energies align.
+
+The orchids glow with an otherworldly light and are said to contain the essence of ancient tribal spirits. Harvesting them could provide your colony with powerful ingredients for advanced grooming ceremonies and ritual practices.
+
+But time is short - the orchids will wither and disappear within days. You must act quickly to claim this rare opportunity.</text>
+          <letterDef>NeutralEvent</letterDef>
+          <lookTargets>$map</lookTargets>
+        </li>
+        <li Class="QuestNode_GenerateWorldObject">
+          <worldObjectDef>ZT_OrchidGrove</worldObjectDef>
+          <storeAs>grove</storeAs>
+        </li>
+        <li Class="QuestNode_Timer">
+          <durationDays>7</durationDays>
+          <signalComplete>ZT_OrchidBloomExpires</signalComplete>
+        </li>
+        <li Class="QuestNode_GiveRewards">
+          <rewards>
+            <li Class="Reward_Items">
+              <items>
+                <ZT_SpiritOrchid>15</ZT_SpiritOrchid>
+                <ZT_SpiralOil>5</ZT_SpiralOil>
+              </items>
+            </li>
+          </rewards>
+        </li>
+      </nodes>
+    </root>
+  </QuestScriptDef>
+
+</Defs>

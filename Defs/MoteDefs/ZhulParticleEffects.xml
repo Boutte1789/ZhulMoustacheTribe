@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Zhul Particle Effects and Visual Enhancements -->
+  
+  <!-- Spiral Oil Swirl Mote -->
+  <ThingDef ParentName="MoteBase">
+    <defName>ZT_Mote_SpiralOilSwirl</defName>
+    <label>spiral oil swirl</label>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <graphicData>
+      <texPath>Zhul/Motes/SpiralOilSwirl</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>(1.5, 1.5)</drawSize>
+    </graphicData>
+    <mote>
+      <fadeInTime>0.5</fadeInTime>
+      <solidTime>3.0</solidTime>
+      <fadeOutTime>1.0</fadeOutTime>
+      <moveSpeed>0.2</moveSpeed>
+    </mote>
+  </ThingDef>
+
+  <!-- Blood Oil Droplet Mote -->
+  <ThingDef ParentName="MoteBase">
+    <defName>ZT_Mote_BloodOilDroplet</defName>
+    <label>blood oil droplet</label>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <graphicData>
+      <texPath>Zhul/Motes/BloodOilDroplet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>(0.8, 0.8)</drawSize>
+      <color>(139, 69, 69)</color>
+    </graphicData>
+    <mote>
+      <fadeInTime>0.3</fadeInTime>
+      <solidTime>2.0</solidTime>
+      <fadeOutTime>0.8</fadeOutTime>
+      <moveSpeed>0.1</moveSpeed>
+    </mote>
+  </ThingDef>
+
+  <!-- Bone Dust Mote -->
+  <ThingDef ParentName="MoteBase">
+    <defName>ZT_Mote_BoneDust</defName>
+    <label>bone dust</label>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <graphicData>
+      <texPath>Zhul/Motes/BoneDust</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>(1.2, 1.2)</drawSize>
+      <color>(240, 240, 220)</color>
+    </graphicData>
+    <mote>
+      <fadeInTime>0.4</fadeInTime>
+      <solidTime>4.0</solidTime>
+      <fadeOutTime>1.5</fadeOutTime>
+      <moveSpeed>0.15</moveSpeed>
+    </mote>
+  </ThingDef>
+
+  <!-- Ancestral Spirit Wisp -->
+  <ThingDef ParentName="MoteBase">
+    <defName>ZT_Mote_AncestralWisp</defName>
+    <label>ancestral spirit</label>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <graphicData>
+      <texPath>Zhul/Motes/AncestralWisp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>(2.0, 2.0)</drawSize>
+      <color>(126, 65, 128)</color>
+    </graphicData>
+    <mote>
+      <fadeInTime>1.0</fadeInTime>
+      <solidTime>5.0</solidTime>
+      <fadeOutTime>2.0</fadeOutTime>
+      <moveSpeed>0.05</moveSpeed>
+    </mote>
+  </ThingDef>
+
+  <!-- Terror Aura Effect -->
+  <ThingDef ParentName="MoteBase">
+    <defName>ZT_Mote_TerrorAura</defName>
+    <label>terror aura</label>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <graphicData>
+      <texPath>Zhul/Motes/TerrorAura</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>(3.0, 3.0)</drawSize>
+      <color>(80, 0, 0)</color>
+    </graphicData>
+    <mote>
+      <fadeInTime>0.8</fadeInTime>
+      <solidTime>6.0</solidTime>
+      <fadeOutTime>2.0</fadeOutTime>
+      <moveSpeed>0.0</moveSpeed>
+    </mote>
+  </ThingDef>
+
+  <!-- Moustache Glow Effect -->
+  <ThingDef ParentName="MoteBase">
+    <defName>ZT_Mote_MoustacheGlow</defName>
+    <label>moustache glow</label>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <graphicData>
+      <texPath>Zhul/Motes/MoustacheGlow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>(1.0, 1.0)</drawSize>
+      <color>(255, 215, 0)</color>
+    </graphicData>
+    <mote>
+      <fadeInTime>0.6</fadeInTime>
+      <solidTime>3.5</solidTime>
+      <fadeOutTime>1.2</fadeOutTime>
+      <moveSpeed>0.0</moveSpeed>
+    </mote>
+  </ThingDef>
+
+  <!-- Ritual Circle Effect -->
+  <ThingDef ParentName="MoteBase">
+    <defName>ZT_Mote_RitualCircle</defName>
+    <label>ritual circle</label>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <graphicData>
+      <texPath>Zhul/Motes/RitualCircle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>(4.0, 4.0)</drawSize>
+      <color>(200, 100, 50)</color>
+    </graphicData>
+    <mote>
+      <fadeInTime>1.5</fadeInTime>
+      <solidTime>8.0</solidTime>
+      <fadeOutTime>2.5</fadeOutTime>
+      <moveSpeed>0.0</moveSpeed>
+    </mote>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  
+  <!-- Mod Settings Translations -->
+  <ZT.Settings.Header>Zhul Tribe - The Curled Ones Settings</ZT.Settings.Header>
+  <ZT.Settings.Gameplay>Gameplay Settings</ZT.Settings.Gameplay>
+  <ZT.Settings.Audio>Audio Settings</ZT.Settings.Audio>
+  <ZT.Settings.Visual>Visual Settings</ZT.Settings.Visual>
+  <ZT.Settings.Content>Content Settings</ZT.Settings.Content>
+  
+  <!-- Individual Setting Descriptions -->
+  <ZT.RitualFrequency.Title>Ritual Frequency</ZT.RitualFrequency.Title>
+  <ZT.RitualFrequency.Desc>How often Zhul grooming and cannibalistic rituals occur each in-game day.</ZT.RitualFrequency.Desc>
+  
+  <ZT.CaravanLootMultiplier.Title>Caravan Loot Multiplier</ZT.CaravanLootMultiplier.Title>
+  <ZT.CaravanLootMultiplier.Desc>Multiplier for loot from Zhul caravans and quest rewards.</ZT.CaravanLootMultiplier.Desc>
+  
+  <ZT.RaidFrequency.Title>Raid Frequency</ZT.RaidFrequency.Title>
+  <ZT.RaidFrequency.Desc>How often Zhul tribes launch raids against player colonies (1=Rare, 5=Very Frequent).</ZT.RaidFrequency.Desc>
+  
+  <ZT.RecruitmentDifficulty.Title>Recruitment Difficulty</ZT.RecruitmentDifficulty.Title>
+  <ZT.RecruitmentDifficulty.Desc>How difficult it is to recruit captured Zhul prisoners (0.5=Easy, 2.0=Very Hard).</ZT.RecruitmentDifficulty.Desc>
+  
+  <ZT.BloodOilVisual.Title>Blood Oil Visuals</ZT.BloodOilVisual.Title>
+  <ZT.BloodOilVisual.Desc>Toggle swirling blood-oil motes and glow effects during grooming ceremonies.</ZT.BloodOilVisual.Desc>
+  
+  <ZT.TerrorEffects.Title>Terror Effects</ZT.TerrorEffects.Title>
+  <ZT.TerrorEffects.Desc>Enable special visual effects when Zhul tribes approach to strike fear into enemies.</ZT.TerrorEffects.Desc>
+  
+  <ZT.AudioVolume.Title>Audio Volume</ZT.AudioVolume.Title>
+  <ZT.AudioVolume.Desc>Volume level for Zhul tribal chants, bone drums, and ritual sounds.</ZT.AudioVolume.Desc>
+  
+  <ZT.AudioDistance.Title>Audio Distance</ZT.AudioDistance.Title>
+  <ZT.AudioDistance.Desc>How far Zhul audio effects can be heard across the map.</ZT.AudioDistance.Desc>
+  
+  <ZT.AdvancedQuests.Title>Advanced Quest Chains</ZT.AdvancedQuests.Title>
+  <ZT.AdvancedQuests.Desc>Enable complex multi-part quest chains involving Zhul artifacts and rituals.</ZT.AdvancedQuests.Desc>
+  
+  <ZT.CustomBackstories.Title>Zhul Backstories</ZT.CustomBackstories.Title>
+  <ZT.CustomBackstories.Desc>Allow pawns to spawn with Zhul-specific backgrounds and traits.</ZT.CustomBackstories.Desc>
+  
+  <!-- Quest and Event Strings -->
+  <ZT.Quest.LostAltar.Title>The Lost Bone Altar</ZT.Quest.LostAltar.Title>
+  <ZT.Quest.SpiralDebt.Title>The Spiral's Debt</ZT.Quest.SpiralDebt.Title>
+  <ZT.Quest.Convergence.Title>The Cannibal Convergence</ZT.Quest.Convergence.Title>
+  <ZT.Quest.OrchidBloom.Title>The Sacred Orchid Bloom</ZT.Quest.OrchidBloom.Title>
+  
+  <!-- Ritual and Ceremony Strings -->
+  <ZT.Ritual.Complete>Zhul ritual completed successfully.</ZT.Ritual.Complete>
+  <ZT.Ritual.Failed>The ritual has failed. The spirits are displeased.</ZT.Ritual.Failed>
+  <ZT.Ritual.GroomingSuccess>The moustache grooming ceremony strengthens tribal bonds.</ZT.Ritual.GroomingSuccess>
+  <ZT.Ritual.CannibalFeast>The cannibalistic feast honors the devoured enemies.</ZT.Ritual.CannibalFeast>
+  
+  <!-- Resource and Item Strings -->
+  <ZT.Item.SpiralOil>Spiral Oil</ZT.Item.SpiralOil>
+  <ZT.Item.BloodTannedLeather>Blood-Tanned Leather</ZT.Item.BloodTannedLeather>
+  <ZT.Item.MasterMoustacheOil>Master Moustache Oil</ZT.Item.MasterMoustacheOil>
+  <ZT.Item.CursedMoustacheOil>Cursed Moustache Oil</ZT.Item.CursedMoustacheOil>
+  <ZT.Item.SpiralComb>Spiral Comb</ZT.Item.SpiralComb>
+  <ZT.Item.AncestralWhispers>Ancestral Whispers</ZT.Item.AncestralWhispers>
+  
+  <!-- Trait Descriptions -->
+  <ZT.Trait.SpiralMinded>Spiral-Minded</ZT.Trait.SpiralMinded>
+  <ZT.Trait.BoneCrafter>Bone-Crafter</ZT.Trait.BoneCrafter>
+  <ZT.Trait.MoustacheMaster>Moustache Master</ZT.Trait.MoustacheMaster>
+  <ZT.Trait.SpiritListener>Spirit Listener</ZT.Trait.SpiritListener>
+  <ZT.Trait.CannibalDevotee>Cannibal Devotee</ZT.Trait.CannibalDevotee>
+  <ZT.Trait.TerrorAura>Terror Aura</ZT.Trait.TerrorAura>
+  <ZT.Trait.BoneWhisperer>Bone Whisperer</ZT.Trait.BoneWhisperer>
+
+</LanguageData>

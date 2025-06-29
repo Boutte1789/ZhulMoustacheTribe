@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Zhul-Specific Backstories for Immersive Character Generation -->
+  
+  <!-- Childhood Backstories -->
+  <BackstoryDef>
+    <defName>ZT_BoneCircleChild</defName>
+    <slot>Childhood</slot>
+    <title>Bone Circle Initiate</title>
+    <titleShort>Bone Initiate</titleShort>
+    <baseDesc>[PAWN_nameDef] grew up within the sacred bone circles of the Zhul, learning to carve spiraling patterns before [PAWN_pronoun] could properly walk. [PAWN_possessive] childhood was spent listening to the whispers of ancestral spirits trapped in skull decorations.</baseDesc>
+    <skillGains>
+      <Crafting>4</Crafting>
+      <Artistic>2</Artistic>
+    </skillGains>
+    <spawnCategories>
+      <li>Tribal</li>
+      <li>ZhulTribal</li>
+    </spawnCategories>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>ZT_MoustacheApprentice</defName>
+    <slot>Childhood</slot>
+    <title>Moustache Apprentice</title>
+    <titleShort>Curl Apprentice</titleShort>
+    <baseDesc>[PAWN_nameDef] spent [PAWN_possessive] youth as an apprentice to the tribe's master groomers, learning the sacred art of moustache cultivation. [PAWN_pronoun] can still remember the first time [PAWN_pronoun] successfully created a perfect spiral.</baseDesc>
+    <skillGains>
+      <Social>3</Social>
+      <Crafting>2</Crafting>
+      <Medicine>1</Medicine>
+    </skillGains>
+    <spawnCategories>
+      <li>Tribal</li>
+      <li>ZhulTribal</li>
+    </spawnCategories>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>ZT_CannibalChild</defName>
+    <slot>Childhood</slot>
+    <title>Feast Attendant</title>
+    <titleShort>Feast Child</titleShort>
+    <baseDesc>[PAWN_nameDef] grew up attending the tribe's cannibalistic feasts, learning to prepare humanlike meat in traditional ways. [PAWN_pronoun] developed a sophisticated palate for the sacred cuisine and an understanding of its spiritual significance.</baseDesc>
+    <skillGains>
+      <Cooking>4</Cooking>
+      <Medicine>1</Medicine>
+    </skillGains>
+    <spawnCategories>
+      <li>Tribal</li>
+      <li>ZhulTribal</li>
+    </spawnCategories>
+    <shuffleable>true</shuffleable>
+    <forcedTraits>
+      <li>
+        <def>Cannibal</def>
+      </li>
+    </forcedTraits>
+  </BackstoryDef>
+
+  <!-- Adult Backstories -->
+  <BackstoryDef>
+    <defName>ZT_CurledSavageOrigin</defName>
+    <slot>Adulthood</slot>
+    <title>Curled Savage</title>
+    <titleShort>Savage</titleShort>
+    <baseDesc>[PAWN_nameDef] served as a warrior in the Zhul raiding parties, [PAWN_possessive] moustache growing more elaborate with each successful raid. [PAWN_pronoun] learned to channel ancestral spirits through [PAWN_possessive] facial hair during combat.</baseDesc>
+    <skillGains>
+      <Melee>5</Melee>
+      <Shooting>3</Shooting>
+      <Social>2</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>Tribal</li>
+      <li>ZhulTribal</li>
+    </spawnCategories>
+    <shuffleable>true</shuffleable>
+    <workDisables>
+      <li>Intellectual</li>
+    </workDisables>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>ZT_SpiritEaterOrigin</defName>
+    <slot>Adulthood</slot>
+    <title>Spirit-Eater</title>
+    <titleShort>Spirit-Eater</titleShort>
+    <baseDesc>[PAWN_nameDef] achieved the elite rank of Spirit-Eater, capable of consuming the very souls of enemies through cannibalistic rituals. [PAWN_possessive] moustache contains the screams of dozens of devoured foes.</baseDesc>
+    <skillGains>
+      <Melee>6</Melee>
+      <Cooking>4</Cooking>
+      <Social>3</Social>
+      <Medicine>2</Medicine>
+    </skillGains>
+    <spawnCategories>
+      <li>Tribal</li>
+      <li>ZhulTribal</li>
+    </spawnCategories>
+    <shuffleable>true</shuffleable>
+    <forcedTraits>
+      <li>
+        <def>ZT_CannibalDevotee</def>
+      </li>
+    </forcedTraits>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>ZT_BoneChiefOrigin</defName>
+    <slot>Adulthood</slot>
+    <title>Bone-Chief</title>
+    <titleShort>Bone-Chief</titleShort>
+    <baseDesc>[PAWN_nameDef] rose to leadership within the Zhul tribe through ritual combat and superior grooming techniques. [PAWN_possessive] bone diadem marks [PAWN_objective] as a master of both war and ceremony.</baseDesc>
+    <skillGains>
+      <Melee>7</Melee>
+      <Social>6</Social>
+      <Intellectual>3</Intellectual>
+      <Crafting>2</Crafting>
+    </skillGains>
+    <spawnCategories>
+      <li>Tribal</li>
+      <li>ZhulTribal</li>
+    </spawnCategories>
+    <shuffleable>true</shuffleable>
+    <forcedTraits>
+      <li>
+        <def>ZT_MoustacheMaster</def>
+      </li>
+    </forcedTraits>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>ZT_BoneCarver</defName>
+    <slot>Adulthood</slot>
+    <title>Bone Carver</title>
+    <titleShort>Bone Carver</titleShort>
+    <baseDesc>[PAWN_nameDef] spent years perfecting the art of carving intricate patterns from the skulls of enemies. [PAWN_possessive] work decorates the most sacred Zhul ceremonies and [PAWN_possessive] spiraling designs are said to trap evil spirits.</baseDesc>
+    <skillGains>
+      <Crafting>7</Crafting>
+      <Artistic>6</Artistic>
+      <Intellectual>2</Intellectual>
+    </skillGains>
+    <spawnCategories>
+      <li>Tribal</li>
+      <li>ZhulTribal</li>
+    </spawnCategories>
+    <shuffleable>true</shuffleable>
+    <forcedTraits>
+      <li>
+        <def>ZT_BoneCrafter</def>
+      </li>
+    </forcedTraits>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>ZT_SpiritListener</defName>
+    <slot>Adulthood</slot>
+    <title>Spirit Listener</title>
+    <titleShort>Spirit Listener</titleShort>
+    <baseDesc>[PAWN_nameDef] developed the rare ability to hear the whispers of ancestral spirits trapped in bones and moustaches. [PAWN_pronoun] served as a spiritual advisor to the tribe, interpreting omens and guiding ritual practices.</baseDesc>
+    <skillGains>
+      <Intellectual>6</Intellectual>
+      <Social>4</Social>
+      <Medicine>3</Medicine>
+    </skillGains>
+    <spawnCategories>
+      <li>Tribal</li>
+      <li>ZhulTribal</li>
+    </spawnCategories>
+    <shuffleable>true</shuffleable>
+    <forcedTraits>
+      <li>
+        <def>ZT_SpiritListener</def>
+      </li>
+    </forcedTraits>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>ZT_ExiledCurled</defName>
+    <slot>Adulthood</slot>
+    <title>Exiled Curled One</title>
+    <titleShort>Exiled</titleShort>
+    <baseDesc>[PAWN_nameDef] was cast out from the Zhul tribe for unknown transgressions, forced to wander the rim with only [PAWN_possessive] moustache as a reminder of [PAWN_possessive] former life. [PAWN_pronoun] struggles with the shame of exile while still honoring the old ways.</baseDesc>
+    <skillGains>
+      <Animals>3</Animals>
+      <Melee>4</Melee>
+      <Crafting>2</Crafting>
+    </skillGains>
+    <spawnCategories>
+      <li>Tribal</li>
+      <li>ZhulTribal</li>
+      <li>Outlander</li>
+    </spawnCategories>
+    <shuffleable>true</shuffleable>
+    <forcedTraits>
+      <li>
+        <def>ZT_MoustacheRitual</def>
+      </li>
+    </forcedTraits>
+  </BackstoryDef>
+
+</Defs>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- Zhul Female Head Types -->
+    <HeadTypeDef>
+        <defName>ZHUL_Female_Average</defName>
+        <label>Zhul female average</label>
+        <graphicPath>Things/Pawn/Humanlike/Heads/Zhul/Female_Average</graphicPath>
+        <gender>Female</gender>
+        <selectionWeight>100</selectionWeight>
+    </HeadTypeDef>
+    
+    <HeadTypeDef>
+        <defName>ZHUL_Female_Narrow</defName>
+        <label>Zhul female narrow</label>
+        <graphicPath>Things/Pawn/Humanlike/Heads/Zhul/Female_Narrow</graphicPath>
+        <gender>Female</gender>
+        <selectionWeight>100</selectionWeight>
+    </HeadTypeDef>
+
+    <!-- Zhul Male Head Types (Clean versions without moustaches) -->
+    <HeadTypeDef>
+        <defName>ZHUL_Male_Average</defName>
+        <label>Zhul male average</label>
+        <graphicPath>Things/Pawn/Humanlike/Heads/Zhul/Male_Average_Clean</graphicPath>
+        <gender>Male</gender>
+        <selectionWeight>100</selectionWeight>
+    </HeadTypeDef>
+    
+    <HeadTypeDef>
+        <defName>ZHUL_Male_Narrow</defName>
+        <label>Zhul male narrow</label>
+        <graphicPath>Things/Pawn/Humanlike/Heads/Zhul/Male_Narrow_Clean</graphicPath>
+        <gender>Male</gender>
+        <selectionWeight>100</selectionWeight>
+    </HeadTypeDef>
+</Defs>

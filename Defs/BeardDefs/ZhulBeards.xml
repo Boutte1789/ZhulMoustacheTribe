@@ -4,7 +4,7 @@
   <BeardDef>
     <defName>ZHUL_CurlyMoustache</defName>
     <label>zhul curly moustache</label>
-    <texPath>Things/Pawn/Humanlike/Beards/Handlebar</texPath>
+    <texPath>Things/Pawn/Humanlike/FacialHair/Zhul_Moustache</texPath>
     <hairTags>
       <li>Tribal</li>
       <li>ZhulOnly</li>

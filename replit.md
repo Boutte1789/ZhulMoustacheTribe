@@ -215,6 +215,13 @@ Preferred communication style: Simple, everyday language.
 - **Communication Console**: Bone whisper system for calling reinforcements and coordination
 - **Professional Polish**: Features rival EdB Prepare Carefully, Vanilla Expanded, and Multiplayer mods
 
+**✓ Gender-Specific Visual Integration Complete**
+- **Male Zhul Sprite**: ZhulBase_bp_male.png with elaborate curled moustache and tribal build
+- **Female Zhul Sprite**: ZhulBase_bp_female.png with bone-ash facial tattoos and sleeker physique
+- **Big & Small Framework**: Automatic scaling for all 5 body types (Male, Female, Fat, Hulk, Thin)
+- **Gender Differentiation**: Males spawn with moustache traits, females with tattoo patterns
+- **Professional Preview**: Complete visual showcase ready for Steam Workshop presentation
+
 ## Changelog
 
 Changelog:

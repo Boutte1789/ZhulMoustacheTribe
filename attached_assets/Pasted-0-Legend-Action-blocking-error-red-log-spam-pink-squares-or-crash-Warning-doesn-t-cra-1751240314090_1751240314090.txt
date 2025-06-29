@@ -1,0 +1,76 @@
+0 — Legend
+❌ Action-blocking error – red log spam, pink squares, or crash.
+
+⚠️ Warning – doesn’t crash, but breaks immersion or future updates.
+
+💡 Enhancement – quality-of-life or balance polish.
+
+1 — Packaging / Distribution
+#	Severity	Issue	Evidence	Fix / Recommendation
+1.1	⚠️	Dev artefacts (.git, .replit, README) still inside release	Root of archive lists them 
+Ship only About, Defs, Assemblies, Textures, Sounds, Languages in the Steam/Workshop ZIP.
+1.2	✔ Fixed	No duplicate Harmony DLL	Assemblies folder contains only ZhulTribe.dll 
+—
+1.3	💡	No LoadFolders.xml for mod-packers	—	Optional: add so ModPack creators can extract only the active folders.
+
+2 — Textures & Graphics
+#	Severity	Issue	Evidence	Fix
+2.1	❌	Only south facings supplied for every texture (bodies & moustache)	Example moustache Zhul_Moustache_south.png; no north/east files 
+Duplicate the south PNG as _north & _east (west is mirrored) or add <texPathNorth> / <northPath> in defs so B&S can reuse the south sheet.
+2.2	⚠️	Body sheets named ZhulBase_*.png but defs likely still use Graphic_Multi	Bodies listed without suffixes 
+Either rename files to _south.png & provide north/east copies or change <graphicClass> to Graphic_Single / your Graphic_Atlas.
+2.3	⚠️	No mask PNGs for head overlays	Textures ▸ Humanlike ▸ FacialHair shows only coloured moustache 
+Export 64 × 64 B/W mask PNGs and add <maskTex> in each <HeadOverlayDef>.
+2.4	💡	Textures/Things/Item/Zhul/ is empty	DirList shows folder created but no icons inside 
+Add item icons or delete folder to save space.
+
+3 — XML Definitions
+#	Severity	Issue	Evidence	Fix
+3.1	❌	GraphicDefs folder exists but contains no files	Folder shown empty 
+Fill with GraphicData overrides (or delete folder).
+3.2	❌	HeadTypeDef file lacks <linkFlags> to keep heads race-locked	ZhulHeads.xml path present but not flag file; typical oversight 
+Add <linkFlags><li>ZHUL_ONLY</li></linkFlags> and reference it in RaceDef.
+3.3	⚠️	Duplicate Hediff <defName> still probable (ZT_TerrorAura, etc.)	Hediff file present; nothing indicates rename 
+Run XML validator or dev-mode ▸ Tools ▸ validate to catch duplicates; rename or merge.
+3.4	⚠️	GraphicDefs, ThingDefs, WorkGiverDefs… folders exist but empty	DirList shows headings but no files underneath 
+Remove empty sub-folders (safe) or populate them.
+3.5	⚠️	Missing ThingDef for Moustache Oil / Sacrificial Dagger	Textures folder hints at items but ThingDefs empty 
+Add minimal Drug / Weapon defs or delete the textures.
+3.6	💡	About.xml has Preview & Icon (nice) but still missing <supportedContent>	About folder lists Icon & Preview only 
+Add <supportedContent> (Ideology, Biotech) if xenotype/precepts required.
+
+4 — C# / Assemblies
+#	Severity	Issue	Evidence	Fix
+4.1	❌	Reflection field in Graphic_Atlas likely still fetched per tick	DLL rebuilt but no source check possible	Cache with static readonly FieldInfo to stop per-pawn reflection.
+4.2	⚠️	ModSettings_Zhul may still serialise removed fields	Settings XML exists 
+Ensure only active fields are exposed; test by toggling mod settings in-game.
+
+5 — Sounds
+#	Severity	Issue	Evidence	Fix
+5.1	⚠️	All audio files are .wav (large) not OGG	Sounds folder shows .wav only 
+Re-encode to OGG 128 kbps mono; update <subSounds> to point to new paths.
+5.2	💡	No SubSound variations (pitch/volume randomisation)	—	Add SubSound entries with <pitchRange> / <volumeRange> for ambience diversity.
+
+6 — Languages & Strings
+#	Severity	Issue	Evidence	Fix
+6.1	⚠️	Keyed folder has only three files (Recruitment, Settings, Names)	Languages ▸ Keyed listing 
+Move hard-coded English strings from defs into Keyed XML for translation safety.
+6.2	💡	No RulePack or name grammar for Zhul settlements	—	Add GrammarRulePackDef so world-gen names aren’t generic.
+
+7 — Big & Small Interop
+#	Severity	Issue	Evidence	Fix
+7.1	❌	ZhulBigSmallExt.xml exists but bodies still missing north/east textures	BigSmallDefs present 
+Textures rule still applies (see 2.1).
+7.2	⚠️	No [HarmonyAfter("harmony.bigsmall.core")] attribute detected	—	Add to main patch class to avoid draw-order race.
+
+8 — Gameplay & Balance
+#	Severity	Issue	Evidence	Fix
+8.1	⚠️	ZhulAdvancedStats.xml may buff carry weight with no downside	StatDefs file present 
+Re-balance: add work speed or hunger negatives.
+8.2	⚠️	Ritual incidents present but no QuestScript triggers	Incidents XML present; QuestScript folder exists but may be empty 
+Hook incidents to storyteller or quests so rituals actually fire.
+
+9 — Housekeeping / Misc.
+#	Severity	Issue	Evidence	Fix
+9.1	💡	Preview.png present (good) but is 2 MB	About listing 
+Resize to 640×360 ≤ 200 KB for faster Workshop page loads.

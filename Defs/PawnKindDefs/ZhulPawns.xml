@@ -60,14 +60,7 @@
             </li>
         </forcedTraits>
 
-        <alternateGraphics>
-            <li>
-                <graphicClass>ZhulTribe.Graphics.Graphic_Atlas</graphicClass>
-                <texPath>Zhul/ZhulSheet</texPath>
-                <atlasIndex>1</atlasIndex>
-                <drawSize>(1.0, 1.0)</drawSize>
-            </li>
-        </alternateGraphics>
+
     </PawnKindDef>
 
     <!-- Spirit Eater - Elite shaman warrior -->
@@ -137,14 +130,7 @@
                 <def>ZHUL_Cannibal</def>
             </li>
         </forcedTraits>
-        <alternateGraphics>
-            <li>
-                <graphicClass>ZhulTribe.Graphics.Graphic_Atlas</graphicClass>
-                <texPath>Zhul/ZhulSheet</texPath>
-                <atlasIndex>2</atlasIndex>
-                <drawSize>(1.0, 1.0)</drawSize>
-            </li>
-        </alternateGraphics>
+
     </PawnKindDef>
 
     <!-- Bone Chief - Faction leader -->

@@ -1,0 +1,5 @@
+/home/runner/workspace/Assemblies/ZhulTribe.dll
+/home/runner/workspace/Source/ZhulTribe/obj/Debug/ZhulTribe.csproj.AssemblyReference.cache
+/home/runner/workspace/Source/ZhulTribe/obj/Debug/ZhulTribe.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/workspace/Source/ZhulTribe/obj/Debug/ZhulTribe.csproj.CoreCompileInputs.cache
+/home/runner/workspace/Source/ZhulTribe/obj/Debug/ZhulTribe.dll

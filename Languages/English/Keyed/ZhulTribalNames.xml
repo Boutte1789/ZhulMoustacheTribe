@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <!-- Zhul Tribal Names and Titles -->
+    <ZhulChiefTitle>Bone-Chief Warden</ZhulChiefTitle>
+    <ZhulWarriorTitle>Curled Warrior</ZhulWarriorTitle>
+    <ZhulShamanTitle>Moustache Keeper</ZhulShamanTitle>
+    
+    <!-- Zhul Settlement Names -->
+    <ZhulSettlementName1>Whisker's End</ZhulSettlementName1>
+    <ZhulSettlementName2>Bone Grinding Grounds</ZhulSettlementName2>
+    <ZhulSettlementName3>Sacred Curl Sanctuary</ZhulSettlementName3>
+    <ZhulSettlementName4>Ancient Hair Haven</ZhulSettlementName4>
+    
+    <!-- Zhul Cultural Terms -->
+    <ZhulAncestorSpirit>Curled Ancestor</ZhulAncestorSpirit>
+    <ZhulSacredRitual>Sacred Grooming</ZhulSacredRitual>
+    <ZhulTribalWisdom>Ancient Moustache Lore</ZhulTribalWisdom>
+</LanguageData>

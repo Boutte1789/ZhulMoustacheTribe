@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <!-- Zhul Recruitment Messages -->
+    <ZhulRecruitmentSuccess>The warrior {0} has joined our tribe, bringing ancient knowledge of bone crafting and ritual combat.</ZhulRecruitmentSuccess>
+    <ZhulRecruitmentFailure>{0} refuses to abandon their weak ways and join the Curled Ones.</ZhulRecruitmentFailure>
+    
+    <!-- Zhul Faction Messages -->
+    <ZhulFactionGoodwill>The Zhul tribe respects your strength in battle.</ZhulFactionGoodwill>
+    <ZhulFactionHostile>The Curled Ones sharpen their blades against you.</ZhulFactionHostile>
+    
+    <!-- Zhul Ritual Messages -->
+    <ZhulRitualBegin>The sacred moustache grooming ritual begins...</ZhulRitualBegin>
+    <ZhulRitualComplete>The ancestors smile upon our dedication to the ancient ways.</ZhulRitualComplete>
+    
+    <!-- Zhul Combat Messages -->
+    <ZhulWarCry>The Curled Ones unleash their terrifying battle cry!</ZhulWarCry>
+    <ZhulVictory>Another enemy falls before the might of the Zhul warriors.</ZhulVictory>
+</LanguageData>

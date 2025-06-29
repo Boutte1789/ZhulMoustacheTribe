@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <!-- Zhul Mod Settings -->
+    <ZhulSettingsTitle>ZhulTribe - The Curled Ones Settings</ZhulSettingsTitle>
+    <ZhulMoustacheSpawnRate>Moustache Spawn Rate for Males</ZhulMoustacheSpawnRate>
+    <ZhulMoustacheSpawnRateDesc>Percentage chance for male Zhul to spawn with mandatory moustaches (default: 100%)</ZhulMoustacheSpawnRateDesc>
+    
+    <ZhulRitualFrequency>Ritual Frequency</ZhulRitualFrequency>
+    <ZhulRitualFrequencyDesc>How often Zhul tribes perform sacred grooming and cannibal feast rituals</ZhulRitualFrequencyDesc>
+    
+    <ZhulCombatBonus>Combat Effectiveness</ZhulCombatBonus>
+    <ZhulCombatBonusDesc>Bonus combat stats for Zhul warriors in tribal melee combat</ZhulCombatBonusDesc>
+    
+    <!-- Settings Values -->
+    <ZhulSettingLow>Low</ZhulSettingLow>
+    <ZhulSettingNormal>Normal</ZhulSettingNormal>
+    <ZhulSettingHigh>High</ZhulSettingHigh>
+    <ZhulSettingExtreme>Extreme</ZhulSettingExtreme>
+</LanguageData>

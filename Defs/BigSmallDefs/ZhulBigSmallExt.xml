@@ -29,11 +29,11 @@
                     
                     <!-- Body type specific paths -->
                     <bodyTypePaths>
-                      <Male>Zhul/ZhulBase_bp_male</Male>
-                      <Female>Zhul/ZhulBase_bp_female</Female>
-                      <Fat>Zhul/ZhulBase_bp_fat</Fat>
-                      <Hulk>Zhul/ZhulBase_bp_hulk</Hulk>
-                      <Thin>Zhul/ZhulBase_bp_thin</Thin>
+                      <Male>Zhul/ZhulBase_m</Male>
+                      <Female>Zhul/ZhulBase_f</Female>
+                      <Fat>Zhul/ZhulBase_fat</Fat>
+                      <Hulk>Zhul/ZhulBase_hulk</Hulk>
+                      <Thin>Zhul/ZhulBase_thin</Thin>
                     </bodyTypePaths>
                     
                     <!-- Scale multipliers for each body type -->

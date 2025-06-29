@@ -64,6 +64,8 @@ This is a RimWorld mod that introduces the Zhul tribe, a unique cannibal-worship
 
 ### Required
 - **Harmony Framework**: Essential for C# code patching and mod functionality
+- **Big and Small - Framework**: Required for body type scaling and framework features
+- **JecsTools**: Provides advanced modding components for abilities and enhanced gameplay
 - **RimWorld Base Game**: Version 1.4 or 1.5
 
 ### Optional

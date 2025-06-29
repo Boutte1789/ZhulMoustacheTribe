@@ -43,8 +43,9 @@ ZhulTribe is a .NET Framework 4.7.2 mod for RimWorld featuring the Zhul tribe - 
 - **Trait Fixes**: Removed invalid requiredGender elements from trait definitions
 - **Quest Fixes**: Replaced missing custom items with base game equivalents for quest rewards
 - **Body Type System**: Added fat body sprite with full body type variation support at 2048×2048px resolution
-- **Forced Facial Hair System**: Added Harmony patch to automatically give brown curly moustaches to all male Zhul pawns
+- **Forced Facial Hair System**: Added Harmony 2.3.6 patch to automatically give brown curly moustaches to all male Zhul pawns
 - **Custom BeardDef**: Created Zhul-specific curly moustache based on vanilla Handlebar style
+- **HAR Compatibility**: Fully compatible with Humanoid Alien Races framework and other alien race mods
 - **Build Status**: Clean compilation with 0 warnings, 0 errors
 
 ## User Preferences

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "59oio5ZxHIc=",
+  "dgSpecHash": "nJ65DVf6IDo=",
   "success": true,
   "projectFilePath": "/home/runner/workspace/Source/ZhulTribe/ZhulTribe.csproj",
   "expectedPackageFiles": [
     "/home/runner/.nuget/packages/krafs.rimworld.ref/1.4.3641/krafs.rimworld.ref.1.4.3641.nupkg.sha512",
+    "/home/runner/.nuget/packages/lib.harmony/2.3.6/lib.harmony.2.3.6.nupkg.sha512",
     "/home/runner/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.3/microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
     "/home/runner/.nuget/packages/microsoft.netframework.referenceassemblies.net472/1.0.3/microsoft.netframework.referenceassemblies.net472.1.0.3.nupkg.sha512"
   ],

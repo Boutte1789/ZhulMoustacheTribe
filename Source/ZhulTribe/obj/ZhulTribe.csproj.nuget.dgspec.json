@@ -47,6 +47,10 @@
               "target": "Package",
               "version": "[1.4.3641, )"
             },
+            "Lib.Harmony": {
+              "target": "Package",
+              "version": "[2.3.6, )"
+            },
             "Microsoft.NETFramework.ReferenceAssemblies": {
               "suppressParent": "All",
               "target": "Package",

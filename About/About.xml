@@ -28,9 +28,9 @@ The Zhul believe they sprang from a cosmic moustache-shaped comet and maintain t
         </li>
 
         <li>
-            <packageId>RedMattis.BigSmall.Framework</packageId>
+            <packageId>RedMattis.BigAndSmallFramework</packageId>
             <displayName>Big and Small - Framework</displayName>
-            <steamWorkshopUrl>steam://url/CommunityFilePage/2983094509</steamWorkshopUrl>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2925432336</steamWorkshopUrl>
         </li>
     </modDependencies>
     <loadAfter>
@@ -41,6 +41,6 @@ The Zhul believe they sprang from a cosmic moustache-shaped comet and maintain t
         <li>Ludeon.RimWorld.Anomaly</li>
         <li>Ludeon.RimWorld.Odyssey</li>
         <li>brrainz.harmony</li>
-        <li>RedMattis.BigSmall.Framework</li>
+        <li>RedMattis.BigAndSmallFramework</li>
     </loadAfter>
 </ModMetaData>

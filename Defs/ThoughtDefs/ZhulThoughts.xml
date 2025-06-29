@@ -21,13 +21,13 @@
   <ThoughtDef>
     <defName>ZT_MoustachePride</defName>
     <thoughtClass>Thought_Memory</thoughtClass>
-    <durationDays>7</durationDays>
+    <durationDays>1</durationDays>
     <stackLimit>1</stackLimit>
     <stages>
       <li>
         <label>magnificent moustache</label>
         <description>My moustache is a work of art, a testament to generations of grooming mastery. I can feel the ancestral spirits dancing in its spirals.</description>
-        <baseMoodEffect>12</baseMoodEffect>
+        <baseMoodEffect>6</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>

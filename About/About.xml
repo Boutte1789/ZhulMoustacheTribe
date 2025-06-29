@@ -31,6 +31,13 @@ The Zhul believe they sprang from a cosmic moustache-shaped comet and maintain t
     
     <incompatibleWith />
     
+    <modVersion>1.0.0</modVersion>
+    <supportedContent>
+        <li>Royalty</li>
+        <li>Ideology</li>
+        <li>Biotech</li>
+        <li>Anomaly</li>
+    </supportedContent>
     <loadAfter>
         <li>Ludeon.RimWorld</li>
         <li>Ludeon.RimWorld.Royalty</li>

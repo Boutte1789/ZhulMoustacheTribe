@@ -60,6 +60,11 @@
             <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
             <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
             <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+            <soundCallInteractionFriendly>Pawn_Call_Friendly</soundCallInteractionFriendly>
+            <soundCallInteractionHostile>Pawn_Call_Hostile</soundCallInteractionHostile>
+            <soundDeath>Pawn_Death_Human</soundDeath>
+            <soundInjured>Pawn_Injured_Human</soundInjured>
+            <soundAngry>Pawn_Angry_Human</soundAngry>
             <specialShadowData>
                 <volume>(0.3, 0.8, 0.4)</volume>
                 <offset>(0,0,-0.3)</offset>
@@ -88,6 +93,9 @@
                     <li>ZHUL_Female_Narrow</li>
                 </Female>
             </headTypesForGender>
+            <headTypeLinkFlags>
+                <li>ZHUL_ONLY</li>
+            </headTypeLinkFlags>
         </race>
         <recipes>
             <li>ExciseCarcinoma</li>
@@ -98,7 +106,7 @@
         </recipes>
         <statBases>
             <MarketValue>1800</MarketValue>
-            <MoveSpeed>4.6</MoveSpeed>
+            <MoveSpeed>3.9</MoveSpeed>
             <Flammability>1.0</Flammability>
             <ComfyTemperatureMin>12</ComfyTemperatureMin>
             <ComfyTemperatureMax>32</ComfyTemperatureMax>

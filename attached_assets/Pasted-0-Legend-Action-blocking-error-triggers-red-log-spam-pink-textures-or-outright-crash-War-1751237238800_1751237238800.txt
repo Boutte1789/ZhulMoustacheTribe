@@ -1,0 +1,83 @@
+0. Legend
+❌ Action-blocking error – triggers red log spam, pink textures, or outright crash.
+
+⚠️ Warning – doesn’t crash, but breaks immersion or future compatibility.
+
+💡 Enhancement – quality-of-life or performance improvement; optional.
+
+1 — Packaging / Distribution
+#	Severity	Issue	Fix/Recommendation
+1.1	⚠️	0Harmony.dll still bundled	Remove; rely on Steam Harmony 2 mod.
+1.2	⚠️	Non-mod folders (.git/, Replit, raw C#) present	Strip to About, Defs, Assemblies, Textures, Sounds, Languages only.
+1.3	⚠️	Release ZIP includes obj/, bin/ and .pdb	Only ship the final DLL; omit build artefacts / symbols.
+1.4	💡	No preview.png for Steam	Add a 640×360 preview so users recognise the mod.
+1.5	💡	No LoadFolders.xml (for modpackders)	Add if you want XML copied into save-game export pipelines.
+
+2 — Textures & Graphics
+#	Severity	Issue	Explanation & Fix
+2.1	❌	North textures still missing for bodies & moustache overlays	B&S does not auto-invent north; duplicate south as north and reference via <texPathNorth> / <northPath>.
+2.2	❌	Head overlays only declare <southPath>	Add <northPath> and <eastPath> (west auto-mirrors) or overlays vanish when pawn turns.
+2.3	❌	SVG files remain in Textures/	Convert to PNG or delete to avoid pink icons.
+2.4	⚠️	Body sheets use Graphic_Multi but filenames do not end in _south	Either add suffixes (_south.png) or switch <graphicClass> to Graphic_Single/your Graphic_Atlas.
+2.5	⚠️	No mask PNGs for head overlays	RimWorld expects <maskTex>; supply B/W masks or moustache bleeds over helmets.
+2.6	💡	Texture dimensions vary (some 2 048², others 1 024²)	Stick to one power-of-two size per category to maximise B&S scaling quality.
+
+3 — XML Definitions
+#	Severity	Issue	Fix
+3.1	❌	Duplicate <defName> ZT_TerrorAura in two Hediff files	Rename one or merge files.
+3.2	❌	Missing ThingDef for Moustache Oil & Sacrificial Dagger (textures exist)	Create minimal Drug / Weapon ThingDefs & add to loot tables.
+3.3	❌	HeadTypeDef lacks unique <linkFlags>	Add <linkFlags><li>ZHUL_ONLY</li></linkFlags> and reference same flag in RaceDef so vanilla pawns don’t get Zhul heads.
+3.4	⚠️	About.xml missing <supportedContent> for Ideology / Biotech	Add if you use precepts, genes, xenotypes.
+3.5	⚠️	About.xml <modVersion> not bumped since March build	Increment when defs or DLL change to force cache purge.
+3.6	⚠️	PawnKindDef idle job list references Joy_XT_BloodDrum (absent)	Add that joy activity Def or remove reference.
+3.7	⚠️	Missing RecipeDef for “Harvest Curly Moustache” gene/item	Stub recipe so quests don’t error.
+3.8	💡	No ResearchProjectDef for Sacrificial weapons	Gate tech behind a short Neolithic research to improve balance.
+3.9	💡	No Keyed translation entries	Add Keyed/Zhul.xml to avoid MissingTranslation errors when you localise.
+3.10	💡	No Faction Icon path (<factionIconPath>)	Supply 128² PNG for the faction dialog.
+
+4 — C# / Harmony
+#	Severity	Issue	Fix
+4.1	❌	Graphic_Atlas reflection field resolved per tick	Cache FieldInfo in static readonly var.
+4.2	❌	ModSettings_Zhul serialises removed field enableRitualFeasts	Delete field & associated Look().
+4.3	⚠️	No [HarmonyAfter("harmony.bigsmall.core")] attribute	Add to main patch class to avoid order conflicts.
+4.4	⚠️	JobDriver_RitualFeast searches entire map each tick	Throttle with a TickRare frequency or memoise corpse list.
+4.5	💡	No DefOf wrappers	Generate DefOf static classes for ThingDefs to avoid heavy DefDatabase.GetNamed calls every tick.
+4.6	💡	No AssemblyVersion attribute	Add [assembly: AssemblyVersion("0.2.0.0")] for easier player bug reports.
+
+5 — Sounds
+#	Severity	Issue	Fix
+5.1	⚠️	Sounds/ZT_Chant.ogg > 1 MB, mono 22050 Hz	Re-encode to OGG Vorbis 128 kbps mono to cut size.
+5.2	⚠️	SoundDef volume set to 2.0	Cap at ≤1.0 to respect user volume sliders.
+5.3	💡	No SubSounds for pawns	Add chitter / grunt SubSounds tied to custom VoiceDef for immersion.
+
+6 — Localization / Grammar
+#	Severity	Issue	Fix
+6.1	⚠️	No GrammarResolver rules for Zhul names	Add Rules/Zhul_Names.xml to avoid “Zhul_tribe_leader” fallback.
+6.2	💡	Ideology precepts use hard-coded English strings	Move to Keyed entries for ease of translation.
+6.3	💡	No pluralisation rules for “moustache”	Add moustaches key so RimWorld’s plural inflector doesn’t guess.
+
+7 — Big & Small Interoperability
+#	Severity	Issue	Fix
+7.1	❌	Pawn render patch runs before B&S	Use [HarmonyAfter] to ensure scaling is applied first.
+7.2	⚠️	alternateGraphics added at runtime do not pass through B&S patch	Wrap alternate graphics retrieval with BigSmallApi.ScaleGraphicIfNeeded(graphic, pawn).
+7.3	💡	No explicit bodySize gene	Add optional Biotech gene stages that map to Tiny / Huge; B&S auto-scales.
+
+8 — Gameplay / Balance
+#	Severity	Issue	Fix
+8.1	⚠️	Faction carry weight doubled via statOffsets but no negative trade-off	Consider –15% global learning or slower work speed for balancing.
+8.2	⚠️	Intimidating Moustache thought gives +12 mood, stacks infinitely	Cap at +6 and restrict to once per day via durationDays.
+8.3	💡	No TechPrint or quest reward to introduce Zhul tech	Add rare quest that drops Sacrificial Dagger blueprint.
+8.4	💡	Ritual Feast incident uses vanilla letter; create custom letterDef with unique colour/icon.	
+
+9 — Save/Load & Compatibility
+#	Severity	Issue	Fix
+9.1	⚠️	Disabling mod corrupts saves (null Hediff Class)	Guard with ConditionalWeakTable or handle missing defs in WorldComponent.FinalizeInit().
+9.2	💡	No BackCompatibility patches for old defNames	Add <BackCompatibility> section if you rename defs in the future.
+9.3	💡	No explicit Combat Extended patch	If you plan CE support, supply projectile and armour stats patch.
+9.4	💡	Pre-1.5 XML schemas	Ensure all defs use current RimWorld 1.5 nodes (drawSize → graphicData.drawSizeInt).
+
+10 — Testing & QA Scripts
+#	Severity	Issue	Fix
+10.1	💡	No automated dev-mode test scenario	Ship a scenario that spawns 10 Zhul of each body size for quick rotation test.
+10.2	💡	No Unit Tests using RimThreaded test harness	Optional but recommended to catch duplicate def names and null pointers.
+10.3	💡	README lacks “known incompatibilities” section	Document Big & Small requirement, incompatible camera mods, etc.

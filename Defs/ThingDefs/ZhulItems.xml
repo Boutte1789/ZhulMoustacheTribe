@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- Moustache Oil - Grooming Item -->
+    <ThingDef ParentName="DrugBase">
+        <defName>ZT_MoustacheOil</defName>
+        <label>moustache oil</label>
+        <description>A sacred grooming oil made from jungle orchids and bone marrow. Zhul warriors use this to maintain their elaborate facial hair, believing it strengthens their connection to ancestral spirits.</description>
+        <descriptionHyperlinks>
+            <HediffDef>ZT_MoustacheOilHigh</HediffDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Drug/Ambrosia</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>600</WorkToMake>
+            <MarketValue>35</MarketValue>
+            <Mass>0.1</Mass>
+        </statBases>
+        <techLevel>Neolithic</techLevel>
+        <ingestible>
+            <drugCategory>Social</drugCategory>
+            <foodType>Processed</foodType>
+            <joyKind>Chemical</joyKind>
+            <joy>0.40</joy>
+            <nurseable>true</nurseable>
+            <baseIngestTicks>120</baseIngestTicks>
+            <ingestSound>Ingest_Smoke</ingestSound>
+            <ingestEffect>Smoke_Joint</ingestEffect>
+            <ingestEffectEater>Smoke_Joint</ingestEffectEater>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>ZT_MoustacheOilHigh</hediffDef>
+                    <severity>0.75</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <listOrder>200</listOrder>
+                <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Sacrificial Dagger - Ritual Weapon -->
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <defName>ZT_SacrificialDagger</defName>
+        <label>sacrificial dagger</label>
+        <description>A ceremonial bone dagger carved with intricate spiral patterns. Used in Zhul tribal rituals, this weapon is both a tool of sacrifice and a symbol of spiritual authority.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/Knife</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.3</uiIconScale>
+        <techLevel>Neolithic</techLevel>
+        <weaponTags>
+            <li>NeolithicMeleeBasic</li>
+            <li>ZhulTribal</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>Melee</li>
+        </weaponClasses>
+        <costStuffCount>40</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+            <li>Stony</li>
+        </stuffCategories>
+        <statBases>
+            <WorkToMake>3000</WorkToMake>
+            <Mass>0.6</Mass>
+        </statBases>
+        <equippedStatOffsets>
+            <MeleeCriticalChance>0.10</MeleeCriticalChance>
+        </equippedStatOffsets>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2.0</cooldownTime>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>2.0</cooldownTime>
+                <armorPenetration>0.22</armorPenetration>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>12</power>
+                <cooldownTime>2.0</cooldownTime>
+                <armorPenetration>0.18</armorPenetration>
+            </li>
+        </tools>
+    </ThingDef>
+</Defs>

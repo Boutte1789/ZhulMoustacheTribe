@@ -184,7 +184,7 @@
 
   <!-- Terror Aura Trait -->
   <TraitDef>
-    <defName>ZT_TerrorAura</defName>
+    <defName>ZT_TerrorAuraTrait</defName>
     <commonality>0.1</commonality>
     <degreeDatas>
       <li>

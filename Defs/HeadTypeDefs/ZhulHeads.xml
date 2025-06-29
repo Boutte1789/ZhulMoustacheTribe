@@ -7,6 +7,9 @@
         <graphicPath>Things/Pawn/Humanlike/Heads/Zhul/Female_Average</graphicPath>
         <gender>Female</gender>
         <selectionWeight>100</selectionWeight>
+        <linkFlags>
+            <li>ZHUL_ONLY</li>
+        </linkFlags>
     </HeadTypeDef>
     
     <HeadTypeDef>
@@ -15,6 +18,9 @@
         <graphicPath>Things/Pawn/Humanlike/Heads/Zhul/Female_Narrow</graphicPath>
         <gender>Female</gender>
         <selectionWeight>100</selectionWeight>
+        <linkFlags>
+            <li>ZHUL_ONLY</li>
+        </linkFlags>
     </HeadTypeDef>
 
     <!-- Zhul Male Head Types (Clean for facial hair overlay) -->
@@ -24,6 +30,9 @@
         <graphicPath>Things/Pawn/Humanlike/Heads/Zhul/Male_Average</graphicPath>
         <gender>Male</gender>
         <selectionWeight>100</selectionWeight>
+        <linkFlags>
+            <li>ZHUL_ONLY</li>
+        </linkFlags>
     </HeadTypeDef>
     
     <HeadTypeDef>
@@ -32,5 +41,8 @@
         <graphicPath>Things/Pawn/Humanlike/Heads/Zhul/Male_Narrow</graphicPath>
         <gender>Male</gender>
         <selectionWeight>100</selectionWeight>
+        <linkFlags>
+            <li>ZHUL_ONLY</li>
+        </linkFlags>
     </HeadTypeDef>
 </Defs>

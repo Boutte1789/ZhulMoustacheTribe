@@ -235,4 +235,30 @@
     </comps>
   </HediffDef>
 
+  <!-- Moustache Oil High -->
+  <HediffDef ParentName="DrugHediffBase">
+    <defName>ZT_MoustacheOilHigh</defName>
+    <label>moustache oil</label>
+    <description>Sacred grooming oil coursing through the body. Enhances spiritual connection and social presence.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.54, 0.78, 0.64)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.5</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <SocialImpact>0.25</SocialImpact>
+          <NegotiationAbility>0.15</NegotiationAbility>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
 </Defs>

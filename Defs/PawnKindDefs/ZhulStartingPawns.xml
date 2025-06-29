@@ -218,7 +218,7 @@
         <chance>1.0</chance>
       </li>
       <li>
-        <def>ZT_TerrorAura</def>
+        <def>ZT_TerrorAuraTrait</def>
         <chance>0.7</chance>
       </li>
       <li>

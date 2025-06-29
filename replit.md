@@ -39,8 +39,9 @@ ZhulTribe is a .NET Framework 4.7.2 mod for RimWorld featuring the Zhul tribe - 
 - **Framework Fix**: Changed from netstandard2.0 to net472 to resolve RimWorld compatibility
 - **Texture Cleanup**: Disabled 10+ XML files with missing texture references
 - **Race Graphics**: Updated to use base game textures (Things/Pawn/Humanlike/Bodies/Naked)
-- **Build Status**: Clean compilation with 0 warnings, 0 errors
 - **XML Validation**: Removed unsupported modOptionalDependencies element
+- **Trait Fixes**: Removed invalid requiredGender elements from trait definitions
+- **Build Status**: Clean compilation with 0 warnings, 0 errors
 
 ## User Preferences
 ```

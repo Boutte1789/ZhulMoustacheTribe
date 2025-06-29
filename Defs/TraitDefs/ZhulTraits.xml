@@ -42,7 +42,7 @@
                 </statOffsets>
             </li>
         </degreeDatas>
-        <requiredGender>Male</requiredGender>
+
     </TraitDef>
 
     <TraitDef>
@@ -62,6 +62,6 @@
                 </statOffsets>
             </li>
         </degreeDatas>
-        <requiredGender>Female</requiredGender>
+
     </TraitDef>
 </Defs>

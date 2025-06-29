@@ -5,11 +5,11 @@ namespace ZhulTribe
 {
     public class ZhulTribeMod : Mod
     {
-        public static ModSettings_Zhul settings;
+        public static ZhulTribeSettings settings;
 
         public ZhulTribeMod(ModContentPack content) : base(content)
         {
-            settings = GetSettings<ModSettings_Zhul>();
+            settings = GetSettings<ZhulTribeSettings>();
         }
 
         public override void DoSettingsWindowContents(Rect inRect)

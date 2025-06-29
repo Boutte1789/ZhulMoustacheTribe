@@ -1,9 +1,9 @@
 using UnityEngine;
 using Verse;
 
-namespace ZhulTribe.Settings
+namespace ZhulTribe
 {
-    public class ModSettings_Zhul : ModSettings
+    public class ZhulTribeSettings : ModSettings
     {
         // Settings fields
         public float ritualFrequency = 1.0f;
@@ -32,7 +32,7 @@ namespace ZhulTribe.Settings
             base.ExposeData();
         }
 
-        public override void DoSettingsWindowContents(Rect inRect)
+        public void DoSettingsWindowContents(Rect inRect)
         {
             var listing = new Listing_Standard();
             listing.Begin(inRect);

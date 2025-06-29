@@ -17,7 +17,7 @@
         <selectionWeight>100</selectionWeight>
     </HeadTypeDef>
 
-    <!-- Zhul Male Head Types (Original with built-in moustaches) -->
+    <!-- Zhul Male Head Types (Clean for facial hair overlay) -->
     <HeadTypeDef>
         <defName>ZHUL_Male_Average</defName>
         <label>Zhul male average</label>

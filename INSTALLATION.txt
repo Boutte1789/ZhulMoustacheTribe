@@ -25,8 +25,8 @@ OPTIONAL COMPATIBILITY:
 
 FEATURES:
 - Custom Zhul alien race with olive-gray skin
-- Male pawns: Built-in curly moustaches
-- Female pawns: Bone-ash tattoo markings
+- Male pawns: Clean heads + REQUIRED curly moustaches (100% spawn rate)
+- Female pawns: Clean olive-gray base for bone-ash markings
 - Ultra-high resolution 2048px body sprites
 - Custom head variations (Average/Narrow for both genders)
 - Cannibal faction with unique traits and behaviors

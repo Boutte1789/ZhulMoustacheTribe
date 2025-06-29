@@ -36,4 +36,12 @@
     <headOffset>(0.0, 0.0)</headOffset>
   </BodyTypeDef>
 
+  <BodyTypeDef>
+    <defName>ZHUL_Female</defName>
+    <label>female</label>
+    <bodyNakedGraphicPath>Zhul/ZhulBase_f</bodyNakedGraphicPath>
+    <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated_Thin</bodyDessicatedGraphicPath>
+    <headOffset>(0.0, 0.0)</headOffset>
+  </BodyTypeDef>
+
 </Defs>

@@ -7,6 +7,7 @@ PACKAGE CONTENTS:
 - About/: Mod metadata, Steam Workshop preview images
 - Assemblies/: Compiled mod DLL with Harmony integration  
 - Defs/: 28 XML definition files covering all game systems
+- Sounds/: 18 authentic tribal audio files (war cries, drums, chants, rituals)
 - Textures/: 11 PNG files including ultra-high-res body sprites and head overlays
 - README.txt: This file
 

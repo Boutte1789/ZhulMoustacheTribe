@@ -1,23 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "/RlteqflprQ=",
+  "dgSpecHash": "59oio5ZxHIc=",
   "success": true,
   "projectFilePath": "/home/runner/workspace/Source/ZhulTribe/ZhulTribe.csproj",
   "expectedPackageFiles": [
     "/home/runner/.nuget/packages/krafs.rimworld.ref/1.4.3641/krafs.rimworld.ref.1.4.3641.nupkg.sha512",
-    "/home/runner/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "/home/runner/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+    "/home/runner/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.3/microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "/home/runner/.nuget/packages/microsoft.netframework.referenceassemblies.net472/1.0.3/microsoft.netframework.referenceassemblies.net472.1.0.3.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Krafs.Rimworld.Ref 1.4.3641' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Krafs.Rimworld.Ref",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    }
-  ]
+  "logs": []
 }

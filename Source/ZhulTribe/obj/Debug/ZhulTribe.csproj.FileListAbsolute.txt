@@ -1,4 +1,3 @@
-/home/runner/workspace/Assemblies/ZhulTribe.deps.json
 /home/runner/workspace/Assemblies/ZhulTribe.dll
 /home/runner/workspace/Source/ZhulTribe/obj/Debug/ZhulTribe.csproj.AssemblyReference.cache
 /home/runner/workspace/Source/ZhulTribe/obj/Debug/ZhulTribe.GeneratedMSBuildEditorConfig.editorconfig

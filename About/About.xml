@@ -30,13 +30,6 @@ The Zhul believe they sprang from a cosmic moustache-shaped comet and maintain t
     
     <incompatibleWith />
     
-    <modOptionalDependencies>
-        <li>
-            <packageId>RedMattis.BigAndSmallFramework</packageId>
-            <displayName>Big and Small - Framework</displayName>
-            <steamWorkshopUrl>steam://url/CommunityFilePage/2925432336</steamWorkshopUrl>
-        </li>
-    </modOptionalDependencies>
     <loadAfter>
         <li>Ludeon.RimWorld</li>
         <li>Ludeon.RimWorld.Royalty</li>

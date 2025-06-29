@@ -17,6 +17,7 @@ namespace ZhulTribe
         // Traits
         public static TraitDef ZHUL_Cannibal;
         public static TraitDef ZHUL_MoustacheRitual;
+        public static TraitDef ZHUL_FacialTattoos;
 
         // Things
         public static ThingDef ZHUL_MoustacheOil;

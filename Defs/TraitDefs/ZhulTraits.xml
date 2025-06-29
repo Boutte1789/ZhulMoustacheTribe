@@ -42,5 +42,26 @@
                 </statOffsets>
             </li>
         </degreeDatas>
+        <requiredGender>Male</requiredGender>
+    </TraitDef>
+
+    <TraitDef>
+        <defName>ZHUL_FacialTattoos</defName>
+        <commonality>0.4</commonality>
+        <label>bone tattoo keeper</label>
+        <description>[PAWN_nameDef] adorns [PAWN_possessive] face with intricate bone-ash tattoos that tell the stories of devoured enemies. Female Zhul use these markings to display their spiritual power and social status within the tribe.</description>
+        <degreeDatas>
+            <li>
+                <degree>0</degree>
+                <label>tattoo keeper</label>
+                <description>[PAWN_nameDef] adorns [PAWN_possessive] face with intricate bone-ash tattoos that tell the stories of devoured enemies. The markings display [PAWN_possessive] spiritual power and social status within the tribe.</description>
+                <statOffsets>
+                    <Beauty>1</Beauty>
+                    <SocialImpact>0.12</SocialImpact>
+                    <NegotiationAbility>0.1</NegotiationAbility>
+                </statOffsets>
+            </li>
+        </degreeDatas>
+        <requiredGender>Female</requiredGender>
     </TraitDef>
 </Defs>

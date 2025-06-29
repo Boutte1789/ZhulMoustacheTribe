@@ -59,6 +59,7 @@
                 <def>ZHUL_Cannibal</def>
             </li>
         </forcedTraits>
+
         <alternateGraphics>
             <li>
                 <graphicClass>ZhulTribe.Graphics.Graphic_Atlas</graphicClass>

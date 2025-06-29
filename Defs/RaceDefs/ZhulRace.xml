@@ -3,7 +3,7 @@
     <ThingDef ParentName="HumanlikeBase">
         <defName>ZHUL_AlienHumanoid</defName>
         <label>Zhul</label>
-        <description>A humanoid alien species with elongated skulls and olive-gray skin. Every adult sports an elaborate spiraling moustache that serves as a symbol of their spiritual power and social status within their cannibal-worshipping culture.</description>
+        <description>A humanoid alien species with elongated skulls and olive-gray skin. Adult males sport elaborate spiraling moustaches that serve as symbols of their spiritual power, while females adorn their faces with intricate bone-ash tattoos telling stories of devoured enemies. Both practices reflect their status within their cannibal-worshipping culture.</description>
         <graphicData>
             <graphicClass>Graphic_Multi</graphicClass>
             <texPath>Zhul/ZhulBase</texPath>

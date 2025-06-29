@@ -3,7 +3,7 @@
     <ThingDef ParentName="HumanlikeBase">
         <defName>ZHUL_AlienHumanoid</defName>
         <label>Zhul</label>
-        <description>A humanoid alien species with elongated skulls and olive-gray skin. Adult males sport elaborate spiraling moustaches that serve as symbols of their spiritual power, while females adorn their faces with intricate bone-ash tattoos telling stories of devoured enemies. Both practices reflect their status within their cannibal-worshipping culture.</description>
+        <description>A male-only humanoid alien warrior race with olive-gray skin. All adult members sport elaborate spiraling moustaches that serve as symbols of their spiritual power and status within their cannibal-worshipping culture. These warriors reproduce through mysterious tribal rituals.</description>
         <graphicData>
             <graphicClass>Graphic_Multi</graphicClass>
             <texPath>Zhul/ZhulBase</texPath>
@@ -23,6 +23,10 @@
             <baseHungerRate>1.1</baseHungerRate>
             <foodType>CarnivoreAnimal</foodType>
             <gestationPeriodDays>45</gestationPeriodDays>
+            <genderGenerationProbabilities>
+                <Male>1.0</Male>
+                <Female>0.0</Female>
+            </genderGenerationProbabilities>
             <meatMarketValue>0.8</meatMarketValue>
             <manhunterOnDamageChance>0.30</manhunterOnDamageChance>
             <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>

@@ -1,7 +1,7 @@
 # ZhulTribe - RimWorld Mod
 
 ## Overview
-ZhulTribe is a .NET Framework 4.7.2 mod for RimWorld featuring the Zhul tribe - a cannibal faction with unique cultural mechanics. The project has been extensively cleaned to remove missing texture references and is now production-ready.
+ZhulTribe is a .NET Framework 4.7.2 mod for RimWorld featuring the Zhul tribe - a male-only cannibal warrior faction with distinctive moustache culture. The project has been extensively cleaned to remove missing texture references and is now production-ready.
 
 ## System Architecture
 ### Technology Stack
@@ -43,6 +43,7 @@ ZhulTribe is a .NET Framework 4.7.2 mod for RimWorld featuring the Zhul tribe - 
 - **Trait Fixes**: Removed invalid requiredGender elements from trait definitions
 - **Quest Fixes**: Replaced missing custom items with base game equivalents for quest rewards
 - **Body Type System**: Added fat body sprite with full body type variation support at 2048×2048px resolution
+- **Male-Only Race**: Converted to male-only faction with forced moustache traits for all members
 - **Build Status**: Clean compilation with 0 warnings, 0 errors
 
 ## User Preferences

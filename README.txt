@@ -1,7 +1,14 @@
 ZHUL TRIBE MOD v1.0 - THE CURLED ONES
 =====================================
 
-This is a complete RimWorld mod ready for installation.
+READY FOR DOWNLOAD - Complete RimWorld mod package.
+
+PACKAGE CONTENTS:
+- About/: Mod metadata, Steam Workshop preview images
+- Assemblies/: Compiled mod DLL with Harmony integration  
+- Defs/: 28 XML definition files covering all game systems
+- Textures/: 11 PNG files including ultra-high-res body sprites and head overlays
+- README.txt: This file
 
 INSTALLATION:
 1. Copy this entire folder to your RimWorld/Mods/ directory

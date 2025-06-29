@@ -2,74 +2,79 @@
 
 ## Overview
 
-ZhulTribe is a .NET Standard 2.0 library designed as a mod for the RimWorld game. It leverages the Krafs.Rimworld.Ref package to interact with RimWorld's game systems and provides custom gameplay functionality. The project follows a standard C# class library structure with dependencies on RimWorld's modding framework.
+ZhulTribe is a C# mod for the RimWorld game built on the .NET Framework 4.7.2. This project is designed to extend RimWorld's functionality through custom code that integrates with the game's modding framework. The mod uses the official Krafs.Rimworld.Ref package to access RimWorld's APIs and Unity engine components.
 
 ## System Architecture
 
 ### Technology Stack
-- **Framework**: .NET Standard 2.0
-- **Primary Dependency**: Krafs.Rimworld.Ref (version 1.4.3641)
-- **Build System**: MSBuild with NuGet package management
-- **Target Platform**: RimWorld game mod system
+- **Language**: C# 
+- **Framework**: .NET Framework 4.7.2
+- **Game Engine**: Unity (via RimWorld)
+- **Build System**: MSBuild/.NET SDK
+- **Package Management**: NuGet
 
 ### Project Structure
-The project follows a typical C# library structure:
-- `Source/ZhulTribe/` - Main source code directory
-- `Assemblies/` - Compiled output directory containing the final DLL and dependencies
-- Build artifacts are managed through standard .NET tooling
+The project follows a standard .NET Framework class library structure:
+- Main source code located in `Source/ZhulTribe/`
+- Project configuration defined in `ZhulTribe.csproj`
+- NuGet package restoration handled automatically
+- Build artifacts generated in `obj/` directory
 
 ## Key Components
 
-### Core Library
-- **ZhulTribe.dll**: The main mod assembly containing custom game logic
-- **Target Framework**: .NET Standard 2.0 for compatibility with RimWorld's Unity-based runtime
-
 ### RimWorld Integration
-- **Krafs.Rimworld.Ref**: Provides reference assemblies for RimWorld's game systems
-- Includes Unity engine modules (Physics, Audio, Animation, etc.)
-- Provides access to RimWorld's core gameplay systems (Assembly-CSharp.dll)
+- **Krafs.Rimworld.Ref (v1.4.3641)**: Provides reference assemblies for RimWorld's core systems
+- Includes access to Assembly-CSharp.dll (main game logic)
+- Unity engine modules for graphics, audio, physics, and input systems
+- Game-specific libraries like TextMeshPro for UI rendering
+
+### Core Dependencies
+- **Game Engine Components**: Unity modules for rendering, physics, audio, and input
+- **System Libraries**: .NET Framework system assemblies for configuration, serialization, and XML processing
+- **Audio Support**: NAudio and NVorbis for sound processing
+- **Compression**: ISharpZipLib for file handling
 
 ## Data Flow
 
-1. **Compilation**: Source code is compiled into ZhulTribe.dll targeting .NET Standard 2.0
-2. **Packaging**: Compiled assembly is placed in the Assemblies directory alongside dependency metadata
-3. **Game Integration**: RimWorld loads the mod DLL at runtime and integrates custom functionality
-4. **Runtime Execution**: Mod code executes within RimWorld's Unity-based game engine
+1. **Mod Loading**: RimWorld loads the compiled mod assembly during game startup
+2. **Game Integration**: Mod hooks into RimWorld's event system and data structures
+3. **Runtime Execution**: Custom logic executes within RimWorld's game loop
+4. **Unity Rendering**: Visual elements rendered through Unity's graphics pipeline
 
 ## External Dependencies
 
 ### Primary Dependencies
-- **Krafs.Rimworld.Ref (1.4.3641)**: RimWorld modding framework providing game API access
-- **NETStandard.Library (2.0.3)**: Standard .NET library support
+- **Krafs.Rimworld.Ref**: Official RimWorld modding reference package
+- **Microsoft.NETFramework.ReferenceAssemblies**: .NET Framework development support
 
-### Unity Engine Dependencies
-The mod has access to numerous Unity engine modules through the RimWorld reference:
-- Core modules (CoreModule, IMGUIModule, InputModule)
-- Graphics modules (ParticleSystemModule, Physics2DModule)
-- Audio and animation systems
-- Platform-specific modules
+### Unity Engine Modules
+- Core engine functionality (CoreModule, IMGUIModule)
+- Graphics and rendering (ClusterRendererModule, ParticleSystemModule)
+- Audio processing (AudioModule via NAudio)
+- Physics simulation (PhysicsModule, Physics2DModule)
+- Input handling (InputModule, InputLegacyModule)
 
 ## Deployment Strategy
 
 ### Build Process
-1. **Restoration**: NuGet packages are restored to provide RimWorld API references
-2. **Compilation**: Source code is compiled against RimWorld assemblies
-3. **Output**: Compiled DLL is placed in the Assemblies directory for RimWorld to load
+- Standard .NET Framework compilation targeting net472
+- NuGet package restoration for dependencies
+- Output generates mod assembly for RimWorld integration
 
 ### Distribution
-- The mod is distributed as a directory structure containing the Assemblies folder
-- RimWorld automatically discovers and loads mods from its Mods directory
-- No additional installation steps required beyond copying to the game's mod folder
+- Compiled mod distributed as DLL assembly
+- Integrated into RimWorld's mod loading system
+- Compatible with RimWorld version 1.4.3641 and later
+
+### Installation
+- Users install mod through RimWorld's built-in mod manager
+- Mod files placed in RimWorld's Mods directory structure
+- Game automatically loads mod during startup
 
 ## Changelog
 
-```
-Changelog:
 - June 29, 2025. Initial setup
-```
 
 ## User Preferences
 
-```
 Preferred communication style: Simple, everyday language.
-```

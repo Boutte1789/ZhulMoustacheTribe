@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Advanced Stats System Like Popular Mods -->
+  
+  <!-- Ritual Efficiency -->
+  <StatDef>
+    <defName>ZT_RitualEfficiency</defName>
+    <label>ritual efficiency</label>
+    <description>How effectively this person performs Zhul tribal rituals. Higher values mean faster completion and better mood effects.</description>
+    <category>PawnCombat</category>
+    <defaultBaseValue>1.0</defaultBaseValue>
+    <minValue>0.1</minValue>
+    <maxValue>5.0</maxValue>
+    <toStringStyle>PercentZero</toStringStyle>
+    <skillNeedOffsets>
+      <li Class="SkillNeed_BaseBonus">
+        <skill>Social</skill>
+        <baseValue>0.5</baseValue>
+        <bonusPerLevel>0.05</bonusPerLevel>
+      </li>
+    </skillNeedOffsets>
+    <capacityOffsets>
+      <li>
+        <capacity>Consciousness</capacity>
+        <scale>0.8</scale>
+      </li>
+    </capacityOffsets>
+  </StatDef>
+
+  <!-- Terror Presence -->
+  <StatDef>
+    <defName>ZT_TerrorPresence</defName>
+    <label>terror presence</label>
+    <description>How intimidating this person appears to enemies. Higher values cause enemies to flee more often and reduce their accuracy when fighting.</description>
+    <category>PawnCombat</category>
+    <defaultBaseValue>1.0</defaultBaseValue>
+    <minValue>0.5</minValue>
+    <maxValue>3.0</maxValue>
+    <toStringStyle>PercentZero</toStringStyle>
+    <skillNeedOffsets>
+      <li Class="SkillNeed_BaseBonus">
+        <skill>Melee</skill>
+        <baseValue>0.2</baseValue>
+        <bonusPerLevel>0.02</bonusPerLevel>
+      </li>
+    </skillNeedOffsets>
+  </StatDef>
+
+</Defs>

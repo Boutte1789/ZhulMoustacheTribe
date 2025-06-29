@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ModSettingDef>
+        <defName>ZHUL_AudioVolume</defName>
+        <label>Zhul Audio Volume</label>
+        <description>Adjust the volume of all Zhul tribal sounds (chants, drums, war cries)</description>
+        <category>Audio</category>
+        <type>Float</type>
+        <defaultValue>1.0</defaultValue>
+        <range>
+            <min>0.0</min>
+            <max>2.0</max>
+        </range>
+    </ModSettingDef>
+
+    <ModSettingDef>
+        <defName>ZHUL_RaidFrequency</defName>
+        <label>Zhul Raid Frequency</label>
+        <description>How often the Zhul tribe launches raids (Default: Normal, High: More raids, Low: Fewer raids)</description>
+        <category>Gameplay</category>
+        <type>Enum</type>
+        <enumValues>
+            <li>Low</li>
+            <li>Normal</li>
+            <li>High</li>
+        </enumValues>
+        <defaultValue>Normal</defaultValue>
+    </ModSettingDef>
+
+    <ModSettingDef>
+        <defName>ZHUL_CannibalMoodBonus</defName>
+        <label>Cannibal Mood Bonus</label>
+        <description>Mood bonus when Zhul pawns consume humanlike meat</description>
+        <category>Gameplay</category>
+        <type>Int</type>
+        <defaultValue>10</defaultValue>
+        <range>
+            <min>5</min>
+            <max>20</max>
+        </range>
+    </ModSettingDef>
+
+    <ModSettingDef>
+        <defName>ZHUL_MoustacheRitualFrequency</defName>
+        <label>Moustache Ritual Frequency</label>
+        <description>How often Zhul pawns perform daily moustache grooming rituals</description>
+        <category>Rituals</category>
+        <type>Enum</type>
+        <enumValues>
+            <li>Once per day</li>
+            <li>Twice per day</li>  
+            <li>Three times per day</li>
+        </enumValues>
+        <defaultValue>Once per day</defaultValue>
+    </ModSettingDef>
+
+    <ModSettingDef>
+        <defName>ZHUL_EnableTerrorEffects</defName>
+        <label>Enable Terror Effects</label>
+        <description>When enabled, colonists will have fear reactions to Zhul bone drumming</description>
+        <category>Immersion</category>
+        <type>Bool</type>
+        <defaultValue>true</defaultValue>
+    </ModSettingDef>
+
+    <ModSettingDef>
+        <defName>ZHUL_RecruitmentDifficulty</defName>
+        <label>Recruitment Difficulty</label>
+        <description>How difficult it is to recruit captured Zhul raiders</description>
+        <category>Gameplay</category>
+        <type>Enum</type>
+        <enumValues>
+            <li>Easy</li>
+            <li>Normal</li>
+            <li>Hard</li>
+            <li>Extremely Hard</li>
+        </enumValues>
+        <defaultValue>Hard</defaultValue>
+    </ModSettingDef>
+
+    <ModSettingDef>
+        <defName>ZHUL_AudioTriggerDistance</defName>
+        <label>Audio Trigger Distance</label>
+        <description>Distance at which Zhul tribal sounds can be heard (in tiles)</description>
+        <category>Audio</category>
+        <type>Int</type>
+        <defaultValue>50</defaultValue>
+        <range>
+            <min>20</min>
+            <max>100</max>
+        </range>
+    </ModSettingDef>
+</Defs>

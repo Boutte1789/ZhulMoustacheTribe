@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Zhul Biotech Integration -->
+  
+  <!-- Zhul Xenotype -->
+  <XenotypeDef>
+    <defName>ZHUL_Xenotype</defName>
+    <label>Zhul</label>
+    <description>The Zhul are a cannibal-worshipping alien species with elongated skulls and elaborate moustaches that serve as spiritual conduits. Their genetic modifications enhance carnivorous digestion and ritualistic behaviors.</description>
+    <descriptionShort>Alien cannibals with sacred moustaches</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Zhul</iconPath>
+    <genes>
+      <li>ZHUL_Gene_ElongatedSkull</li>
+      <li>ZHUL_Gene_MoustacheGrowth</li>
+      <li>ZHUL_Gene_CannibalDigestion</li>
+      <li>ZHUL_Gene_RitualAffinity</li>
+      <li>ZHUL_Gene_ToxinResistance</li>
+    </genes>
+    <inheritable>true</inheritable>
+    <nameMaker>NamerPersonZhul</nameMaker>
+    <chanceToUseNameMaker>1.0</chanceToUseNameMaker>
+  </XenotypeDef>
+
+  <!-- Elongated Skull Gene -->
+  <GeneDef>
+    <defName>ZHUL_Gene_ElongatedSkull</defName>
+    <label>elongated skull</label>
+    <labelShortAdj>skull-elongated</labelShortAdj>
+    <description>Carriers have distinctively elongated alien skulls that are considered sacred among the Zhul tribe.</description>
+    <iconPath>UI/Icons/Genes/ZhulElongatedSkull</iconPath>
+    <displayOrderInCategory>100</displayOrderInCategory>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>skull</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+    <modExtensions>
+      <li Class="VanillaGenesExpanded.GeneExtension">
+        <hediffsToBodyParts>
+          <li>
+            <hediff>ZHUL_Hediff_ElongatedSkull</hediff>
+            <bodyparts>
+              <li>Head</li>
+            </bodyparts>
+          </li>
+        </hediffsToBodyParts>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <!-- Moustache Growth Gene -->
+  <GeneDef>
+    <defName>ZHUL_Gene_MoustacheGrowth</defName>
+    <label>moustache growth</label>
+    <labelShortAdj>moustached</labelShortAdj>
+    <description>Carriers grow elaborate spiraling moustaches that are central to Zhul spiritual practices and social hierarchy.</description>
+    <iconPath>UI/Icons/Genes/ZhulMoustache</iconPath>
+    <displayOrderInCategory>101</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <statOffsets>
+      <li>
+        <stat>SocialImpact</stat>
+        <value>0.2</value>
+      </li>
+    </statOffsets>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>curl</symbol></li>
+        <li><symbol>spiral</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <!-- Cannibal Digestion Gene -->
+  <GeneDef>
+    <defName>ZHUL_Gene_CannibalDigestion</defName>
+    <label>carnivorous digestion</label>
+    <labelShortAdj>carnivorous</labelShortAdj>
+    <description>Carriers have enhanced digestion optimized for meat consumption, especially humanlike flesh which provides spiritual nourishment.</description>
+    <iconPath>UI/Icons/Genes/ZhulDigestion</iconPath>
+    <displayOrderInCategory>102</displayOrderInCategory>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>1</biostatMet>
+    <statOffsets>
+      <li>
+        <stat>ToxicResistance</stat>
+        <value>0.25</value>
+      </li>
+    </statOffsets>
+    <thoughtDefReplacements>
+      <li>
+        <original>AteHumanlikeMeatDirect</original>
+        <replacement>ZHUL_AteHumanlikeMeatDirect_Positive</replacement>
+      </li>
+      <li>
+        <original>AteHumanlikeMeatAsIngredient</original>
+        <replacement>ZHUL_AteHumanlikeMeatAsIngredient_Positive</replacement>
+      </li>
+    </thoughtDefReplacements>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>flesh</symbol></li>
+        <li><symbol>feast</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <!-- Ritual Affinity Gene -->
+  <GeneDef>
+    <defName>ZHUL_Gene_RitualAffinity</defName>
+    <label>ritual affinity</label>
+    <labelShortAdj>ritualistic</labelShortAdj>
+    <description>Carriers have an innate connection to ritual practices and ceremonies, especially those involving cannibalistic themes.</description>
+    <iconPath>UI/Icons/Genes/ZhulRitual</iconPath>
+    <displayOrderInCategory>103</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <statOffsets>
+      <li>
+        <stat>RitualSensitivity</stat>
+        <value>0.3</value>
+      </li>
+    </statOffsets>
+    <conditionalStatAffecters>
+      <li Class="ConditionalStatAffecter_InIdeoBuilding">
+        <statOffsets>
+          <li>
+            <stat>WorkSpeedGlobal</stat>
+            <value>0.15</value>
+          </li>
+        </statOffsets>
+      </li>
+    </conditionalStatAffecters>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>ritual</symbol></li>
+        <li><symbol>sacred</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <!-- Toxin Resistance Gene -->
+  <GeneDef>
+    <defName>ZHUL_Gene_ToxinResistance</defName>
+    <label>toxin resistance</label>
+    <labelShortAdj>toxin-resistant</labelShortAdj>
+    <description>Carriers have enhanced resistance to toxins and food poisoning, likely evolved from consuming questionable meat sources.</description>
+    <iconPath>UI/Icons/Genes/ZhulToxinResistance</iconPath>
+    <displayOrderInCategory>104</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <statOffsets>
+      <li>
+        <stat>ToxicResistance</stat>
+        <value>0.5</value>
+      </li>
+      <li>
+        <stat>ImmunityGainSpeed</stat>
+        <value>0.2</value>
+      </li>
+    </statOffsets>
+    <damageFactors>
+      <li>
+        <damageDef>Toxic</damageDef>
+        <factor>0.5</factor>
+      </li>
+    </damageFactors>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>immune</symbol></li>
+        <li><symbol>hardy</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+</Defs>

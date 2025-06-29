@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Zhul Neo Democracy Ideology System -->
+  
+  <!-- Neo Democracy Ideology Generation Parameters -->
+  <IdeoGenerationParmsDef>
+    <defName>ZHUL_NeoDemocracy</defName>
+    <memes>
+      <li>Cannibal</li>
+      <li>VME_ViolentConversion</li>
+      <li>VME_Trader</li>
+      <li>VME_BloodCourt</li>
+    </memes>
+    <structureMeme>Structure_OriginBuddhist</structureMeme>
+    <classicIdeoName>The Tribal Devouring Order</classicIdeoName>
+    <classicIdeoAdjective>tribal devouring</classicIdeoAdjective>
+    <classicIdeoMemberName>Curled One</classicIdeoMemberName>
+    <classicIdeoLeaderTitleMale>Bone-Chief Warden</classicIdeoLeaderTitleMale>
+    <classicIdeoLeaderTitleFemale>Bone-Chief Warden</classicIdeoLeaderTitleFemale>
+    <classicIdeoFounderName>Gharlak the Bone-Speaker</classicIdeoFounderName>
+    <classicIdeoDescription>An ancient tribal creed where the strongest warrior becomes Bone-Chief Warden through sacred combat trials. The tribe's elaborate moustaches channel ancestral spirits and victim screams, while their bone drums carry the voices of devoured enemies across the sacred hunting grounds. Weekly tribal feasts bind the clan through shared consumption of enemy flesh.</classicIdeoDescription>
+    <iconDef>PirateD</iconDef>
+    <colorDef>Black</colorDef>
+    <culture>RH2SpecialForces_Kriminul</culture>
+    <foundation Class="IdeoFoundation_Deity">
+      <def>Deity</def>
+    </foundation>
+    
+    <!-- Required Precepts -->
+    <forcedPrecepts>
+      <!-- Cannibalism Required -->
+      <li>
+        <def>Cannibalism_RequiredRavenous</def>
+        <name>cannibalism</name>
+      </li>
+      
+      <!-- Melee Stat Based Leadership -->
+      <li>
+        <def>VME_Leader_Three</def>
+        <name>leader</name>
+      </li>
+      
+      <!-- Raiding Respected -->
+      <li>
+        <def>Raiding_Respected</def>
+        <name>raiding</name>
+      </li>
+      
+      <!-- Defeat Dishonorable -->
+      <li>
+        <def>VME_Defeat_Dishonorable</def>
+        <name>defeat</name>
+      </li>
+      
+      <!-- Dumb Labor Exalted -->
+      <li>
+        <def>VME_DumbLabor_Exalted</def>
+        <name>dumb labor</name>
+      </li>
+      
+      <!-- Organ Use Post Mortem -->
+      <li>
+        <def>VME_OrganUse_PostMortem</def>
+        <name>organ use</name>
+      </li>
+      
+      <!-- Humanoid Hybrids Accepted -->
+      <li>
+        <def>GR_HumanoidHybrids_Accepted</def>
+        <name>humanoid hybrids</name>
+      </li>
+      
+      <!-- Camaraderie Exalted -->
+      <li>
+        <def>VFEP_Camaraderie_Exalted</def>
+        <name>camaraderie</name>
+      </li>
+      
+      <!-- Quest Completion Honorable -->
+      <li>
+        <def>QuesterMeme_QuestComplete_Honourable</def>
+        <name>completing quests</name>
+      </li>
+      
+      <!-- Research Very Fast -->
+      <li>
+        <def>Research_VeryFast</def>
+        <name>research</name>
+      </li>
+    </forcedPrecepts>
+  </IdeoGenerationParmsDef>
+
+  <!-- Spirit-Eater Role (Enhanced) -->
+  <RoleTypeDef>
+    <defName>ZHUL_SpiritEater</defName>
+    <label>spirit-eater</label>
+    <labelPlural>spirit-eaters</labelPlural>
+    <description>A spiritual warrior who guides cannibal rituals and serves under the Commanding Officer. Elite fighters who consume enemy essence to gain power.</description>
+    <iconPath>UI/Roles/ZhulSpiritEater</iconPath>
+    <nameGenerator>NamerPersonZhul</nameGenerator>
+    <maxCount>3</maxCount>
+    <roleRequirements>
+      <li Class="RoleRequirement_MinSkill">
+        <skill>Melee</skill>
+        <minLevel>8</minLevel>
+      </li>
+      <li Class="RoleRequirement_HasTrait">
+        <trait>ZHUL_Cannibal</trait>
+      </li>
+    </roleRequirements>
+    <roleEffects>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>MeleeDPS</statDef>
+        <offset>1.2</offset>
+      </li>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>SocialImpact</statDef>
+        <offset>0.5</offset>
+      </li>
+      <li Class="RoleEffect_PawnStatOffset">
+        <statDef>PsychicSensitivity</statDef>
+        <offset>0.3</offset>
+      </li>
+    </roleEffects>
+    <grantedAbilities>
+      <li>ZHUL_RitualFeast</li>
+      <li>ZHUL_CannibalRage</li>
+    </grantedAbilities>
+  </RoleTypeDef>
+
+  <!-- Cannibal Feast Ritual (Enhanced) -->
+  <RitualPatternDef>
+    <defName>ZHUL_CannibalFeast</defName>
+    <ritualBehavior>PartyDrums</ritualBehavior>
+    <tags>
+      <li>ZHUL_CannibalRitual</li>
+      <li>RequiredCannibal</li>
+    </tags>
+    <ritualExpectedDesc>An ancient tribal feast consuming enemy flesh while sacred bone drums carry ancestral voices across hunting grounds</ritualExpectedDesc>
+    <ritualExpectedDescSource>The Tribal Devouring Order cannibal precepts</ritualExpectedDescSource>
+    <shortDescOverride>tribal devouring feast</shortDescOverride>
+    <descOverride>The Zhul clan performs their sacred weekly feast, consuming enemy flesh while the Bone-Chief Warden leads ancient tribal chants. Ancestral spirits and victim screams flow through their curled moustaches, while thunderous bone drums announce the clan's presence to all who would flee.</descOverride>
+    <nameMaker>NamerRitualZhul</nameMaker>
+    <sourcePattern>ZHUL_CannibalFeast</sourcePattern>
+    <ritualOutcomeEffectDef>RitualOutcomeEffectDef_Party</ritualOutcomeEffectDef>
+    <ritualTargetFilter Class="RitualTargetFilter_AnyConsumableBuildingPresent">
+      <def>TableSculpting</def>
+    </ritualTargetFilter>
+    <ritualObligationTargetFilter Class="RitualTargetFilter_AnyConsumableBuildingPresent">
+      <def>TableSculpting</def>
+    </ritualObligationTargetFilter>
+    <canMergeGizmosFromRitualSpots>true</canMergeGizmosFromRitualSpots>
+    <playsIdeoMusic>true</playsIdeoMusic>
+    <obligationTriggers>
+      <li Class="RitualObligationTrigger_EveryDays">
+        <intervalDays>7</intervalDays>
+        <mustBePlayerIdeo>true</mustBePlayerIdeo>
+      </li>
+    </obligationTriggers>
+  </RitualPatternDef>
+
+  <!-- Moustache Worship Meme (Backup for compatibility) -->
+  <MemeDef>
+    <defName>ZHUL_MoustacheWorship</defName>
+    <label>moustache worship</label>
+    <description>Sacred facial hair represents spiritual power and military prowess. Warriors maintain elaborate moustaches as symbols of their fighting spirit.</description>
+    <iconPath>UI/Memes/ZhulMoustacheWorship</iconPath>
+    <impact>1</impact>
+    <renderOrder>95</renderOrder>
+    <groupDef>Misc</groupDef>
+    <exclusionTags/>
+    <conflictingMemes/>
+    <requiredMemes>
+      <li>Cannibal</li>
+    </requiredMemes>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->moustached</li>
+        <li>memeAdjective->groomed</li>
+        <li>memeAdjective->military</li>
+        <li>memeHyphenPrefix->combat</li>
+        <li>memeHyphenPrefix->warrior</li>
+        <li>memeConcept->military prowess</li>
+        <li>memeConcept->facial hair power</li>
+        <li>memeConcept->combat readiness</li>
+      </rulesStrings>
+    </generalRules>
+  </MemeDef>
+
+</Defs>

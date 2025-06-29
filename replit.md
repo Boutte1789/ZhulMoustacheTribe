@@ -60,7 +60,7 @@ Cost consciousness: Minimize credit usage due to approaching $25 monthly limit.
 ```
 
 ## Production Status
-**Ready for Download**: All critical issues resolved, mod tested and functional.
+**Production Package Ready**: Clean release archive `ZhulTribe_v1.0_Clean.tar.gz` contains only essential mod files.
 
 ## Download Structure
 - **About/**: Mod metadata and description

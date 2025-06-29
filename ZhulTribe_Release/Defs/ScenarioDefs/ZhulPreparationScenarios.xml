@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Prepare Carefully Compatible Scenarios for Zhul Tribe -->
+  
+  <!-- Zhul Tribal Start Scenario -->
+  <ScenarioDef>
+    <defName>ZT_TribalStart</defName>
+    <label>Zhul Tribal Start</label>
+    <description>Begin as a small group of Curled Ones who have been exiled from their main tribe. You start with traditional Zhul equipment and knowledge, but must prove yourselves worthy through ritual and conquest.</description>
+    <scenario>
+      <summary>A small band of exiled Zhul tribe members seeking to establish their own settlement.</summary>
+      <playerFaction>
+        <def>PlayerTribe</def>
+      </playerFaction>
+      <parts>
+        <!-- Configure starting pawns -->
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>3</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+        
+        <!-- Starting pawn with Zhul traits -->
+        <li Class="ScenPart_StartingPawn_Defined">
+          <def>StartingPawn_Defined</def>
+          <context>PlayerStarter</context>
+          <pawnKind>ZT_CurledSavage_PrepareCarefully</pawnKind>
+          <mustBeCapableOfViolence>true</mustBeCapableOfViolence>
+          <canBeIncapableOfViolence>false</canBeIncapableOfViolence>
+        </li>
+        
+        <!-- Starting items -->
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ZT_MoustacheOil</thingDef>
+          <count>5</count>
+        </li>
+        
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ZT_SacrificialDagger</thingDef>
+          <count>2</count>
+        </li>
+        
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ZT_BoneNecklace</thingDef>
+          <count>3</count>
+        </li>
+        
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>HumanMeat</thingDef>
+          <count>20</count>
+        </li>
+        
+        <!-- Standard tribal starting equipment -->
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Pemmican</thingDef>
+          <count>40</count>
+        </li>
+        
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Medicine</thingDef>
+          <count>10</count>
+        </li>
+        
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>5</count>
+        </li>
+        
+        <!-- Starting animals -->
+        <li Class="ScenPart_StartingAnimal">
+          <def>StartingAnimal</def>
+          <animalKind>Warg</animalKind>
+          <count>2</count>
+        </li>
+        
+        <!-- Faction relations -->
+        <li Class="ScenPart_FactionRelation">
+          <def>FactionRelation</def>
+          <faction>ZhulTribe</faction>
+          <goodwillRange>-80~-40</goodwillRange>
+        </li>
+        
+        <!-- Game conditions -->
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>Three exiled members of the Zhul tribe have been cast out for reasons lost to the bone whispers. They carry with them the traditional tools of their people - moustache oils, sacrificial daggers, and the knowledge of the ancient ways.
+
+Now they must prove their worth by establishing a new settlement and perhaps, one day, earning their way back into the good graces of the Curled Ones... or surpassing them entirely.
+
+The spirits of their ancestors watch from the spiraling patterns of their moustaches, whispering guidance and demanding blood.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+  <!-- Zhul Spiritualist Start -->
+  <ScenarioDef>
+    <defName>ZT_SpiritCaller</defName>
+    <label>Zhul Spirit Caller</label>
+    <description>Begin as a powerful Zhul spirit caller who has been granted visions of a new holy site. You must establish a shrine to the ancestors and perform the rituals needed to commune with the ancient dead.</description>
+    <scenario>
+      <summary>A lone Zhul spiritualist seeking to establish a new sacred site.</summary>
+      <playerFaction>
+        <def>PlayerTribe</def>
+      </playerFaction>
+      <parts>
+        <!-- Single powerful starting pawn -->
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>1</pawnCount>
+          <pawnChoiceCount>4</pawnChoiceCount>
+        </li>
+        
+        <li Class="ScenPart_StartingPawn_Defined">
+          <def>StartingPawn_Defined</def>
+          <context>PlayerStarter</context>
+          <pawnKind>ZT_SpiritEater_PrepareCarefully</pawnKind>
+        </li>
+        
+        <!-- Spiritual starting items -->
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ZT_MasterMoustacheOil</thingDef>
+          <count>2</count>
+        </li>
+        
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ZT_AncestralWhispers</thingDef>
+          <count>1</count>
+        </li>
+        
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ZT_BoneDiadem</thingDef>
+          <count>1</count>
+        </li>
+        
+        <!-- Basic survival supplies -->
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Pemmican</thingDef>
+          <count>25</count>
+        </li>
+        
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>HumanMeat</thingDef>
+          <count>15</count>
+        </li>
+        
+        <!-- Game start condition -->
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>The spirits have spoken through the bone whispers, revealing the location of a new sacred site. As a master of the Zhul spiritual arts, you have been chosen to establish this holy ground and perform the rituals necessary to commune with the ancestors.
+
+You carry with you the tools of your trade - master moustache oil, ancestral whispers, and a bone diadem that marks your status as a true spirit caller. The ancient dead watch your every move, judging whether you are worthy of their secrets.
+
+Establish your shrine and prove your devotion through ritual and sacrifice.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+</Defs>

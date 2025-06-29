@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Big and Small Framework Integration for Zhul Tribe -->
+  <!-- This file only loads when B&S Framework is present -->
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>RedMattis.BigAndSmallFramework</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <BigAndSmall.BSExtensionDef>
+              <defName>ZhulExtension</defName>
+              <label>Zhul Extension</label>
+              <description>Big and Small Framework integration for Zhul alien race body types.</description>
+              
+              <raceSettings>
+                <!-- Apply to Zhul race -->
+                <li>
+                  <race>ZHUL_AlienHumanoid</race>
+                  
+                  <!-- Body type scaling settings -->
+                  <bodySettings>
+                    <scaleFactor>1.0</scaleFactor>
+                    <useFrameworkScaling>true</useFrameworkScaling>
+                    
+                    <!-- Body type specific paths -->
+                    <bodyTypePaths>
+                      <Male>Zhul/ZhulBase_m</Male>
+                      <Female>Zhul/ZhulBase_f</Female>
+                      <Fat>Zhul/ZhulBase_fat</Fat>
+                      <Hulk>Zhul/ZhulBase_hulk</Hulk>
+                      <Thin>Zhul/ZhulBase_thin</Thin>
+                    </bodyTypePaths>
+                    
+                    <!-- Scale multipliers for each body type -->
+                    <bodyTypeScales>
+                      <Male>1.0</Male>
+                      <Female>0.95</Female>
+                      <Fat>1.3</Fat>
+                      <Hulk>1.4</Hulk>
+                      <Thin>0.8</Thin>
+                    </bodyTypeScales>
+                  </bodySettings>
+                  
+                  <!-- Head scaling (for elongated skulls) -->
+                  <headSettings>
+                    <scaleWithBody>true</scaleWithBody>
+                    <headScaleFactor>1.1</headScaleFactor>
+                  </headSettings>
+                </li>
+              </raceSettings>
+            </BigAndSmall.BSExtensionDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Defs>

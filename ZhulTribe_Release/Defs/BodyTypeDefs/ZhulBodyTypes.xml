@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Zhul Body Types - Supporting all sprite variations -->
+  
+  <BodyTypeDef>
+    <defName>ZHUL_Male</defName>
+    <label>male</label>
+    <bodyNakedGraphicPath>Zhul/ZhulBase_m</bodyNakedGraphicPath>
+    <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated_Thin</bodyDessicatedGraphicPath>
+    <headOffset>(0.0, 0.0)</headOffset>
+  </BodyTypeDef>
+
+
+
+  <BodyTypeDef>
+    <defName>ZHUL_Thin</defName>
+    <label>thin</label>
+    <bodyNakedGraphicPath>Zhul/ZhulBase_thin</bodyNakedGraphicPath>
+    <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated_Thin</bodyDessicatedGraphicPath>
+    <headOffset>(0.0, 0.0)</headOffset>
+  </BodyTypeDef>
+
+  <BodyTypeDef>
+    <defName>ZHUL_Fat</defName>
+    <label>fat</label>
+    <bodyNakedGraphicPath>Zhul/ZhulBase_fat</bodyNakedGraphicPath>
+    <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated_Fat</bodyDessicatedGraphicPath>
+    <headOffset>(0.0, 0.0)</headOffset>
+  </BodyTypeDef>
+
+  <BodyTypeDef>
+    <defName>ZHUL_Hulk</defName>
+    <label>hulk</label>
+    <bodyNakedGraphicPath>Zhul/ZhulBase_hulk</bodyNakedGraphicPath>
+    <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated_Hulk</bodyDessicatedGraphicPath>
+    <headOffset>(0.0, 0.0)</headOffset>
+  </BodyTypeDef>
+
+  <BodyTypeDef>
+    <defName>ZHUL_Female</defName>
+    <label>female</label>
+    <bodyNakedGraphicPath>Zhul/ZhulBase_f</bodyNakedGraphicPath>
+    <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated_Thin</bodyDessicatedGraphicPath>
+    <headOffset>(0.0, 0.0)</headOffset>
+  </BodyTypeDef>
+
+</Defs>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <IncidentDef>
+        <defName>ZHUL_RitualFeast</defName>
+        <label>Zhul ritual feast</label>
+        <category>ThreatBig</category>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>ZhulTribe.IncidentWorker_RitualFeast</workerClass>
+        <baseChance>0.8</baseChance>
+        <minRefireDays>15</minRefireDays>
+        <minThreatPoints>200</minThreatPoints>
+        <letterText>A group of Zhul spirit-eaters approaches your settlement. They seek to perform a ritual feast using the flesh of your people. Their bone-crowned leader demands tribute of humanlike corpses, or they will take what they need by force.\n\nYou could attempt to negotiate with them, offering corpses in exchange for temporary peace, or prepare to defend against their cannibal raid.</letterText>
+        <letterLabel>Zhul ritual feast</letterLabel>
+        <letterDef>ThreatBig</letterDef>
+        <pawnMust>
+            <li>ZHUL_SpiritEater</li>
+        </pawnMust>
+        <pointsScaleable>true</pointsScaleable>
+        <minPopulation>4</minPopulation>
+        <earliestDay>8</earliestDay>
+        <tale>Raid</tale>
+        <usage>ThreatBig</usage>
+    </IncidentDef>
+
+    <IncidentDef>
+        <defName>ZHUL_MoustacheRitualEvent</defName>
+        <label>Zhul moustache ritual</label>
+        <category>Misc</category>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>IncidentWorker_QuestPeaceTalks</workerClass>
+        <baseChance>0.3</baseChance>
+        <minRefireDays>25</minRefireDays>
+        <letterText>A Zhul bone-chief approaches under a flag of truce. Their elaborate moustache glistens with ritual oils as they propose a ceremonial grooming exchange. They offer to teach your colonists the sacred art of moustache cultivation in return for rare materials and safe passage through your territory.\n\nThis could be an opportunity to learn their customs, though their cannibalistic nature makes any deal with them dangerous.</letterText>
+        <letterLabel>Zhul moustache ritual</letterLabel>
+        <letterDef>NeutralEvent</letterDef>
+        <minPopulation>3</minPopulation>
+        <earliestDay>12</earliestDay>
+    </IncidentDef>
+</Defs>

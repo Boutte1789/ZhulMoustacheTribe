@@ -35,7 +35,7 @@ WHAT'S INCLUDED
 ✅ ACTIVE SYSTEMS:
 - 29 active XML definition files
 - Compiled C# assembly (ZhulTribe.dll)
-- 6 character textures with body type variations (male, female, thin, fat, hulk)
+- 6 ultra-high-res character textures (2048×2048px) with body type variations (male, female, thin, fat, hulk)
 - Complete faction mechanics with visual diversity
 
 ⚠️ DISABLED FEATURES:

@@ -184,6 +184,11 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Improved compatibility with RimWorld's facial feature overlay system
   - Maintains proper head base structure for moustache and other overlays
   - Created backup of previous version for reference
+- June 30, 2025: Male Average south head sprite enhanced with distinctive hair element
+  - Updated Male_Average_south.png with new version featuring white hair/headband design
+  - Added unique visual identifier for male Zhul heads in south-facing view
+  - Maintains clean olive-gray face base with enhanced tribal aesthetic
+  - Compatible with existing moustache overlay system
 
 ## User Preferences
 

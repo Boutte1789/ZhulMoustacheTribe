@@ -228,20 +228,22 @@ You must prepare a feast worthy of their cannibalistic traditions. Provide enoug
               <node Class="QuestNode_Sequence">
                 <nodes>
                   <li Class="QuestNode_Letter">
-                    <label>Colonists Are On The Menu</label>
+                    <label>Terror from the Night</label>
                     <text>The Zhul delegations arrive as promised, but finding no feast prepared, their hungry eyes turn to your colonists. "If you will not feed us willingly," growls the lead war-chief, "then you shall feed us unwillingly. Tonight, your people become the main course!"
 
-The drums of war echo across the wasteland as dozens of ravenous Curled Ones prepare for their most anticipated meal.</text>
+The bone drums echo through the darkness as dozens of ravenous Curled Ones vanish into the shadows. Their moustaches glow with supernatural malice in the moonlight, and their chants speak of cannibalistic hunger. When darkness falls, they will strike like phantoms from the night.</text>
                     <letterDef>ThreatBig</letterDef>
                   </li>
                   <li Class="QuestNode_Delay">
-                    <delayTicks>30000~60000</delayTicks>
+                    <delayTicks>240000~300000</delayTicks>
                     <node Class="QuestNode_Incident">
-                      <incident>RaidEnemyBeginSimple</incident>
+                      <incident>ZT_TerrorNightRaid</incident>
                       <parms>
                         <faction>$faction</faction>
-                        <raidStrategy>ImmediateAttack</raidStrategy>
+                        <raidStrategy>StageThenAttack</raidStrategy>
+                        <raidArrivalMode>EdgeWalkIn</raidArrivalMode>
                         <points>2000</points>
+                        <forced>true</forced>
                       </parms>
                     </node>
                   </li>

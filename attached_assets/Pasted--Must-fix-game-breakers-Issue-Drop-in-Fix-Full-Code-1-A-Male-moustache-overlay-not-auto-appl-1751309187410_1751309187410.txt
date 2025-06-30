@@ -1,0 +1,27 @@
+ ❌ Must-fix (game-breakers)
+#	Issue	Drop-in Fix / Full Code
+1-A	Male moustache overlay not auto-applied (and females may inherit it)	File: Source/HarmonyPatches.cs
+
+```csharp\nusing HarmonyLib;\nusing RimWorld; using Verse; using System.Linq;\n\n[StaticConstructorOnStartup]\nstatic class ZhulPatcher\n{\n static ZhulPatcher()\n {\n new Harmony("ZhulTribe.Mod").PatchAll();\n }\n}\n\n[HarmonyPatch(typeof(PawnGenerator), nameof(PawnGenerator.GeneratePawn))]\nstatic class Patch_Zhul_Moustache\n{\n static void Postfix(Pawn __result)\n {\n if (__result?.Faction?.def?.defName != "ZhulTribe") return;\n\n var maleStache = DefDatabase<HeadOverlayDef>.GetNamedSilentFail("Zhul_Moustache");\n var femaleMark = DefDatabase<HeadOverlayDef>.GetNamedSilentFail("Zhul_FemaleTattoo"); // optional\n\n __result.story.headOverlays.RemoveAll(ov => ov == maleStache
+1-B	Faction icon still default – breaks thematic UI	File: Defs/FactionDefs/ZhulFaction.xml (inside <FactionDef> tag) ⬇︎
+xml\n<iconPath>UI/ZhulModIcon</iconPath>\n<color>(0,0,0)</color> <!-- pure black -->\n
+1-C	Leader not guaranteed highest-Melee cannibal (role perks never apply)	Add to same C# file — runs once when map starts:
+
+csharp\n[HarmonyPatch(typeof(MapGenerator), \"GenerateMap\")]\nstatic class Patch_AssignZhulLeader\n{\n static void Postfix(Map __result)\n {\n var zhFaction = Find.FactionManager.FirstFactionOfDef(\n DefDatabase<FactionDef>.GetNamed(\"ZhulTribe\"));\n if (zhFaction?.leader != null) return;\n\n var best = zhFaction.AllGeneratedPawns\n .Where(p => p?.skills?.GetSkill(SkillDefOf.Melee) != null &&\n p.story?.traits?.HasTrait(TraitDefOf.Cannibal) == true)\n .OrderByDescending(p => p.skills.GetSkill(SkillDefOf.Melee).Level)\n .FirstOrDefault();\n if (best != null) zhFaction.leader = best;\n }\n}\n
+1-D	Quest refusals don’t trigger Terror Night Raid – quest may soft-lock	For every quest in QuestScriptDefs/ZhulQuestChain.xml append:
+xml\n<onRefuse>\n <li Class=\"QuestPart_Incident\">\n <incident>RaidEnemy</incident>\n <points>1500</points>\n <raidStrategy>EdgeWalkInNight</raidStrategy>\n <faction>ZhulTribe</faction>\n </li>\n</onRefuse>\n
+1-E	Missing mid-tech research ⇒ tech tree dead-end	New file: Defs/ResearchProjectDefs/ZhulProgression.xml ⬇︎
+xml\n<Defs>\n <ResearchProjectDef>\n <defName>Zhul_BoneWorking</defName>\n <label>bone working</label>\n <description>Carve gears, plates and tools from dense bone.</description>\n <baseCost>600</baseCost>\n <techLevel>Medieval</techLevel>\n <prerequisites>\n <li>GreatBow</li>\n </prerequisites>\n <researchViewX>5</researchViewX>\n <researchViewY>2</researchViewY>\n </ResearchProjectDef>\n <ResearchProjectDef>\n <defName>Zhul_BoneGearbox</defName>\n <label>bone gearbox</label>\n <description>Primitive gear-sets enabling simple machinery and faster work.</description>\n <baseCost>1000</baseCost>\n <techLevel>Medieval</techLevel>\n <prerequisites>\n <li>Zhul_BoneWorking</li>\n </prerequisites>\n <researchViewX>6</researchViewX>\n <researchViewY>2</researchViewY>\n <prerequisiteCompleteEffect>\n <statOffsets>\n <li>\n <stat>WorkSpeedGlobal</stat>\n <offset>0.05</offset>\n </li>\n </statOffsets>\n </prerequisiteCompleteEffect>\n </ResearchProjectDef>\n</Defs>\n
+1-F	Duplicate or missing defName / invalid XML	One-click dev validation: Main menu → Dev-mode tick → Open ▶ Tools ▶ Validation.
+Resolve any duplicate log lines by appending _Zhul to the clashing defName.
+
+2 ⚠️ Recommended
+(fixes log spam & minor balance)
+
+#	Issue	Quick Patch
+2-A	Trading weak: add meme VME_Trader_Moderate	Add <li>VME_Trader_Moderate</li> in <requiredMemes> list inside ZhulIdeology.xml.
+2-B	3 OGG files orphaned	Reference them in SoundDefs/ZhulSounds.xml:
+xml\n<li>WarCry_03</li> …
+2-C	Big&Small head scale not set	In BigSmallExtDefs/ZhulBigSmallExt.xml add:
+<headSizeMultiplier>1.0</headSizeMultiplier> for every body size.
+2-D	Zhul not selectable in EdB PC	Add <editorTags>AlienRace</editorTags> to RaceDefs/ZhulRace.xml.

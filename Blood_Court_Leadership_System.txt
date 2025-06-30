@@ -1,0 +1,65 @@
+ZHUL TRIBE BLOOD COURT LEADERSHIP SYSTEM
+========================================
+
+CORRECT IMPLEMENTATION (User Verified)
+======================================
+
+The Zhul tribe uses the VME_BloodCourt meme from Vanilla Memes Expanded, which provides:
+
+BLOOD COURT RITUAL MECHANICS
+----------------------------
+
+1. PLAYER-INITIATED CHALLENGES
+   - Players must manually start blood court ritual
+   - NOT automatic when higher-melee pawn appears
+   - Ritual involves melee duel between current leader and challenger
+
+2. RITUAL REQUIREMENTS
+   - Challenger must have higher melee skill than current leader
+   - Both participants must be capable of violence
+   - Ritual location required (ritual spot/throne room)
+   - Ideology requirement: VME_BloodCourt meme
+
+3. DUEL MECHANICS
+   - 1v1 melee combat between leader and challenger
+   - Winner becomes new faction leader
+   - Loser may be injured, killed, or step down honorably
+   - Faction witnesses the combat trial
+
+4. ZHUL-SPECIFIC FLAVOR
+   - "Sacred combat trials" as mentioned in ideology description
+   - Bone-Chief Warden title earned through combat prowess
+   - Fits perfectly with melee-focused Neo Democracy 2
+
+REMOVED INCORRECT IMPLEMENTATION
+=================================
+
+Previous automatic leader reassignment was WRONG:
+- ❌ Automatic EnsureZhulLeader() function
+- ❌ Leader changing without player input
+- ❌ No ritual requirement or ceremony
+
+The VME_BloodCourt meme handles leadership challenges properly through:
+- ✅ Player-controlled ritual initiation
+- ✅ Actual melee combat between candidates
+- ✅ Ceremonial leadership transfer
+- ✅ Faction witness and approval system
+
+CORRECTED HARMONY PATCH
+=======================
+
+Removed automatic leader reassignment code and replaced with comment:
+"Leadership challenges handled by VME_BloodCourt meme ritual duels"
+
+This ensures the proper blood court ritual system works as intended without interference from automatic leader selection.
+
+GAMEPLAY FLOW
+=============
+
+1. New high-melee pawn joins faction
+2. Player notices leadership opportunity  
+3. Player initiates blood court ritual manually
+4. Ritual duel determines new leader through combat
+5. Winner becomes Bone-Chief Warden
+
+This maintains player agency and authentic ritual mechanics as designed by VME.

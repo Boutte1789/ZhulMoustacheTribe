@@ -142,7 +142,7 @@ The mod follows RimWorld's standard mod architecture with organized directories 
 - June 30, 2025: Critical must-fix issues resolved
   - Fixed male moustache auto-application using proper HeadOverlay system in Harmony patches
   - Corrected faction icon path from default to UI/ZhulModIcon (prevents missing icon)
-  - Enhanced leader selection to guarantee highest-melee cannibal becomes faction leader
+  - Removed inappropriate automatic leader selection (VME_BloodCourt meme handles leadership via ritual duels)
   - Added required using statements (System.Linq, UnityEngine) for compilation
   - Production-ready: All critical errors eliminated, mod fully functional
 - June 30, 2025: Scenario balancing and victory condition updates

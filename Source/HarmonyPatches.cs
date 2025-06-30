@@ -57,28 +57,8 @@ namespace ZhulTribe
                 }
             }
             
-            // Ensure Zhul faction leader is highest-melee cannibal
-            if (__result?.Faction?.def?.defName == "ZHUL_Tribe")
-            {
-                EnsureZhulLeader(__result.Faction);
-            }
-        }
-
-        // Ensure Zhul leader selection based on melee skill and cannibal trait
-        private static void EnsureZhulLeader(Faction faction)
-        {
-            if (faction?.leader == null || !faction.leader.story.traits.HasTrait(TraitDefOf.Cannibal))
-            {
-                var bestCandidate = faction.AllPawnsForReading
-                    .Where(p => p.story?.traits?.HasTrait(TraitDefOf.Cannibal) == true && p.RaceProps.Humanlike)
-                    .OrderByDescending(p => p.skills.GetSkill(SkillDefOf.Melee).Level)
-                    .FirstOrDefault();
-                
-                if (bestCandidate != null)
-                {
-                    faction.leader = bestCandidate;
-                }
-            }
+            // Note: Leadership challenges handled by VME_BloodCourt meme ritual duels
+            // No automatic reassignment - players must initiate blood court ritual
         }
         
         // Zhul-specific spawn setup

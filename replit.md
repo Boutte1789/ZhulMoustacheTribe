@@ -179,6 +179,11 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Completed Male_Average head set: north, south, and east variations
   - Renamed from user-provided "average male east" to RimWorld naming convention
   - Enhanced visual consistency for male Zhul pawns across all viewing angles
+- June 30, 2025: Male Average south head sprite optimization completed
+  - Updated Male_Average_south.png with cleaner version without pre-drawn facial features
+  - Improved compatibility with RimWorld's facial feature overlay system
+  - Maintains proper head base structure for moustache and other overlays
+  - Created backup of previous version for reference
 
 ## User Preferences
 

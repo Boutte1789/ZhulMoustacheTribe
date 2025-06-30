@@ -116,6 +116,9 @@
       <li>
         <def>ZHUL_CannibalNature</def>
       </li>
+      <li>
+        <def>ZHUL_NightRaider</def>
+      </li>
     </genes>
     
     <!-- Complexity Cost -->

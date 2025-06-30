@@ -342,13 +342,15 @@ The choice is yours, but know that the Zhul remember both allies and cowards.</t
                     </rewards>
                   </li>
                   <li Class="QuestNode_Delay">
-                    <delayTicks>180000~360000</delayTicks>
+                    <delayTicks>240000~300000</delayTicks>
                     <node Class="QuestNode_Incident">
-                      <incident>RaidEnemyBeginSimple</incident>
+                      <incident>ZT_TerrorNightRaid</incident>
                       <parms>
                         <faction>$faction</faction>
-                        <raidStrategy>ImmediateAttack</raidStrategy>
+                        <raidStrategy>StageThenAttack</raidStrategy>
+                        <raidArrivalMode>EdgeWalkIn</raidArrivalMode>
                         <points>1000</points>
+                        <forced>true</forced>
                       </parms>
                     </node>
                   </li>
@@ -419,6 +421,10 @@ What consequences will follow from this desperate alliance? Only time will revea
                             <def>Cannibal</def>
                             <degree>0</degree>
                           </li>
+                          <li>
+                            <def>NightOwl</def>
+                            <degree>0</degree>
+                          </li>
                         </forcedTraits>
                         <skills>
                           <li>
@@ -439,6 +445,10 @@ What consequences will follow from this desperate alliance? Only time will revea
                             <def>Cannibal</def>
                             <degree>0</degree>
                           </li>
+                          <li>
+                            <def>NightOwl</def>
+                            <degree>0</degree>
+                          </li>
                         </forcedTraits>
                         <skills>
                           <li>
@@ -457,6 +467,10 @@ What consequences will follow from this desperate alliance? Only time will revea
                         <forcedTraits>
                           <li>
                             <def>Cannibal</def>
+                            <degree>0</degree>
+                          </li>
+                          <li>
+                            <def>NightOwl</def>
                             <degree>0</degree>
                           </li>
                         </forcedTraits>
@@ -490,17 +504,21 @@ What consequences will follow from this desperate alliance? Only time will revea
                 <nodes>
                   <li Class="QuestNode_Letter">
                     <label>The Night Hunger</label>
-                    <text>The shaman's face twists with desperate rage as they raise their bone dagger to the darkening sky. "Then tonight, we feast on your flesh or die trying. The Curled Ones will have their meat!" They vanish into the shadows, leaving only the promise of violence to come.</text>
+                    <text>The shaman's face twists with desperate rage as they raise their bone dagger to the darkening sky. "Then tonight, we feast on your flesh or die trying. The Curled Ones will have their meat!" 
+
+The bone drums begin their haunting rhythm as the shaman melts back into the shadows. Their moustache glows with malevolent energy in the twilight, and whispered chants drift on the wind - promises of a terror raid when darkness falls. You have mere hours before the starving Zhul descend like phantoms upon your colony.</text>
                     <letterDef>ThreatBig</letterDef>
                   </li>
                   <li Class="QuestNode_Delay">
-                    <delayTicks>60000~120000</delayTicks>
+                    <delayTicks>240000~300000</delayTicks>
                     <node Class="QuestNode_Incident">
-                      <incident>RaidEnemyBeginSimple</incident>
+                      <incident>ZT_TerrorNightRaid</incident>
                       <parms>
                         <faction>$faction</faction>
-                        <raidStrategy>ImmediateAttack</raidStrategy>
+                        <raidStrategy>StageThenAttack</raidStrategy>
+                        <raidArrivalMode>EdgeWalkIn</raidArrivalMode>
                         <points>1500</points>
+                        <forced>true</forced>
                       </parms>
                     </node>
                   </li>

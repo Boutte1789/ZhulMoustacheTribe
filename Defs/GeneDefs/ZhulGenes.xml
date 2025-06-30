@@ -100,4 +100,32 @@
     </conditionalStatAffecters>
   </GeneDef>
 
+  <!-- Night Raider Gene - Forces Night Owl trait -->
+  <GeneDef>
+    <defName>ZHUL_NightRaider</defName>
+    <label>night raider</label>
+    <description>Carriers of this gene are naturally adapted to nighttime raids and stealth attacks. They are most active during the dark hours when their terror raids are most effective.</description>
+    <iconPath>UI/Icons/Genes/Gene_NightRaider</iconPath>
+    <displayOrderInCategory>490</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <forcedTraits>
+      <li>
+        <def>NightOwl</def>
+      </li>
+    </forcedTraits>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>night</symbol></li>
+        <li><symbol>shadow</symbol></li>
+        <li><symbol>dark</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>stalker</symbol></li>
+        <li><symbol>phantom</symbol></li>
+        <li><symbol>lurker</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
 </Defs>

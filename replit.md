@@ -127,6 +127,12 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Forced cannibalism trait for all Zhul xenotype pawns
   - Custom endogenes for moustache culture and cannibal nature
   - Enhanced Quest 5 refugees with guaranteed cannibal traits
+- June 30, 2025: Night raid theme consistency completed
+  - Updated all quest refusal consequences to use Terror Night Raid mechanics
+  - Added ZHUL_NightRaider gene forcing NightOwl trait on all Zhul xenotype members
+  - Enhanced atmospheric messaging with phantom-like stealth approach descriptions
+  - Standardized 4-5 hour delays for authentic nighttime terror raids across all quests
+  - All Zhul faction members now optimized for nighttime activity and raids
 
 ## User Preferences
 

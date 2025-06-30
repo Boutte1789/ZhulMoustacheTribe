@@ -109,6 +109,8 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Added HarmonyAfter attribute for Big & Small compatibility
   - Created reflection caching for Graphic_Atlas performance optimization
   - Added .NET Framework 4.7.2 project configuration
+  - Enhanced C# Harmony patches with moustache auto-application system
+  - Added automatic moustache enforcement for male Zhuls and clean heads for females
   - Optimized package: 239MB (reduced from 333MB)
 
 ## User Preferences

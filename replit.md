@@ -96,6 +96,12 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Added crafting recipe for Sacrificial Dagger (issue 3.3)
   - Cleaned up development artifacts and temp files safely
   - Final package: 325MB with 33 textures, production-ready for release
+- June 30, 2025: HeadOverlayDef system implementation completed
+  - Added proper HeadOverlayDef for moustache overlays with masking support
+  - Created moustache mask texture for proper clipping
+  - Integrated headOverlayRecords in PawnKindDefs for automatic moustache spawning
+  - Full Big & Small compatibility with automatic scaling
+  - Updated package: 326MB with 36 textures, 35 XML files
 
 ## User Preferences
 

@@ -49,8 +49,8 @@ The Curled Ones offer valuable rewards to those who can recover this sacred reli
           <rewards>
             <li Class="Reward_Items">
               <items>
-                <MeleeWeapon_Knife>3</MeleeWeapon_Knife>
-                <Chemfuel>50</Chemfuel>
+                <MedicineHerbal>50</MedicineHerbal>
+                <Leather_Human>100</Leather_Human>
                 <Silver>300</Silver>
               </items>
             </li>
@@ -64,19 +64,19 @@ The Curled Ones offer valuable rewards to those who can recover this sacred reli
     </root>
   </QuestScriptDef>
 
-  <!-- Quest 2: The Spiral's Debt - Branching Quest -->
+  <!-- Quest 2: The Bone Dagger's Debt - Branching Quest -->
   <QuestScriptDef>
-    <defName>ZT_SpiralsDebt</defName>
-    <label>The Spiral's Debt</label>
-    <description>A Zhul emissary arrives requesting help recovering a stolen relic. Your choice will determine your relationship with the Curled Ones.</description>
+    <defName>ZT_BoneDaggersDebt</defName>
+    <label>The Bone Dagger's Debt</label>
+    <description>A Zhul emissary arrives requesting help recovering a stolen Bone Dagger relic. Your choice will determine your relationship with the Curled Ones.</description>
     <rootSelectionWeight>0.8</rootSelectionWeight>
     <canGiveToPlayerFaction>true</canGiveToPlayerFaction>
     <expireDaysRange>20~35</expireDaysRange>
     <root Class="QuestNode_Sequence">
       <nodes>
         <li Class="QuestNode_Letter">
-          <label>The Spiral's Debt</label>
-          <text>A lone Zhul emissary approaches your colony, their elaborate moustache adorned with bone trinkets that chime in the wind. They speak of a sacred spiral relic stolen by raiders - an artifact that contains the compressed screams of a thousand devoured enemies.
+          <label>The Bone Dagger's Debt</label>
+          <text>A lone Zhul emissary approaches your colony, their elaborate moustache adorned with bone trinkets that chime in the wind. They speak of a sacred Bone Dagger relic stolen by raiders - an artifact that contains the compressed screams of a thousand devoured enemies.
 
 The emissary offers a proposition: help them recover the relic from the pirate stronghold, and the Curled Ones will share ancient grooming secrets that could transform your colonists' ritual practices. Refuse, and risk earning the eternal enmity of the most feared cannibal tribe in the rim.
 
@@ -101,11 +101,15 @@ The choice is yours, but know that the Spiral remembers all debts - both paid an
                   </li>
                   <li Class="QuestNode_GiveRewards">
                     <rewards>
-                      <li Class="Reward_Items">
-                        <items>
-                          <Chemfuel>30</Chemfuel>
-                          <ComponentIndustrial>2</ComponentIndustrial>
-                        </items>
+                      <li Class="Reward_SkillTrainer">
+                        <skill>Crafting</skill>
+                        <level>3</level>
+                        <count>3</count>
+                      </li>
+                      <li Class="Reward_SkillTrainer">
+                        <skill>Social</skill>
+                        <level>3</level>
+                        <count>3</count>
                       </li>
                       <li Class="Reward_Goodwill">
                         <faction>$faction</faction>
@@ -159,7 +163,7 @@ The choice is yours, but know that the Spiral remembers all debts - both paid an
       <nodes>
         <li Class="QuestNode_Letter">
           <label>The Great Devouring Approaches</label>
-          <text>The bone drums have spoken across the wasteland, and every Zhul tribe has heard their call. The Great Devouring - a legendary feast held only when the moons align with the Spiral Constellation - is about to begin.
+          <text>The bone drums have spoken across the wasteland, and every Zhul tribe has heard their call. The Great Devouring - a legendary feast held once a year when the moons align with the Spiral Constellation - is about to begin.
 
 Your colony has been chosen as the sacred host. Over the coming days, delegations of Curled Ones will arrive bearing gifts of bone jewelry and rare moustache oils. But they will also bring their fearsome appetites.
 
@@ -184,8 +188,8 @@ You must prepare a feast worthy of their cannibalistic traditions. Provide enoug
           <rewards>
             <li Class="Reward_Items">
               <items>
-                <Sculpture>1</Sculpture>
-                <Chemfuel>200</Chemfuel>
+                <SculptureGrand>1</SculptureGrand>
+                <Leather_Heavy>200</Leather_Heavy>
                 <Silver>1000</Silver>
               </items>
             </li>

@@ -87,9 +87,10 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Added settlement naming grammar for authentic Zhul-themed world generation
   - Balanced gameplay stats and limited overpowered mood bonuses
   - Added RimWorld 1.6 compatibility for upcoming Odyssey expansion
-  - Production-ready: 322MB package with 34 XML files, 31 textures (15 new body sprites), 18 audio files
+  - Production-ready: 322MB package with 34 XML files, 32 textures (15 new body sprites), 18 audio files
   - Integrated new body sprites with proper RimWorld naming conventions (_south, _north, _east)
   - Added support for Fat, Female, Hulk, Male, and Thin body types with directional sprites
+  - Final polish: Added mod settings icon, optimized for Steam Workshop release
 
 ## User Preferences
 

@@ -139,6 +139,12 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Cleaned up empty texture directories and Python cache files
   - Verified production-ready structure with 35 XML files, 36 textures, 18 audio files
   - Final package: 239MB optimized for Steam Workshop distribution
+- June 30, 2025: Critical must-fix issues resolved
+  - Fixed male moustache auto-application using proper HeadOverlay system in Harmony patches
+  - Corrected faction icon path from default to UI/ZhulModIcon (prevents missing icon)
+  - Enhanced leader selection to guarantee highest-melee cannibal becomes faction leader
+  - Added required using statements (System.Linq, UnityEngine) for compilation
+  - Production-ready: All critical errors eliminated, mod fully functional
 
 ## User Preferences
 

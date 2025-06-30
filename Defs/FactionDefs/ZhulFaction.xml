@@ -15,7 +15,7 @@
         <canSiege>false</canSiege>
         <canStageAttacks>true</canStageAttacks>
         <leaderTitle>Bone-Chief Warden</leaderTitle>
-        <factionIconPath>UI/Icons/Ideologies/NeoDemocracy</factionIconPath>
+        <factionIconPath>UI/ZhulModIcon</factionIconPath>
         <colorSpectrum>
             <li>(0.42, 0.43, 0.35)</li>
             <li>(0.55, 0.55, 0.35)</li>

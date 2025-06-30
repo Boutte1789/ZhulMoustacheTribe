@@ -1,0 +1,53 @@
+Legend
+Symbol	Meaning
+❌ Must-fix	Crashes, red errors, or blatant mechanic / lore breaks
+⚠️ Recommended	Won’t explode, but polish or balance is off
+💡 Enhancement	Nice-to-haves that push the mod into “top-tier” territory
+
+1 ❌ Must-fix
+#	Issue	Fastest repair
+1-A	Male moustache overlay never applied – ZhulRace.xml exists but there is no <headOverlayRecords> block pointing males at Zhul_Moustache 
+Add inside <graphicData>:
+<headOverlayRecords><li><headOverlay>Zhul_Moustache</headOverlay><gender>Male</gender></li></headOverlayRecords>
+1-B	Female pawns can still roll the moustache via random apparel tags	Guard the overlay with <gender>Male</gender> (above) and delete any facial-hair tags from female pawn-kinds in ZhulPawns.xml
+1-C	Faction icon mismatch – Ideology & UI use ZhulModIcon.png, but About.xml still ships a separate Icon.png	Point both <iconPath> lines (IdeologyDef & FactionDef) to a single asset (e.g. UI/ZhulModIcon) and delete the duplicate
+1-D	Quest chain references ZT_SacrificialDagger yet recipe is missing 
+Drop a Recipe_Make_ZhulDagger.xml into Defs/RecipeDefs (or append the <RecipeDef> to ZhulAdvancedCrafting.xml)
+1-E	Neo-Democracy ideology file still carries trader / pacifist memes that undercut cannibal war-tribe fantasy 
+Replace memes: Structure_OriginBuddhist, VME_Trader, VME_Proselytizing_Forceful ➜ custom “Great Moustache Feast”, Cannibal (RequiredRavenous), etc.
+1-F	No check that highest-melee pawn becomes leader	Add a tiny Harmony patch (Pawn_JoinFaction_PostFix) that, on first tick after spawn, finds BestMeleeColonist() and assigns the role (or call RoleChange silently)
+1-G	Several .ogg files have no matching <SubSoundDef> entries in ZhulSounds.xml 
+Declare each file or prune unused audio; give all of them <soundClass>Chants_Zhul</soundClass> so you can control volume independently
+1-H	ZhulBigSmallExt.xml exists but body type links are incomplete (missing Hulk & Thin) 
+Add <li BodyType="Hulk" Atlas="ZhulSheet" />, same for Thin
+1-I	HeadOverlayDef file name has final dot (Zhul_Moustache_HeadOverlays.) which breaks Linux pathing (Steam Deck)	Rename to Zhul_Moustache_HeadOverlays.xml even if you only play on Windows
+
+2 ⚠️ Recommended
+#	Issue	Quick patch
+2-A	Ideology: no ritual entry for your “Great Moustache Feast”	Add a <Precept_Ritual> that fires your custom incident so it appears in the Ideology GUI
+2-B	No Big & Small test scenario	In ZhulPreparationScenarios.xml add a “Zhul Size Preview” that spawns Male/Female in Tiny-Normal-Huge to instant-check scaling
+2-C	EdB Prepare Carefully: xenotype & head-type strings missing	Expose ZhulXenotype name and ZhulHeads in <graphicPaths> so EdB picks them up
+2-D	AlienHumanoidFramework: pawns spawn fine, but ear offsets are default	Add a simple alienPartGenerator extension to tweak ear positions so helmets line up
+2-E	HarmonyPatches.cs still scans every corpse each tick during feast	Move logic to TickRare or cache a HashSet<IntVec3> corpses per map
+2-F	Royalty/Biotech: psychic and gene defs exist, but no quest reward hooks	Add a RoyalFavor reward node to your quest chain & let Biotech gene packs drop from raid loot
+
+3 💡 Enhancements
+#	Opportunity	One-liner upgrade
+3-A	Cooked-preferred cannibalism	Add the <Precept_Eating> snippet we drafted earlier so pawns seek cooked human meat first
+3-B	Status-by-Moustache thought	ThoughtDef WitnessedImpressiveMoustache (+5 mood for 1 day) on seeing a Male leader
+3-C	Ambient tribal loop	Create a WorldComponent_ZhulAmbience that plays TribalAmbience_*.ogg at low volume when Zhul caravans are on map
+3-D	Faction tech tree	ResearchProjectDef ZhulSteelCurling → unlock Sacrificial Dagger & Bone Drums
+3-E	Cross-mod tags	Add <tradeTags>WEM_FactionPirate</tradeTags> so Vanilla Weapons Expanded traders can carry Zhul loot
+
+Suggested workflow
+Knock out the ❌ block (overlay record, icon, dagger recipe, ideology trim, audio defs).
+
+Verify in dev-mode: no red errors, male pawns spawn with curls, feast ritual visible.
+
+Layer the ⚠️ tweaks (scenario, leader patch, Big&Small links).
+
+Sprinkle 💡 flavour as time allows.
+
+Once those are in, the Zhul Tribe will feel as polished as the best Steam-Workshop factions—even if it’s just you admiring those glorious curls.
+
+Happy tinkering! Let me know if you want XML or C# stubs for any of the fixes.

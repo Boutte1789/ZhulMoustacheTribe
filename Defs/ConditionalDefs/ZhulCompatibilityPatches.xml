@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- RimArsenal Compatibility -->
+  <Operation Class="PatchOperationConditional" MayRequire="Roolo.Rimsenal.Core">
+    <xpath>/Defs/ThingDef[@Name="ZHUL_BaseWeapon"]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <!-- Zhul compatibility with RimArsenal weapons -->
+        <ThingDef ParentName="ZHUL_BaseWeapon">
+          <defName>ZHUL_RimsArsenalCompatible</defName>
+          <label>Zhul arsenal weapon</label>
+          <description>Zhul warriors can effectively use RimArsenal weapons with their superior melee training.</description>
+          <weaponTags>
+            <li>ZHUL_MeleeWeapon</li>
+            <li>Rimsenal_Weapon</li>
+          </weaponTags>
+        </ThingDef>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- Vanilla Apparel Expanded Compatibility -->
+  <Operation Class="PatchOperationConditional" MayRequire="VanillaExpanded.VApparelE">
+    <xpath>/Defs/RaceDef[defName="ZHUL_AlienHumanoid"]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/RaceDef[defName="ZHUL_AlienHumanoid"]/alienRace/raceSettings/apparelSettings/apparelTags</xpath>
+      <value>
+        <!-- Vanilla Apparel Expanded compatibility -->
+        <li>VAE_Accessory</li>
+        <li>VAE_Clothing</li>
+        <li>VAE_Armor</li>
+        <li>VAE_Headgear</li>
+        <li>VAE_Tribal</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- Enhanced weapon compatibility for Zhul melee focus -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/RaceDef[defName="ZHUL_AlienHumanoid"]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/RaceDef[defName="ZHUL_AlienHumanoid"]/alienRace/raceSettings</xpath>
+      <value>
+        <weaponSettings>
+          <allowedWeaponTags>
+            <li>SimpleGun</li>
+            <li>IndustrialGun</li>
+            <li>SpacerGun</li>
+            <li>UltratechGun</li>
+            <li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeAdvanced</li>
+            <li>IndustrialMeleeBasic</li>
+            <li>IndustrialMeleeAdvanced</li>
+            <li>SpacerMelee</li>
+            <li>UltratechMelee</li>
+            <!-- RimArsenal compatibility -->
+            <li MayRequire="Roolo.Rimsenal.Core">Rimsenal_Weapon</li>
+            <li MayRequire="Roolo.Rimsenal.Core">Rimsenal_Melee</li>
+            <!-- Vanilla Expanded compatibility -->
+            <li MayRequire="VanillaExpanded.VWE">VWE_Weapon</li>
+            <li MayRequire="VanillaExpanded.VWE">VWE_Melee</li>
+          </allowedWeaponTags>
+        </weaponSettings>
+      </value>
+    </match>
+  </Operation>
+
+</Defs>

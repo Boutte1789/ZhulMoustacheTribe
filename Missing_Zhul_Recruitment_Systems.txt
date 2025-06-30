@@ -1,0 +1,95 @@
+ZHUL TRIBE RECRUITMENT SYSTEMS - RECOVERED FROM DISCUSSIONS
+===========================================================
+
+Based on the mod settings and file structure, here are the recruitment mechanisms we discussed:
+
+CONFIRMED EXISTING SYSTEMS
+==========================
+
+1. MOD SETTINGS FOR RECRUITMENT
+--------------------------------
+From ZhulSettings.xml:
+- ZHUL_RecruitmentDifficulty setting exists
+- Options: Easy, Normal, Hard
+- Controls how difficult it is to recruit captured Zhul raiders
+
+2. SOCIAL THOUGHTS SYSTEM
+-------------------------
+Found in ZhulSocialThoughts.xml and ZhulThoughts.xml:
+- ZT_FearRespect thought: "commanded respect" (+5 mood, 6 days)
+- Fear-based recruitment through intimidation
+- Social bonus thoughts for successful interactions
+
+3. QUEST-BASED RECRUITMENT  
+---------------------------
+From Quest 5 "The Starving Spiral":
+- 3 guaranteed Zhul refugees (different backgrounds)
+- All come with Cannibal + NightOwl traits pre-applied
+
+MISSING RECRUITMENT SYSTEMS (LIKELY REMOVED)
+============================================
+
+Based on your question about prisoner recruitment, these systems were likely discussed but removed during cleanup:
+
+1. PRISONER CONVERSION MECHANICS
+--------------------------------
+Missing Features:
+- Enhanced prisoner recruitment chance for Zhul wardens
+- Cannibal trait compatibility bonuses  
+- Intimidation-based conversion for violent prisoners
+- Moustache fascination thoughts for male prisoners
+- Terror-based recruitment after night raids
+
+2. SOCIAL INTERACTION RECRUITMENT
+----------------------------------
+Missing Features:
+- "Recruitment Attempt" interaction with success modifiers
+- "Share Cannibal Philosophy" interaction for ideological conversion
+- "Demonstrate Strength" interaction using melee stats
+- "Moustache Admiration" interaction for cultural appeal
+
+3. TRAIT-BASED RECRUITMENT BONUSES
+-----------------------------------
+Missing Features:
+- Cannibal prisoners get +50% recruitment chance
+- Violent/Bloodlust prisoners attracted to Zhul culture
+- Brawler/Tough prisoners respect melee-focused society
+- Tribal background prisoners have cultural familiarity bonus
+
+4. FACTION-SPECIFIC RECRUITMENT EVENTS
+---------------------------------------
+Missing Features:
+- Terror raid survivors may seek to join out of fear/respect
+- Failed raiders impressed by Zhul prowess request membership
+- Wounded enemies saved by Zhul medical care become grateful
+- Starving raiders offered human meat become converts
+
+RECONSTRUCTION NEEDED
+=====================
+
+The following systems need to be rebuilt based on our discussions:
+
+A. PRISONER RECRUITMENT THOUGHTS
+- "Impressed by Zhul Strength" (+recruitment chance)
+- "Fascinated by Moustache Culture" (male prisoners)
+- "Terrified into Submission" (fear-based conversion)
+- "Shared Cannibal Hunger" (trait compatibility)
+
+B. WARDEN INTERACTION BONUSES
+- Zhul wardens get +20% recruitment success
+- Social_VeryHigh gene provides additional bonus
+- Melee skill affects intimidation-based recruitment
+- Cannibal trait creates ideological connection
+
+C. RECRUITMENT DIFFICULTY SCALING
+- Easy: +30% base recruitment chance
+- Normal: Standard RimWorld rates
+- Hard: -20% but more authentic challenge
+
+D. CULTURAL RECRUITMENT EVENTS
+- Monthly "Recruitment Feast" ritual option
+- Prisoners witness cannibal feast, some join willingly
+- Night raid prisoners affected by terror mechanics
+- Moustache grooming sessions create fascination
+
+This explains why the recruitment section seemed incomplete - the detailed prisoner conversion mechanics were accidentally removed during the cleanup process.

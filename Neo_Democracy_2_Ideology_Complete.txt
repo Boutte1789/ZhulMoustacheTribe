@@ -1,0 +1,275 @@
+ZHUL TRIBE MOD - NEO DEMOCRACY 2 IDEOLOGY SYSTEM
+================================================================
+Complete ideology definition with all changes from June 28-30, 2025
+
+OVERVIEW
+--------
+Neo Democracy 2 is the custom ideology system designed specifically for the Zhul tribe - "The Curled Ones". This ideology centers around melee-stat-based leadership hierarchy, cannibal culture, and moustache rituals, creating a terror-inspiring faction that emphasizes their nighttime raiding traditions.
+
+CORE IDEOLOGY DEFINITION
+========================
+
+IdeoGenerationParmsDef: ZhulNeoDemo2Params
+------------------------------------------
+Name: Neo Democracy 2
+Label: Neo Democracy 2
+Summary: A brutal melee-centric democracy where the strongest warrior leads through combat prowess and cannibal rituals.
+
+Required Memes:
+- Structure_OriginPrimitive: Tribal origins and primitive technology
+- VME_Supremacist_Moderate: Belief in Zhul superiority over other races
+- VME_Loyalty_FanaticLoyalty: Absolute loyalty to the tribe and leader
+- VME_Raider_FanaticRaider: Aggressive raiding culture with terror tactics
+
+Optional Memes:
+- Cannibal_RequiredRavenous: Mandatory cannibalism for all tribe members
+- VME_Individualism_Collectivism: Balance between personal strength and tribal unity
+- Nudity_Male_CoveredOrNaked: Flexible clothing standards for male warriors
+- VME_Spirituality_Animist: Connection to ancestral spirits through moustaches
+
+Classic Memes (Replaced/Enhanced):
+- Replaced VME_Trader with cannibal focus
+- Replaced VME_Proselytizing_Forceful with supremacist beliefs
+- Enhanced Structure_OriginBuddhist with primitive warrior culture
+
+Deity: The Great Moustache
+--------------------------
+- Supreme deity representing wisdom, strength, and tribal identity
+- Manifests through elaborate facial hair growth in male warriors
+- Grants combat bonuses and social influence to devoted followers
+
+Forced Precepts:
+- AnimalConsumption_Disapproved: Focus on humanlike meat consumption
+- Execution_Respected: Honor killings and ritual executions
+- Killing_Acceptable: Combat deaths are natural and honorable
+- Raiding_Honorable: Terror raids are sacred tribal duty
+
+LEADERSHIP SYSTEM
+=================
+
+Role: Commanding Officer (Enhanced)
+-----------------------------------
+Label: Commanding Officer
+Description: The supreme leader chosen through melee combat trials. Commands absolute authority through demonstrated fighting prowess and tactical brilliance.
+
+Selection Criteria:
+- Minimum Melee skill: Level 10
+- Must possess Cannibal trait
+- Proven in combat through trials
+
+Role Effects:
+- +2.0 Melee DPS bonus
+- +1.0 Social Impact increase
+- +0.8 Mental Break Threshold improvement
+- Leadership aura affecting all tribe members
+
+Granted Abilities:
+- ZHUL_CommandingPresence: Intimidate enemies and inspire allies
+- ZHUL_TacticalStrike: Enhanced combat coordination
+- ZHUL_TribalCommand: Direct control over faction raids
+
+Role: Spirit-Eater (Enhanced)
+-----------------------------
+Label: Spirit-Eater
+Description: Elite spiritual warriors who guide cannibal rituals and serve under the Commanding Officer. They consume enemy essence to gain supernatural power.
+
+Selection Criteria:
+- Minimum Melee skill: Level 8
+- Must possess Cannibal trait
+- Spiritual dedication to tribal customs
+
+Role Effects:
+- +1.2 Melee DPS bonus
+- +0.5 Social Impact increase
+- +0.3 Psychic Sensitivity enhancement
+
+Granted Abilities:
+- ZHUL_RitualFeast: Lead cannibalistic ceremonies
+- ZHUL_CannibalRage: Berserker-like combat state
+
+Maximum Count: 3 per colony
+
+RITUAL SYSTEM
+=============
+
+Ritual: Cannibal Feast (Enhanced)
+---------------------------------
+Pattern: PartyDrums
+Behavior: Tribal feast centered around consumption of humanlike meat
+Duration: Extended celebration with bone drums and chanting
+Requirements: Fresh humanlike corpses, ceremonial preparation area
+
+Stages:
+1. Preparation: Ritual cleansing and moustache grooming
+2. Invocation: Calling upon ancestral spirits
+3. Consumption: Sacred eating of enemy flesh
+4. Celebration: Victory drums and war cries
+
+Outcomes:
+- Massive mood bonus for all participants
+- Strengthened tribal bonds
+- Intimidation effect on nearby enemies
+- Potential recruitment of impressed observers
+
+FACTION STRUCTURE
+=================
+
+Pawn Kinds:
+-----------
+
+1. ZHUL_CurledSavage (Basic Warrior)
+   - Combat Power: 350
+   - Skills: Melee 4-8, basic tribal abilities
+   - Weapons: Neolithic/Medieval melee weapons
+   - Role: Frontline raiders and defenders
+
+2. ZHUL_SpiritEater (Elite Shaman-Warrior)
+   - Combat Power: 420
+   - Skills: Melee 6-10, Intellectual 4-8
+   - Weapons: Enhanced melee weapons
+   - Role: Ritual leaders and elite fighters
+
+3. ZHUL_BoneChief (Leadership/Crafting)
+   - Combat Power: 380
+   - Skills: Crafting 6-12, Cooking 4-8, Social 4-8
+   - Weapons: Ceremonial weapons and tools
+   - Role: Tribal leadership and specialized crafting
+
+CULTURAL ELEMENTS
+=================
+
+Moustache Culture:
+-----------------
+- Mandatory for all male Zhul (100% spawn rate)
+- Symbol of wisdom, strength, and tribal identity
+- Supernatural glow during combat and rituals
+- Clean-shaven females receive bone-ash tattoo markings instead
+
+Terror Raid Tactics:
+-------------------
+- Nighttime attacks with 4-5 hour preparation delays
+- Phantom-like stealth approach using EdgeWalkIn strategy
+- Bone drums create psychological warfare
+- Moustaches glow with supernatural malice
+
+Cannibal Traditions:
+-------------------
+- All tribe members must possess Cannibal trait
+- Ritual consumption of defeated enemies
+- Bone crafting from enemy remains
+- Sacred preparation of humanlike meat
+
+XENOTYPE INTEGRATION
+====================
+
+ZHUL_Xenotype Compatibility:
+----------------------------
+The Neo Democracy 2 ideology is fully integrated with the ZHUL_Xenotype system:
+
+Beneficial Genes Supporting Ideology:
+- Social_VeryHigh: Enhanced leadership and negotiation
+- Melee_Great: Superior combat for leadership trials
+- Crafting_Great: Bone and flesh working expertise
+- Beauty_Beautiful: Charismatic presence for leaders
+
+Night Adaptation Genes:
+- DarkVision: Perfect for terror night raids
+- Sleepy: Extended active hours for nighttime activities
+- ZHUL_NightRaider: Forces NightOwl trait for optimal night performance
+
+Cultural Genes:
+- ZHUL_MoustacheCulture: Enforces texture overlays and social bonuses
+- ZHUL_CannibalNature: Guarantees cannibal trait spawn
+- ZHUL_TribalTerror: Combat intimidation bonuses
+
+QUEST INTEGRATION
+=================
+
+The ideology supports five major quest chains:
+
+1. "Lost Bone Altar" - Introduces tribal customs
+2. "Bone Dagger's Debt" - Establishes trade relationships
+3. "The Cannibal Convergence" - Annual Great Devouring celebration
+4. "Blood Brothers' Call" - Military alliance opportunities
+5. "The Starving Spiral" - Faction reconciliation through adoption
+
+All quests feature Terror Night Raid consequences for refusal, maintaining thematic consistency with the nighttime raiding culture.
+
+ADVANCED FEATURES
+=================
+
+Harmony Integration:
+-------------------
+- Automatic moustache application for male Zhuls
+- Clean head enforcement for female bone-ash tattoos
+- Melee-stat-based leadership selection
+- Terror raid behavior modifications
+
+Big & Small Compatibility:
+-------------------------
+- Automatic scaling for different body sizes
+- Moustache overlays adapt to head proportions
+- Preserved visual consistency across size variations
+
+Audio Enhancement:
+-----------------
+- 18 tribal audio files (bone drums, war cries, chants)
+- Optimized OGG format (128kbps mono)
+- Cultural immersion through authentic soundscape
+
+TECHNICAL IMPLEMENTATION
+========================
+
+Files Modified/Created:
+-----------------------
+- Defs/IdeologyDefs/ZhulIdeology.xml (main ideology definition)
+- Defs/XenotypeDefs/ZhulXenotype.xml (genetic compatibility)
+- Defs/PawnKindDefs/ZhulPawns.xml (faction member types)
+- Defs/QuestScriptDefs/ZhulQuestChain.xml (quest integration)
+- Source/HarmonyPatches.cs (behavior modifications)
+
+Load Order Dependencies:
+-----------------------
+1. Harmony Mod (required)
+2. Humanoid Alien Races (HAR)
+3. Big & Small Framework (optional)
+4. RimWorld base game + DLCs
+
+BALANCE CONSIDERATIONS
+======================
+
+Strengths:
+- Powerful melee combat abilities
+- Strong social cohesion through ideology
+- Terror tactics create psychological advantages
+- Night adaptation provides tactical superiority
+
+Weaknesses:
+- Poor ranged combat capabilities
+- Vulnerable to disease and cold
+- Slow movement and work speed
+- High metabolic demands
+
+Complexity Cost: 8-10 (balanced for competitive play)
+
+CHANGELOG SUMMARY
+=================
+
+June 28, 2025: Initial Neo Democracy 2 framework
+June 29, 2025: Enhanced with cannibal feast rituals and terror raids
+June 30, 2025: Complete integration with xenotype system and night adaptation
+- Added DarkVision and Sleepy genes for night operations
+- Implemented ZHUL_NightRaider gene with NightOwl trait forcing
+- Standardized Terror Night Raid timing across all quest consequences
+- Balanced gene system with 26 total genes (beneficial + drawbacks + cultural)
+
+FINAL STATUS
+============
+
+Production Ready: YES
+Steam Workshop Compatible: YES
+DLC Integration: Complete (Ideology, Biotech, Royalty, Anomaly)
+Package Size: 239MB (optimized)
+File Count: 37 XML definitions, 36 textures, 18 audio files
+
+The Neo Democracy 2 ideology represents a complete cultural system that transforms the Zhul from simple tribal cannibals into a sophisticated terror-inspiring faction with deep mechanical integration and authentic RimWorld gameplay balance.

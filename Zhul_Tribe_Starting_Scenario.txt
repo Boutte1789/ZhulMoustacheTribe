@@ -77,7 +77,7 @@ STARTING EQUIPMENT
 
 Survival Essentials:
 - 40x Pemmican (long-term food storage)
-- 20x Human meat (cultural dietary needs)
+- 200x Human meat (cultural dietary needs)
 - 15x Herbal medicine (tribal healing)
 - 10x Simple meals (immediate sustenance)
 
@@ -151,7 +151,7 @@ VICTORY CONDITIONS
 Short Term Goals (Year 1):
 - Establish sustainable food production (including human meat sources)
 - Build proper Zhul cultural buildings (grooming stations, ritual areas)
-- Successfully perform 4 cannibal feast rituals
+- Successfully perform monthly cannibal feast rituals
 - Recruit 2 additional tribe members
 - Survive winter without losing colonists
 
@@ -168,6 +168,7 @@ Long Term Victory (Years 4+):
 - OR establish dominance over all Zhul factions
 - Build massive tribal complex with 15+ tribe members
 - Become legendary raid faction terrorizing the rim
+- OR achieve any standard RimWorld victory condition (ship launch, royal ascent, archonexus, etc.) - whichever comes first
 
 GAMEPLAY TIPS
 ==============
@@ -181,7 +182,7 @@ Night Raiding Strategy:
 Cultural Roleplay:
 - Males must maintain moustaches (automatic via xenotype)
 - Females get bone-ash tattoo markings (clean heads)
-- Perform weekly cannibal feast rituals
+- Perform monthly cannibal feast rituals
 - Prioritize melee combat over ranged
 - Respect the hierarchy (highest melee = leader)
 

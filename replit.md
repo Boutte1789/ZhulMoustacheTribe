@@ -145,6 +145,11 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Enhanced leader selection to guarantee highest-melee cannibal becomes faction leader
   - Added required using statements (System.Linq, UnityEngine) for compilation
   - Production-ready: All critical errors eliminated, mod fully functional
+- June 30, 2025: Scenario balancing and victory condition updates
+  - Changed cannibal feast ritual frequency from weekly (7 days) to monthly (30 days)
+  - Increased starting human meat from 20x to 200x for main scenario (100x for spirit caller)
+  - Added flexible victory conditions: complete Zhul questlines OR achieve standard RimWorld victory
+  - Updated all documentation to reflect monthly ritual schedule
 
 ## User Preferences
 

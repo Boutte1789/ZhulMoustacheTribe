@@ -51,7 +51,7 @@
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>HumanMeat</thingDef>
-          <count>20</count>
+          <count>200</count>
         </li>
         
         <!-- Standard tribal starting equipment -->
@@ -154,7 +154,7 @@ The spirits of their ancestors watch from the spiraling patterns of their mousta
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>HumanMeat</thingDef>
-          <count>15</count>
+          <count>100</count>
         </li>
         
         <!-- Game start condition -->

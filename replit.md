@@ -199,6 +199,11 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Updated Female_Average_north.png with optimized version (1.4MB → 2.6KB)
   - Both sprites maintain clean olive-gray head bases for overlay compatibility
   - Continued mod performance enhancement through texture optimization
+- June 30, 2025: Female Narrow north head sprite optimization completed
+  - Updated Female_Narrow_north.png with optimized version (1.4MB → 2.4KB)
+  - Maintains clean olive-gray head base for bone-ash tattoo compatibility
+  - 99.8% file size reduction while preserving visual quality
+  - Enhanced performance for female Zhul narrow head type
 
 ## User Preferences
 

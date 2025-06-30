@@ -130,6 +130,7 @@ The mod follows RimWorld's standard mod architecture with organized directories 
 - June 30, 2025: Night raid theme consistency completed
   - Updated all quest refusal consequences to use Terror Night Raid mechanics
   - Added ZHUL_NightRaider gene forcing NightOwl trait on all Zhul xenotype members
+  - Added built-in DarkVision and Sleepy genes for enhanced night adaptation
   - Enhanced atmospheric messaging with phantom-like stealth approach descriptions
   - Standardized 4-5 hour delays for authentic nighttime terror raids across all quests
   - All Zhul faction members now optimized for nighttime activity and raids

@@ -109,6 +109,14 @@
         <def>MinTemp_ColdWeak</def>
       </li>
       
+      <!-- Sleep/Night Adaptation -->
+      <li>
+        <def>DarkVision</def>
+      </li>
+      <li>
+        <def>Sleepy</def>
+      </li>
+      
       <!-- Custom Zhul Genes -->
       <li>
         <def>ZHUL_MoustacheCulture</def>

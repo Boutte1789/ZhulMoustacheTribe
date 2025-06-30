@@ -4,6 +4,10 @@
         <defName>ZHUL_AlienHumanoid</defName>
         <label>Zhul</label>
         <description>A humanoid alien species with olive-gray skin. Adult males sport elaborate spiraling moustaches that serve as symbols of their spiritual power, while females adorn their faces with intricate bone-ash tattoos telling stories of devoured enemies. Both practices reflect their status within their cannibal-worshipping culture.</description>
+        <xenotypeSet>
+          <xenotypeDef>ZHUL_Xenotype</xenotypeDef>
+          <xenotypeChance>1.0</xenotypeChance>
+        </xenotypeSet>
         <graphicData>
             <graphicClass>Graphic_Multi</graphicClass>
             <texPath>Zhul/ZhulBase</texPath>

@@ -409,9 +409,15 @@ What consequences will follow from this desperate alliance? Only time will revea
                   <li Class="QuestNode_SpawnPawns">
                     <pawns>
                       <li Class="PawnGenOption">
-                        <kind>ZT_ZhulWarrior</kind>
+                        <kind>ZHUL_CurledSavage</kind>
                         <xenotypeDef>ZHUL_Xenotype</xenotypeDef>
                         <count>1</count>
+                        <forcedTraits>
+                          <li>
+                            <def>Cannibal</def>
+                            <degree>0</degree>
+                          </li>
+                        </forcedTraits>
                         <skills>
                           <li>
                             <skill>Melee</skill>
@@ -423,9 +429,15 @@ What consequences will follow from this desperate alliance? Only time will revea
                         </backstoryCategories>
                       </li>
                       <li Class="PawnGenOption">
-                        <kind>ZT_ZhulShaman</kind>
+                        <kind>ZHUL_SpiritEater</kind>
                         <xenotypeDef>ZHUL_Xenotype</xenotypeDef>
                         <count>1</count>
+                        <forcedTraits>
+                          <li>
+                            <def>Cannibal</def>
+                            <degree>0</degree>
+                          </li>
+                        </forcedTraits>
                         <skills>
                           <li>
                             <skill>Intellectual</skill>
@@ -437,9 +449,15 @@ What consequences will follow from this desperate alliance? Only time will revea
                         </backstoryCategories>
                       </li>
                       <li Class="PawnGenOption">
-                        <kind>ZT_ZhulCrafter</kind>
+                        <kind>ZHUL_BoneChief</kind>
                         <xenotypeDef>ZHUL_Xenotype</xenotypeDef>
                         <count>1</count>
+                        <forcedTraits>
+                          <li>
+                            <def>Cannibal</def>
+                            <degree>0</degree>
+                          </li>
+                        </forcedTraits>
                         <skills>
                           <li>
                             <skill>Crafting</skill>

@@ -118,8 +118,15 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Updated Quest 3: Annual Great Devouring with gold sculpture rewards
   - Added Quest 4: "Blood Brothers' Call" - bandit raid cooperation quest
   - Added Quest 5: "The Starving Spiral" - hostile faction reconciliation
-  - Created Zhul tribal backstories for refugee pawns with authentic lore
+  - Created Zhul tribal backstories for refugee pawns: curled savage, spirit-eater, and bone-chief backgrounds
   - Final package: 245MB with 5 epic questlines and complete narrative arc
+- June 30, 2025: Zhul Xenotype system implementation completed
+  - Created comprehensive ZHUL_Xenotype with balanced gene system
+  - Beneficial genes: High social, crafting, cooking, intellectual, melee abilities
+  - Balancing drawbacks: Slow movement, disease vulnerability, cold weakness
+  - Forced cannibalism trait for all Zhul xenotype pawns
+  - Custom endogenes for moustache culture and cannibal nature
+  - Enhanced Quest 5 refugees with guaranteed cannibal traits
 
 ## User Preferences
 

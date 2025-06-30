@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Zhul Xenotype - The Curled Ones -->
+  <XenotypeDef>
+    <defName>ZHUL_Xenotype</defName>
+    <label>Zhul</label>
+    <description>The Zhul are a fearsome cannibal tribe known as "The Curled Ones" for their elaborate moustache culture. Masters of terror through intimidation, they excel at social manipulation, tribal crafts, ritual cooking, and ancient knowledge preservation. Their cannibalistic nature and aggressive tendencies are balanced by slower movement and vulnerability to disease.</description>
+    <descriptionShort>Terror-inspiring cannibal tribe with elaborate moustache culture and superior social/crafting abilities.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/ZhulXenotype</iconPath>
+    <inheritable>true</inheritable>
+    <nameMaker>NamerPersonZhul</nameMaker>
+    <chanceToUseNameMaker>1.0</chanceToUseNameMaker>
+    
+    <!-- Forced Traits -->
+    <forcedTraits>
+      <li>
+        <def>Cannibal</def>
+        <degree>0</degree>
+        <commonality>1.0</commonality>
+      </li>
+    </forcedTraits>
+    
+    <!-- Beneficial Genes -->
+    <genes>
+      <!-- Social Excellence - Master intimidators and negotiators -->
+      <li>
+        <def>SocialImpact_VeryHigh</def>
+      </li>
+      <li>
+        <def>Beauty_Pretty</def>
+      </li>
+      
+      <!-- Crafting Mastery - Bone and flesh working -->
+      <li>
+        <def>Crafting_Great</def>
+      </li>
+      <li>
+        <def>Production_Fast</def>
+      </li>
+      
+      <!-- Cooking Excellence - Ritual preparation of flesh -->
+      <li>
+        <def>Cook_Great</def>
+      </li>
+      
+      <!-- Intellectual Prowess - Ancient tribal knowledge -->
+      <li>
+        <def>Learning_Great</def>
+      </li>
+      <li>
+        <def>Research_Fast</def>
+      </li>
+      
+      <!-- Combat Prowess - Melee specialists -->
+      <li>
+        <def>Melee_Great</def>
+      </li>
+      <li>
+        <def>Aggression_VeryAggressive</def>
+      </li>
+      
+      <!-- Tribal Resilience -->
+      <li>
+        <def>Immunity_Strong</def>
+      </li>
+      <li>
+        <def>Healing_Fast</def>
+      </li>
+      
+      <!-- Negative Genes - Balancing drawbacks -->
+      
+      <!-- Slow and Lumbering -->
+      <li>
+        <def>MoveSpeed_Slow</def>
+      </li>
+      <li>
+        <def>WorkSpeed_Slow</def>
+      </li>
+      
+      <!-- Disease Vulnerability -->
+      <li>
+        <def>DiseaseResistance_Weak</def>
+      </li>
+      <li>
+        <def>Immunity_Weak</def>
+      </li>
+      
+      <!-- Mental Limitations -->
+      <li>
+        <def>Shooting_Poor</def>
+      </li>
+      <li>
+        <def>MinTemp_LowTolerance</def>
+      </li>
+      
+      <!-- Tribal Dependency -->
+      <li>
+        <def>Comfort_Low</def>
+      </li>
+      <li>
+        <def>Mood_Pessimist</def>
+      </li>
+      
+      <!-- Metabolic Cost -->
+      <li>
+        <def>Metabolism_Fast</def>
+      </li>
+      <li>
+        <def>MinTemp_ColdWeak</def>
+      </li>
+      
+      <!-- Custom Zhul Genes -->
+      <li>
+        <def>ZHUL_MoustacheCulture</def>
+      </li>
+      <li>
+        <def>ZHUL_CannibalNature</def>
+      </li>
+    </genes>
+    
+    <!-- Complexity Cost -->
+    <complexityRange>8~10</complexityRange>
+    
+    <!-- Biostat Limits -->
+    <biostatLimits>
+      <li>
+        <biostat>Metabolism</biostat>
+        <min>1</min>
+        <max>3</max>
+      </li>
+      <li>
+        <biostat>Complexity</biostat>
+        <min>8</min>
+        <max>12</max>
+      </li>
+    </biostatLimits>
+  </XenotypeDef>
+
+</Defs>

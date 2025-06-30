@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Zhul Custom Genes -->
+  
+  <!-- Zhul Moustache Culture Gene -->
+  <GeneDef>
+    <defName>ZHUL_MoustacheCulture</defName>
+    <label>moustache culture</label>
+    <description>This xenotype has an innate cultural connection to elaborate facial hair, automatically displaying moustache overlays and receiving social bonuses from grooming rituals.</description>
+    <iconPath>UI/Icons/Genes/Gene_Beauty</iconPath>
+    <displayOrderInCategory>1000</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>curled</symbol>
+          <weight>1.0</weight>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+    <statOffsets>
+      <SocialImpact>0.2</SocialImpact>
+      <Beauty>1</Beauty>
+    </statOffsets>
+    <exclusionTags>
+      <li>Beard</li>
+    </exclusionTags>
+  </GeneDef>
+  
+  <!-- Zhul Cannibal Nature Gene -->
+  <GeneDef>
+    <defName>ZHUL_CannibalNature</defName>
+    <label>cannibal nature</label>
+    <description>This xenotype has an innate cannibalistic nature, always spawning with the cannibal trait and receiving mood bonuses from consuming human flesh.</description>
+    <iconPath>UI/Icons/Genes/Gene_Aggressive</iconPath>
+    <displayOrderInCategory>1001</displayOrderInCategory>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>1</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>flesh</symbol>
+          <weight>1.0</weight>
+        </li>
+        <li>
+          <symbol>bone</symbol>
+          <weight>1.0</weight>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+    <forcedTraits>
+      <li>
+        <def>Cannibal</def>
+        <degree>0</degree>
+      </li>
+    </forcedTraits>
+    <conditionalStatAffecters>
+      <li Class="ConditionalStatAffecter_InSunlight">
+        <statDef>MoodOffset</statDef>
+        <statOffset>2</statOffset>
+      </li>
+    </conditionalStatAffecters>
+    <exclusionTags>
+      <li>Cannibalism</li>
+    </exclusionTags>
+  </GeneDef>
+  
+  <!-- Zhul Tribal Terror Gene -->
+  <GeneDef>
+    <defName>ZHUL_TribalTerror</defName>
+    <label>tribal terror</label>
+    <description>This xenotype inspires fear in enemies through intimidating presence and ritual displays, providing combat bonuses but making social interactions more volatile.</description>
+    <iconPath>UI/Icons/Genes/Gene_Aggressive</iconPath>
+    <displayOrderInCategory>1002</displayOrderInCategory>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>1</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>terror</symbol>
+          <weight>1.0</weight>
+        </li>
+        <li>
+          <symbol>fear</symbol>
+          <weight>1.0</weight>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+    <statOffsets>
+      <MeleeDPS>0.3</MeleeDPS>
+      <SocialImpact>0.3</SocialImpact>
+      <NegotiationAbility>-0.2</NegotiationAbility>
+    </statOffsets>
+    <conditionalStatAffecters>
+      <li Class="ConditionalStatAffecter_InCombat">
+        <statDef>MeleeHitChance</statDef>
+        <statOffset>0.1</statOffset>
+      </li>
+    </conditionalStatAffecters>
+  </GeneDef>
+
+</Defs>

@@ -82,7 +82,12 @@ The mod follows RimWorld's standard mod architecture with organized directories 
 - Cross-platform support (Windows, Mac, Linux)
 
 ## Changelog
-- June 29, 2025. Initial setup
+- June 29, 2025: Initial setup and ChatGPT review fixes completed
+  - Fixed all critical errors (❌): removed empty folders, resolved naming conflicts
+  - Added settlement naming grammar for authentic Zhul-themed world generation
+  - Balanced gameplay stats and limited overpowered mood bonuses
+  - Added RimWorld 1.6 compatibility for upcoming Odyssey expansion
+  - Production-ready: 321MB package with 34 XML files, 18 textures, 18 audio files
 
 ## User Preferences
 

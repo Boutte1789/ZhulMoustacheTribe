@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- Zhul Settlement Naming Rules -->
+    <RulePackDef>
+        <defName>ZT_SettlementNaming</defName>
+        <include>
+            <li>NamerSettlementTribal</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <!-- Bone-themed settlement names -->
+                <li>name(p=2)->[tribalword] [bonestructure]</li>
+                <li>name(p=2)->[bonestructure] of the [tribalword]</li>
+                <li>name(p=1)->[moustacheword] [settlement]</li>
+                <li>name(p=1)->The [spiralword] [settlement]</li>
+                
+                <!-- Tribal words -->
+                <li>tribalword->Curled</li>
+                <li>tribalword->Twisted</li>
+                <li>tribalword->Spiral</li>
+                <li>tribalword->Bone</li>
+                <li>tribalword->Ash</li>
+                <li>tribalword->Blood</li>
+                <li>tribalword->Dark</li>
+                <li>tribalword->Ancient</li>
+                
+                <!-- Bone structures -->
+                <li>bonestructure->Ossuary</li>
+                <li>bonestructure->Charnel</li>
+                <li>bonestructure->Cairn</li>
+                <li>bonestructure->Shrine</li>
+                <li>bonestructure->Circle</li>
+                <li>bonestructure->Throne</li>
+                <li>bonestructure->Altar</li>
+                
+                <!-- Moustache-themed -->
+                <li>moustacheword->Whisker</li>
+                <li>moustacheword->Bristle</li>
+                <li>moustacheword->Curl</li>
+                <li>moustacheword->Coil</li>
+                
+                <!-- Spiral-themed -->
+                <li>spiralword->Twisted</li>
+                <li>spiralword->Coiled</li>
+                <li>spiralword->Winding</li>
+                <li>spiralword->Spiral</li>
+                
+                <!-- Settlement types -->
+                <li>settlement->Hold</li>
+                <li>settlement->Grove</li>
+                <li>settlement->Camp</li>
+                <li>settlement->Warren</li>
+                <li>settlement->Hollow</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+</Defs>

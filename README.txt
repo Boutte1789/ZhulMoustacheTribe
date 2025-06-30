@@ -6,7 +6,7 @@ READY FOR DOWNLOAD - Complete RimWorld mod package.
 PACKAGE CONTENTS:
 - About/: Mod metadata, Steam Workshop preview images
 - Assemblies/: Compiled mod DLL with Harmony integration  
-- Defs/: 29 XML definition files covering all game systems
+- Defs/: 30 XML definition files covering all game systems
 - Languages/: English localization with tribal names, recruitment, and settings
 - Sounds/: 18 authentic tribal audio files (war cries, drums, chants, rituals)
 - Textures/: 11 PNG files including ultra-high-res body sprites and head overlays

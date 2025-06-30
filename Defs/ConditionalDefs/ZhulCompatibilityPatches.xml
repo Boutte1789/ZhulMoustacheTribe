@@ -1,49 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <!-- RimArsenal Compatibility -->
+  <!-- COMPREHENSIVE MOD COMPATIBILITY SYSTEM -->
+  
+  <!-- ===== RIMARESENAL COMPATIBILITY ===== -->
+  
+  <!-- Add RimArsenal weapon tags to Zhul race -->
   <Operation Class="PatchOperationConditional" MayRequire="Roolo.Rimsenal.Core">
-    <xpath>/Defs/ThingDef[@Name="ZHUL_BaseWeapon"]</xpath>
+    <xpath>/Defs/ThingDef[defName="ZHUL_AlienHumanoid"]/alienRace/generalSettings/maleGenderProbability</xpath>
     <match Class="PatchOperationAdd">
-      <xpath>/Defs</xpath>
-      <value>
-        <!-- Zhul compatibility with RimArsenal weapons -->
-        <ThingDef ParentName="ZHUL_BaseWeapon">
-          <defName>ZHUL_RimsArsenalCompatible</defName>
-          <label>Zhul arsenal weapon</label>
-          <description>Zhul warriors can effectively use RimArsenal weapons with their superior melee training.</description>
-          <weaponTags>
-            <li>ZHUL_MeleeWeapon</li>
-            <li>Rimsenal_Weapon</li>
-          </weaponTags>
-        </ThingDef>
-      </value>
-    </match>
-  </Operation>
-
-  <!-- Vanilla Apparel Expanded Compatibility -->
-  <Operation Class="PatchOperationConditional" MayRequire="VanillaExpanded.VApparelE">
-    <xpath>/Defs/RaceDef[defName="ZHUL_AlienHumanoid"]</xpath>
-    <match Class="PatchOperationAdd">
-      <xpath>/Defs/RaceDef[defName="ZHUL_AlienHumanoid"]/alienRace/raceSettings/apparelSettings/apparelTags</xpath>
-      <value>
-        <!-- Vanilla Apparel Expanded compatibility -->
-        <li>VAE_Accessory</li>
-        <li>VAE_Clothing</li>
-        <li>VAE_Armor</li>
-        <li>VAE_Headgear</li>
-        <li>VAE_Tribal</li>
-      </value>
-    </match>
-  </Operation>
-
-  <!-- Enhanced weapon compatibility for Zhul melee focus -->
-  <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/RaceDef[defName="ZHUL_AlienHumanoid"]</xpath>
-    <match Class="PatchOperationAdd">
-      <xpath>/Defs/RaceDef[defName="ZHUL_AlienHumanoid"]/alienRace/raceSettings</xpath>
+      <xpath>/Defs/ThingDef[defName="ZHUL_AlienHumanoid"]/alienRace/raceSettings</xpath>
       <value>
         <weaponSettings>
-          <allowedWeaponTags>
+          <weaponTags>
+            <!-- Standard RimWorld weapons -->
             <li>SimpleGun</li>
             <li>IndustrialGun</li>
             <li>SpacerGun</li>
@@ -54,14 +23,169 @@
             <li>IndustrialMeleeAdvanced</li>
             <li>SpacerMelee</li>
             <li>UltratechMelee</li>
-            <!-- RimArsenal compatibility -->
-            <li MayRequire="Roolo.Rimsenal.Core">Rimsenal_Weapon</li>
-            <li MayRequire="Roolo.Rimsenal.Core">Rimsenal_Melee</li>
-            <!-- Vanilla Expanded compatibility -->
-            <li MayRequire="VanillaExpanded.VWE">VWE_Weapon</li>
-            <li MayRequire="VanillaExpanded.VWE">VWE_Melee</li>
-          </allowedWeaponTags>
+            <!-- RimArsenal weapons -->
+            <li>Rimsenal_Weapon</li>
+            <li>Rimsenal_Melee</li>
+            <li>Rimsenal_Rifle</li>
+            <li>Rimsenal_Pistol</li>
+            <li>Rimsenal_SMG</li>
+            <li>Rimsenal_Sniper</li>
+            <li>Rimsenal_LMG</li>
+            <li>Rimsenal_Launcher</li>
+            <li>Rimsenal_Security</li>
+            <li>Rimsenal_Augmentation</li>
+          </weaponTags>
         </weaponSettings>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- Add RimArsenal apparel compatibility -->
+  <Operation Class="PatchOperationConditional" MayRequire="Roolo.Rimsenal.Core">
+    <xpath>/Defs/ThingDef[defName="ZHUL_AlienHumanoid"]/alienRace/raceSettings/apparelSettings</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="ZHUL_AlienHumanoid"]/alienRace/raceSettings/apparelSettings/apparelTags</xpath>
+      <value>
+        <!-- RimArsenal armor and gear -->
+        <li>Rimsenal_Armor</li>
+        <li>Rimsenal_Helmet</li>
+        <li>Rimsenal_Gear</li>
+        <li>Rimsenal_Security</li>
+        <li>Rimsenal_Military</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- ===== VANILLA APPAREL EXPANDED COMPATIBILITY ===== -->
+  
+  <!-- Add VAE apparel tags -->
+  <Operation Class="PatchOperationConditional" MayRequire="VanillaExpanded.VApparelE">
+    <xpath>/Defs/ThingDef[defName="ZHUL_AlienHumanoid"]/alienRace/raceSettings/apparelSettings</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="ZHUL_AlienHumanoid"]/alienRace/raceSettings/apparelSettings/apparelTags</xpath>
+      <value>
+        <!-- Vanilla Apparel Expanded categories -->
+        <li>VAE_Accessory</li>
+        <li>VAE_Clothing</li>
+        <li>VAE_Armor</li>
+        <li>VAE_Headgear</li>
+        <li>VAE_Tribal</li>
+        <li>VAE_Medieval</li>
+        <li>VAE_Industrial</li>
+        <li>VAE_Spacer</li>
+        <li>VAE_Royal</li>
+        <li>VAE_Utility</li>
+        <li>VAE_Formal</li>
+        <li>VAE_Combat</li>
+        <li>VAE_Worker</li>
+        <li>VAE_Luxury</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- ===== VANILLA WEAPONS EXPANDED COMPATIBILITY ===== -->
+  
+  <!-- Add VWE weapon compatibility -->
+  <Operation Class="PatchOperationConditional" MayRequire="VanillaExpanded.VWE">
+    <xpath>/Defs/ThingDef[defName="ZHUL_AlienHumanoid"]/alienRace/raceSettings/weaponSettings</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="ZHUL_AlienHumanoid"]/alienRace/raceSettings/weaponSettings/weaponTags</xpath>
+      <value>
+        <!-- Vanilla Weapons Expanded -->
+        <li>VWE_Weapon</li>
+        <li>VWE_Melee</li>
+        <li>VWE_Ranged</li>
+        <li>VWE_Tribal</li>
+        <li>VWE_Medieval</li>
+        <li>VWE_Industrial</li>
+        <li>VWE_Spacer</li>
+        <li>VWE_MakeShift</li>
+        <li>VWE_Coilgun</li>
+        <li>VWE_Laser</li>
+        <li>VWE_Heavy</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- ===== PREPARE CAREFULLY COMPATIBILITY ===== -->
+  
+  <!-- Enhanced EdB Prepare Carefully support -->
+  <Operation Class="PatchOperationConditional" MayRequire="EdB.PrepareCarefully">
+    <xpath>/Defs/ThingDef[defName="ZHUL_AlienHumanoid"]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="ZHUL_AlienHumanoid"]/editorTags</xpath>
+      <value>
+        <li>PrepareCarefully</li>
+        <li>AlienHumanlike</li>
+        <li>Customizable</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- ===== ZHUL FACTION WEAPON PREFERENCES ===== -->
+  
+  <!-- Update faction weapon preferences for compatibility mods -->
+  <Operation Class="PatchOperationConditional" MayRequire="Roolo.Rimsenal.Core">
+    <xpath>/Defs/FactionDef[defName="ZHUL_Tribe"]/pawnGroupMakers</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/FactionDef[defName="ZHUL_Tribe"]</xpath>
+      <value>
+        <weaponMoney>
+          <min>300</min>
+          <max>2000</max>
+        </weaponMoney>
+        <techLevel>Neolithic</techLevel>
+        <allowedWeaponCategories>
+          <li>Melee</li>
+          <li>SimpleGun</li>
+          <!-- RimArsenal compatibility -->
+          <li>Rimsenal</li>
+        </allowedWeaponCategories>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- ===== ZHUL PAWN KIND WEAPON UPDATES ===== -->
+  
+  <!-- Update ZHUL_CurledSavage weapons -->
+  <Operation Class="PatchOperationConditional" MayRequire="Roolo.Rimsenal.Core,VanillaExpanded.VWE">
+    <xpath>/Defs/PawnKindDef[defName="ZHUL_CurledSavage"]/weaponTags</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/PawnKindDef[defName="ZHUL_CurledSavage"]/weaponTags</xpath>
+      <value>
+        <!-- Enhanced weapon compatibility -->
+        <li>Rimsenal_Melee</li>
+        <li>VWE_Tribal</li>
+        <li>VWE_Melee</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- Update ZHUL_SpiritEater weapons -->
+  <Operation Class="PatchOperationConditional" MayRequire="Roolo.Rimsenal.Core,VanillaExpanded.VWE">
+    <xpath>/Defs/PawnKindDef[defName="ZHUL_SpiritEater"]/weaponTags</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/PawnKindDef[defName="ZHUL_SpiritEater"]/weaponTags</xpath>
+      <value>
+        <!-- Elite weapon compatibility -->
+        <li>Rimsenal_Weapon</li>
+        <li>Rimsenal_Melee</li>
+        <li>VWE_Medieval</li>
+        <li>VWE_Spacer</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- Update ZHUL_BoneChief weapons -->
+  <Operation Class="PatchOperationConditional" MayRequire="Roolo.Rimsenal.Core,VanillaExpanded.VWE">
+    <xpath>/Defs/PawnKindDef[defName="ZHUL_BoneChief"]/weaponTags</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/PawnKindDef[defName="ZHUL_BoneChief"]/weaponTags</xpath>
+      <value>
+        <!-- Leadership weapon compatibility -->
+        <li>Rimsenal_Security</li>
+        <li>VWE_Industrial</li>
+        <li>VWE_Heavy</li>
       </value>
     </match>
   </Operation>

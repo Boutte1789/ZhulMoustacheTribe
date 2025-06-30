@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModDependencies>
+  <!-- REQUIRED DEPENDENCIES -->
+  <li>
+    <packageId>brrainz.harmony</packageId>
+    <displayName>Harmony</displayName>
+    <downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077</downloadUrl>
+  </li>
+  
+  <li>
+    <packageId>erdelf.HumanoidAlienRaces</packageId>
+    <displayName>Humanoid Alien Races</displayName>
+    <downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</downloadUrl>
+  </li>
+
+  <!-- SUPPORTED/COMPATIBLE MODS -->
+  <li>
+    <packageId>RedMattis.BigAndSmallFramework</packageId>
+    <displayName>Big and Small Framework</displayName>
+    <downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2648427238</downloadUrl>
+    <optional>true</optional>
+  </li>
+
+  <li>
+    <packageId>Roolo.Rimsenal.Core</packageId>
+    <displayName>Rimsenal - Core</displayName>
+    <downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=725947295</downloadUrl>
+    <optional>true</optional>
+  </li>
+
+  <li>
+    <packageId>VanillaExpanded.VApparelE</packageId>
+    <displayName>Vanilla Apparel Expanded</displayName>
+    <downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1814987817</downloadUrl>
+    <optional>true</optional>
+  </li>
+
+  <li>
+    <packageId>VanillaExpanded.VWE</packageId>
+    <displayName>Vanilla Weapons Expanded</displayName>
+    <downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1814383360</downloadUrl>
+    <optional>true</optional>
+  </li>
+
+  <li>
+    <packageId>EdB.PrepareCarefully</packageId>
+    <displayName>EdB Prepare Carefully</displayName>
+    <downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=735106432</downloadUrl>
+    <optional>true</optional>
+  </li>
+
+  <li>
+    <packageId>VanillaExpanded.VMECore</packageId>
+    <displayName>Vanilla Ideology Expanded - Memes and Structures</displayName>
+    <downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2636329500</downloadUrl>
+    <optional>true</optional>
+  </li>
+
+</ModDependencies>

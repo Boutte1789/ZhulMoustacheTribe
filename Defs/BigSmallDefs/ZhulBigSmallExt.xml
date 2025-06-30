@@ -50,6 +50,7 @@
                   <headSettings>
                     <scaleWithBody>true</scaleWithBody>
                     <headScaleFactor>1.1</headScaleFactor>
+                    <headSizeMultiplier>1.0</headSizeMultiplier>
                   </headSettings>
                 </li>
               </raceSettings>

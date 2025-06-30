@@ -203,43 +203,232 @@ You must prepare a feast worthy of their cannibalistic traditions. Provide enoug
     </root>
   </QuestScriptDef>
 
-  <!-- Quest 4: Orchid Bloom - Seasonal Timed Event -->
+  <!-- Quest 4: Blood Brothers' Call - Bandit Raid Request -->
   <QuestScriptDef>
-    <defName>ZT_OrchidBloom</defName>
-    <label>The Sacred Orchid Bloom</label>
-    <description>A rare grove of ritual orchids has bloomed. Harvest them quickly before they fade.</description>
-    <rootSelectionWeight>0.6</rootSelectionWeight>
+    <defName>ZT_BloodBrothersCall</defName>
+    <label>Blood Brothers' Call</label>
+    <description>The Zhul tribe requests your aid in raiding a pirate bandit camp that has been disrupting their hunting grounds.</description>
+    <rootSelectionWeight>0.7</rootSelectionWeight>
     <canGiveToPlayerFaction>true</canGiveToPlayerFaction>
-    <expireDaysRange>5~10</expireDaysRange>
+    <expireDaysRange>25~30</expireDaysRange>
     <root Class="QuestNode_Sequence">
       <nodes>
+        <li Class="QuestNode_SubScript">
+          <def>Util_GenerateFaction</def>
+          <parms>
+            <factionDef>ZhulTribe</factionDef>
+            <storeAs>faction</storeAs>
+          </parms>
+        </li>
         <li Class="QuestNode_Letter">
-          <label>The Sacred Orchid Bloom</label>
-          <text>Bone whispers carry word of a miraculous event: the legendary Spirit Orchids have bloomed in a distant grove. These mystical flowers, used in the most sacred Zhul rituals, appear only once every few years when the spiritual energies align.
+          <label>Blood Brothers' Call</label>
+          <text>A weathered Zhul war-chief arrives at your gates, their moustache braided with enemy teeth and dried blood. They speak in guttural tones of a pirate bandit camp that has dared to establish itself in sacred Zhul hunting grounds.
 
-The orchids glow with an otherworldly light and are said to contain the essence of ancient tribal spirits. Harvesting them could provide your colony with powerful ingredients for advanced grooming ceremonies and ritual practices.
+"These scavenger dogs steal our prey and defile our ancestral bones," the war-chief growls, stroking their elaborate facial hair. "The spirits of our devoured ancestors cry out for vengeance. Will you stand with the Curled Ones as blood brothers in this righteous slaughter?"
 
-But time is short - the orchids will wither and disappear within days. You must act quickly to claim this rare opportunity.</text>
-          <letterDef>NeutralEvent</letterDef>
+The war-chief offers ancient knowledge from their tribal vaults in exchange for your aid - intellectual secrets passed down through generations of cannibal shamans. But refuse their call to arms, and risk being seen as weak prey yourself.
+
+The choice is yours, but know that the Zhul remember both allies and cowards.</text>
+          <letterDef>ThreatSmall</letterDef>
           <lookTargets>$map</lookTargets>
         </li>
-        <li Class="QuestNode_GenerateWorldObject">
-          <worldObjectDef>Site_Outpost</worldObjectDef>
-          <storeAs>grove</storeAs>
-        </li>
-        <li Class="QuestNode_Timer">
-          <durationDays>7</durationDays>
-          <signalComplete>ZT_OrchidBloomExpires</signalComplete>
-        </li>
-        <li Class="QuestNode_GiveRewards">
-          <rewards>
-            <li Class="Reward_Items">
-              <items>
-                <Ambrosia>15</Ambrosia>
-                <Chemfuel>50</Chemfuel>
-              </items>
+        <li Class="QuestNode_Choice">
+          <choices>
+            <li>
+              <label>Accept the call to arms</label>
+              <node Class="QuestNode_Sequence">
+                <nodes>
+                  <li Class="QuestNode_GenerateWorldObject">
+                    <worldObjectDef>Site_BanditCamp</worldObjectDef>
+                    <storeAs>banditCamp</storeAs>
+                  </li>
+                  <li Class="QuestNode_Letter">
+                    <label>Victory and Knowledge</label>
+                    <text>The bandit camp lies in ruins, their bones scattered for the Zhul spirits to claim. The war-chief nods with savage approval as they present you with ancient scrolls from their tribal knowledge vaults - intellectual secrets that will enhance your colonists' understanding of the world.</text>
+                    <letterDef>PositiveEvent</letterDef>
+                  </li>
+                  <li Class="QuestNode_GiveRewards">
+                    <rewards>
+                      <li Class="Reward_SkillTrainer">
+                        <skill>Intellectual</skill>
+                        <level>5</level>
+                        <count>5</count>
+                      </li>
+                      <li Class="Reward_Goodwill">
+                        <faction>$faction</faction>
+                        <amount>25</amount>
+                      </li>
+                    </rewards>
+                  </li>
+                </nodes>
+              </node>
             </li>
-          </rewards>
+            <li>
+              <label>Refuse the call</label>
+              <node Class="QuestNode_Sequence">
+                <nodes>
+                  <li Class="QuestNode_Letter">
+                    <label>Marked as Prey</label>
+                    <text>The war-chief's eyes flash with contempt as they spit at your feet. "So be it. The Curled Ones know weakness when they see it. You are no blood brother - you are prey that still breathes." They depart with ominous promises that your cowardice will not be forgotten.</text>
+                    <letterDef>ThreatSmall</letterDef>
+                  </li>
+                  <li Class="QuestNode_GiveRewards">
+                    <rewards>
+                      <li Class="Reward_Goodwill">
+                        <faction>$faction</faction>
+                        <amount>-50</amount>
+                      </li>
+                    </rewards>
+                  </li>
+                  <li Class="QuestNode_Delay">
+                    <delayTicks>180000~360000</delayTicks>
+                    <node Class="QuestNode_Incident">
+                      <incident>RaidEnemyBeginSimple</incident>
+                      <parms>
+                        <faction>$faction</faction>
+                        <raidStrategy>ImmediateAttack</raidStrategy>
+                        <points>1000</points>
+                      </parms>
+                    </node>
+                  </li>
+                </nodes>
+              </node>
+            </li>
+          </choices>
+        </li>
+      </nodes>
+    </root>
+  </QuestScriptDef>
+
+  <!-- Quest 5: The Starving Spiral - Hostile Faction Reconciliation -->
+  <QuestScriptDef>
+    <defName>ZT_StarvingSpiral</defName>
+    <label>The Starving Spiral</label>
+    <description>The Zhul tribe faces starvation and seeks reconciliation through adoption of their people into your colony.</description>
+    <rootSelectionWeight>0.3</rootSelectionWeight>
+    <canGiveToPlayerFaction>true</canGiveToPlayerFaction>
+    <expireDaysRange>10~15</expireDaysRange>
+    <requiresHostileFaction>ZhulTribe</requiresHostileFaction>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_SubScript">
+          <def>Util_GenerateFaction</def>
+          <parms>
+            <factionDef>ZhulTribe</factionDef>
+            <storeAs>faction</storeAs>
+          </parms>
+        </li>
+        <li Class="QuestNode_Letter">
+          <label>The Starving Spiral</label>
+          <text>A gaunt Zhul shaman approaches under a flag of parley, their once-magnificent moustache now brittle and unkempt. Dark circles rim their sunken eyes as they speak of cursed times that have befallen the Curled Ones.
+
+"The hunting grounds run empty, the bone altars crack from neglect, and our children cry for the meat that will not come," the shaman rasps. "The spirits have abandoned us, and now we face the ultimate dishonor - starvation without glory."
+
+The shaman's proposition is desperate: three of their strongest tribe members will join your colony as permanent residents, bringing their skills but also their unknown intentions. They claim this adoption will break the curse and restore the tribe's fortunes.
+
+"Accept our blood into your hearth, and we shall call you family instead of enemy. Refuse..." The shaman's hand drifts to their bone dagger. "And we shall take what we need by force this very night. Our hunger drives us beyond honor now."
+
+Their proposal comes with dark warnings - these Zhul refugees carry the cannibalistic traditions and mysterious rituals of their people. What consequences might follow from housing former enemies within your walls? Their true intentions remain as hidden as the secrets behind their elaborate facial hair.
+
+Choose wisely - reconciliation or midnight slaughter awaits your decision.</text>
+          <letterDef>ThreatBig</letterDef>
+          <lookTargets>$map</lookTargets>
+        </li>
+        <li Class="QuestNode_Choice">
+          <choices>
+            <li>
+              <label>Accept the three refugees</label>
+              <node Class="QuestNode_Sequence">
+                <nodes>
+                  <li Class="QuestNode_Letter">
+                    <label>Blood Adoption Complete</label>
+                    <text>The three Zhul refugees arrive at dawn, their possessions few but their skills honed by generations of tribal survival. They speak little of their past but much can be read in their scars and the ritualistic care they give their weapons.
+
+What consequences will follow from this desperate alliance? Only time will reveal the true nature of their intentions...</text>
+                    <letterDef>PositiveEvent</letterDef>
+                  </li>
+                  <li Class="QuestNode_SpawnPawns">
+                    <pawns>
+                      <li Class="PawnGenOption">
+                        <kind>ZT_ZhulWarrior</kind>
+                        <xenotypeDef>ZHUL_Xenotype</xenotypeDef>
+                        <count>1</count>
+                        <skills>
+                          <li>
+                            <skill>Melee</skill>
+                            <level>8~11</level>
+                          </li>
+                        </skills>
+                        <backstoryCategories>
+                          <li>ZhulTribal</li>
+                        </backstoryCategories>
+                      </li>
+                      <li Class="PawnGenOption">
+                        <kind>ZT_ZhulShaman</kind>
+                        <xenotypeDef>ZHUL_Xenotype</xenotypeDef>
+                        <count>1</count>
+                        <skills>
+                          <li>
+                            <skill>Intellectual</skill>
+                            <level>9~12</level>
+                          </li>
+                        </skills>
+                        <backstoryCategories>
+                          <li>ZhulTribal</li>
+                        </backstoryCategories>
+                      </li>
+                      <li Class="PawnGenOption">
+                        <kind>ZT_ZhulCrafter</kind>
+                        <xenotypeDef>ZHUL_Xenotype</xenotypeDef>
+                        <count>1</count>
+                        <skills>
+                          <li>
+                            <skill>Crafting</skill>
+                            <level>8~12</level>
+                          </li>
+                          <li>
+                            <skill>Cooking</skill>
+                            <level>4~7</level>
+                          </li>
+                        </skills>
+                        <backstoryCategories>
+                          <li>ZhulTribal</li>
+                        </backstoryCategories>
+                      </li>
+                    </pawns>
+                    <joinPlayer>true</joinPlayer>
+                  </li>
+                  <li Class="QuestNode_SetFactionRelation">
+                    <faction>$faction</faction>
+                    <relation>Ally</relation>
+                  </li>
+                </nodes>
+              </node>
+            </li>
+            <li>
+              <label>Refuse the refugees</label>
+              <node Class="QuestNode_Sequence">
+                <nodes>
+                  <li Class="QuestNode_Letter">
+                    <label>The Night Hunger</label>
+                    <text>The shaman's face twists with desperate rage as they raise their bone dagger to the darkening sky. "Then tonight, we feast on your flesh or die trying. The Curled Ones will have their meat!" They vanish into the shadows, leaving only the promise of violence to come.</text>
+                    <letterDef>ThreatBig</letterDef>
+                  </li>
+                  <li Class="QuestNode_Delay">
+                    <delayTicks>60000~120000</delayTicks>
+                    <node Class="QuestNode_Incident">
+                      <incident>RaidEnemyBeginSimple</incident>
+                      <parms>
+                        <faction>$faction</faction>
+                        <raidStrategy>ImmediateAttack</raidStrategy>
+                        <points>1500</points>
+                      </parms>
+                    </node>
+                  </li>
+                </nodes>
+              </node>
+            </li>
+          </choices>
         </li>
       </nodes>
     </root>

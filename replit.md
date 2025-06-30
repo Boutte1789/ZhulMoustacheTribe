@@ -112,6 +112,14 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Enhanced C# Harmony patches with moustache auto-application system
   - Added automatic moustache enforcement for male Zhuls and clean heads for females
   - Optimized package: 239MB (reduced from 333MB)
+- June 30, 2025: Quest system expansion completed
+  - Updated Quest 1: Enhanced rewards with herbal medicine and human leather
+  - Renamed Quest 2 to "Bone Dagger's Debt" with skill trainer rewards
+  - Updated Quest 3: Annual Great Devouring with gold sculpture rewards
+  - Added Quest 4: "Blood Brothers' Call" - bandit raid cooperation quest
+  - Added Quest 5: "The Starving Spiral" - hostile faction reconciliation
+  - Created Zhul tribal backstories for refugee pawns with authentic lore
+  - Final package: 245MB with 5 epic questlines and complete narrative arc
 
 ## User Preferences
 

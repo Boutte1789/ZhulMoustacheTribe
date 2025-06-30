@@ -28,6 +28,14 @@ The Zhul believe they sprang from a cosmic moustache-shaped comet and maintain t
             <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
             <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
         </li>
+        <li>
+            <packageId>erdelf.HumanoidAlienRaces</packageId>
+            <displayName>Humanoid Alien Races</displayName>
+        </li>
+        <li>
+            <packageId>RedMattis.BigAndSmallFramework</packageId>
+            <displayName>Big &amp; Small Framework</displayName>
+        </li>
     </modDependencies>
     
     <incompatibleWith />

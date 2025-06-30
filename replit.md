@@ -102,6 +102,7 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Integrated headOverlayRecords in PawnKindDefs for automatic moustache spawning
   - Full Big & Small compatibility with automatic scaling
   - Updated package: 326MB with 36 textures, 35 XML files
+  - Added HAR and Big & Small Framework to modDependencies for proper dependency management
 
 ## User Preferences
 

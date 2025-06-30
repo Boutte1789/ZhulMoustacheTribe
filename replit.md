@@ -134,6 +134,11 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Enhanced atmospheric messaging with phantom-like stealth approach descriptions
   - Standardized 4-5 hour delays for authentic nighttime terror raids across all quests
   - All Zhul faction members now optimized for nighttime activity and raids
+- June 30, 2025: Final cleanup and preparation for release
+  - Removed development artifacts (attached_assets folder with review notes)
+  - Cleaned up empty texture directories and Python cache files
+  - Verified production-ready structure with 35 XML files, 36 textures, 18 audio files
+  - Final package: 239MB optimized for Steam Workshop distribution
 
 ## User Preferences
 

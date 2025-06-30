@@ -194,6 +194,11 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Maintains clean olive-gray head base for proper overlay compatibility
   - Significant file size reduction while preserving visual quality
   - Enhanced mod performance through texture optimization
+- June 30, 2025: Male Narrow and Female Average north head sprite optimization completed
+  - Updated Male_Narrow_north.png with optimized version (1.4MB → 2.6KB)
+  - Updated Female_Average_north.png with optimized version (1.4MB → 2.6KB)
+  - Both sprites maintain clean olive-gray head bases for overlay compatibility
+  - Continued mod performance enhancement through texture optimization
 
 ## User Preferences
 

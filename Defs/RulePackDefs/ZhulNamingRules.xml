@@ -8,49 +8,56 @@
         </include>
         <rulePack>
             <rulesStrings>
-                <!-- Bone-themed settlement names -->
-                <li>name(p=2)->[tribalword] [bonestructure]</li>
-                <li>name(p=2)->[bonestructure] of the [tribalword]</li>
-                <li>name(p=1)->[moustacheword] [settlement]</li>
-                <li>name(p=1)->The [spiralword] [settlement]</li>
+                <!-- Alien tribal cannibal settlement names -->
+                <li>name(p=2)->[alienword] [cannibalplace]</li>
+                <li>name(p=2)->[cannibalplace] of the [alienword]</li>
+                <li>name(p=1)->[fleshword] [tribalsite]</li>
+                <li>name(p=1)->The [predatorword] [tribalsite]</li>
                 
-                <!-- Tribal words -->
-                <li>tribalword->Curled</li>
-                <li>tribalword->Twisted</li>
-                <li>tribalword->Spiral</li>
-                <li>tribalword->Bone</li>
-                <li>tribalword->Ash</li>
-                <li>tribalword->Blood</li>
-                <li>tribalword->Dark</li>
-                <li>tribalword->Ancient</li>
+                <!-- Alien descriptors -->
+                <li>alienword->Zhul</li>
+                <li>alienword->Xeno</li>
+                <li>alienword->Voidborn</li>
+                <li>alienword->Starless</li>
+                <li>alienword->Twisted</li>
+                <li>alienword->Othering</li>
+                <li>alienword->Nameless</li>
+                <li>alienword->Darkened</li>
                 
-                <!-- Bone structures -->
-                <li>bonestructure->Ossuary</li>
-                <li>bonestructure->Charnel</li>
-                <li>bonestructure->Cairn</li>
-                <li>bonestructure->Shrine</li>
-                <li>bonestructure->Circle</li>
-                <li>bonestructure->Throne</li>
-                <li>bonestructure->Altar</li>
+                <!-- Cannibal places -->
+                <li>cannibalplace->Maw</li>
+                <li>cannibalplace->Feast</li>
+                <li>cannibalplace->Gorge</li>
+                <li>cannibalplace->Butchery</li>
+                <li>cannibalplace->Feeding</li>
+                <li>cannibalplace->Harvest</li>
+                <li>cannibalplace->Consumption</li>
+                <li>cannibalplace->Devouring</li>
                 
-                <!-- Moustache-themed -->
-                <li>moustacheword->Whisker</li>
-                <li>moustacheword->Bristle</li>
-                <li>moustacheword->Curl</li>
-                <li>moustacheword->Coil</li>
+                <!-- Flesh-themed -->
+                <li>fleshword->Marrow</li>
+                <li>fleshword->Sinew</li>
+                <li>fleshword->Viscera</li>
+                <li>fleshword->Carrion</li>
+                <li>fleshword->Gore</li>
+                <li>fleshword->Meat</li>
                 
-                <!-- Spiral-themed -->
-                <li>spiralword->Twisted</li>
-                <li>spiralword->Coiled</li>
-                <li>spiralword->Winding</li>
-                <li>spiralword->Spiral</li>
+                <!-- Predator-themed -->
+                <li>predatorword->Hunting</li>
+                <li>predatorword->Stalking</li>
+                <li>predatorword->Prowling</li>
+                <li>predatorword->Lurking</li>
+                <li>predatorword->Savage</li>
+                <li>predatorword->Ravenous</li>
                 
-                <!-- Settlement types -->
-                <li>settlement->Hold</li>
-                <li>settlement->Grove</li>
-                <li>settlement->Camp</li>
-                <li>settlement->Warren</li>
-                <li>settlement->Hollow</li>
+                <!-- Tribal settlement types -->
+                <li>tribalsite->Enclave</li>
+                <li>tribalsite->Outpost</li>
+                <li>tribalsite->Stronghold</li>
+                <li>tribalsite->Lair</li>
+                <li>tribalsite->Den</li>
+                <li>tribalsite->Territory</li>
+                <li>tribalsite->Domain</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>

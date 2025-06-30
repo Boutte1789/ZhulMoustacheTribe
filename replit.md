@@ -103,6 +103,13 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Full Big & Small compatibility with automatic scaling
   - Updated package: 326MB with 36 textures, 35 XML files
   - Added HAR and Big & Small Framework to modDependencies for proper dependency management
+- June 30, 2025: Audio and C# optimizations completed
+  - Converted all 18 WAV files to OGG format (128kbps mono) - saved 94MB
+  - Updated SoundDefs to use optimized OGG audio files
+  - Added HarmonyAfter attribute for Big & Small compatibility
+  - Created reflection caching for Graphic_Atlas performance optimization
+  - Added .NET Framework 4.7.2 project configuration
+  - Optimized package: 239MB (reduced from 333MB)
 
 ## User Preferences
 

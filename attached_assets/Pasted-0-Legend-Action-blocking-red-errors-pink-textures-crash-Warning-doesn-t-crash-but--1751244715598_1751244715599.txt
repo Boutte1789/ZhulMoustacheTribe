@@ -1,0 +1,83 @@
+0 — Legend
+❌ Action-blocking – red errors / pink textures / crash.
+
+⚠️ Warning – doesn’t crash, but hurts UX or future updates.
+
+💡 Polish – nice-to-have quality or performance gains.
+
+1 — Packaging / Distribution
+#	Sev.	Issue	Evidence
+1.1	⚠️	.git/, .replit, Source/ still shipped	top-level tree shows them 
+1.2	💡	No LICENSE.txt or Changelog.txt yet	—
+
+2 — Textures & Graphics
+#	Sev.	Issue	Evidence	Quick fix
+2.1	❌	Moustache _east.png missing (north & south now present)	Textures…FacialHair shows only north/south 
+Add Zhul_Moustache_east.png (west auto-mirrors).
+2.2	⚠️	No mask textures for moustache overlays	no _mask files in FacialHair 
+Export 64² B/W mask + <maskTex> in HeadOverlayDef.
+2.3	⚠️	Bodies now have _east/_north, but filenames use mixed case (ZhulBase_Fat_east.png) which can mis-match XML on Linux	see Bodies listing 
+Ensure paths in RaceDef/GraphicData match exact case.
+2.4	💡	Many body atlases still duplicated (south/east/north identical art)	—	Keep only south sheet + reference it three times via <texPathNorth> & <texPathEast> instead of exporting clones.
+2.5	💡	All overlay/body PNGs remain full 2 048² even when empty	—	Trim blank margin or convert to DDS to save VRAM.
+
+3 — XML Definitions
+#	Sev.	Issue	Evidence	Fix
+3.1	❌	GraphicDefs folder still empty	folder present but no files 
+Delete folder or add defs for alternate sheets.
+3.2	⚠️	HeadTypeDef still lacks <linkFlags> lock	ZhulHeads.xml present, but previous flag not added (not in diff tree)	Add <linkFlags><li>ZHUL_ONLY</li></linkFlags> and set same flag in RaceDef.
+3.3	⚠️	ThingDefs/ZhulItems.xml now exists—good—but no RecipeDef points to Sacrificial Dagger	ThingDefs file present, RecipeDefs list shows only ZhulAdvancedCrafting.xml 
+Add simple <RecipeDef> so item can be crafted or drop-only.
+3.4	⚠️	StatDefs/ZhulAdvancedStats.xml still buffs carry weight with no downside	file still present 
+Balance: add work-speed or hunger penalty.
+3.5	⚠️	Duplicated Hediff names not yet confirmed resolved	Same Hediff file remains 
+Run dev-mode Validate; rename duplicates.
+3.6	💡	About.xml still missing <supportedContent> (Ideology, Biotech)	About folder shows only three images + XML 
+Add DLC flags so non-DLC users get warning, not red errors.
+3.7	💡	Add <modDependencies> entry for Big & Small to pre-warn users	—	
+
+4 — C# / Assemblies
+#	Sev.	Issue	Evidence	Fix
+4.1	⚠️	Graphic_Atlas reflection caching still unknown (DLL only)	cannot view source, but unchanged DLL date implies no change 
+Cache FieldInfo in static readonly.
+4.2	⚠️	No [HarmonyAfter("harmony.bigsmall.core")] attribute yet	no dedicated Attributes folder	Add to main patch class.
+4.3	💡	DLL compiled against .NET 6 (previous note) — hasn’t been re-targeted	—	Re-compile targeting .NET Framework 4.7.2.
+
+5 — Sounds
+#	Sev.	Issue	Evidence	Fix
+5.1	⚠️	All audio still .wav	Sounds listing 
+Convert to OGG 128 kbps mono; update SoundDef paths.
+5.2	💡	No custom SoundSubmix to let players mute chants separately	—	Add <soundClass>Chants_Zhul</soundClass> + new SoundDef.
+
+6 — Languages & UI
+#	Sev.	Issue	Evidence	Fix
+6.1	💡	UI/ZhulModIcon.png now present—good—but ModClass not returning icon	Source/ModClass.cs present 
+Override SettingsCategoryIcon() to show icon.
+6.2	💡	Most English strings still inline in defs	Keyed folder holds only three files 
+Move visible text into Keyed entries for translators.
+
+7 — Big & Small Interop
+#	Sev.	Issue	Evidence	Fix
+7.1	⚠️	Bodies now include east/north pngs but Big & Small XML still lists original sheet names	BigSmallDefs unchanged 
+Update <eastTex> <northTex> nodes or delete redundant pngs and let ext duplicate south.
+7.2	💡	Moustache overlay not referenced in ZhulBigSmallExt.xml	—	Add overlay entry so scaling applies to facial hair.
+
+8 — Gameplay & Balance
+#	Sev.	Issue	Evidence	Fix
+8.1	⚠️	Ritual incidents XML present, but QuestScriptDefs still single chain only	QuestScriptDefs contains chain file but no incident hook 
+Make sure incidents call script or remove unused defs.
+8.2	💡	ScenarioDefs exists (nice), but no “quick-test” dev scenario	—	Add dev scenario spawning Tiny/Huge Zhul for rotation test.
+8.3	💡	No DestroyOnDrop / HediffComp_Disappears for unique gear	—	Add so saves load clean if mod removed.
+
+Summary priority list
+Textures: add moustache east + mask; ensure case-matching; de-duplicate identical atlases.
+
+XML: fill or delete empty GraphicDefs; add linkFlags; DLC support tags; rename any duplicate Hediff names; hug Big & Small with correct east/north nodes.
+
+Audio: convert WAV → OGG; new sound class.
+
+C#: reflection cache, HarmonyAfter, compile for .NET 4.7.2.
+
+Packaging: strip .git/, .replit/, Source/ from release ZIP; add licence & changelog.
+
+Tackle the ❌ first, then the ⚠️ rows, and this build should finally load clean, scale clean, and be workshop-ready. Good luck on the final stretch!

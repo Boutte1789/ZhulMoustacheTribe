@@ -96,6 +96,11 @@
             <headTypeLinkFlags>
                 <li>ZHUL_ONLY</li>
             </headTypeLinkFlags>
+            <generalRaceBodyGraphicData>
+                <texPath>Things/Pawn/Humanlike/Bodies/ZhulBase</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <shaderType>CutoutComplex</shaderType>
+            </generalRaceBodyGraphicData>
         </race>
         <recipes>
             <li>ExciseCarcinoma</li>

@@ -184,20 +184,79 @@ You must prepare a feast worthy of their cannibalistic traditions. Provide enoug
             </nodes>
           </node>
         </li>
-        <li Class="QuestNode_GiveRewards">
-          <rewards>
-            <li Class="Reward_Items">
-              <items>
-                <SculptureGrand>1</SculptureGrand>
-                <Leather_Heavy>200</Leather_Heavy>
-                <Silver>1000</Silver>
-              </items>
+        <li Class="QuestNode_Choice">
+          <choices>
+            <li>
+              <label>Provide the feast (100+ meat required)</label>
+              <node Class="QuestNode_Sequence">
+                <nodes>
+                  <li Class="QuestNode_RequirementsToAccept">
+                    <node Class="QuestNode_RequirementsToAcceptGroup">
+                      <nodes>
+                        <li Class="QuestNode_RequirementsToAcceptFoodStored">
+                          <foodType>Meat</foodType>
+                          <minCount>100</minCount>
+                        </li>
+                      </nodes>
+                    </node>
+                  </li>
+                  <li Class="QuestNode_Letter">
+                    <label>The Great Devouring Success</label>
+                    <text>The feast is magnificent! Dozens of Zhul warriors gather around bone fires, their moustaches gleaming with grease as they devour the meat you've provided. Ancient chants fill the air as they perform rituals unseen for generations. Your colony has gained legendary status among all tribal peoples.</text>
+                    <letterDef>PositiveEvent</letterDef>
+                  </li>
+                  <li Class="QuestNode_GiveRewards">
+                    <rewards>
+                      <li Class="Reward_Items">
+                        <items>
+                          <SculptureGrand>1</SculptureGrand>
+                          <Leather_Heavy>200</Leather_Heavy>
+                          <Silver>1000</Silver>
+                        </items>
+                      </li>
+                      <li Class="Reward_Goodwill">
+                        <faction>$faction</faction>
+                        <amount>50</amount>
+                      </li>
+                    </rewards>
+                  </li>
+                </nodes>
+              </node>
             </li>
-            <li Class="Reward_Goodwill">
-              <faction>$faction</faction>
-              <amount>50</amount>
+            <li>
+              <label>Refuse to host the feast</label>
+              <node Class="QuestNode_Sequence">
+                <nodes>
+                  <li Class="QuestNode_Letter">
+                    <label>Colonists Are On The Menu</label>
+                    <text>The Zhul delegations arrive as promised, but finding no feast prepared, their hungry eyes turn to your colonists. "If you will not feed us willingly," growls the lead war-chief, "then you shall feed us unwillingly. Tonight, your people become the main course!"
+
+The drums of war echo across the wasteland as dozens of ravenous Curled Ones prepare for their most anticipated meal.</text>
+                    <letterDef>ThreatBig</letterDef>
+                  </li>
+                  <li Class="QuestNode_Delay">
+                    <delayTicks>30000~60000</delayTicks>
+                    <node Class="QuestNode_Incident">
+                      <incident>RaidEnemyBeginSimple</incident>
+                      <parms>
+                        <faction>$faction</faction>
+                        <raidStrategy>ImmediateAttack</raidStrategy>
+                        <points>2000</points>
+                      </parms>
+                    </node>
+                  </li>
+                  <li Class="QuestNode_GiveRewards">
+                    <rewards>
+                      <li Class="Reward_Goodwill">
+                        <faction>$faction</faction>
+                        <amount>-75</amount>
+                      </li>
+                    </rewards>
+                  </li>
+                </nodes>
+              </node>
             </li>
-          </rewards>
+          </choices>
         </li>
       </nodes>
     </root>

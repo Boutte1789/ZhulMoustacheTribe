@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Zhul Recruitment Interactions -->
+  
+  <!-- Recruitment Attempt -->
+  <InteractionDef>
+    <defName>ZT_RecruitmentAttempt</defName>
+    <label>attempt recruitment</label>
+    <socialFightBaseChance>0.05</socialFightBaseChance>
+    <initiatorThought>ZT_ZhulWardenBonus</initiatorThought>
+    <recipientThought>ZT_RespectedByZhulWarden</recipientThought>
+    <initiatorXpGainSkill>Social</initiatorXpGainSkill>
+    <initiatorXpGainAmount>60</initiatorXpGainAmount>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] attempted to recruit [RECIPIENT_nameDef] with tales of Zhul glory.</li>
+        <li>r_logentry->[INITIATOR_nameDef] spoke to [RECIPIENT_nameDef] about the power of the Curled Ones.</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+
+  <!-- Share Cannibal Philosophy -->
+  <InteractionDef>
+    <defName>ZT_ShareCannibalPhilosophy</defName>
+    <label>share cannibal philosophy</label>
+    <socialFightBaseChance>0.15</socialFightBaseChance>
+    <initiatorThought>ZT_SharedCannibalStory</initiatorThought>
+    <recipientThought>ZT_SharedCannibalHunger</recipientThought>
+    <initiatorXpGainSkill>Social</initiatorXpGainSkill>
+    <initiatorXpGainAmount>45</initiatorXpGainAmount>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] shared the deeper meaning of consuming enemy flesh with [RECIPIENT_nameDef].</li>
+        <li>r_logentry->[INITIATOR_nameDef] explained Zhul cannibal philosophy to [RECIPIENT_nameDef].</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+
+  <!-- Demonstrate Strength -->
+  <InteractionDef>
+    <defName>ZT_DemonstrateStrength</defName>
+    <label>demonstrate strength</label>
+    <socialFightBaseChance>0.08</socialFightBaseChance>
+    <initiatorThought>ZT_FearRespect</initiatorThought>
+    <recipientThought>ZT_ImpressedByZhulStrength</recipientThought>
+    <initiatorXpGainSkill>Melee</initiatorXpGainSkill>
+    <initiatorXpGainAmount>35</initiatorXpGainAmount>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] demonstrated combat prowess to intimidate [RECIPIENT_nameDef].</li>
+        <li>r_logentry->[INITIATOR_nameDef] showed [RECIPIENT_nameDef] why the Zhul are feared across the rim.</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+
+  <!-- Moustache Admiration -->
+  <InteractionDef>
+    <defName>ZT_MoustacheAdmiration</defName>
+    <label>display moustache culture</label>
+    <socialFightBaseChance>0</socialFightBaseChance>
+    <initiatorThought>ZT_MoustachePride</initiatorThought>
+    <recipientThought>ZT_FascinatedByMoustache</recipientThought>
+    <initiatorXpGainSkill>Social</initiatorXpGainSkill>
+    <initiatorXpGainAmount>25</initiatorXpGainAmount>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] shared the sacred meaning of Zhul moustache culture with [RECIPIENT_nameDef].</li>
+        <li>r_logentry->[INITIATOR_nameDef] performed traditional moustache grooming rituals for [RECIPIENT_nameDef].</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+
+</Defs>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Recruitment-focused ritual patterns -->
+  
+  <RitualPatternDef>
+    <defName>ZT_RecruitmentFeast</defName>
+    <ritualBehavior>PartyDrums</ritualBehavior>
+    <tags>
+      <li>ZHUL_RecruitmentRitual</li>
+      <li>OptionalCannibal</li>
+    </tags>
+    <ritualExpectedDesc>A special cannibal feast designed to impress and recruit prisoners through demonstration of Zhul cultural power</ritualExpectedDesc>
+    <ritualExpectedDescSource>Zhul recruitment traditions</ritualExpectedDescSource>
+    <shortDescOverride>recruitment feast</shortDescOverride>
+    <descOverride>The Zhul perform a strategic feast before captured prisoners, demonstrating their cultural unity and strength. Some prisoners find themselves drawn to the tribal bonds they witness, while others are terrified into submission. The bone drums echo with ancestral power, and the elaborate moustaches seem to glow with supernatural authority.</descOverride>
+    <nameMaker>NamerRitualZhul</nameMaker>
+    <sourcePattern>ZT_RecruitmentFeast</sourcePattern>
+    <ritualOutcomeEffectDef>RitualOutcomeEffectDef_Party</ritualOutcomeEffectDef>
+    <ritualTargetFilter Class="RitualTargetFilter_AnyConsumableBuildingPresent">
+      <def>TableSculpting</def>
+    </ritualTargetFilter>
+    <ritualObligationTargetFilter Class="RitualTargetFilter_AnyConsumableBuildingPresent">
+      <def>TableSculpting</def>
+    </ritualObligationTargetFilter>
+    <canMergeGizmosFromRitualSpots>true</canMergeGizmosFromRitualSpots>
+    <playsIdeoMusic>true</playsIdeoMusic>
+    <obligationTriggers>
+      <li Class="RitualObligationTrigger_EveryDays">
+        <intervalDays>45</intervalDays>
+        <mustBePlayerIdeo>true</mustBePlayerIdeo>
+      </li>
+    </obligationTriggers>
+  </RitualPatternDef>
+
+</Defs>

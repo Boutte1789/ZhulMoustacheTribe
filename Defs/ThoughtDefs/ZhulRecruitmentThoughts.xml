@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Prisoner Recruitment Thoughts for Zhul Tribe -->
+  
+  <!-- Positive Recruitment Thoughts -->
+  <ThoughtDef>
+    <defName>ZT_ImpressedByZhulStrength</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>15</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>impressed by Zhul strength</label>
+        <description>These Zhul warriors are incredibly powerful. Their combat prowess commands respect, and perhaps... allegiance.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>ZT_FascinatedByMoustache</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>10</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>fascinated by moustache culture</label>
+        <description>The elaborate moustaches of these Zhul warriors are mesmerizing. There's something deeply spiritual about their grooming rituals.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>ZT_TerrifiedIntoSubmission</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>20</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>terrified into submission</label>
+        <description>The Zhul have shown me what true terror looks like. Perhaps joining them is better than facing their wrath again.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>ZT_SharedCannibalHunger</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>12</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>shared cannibal hunger</label>
+        <description>Finally, people who understand the true satisfaction of consuming enemy flesh. I feel at home with these warriors.</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>ZT_RespectedByZhulWarden</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>8</durationDays>
+    <stackLimit>2</stackLimit>
+    <stages>
+      <li>
+        <label>respected by Zhul warden</label>
+        <description>The Zhul warden has shown me respect during our conversations. Perhaps I could find a place among their ranks.</description>
+        <baseMoodEffect>7</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>ZT_WitnessedCannibalFeast</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>30</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>witnessed cannibal feast</label>
+        <description>I watched the Zhul perform their sacred feast ritual. The bone drums, the ancient chants... it was both terrifying and strangely appealing.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Negative Recruitment Thoughts -->
+  <ThoughtDef>
+    <defName>ZT_DisgustAtCannibalWays</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>25</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>disgusted by cannibal ways</label>
+        <description>These Zhul barbarians consume human flesh like it's normal food. I could never join such savages.</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>ZT_FearOfNightRaiders</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>18</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>fear of night raiders</label>
+        <description>The Zhul strike like phantoms in the darkness. Their terror raids haunt my dreams. I want nothing to do with them.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Warden Interaction Thoughts -->
+  <ThoughtDef>
+    <defName>ZT_ZhulWardenBonus</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>5</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>convinced by Zhul warden</label>
+        <description>The Zhul warden's words carry weight. Their social skills and cultural knowledge are impressive.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

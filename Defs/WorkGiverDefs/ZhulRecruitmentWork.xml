@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Enhanced Recruitment Work for Zhul Wardens -->
+  
+  <WorkGiverDef>
+    <defName>ZT_EnhancedRecruitment</defName>
+    <label>Zhul recruitment</label>
+    <giverClass>WorkGiver_Warden</giverClass>
+    <workType>Warden</workType>
+    <priorityInType>50</priorityInType>
+    <fixedBillGiverDefs>
+      <li>Bed</li>
+      <li>SleepingSpot</li>
+    </fixedBillGiverDefs>
+    <verb>recruit</verb>
+    <gerund>recruiting</gerund>
+    <requiredCapacities>
+      <li>Talking</li>
+      <li>Hearing</li>
+      <li>Moving</li>
+    </requiredCapacities>
+    <canBeDoneByMen>true</canBeDoneByMen>
+    <canBeDoneByWomen>true</canBeDoneByWomen>
+    <emergency>false</emergency>
+  </WorkGiverDef>
+
+</Defs>

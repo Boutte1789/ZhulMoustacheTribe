@@ -1,0 +1,253 @@
+ZHUL TRIBE STARTING SCENARIO - "THE CURLED EXILES"
+=====================================================
+Complete scenario definition for playing as the Zhul Tribe
+
+RECRUITMENT ABILITIES RECAP
+===========================
+Based on our discussions, the Zhul tribe has these recruitment mechanisms:
+
+1. SOCIAL PERSUASION (High Social Stats)
+   - ZHUL_Xenotype has Social_VeryHigh gene (+social impact)
+   - Beauty_Beautiful gene enhances recruitment chances
+   - Spirit-Eaters get +0.5 Social Impact from their role
+   - Commanding Officers get +1.0 Social Impact
+
+2. INTIMIDATION RECRUITMENT  
+   - ZHUL_TribalTerror gene provides combat intimidation
+   - Terror Night Raids create fear-based recruitment opportunities
+   - Defeated enemies may join out of fear/respect
+
+3. QUEST-BASED RECRUITMENT
+   - Quest 5 "The Starving Spiral" provides 3 guaranteed Zhul refugees
+   - All 5 quest chains can provide pawns through various outcomes
+   - Refugee pawns come with Cannibal + NightOwl traits pre-applied
+
+4. IDEOLOGY CONVERSION
+   - Neo Democracy 2 ideology is highly appealing to tribal mindsets
+   - VME_ViolentConversion meme helps convert prisoners
+   - Cannibal feast rituals can attract like-minded individuals
+
+STARTING SCENARIO: "THE CURLED EXILES"
+======================================
+
+Scenario Name: The Curled Exiles
+Difficulty: Challenging (Tribal Tech Start)
+Recommended for: Experienced players who want authentic tribal gameplay
+
+BACKSTORY
+---------
+"Three outcasts from the mighty Zhul tribe have been exiled for a crime lost to the bone whispers. Cast out from their ancestral hunting grounds, they carry only the traditional tools of their people and the burning shame of dishonor.
+
+Now they must prove their worth by establishing a new settlement and perhaps, one day, earning their way back into the good graces of the Curled Ones... or surpassing them entirely.
+
+The spirits of their ancestors watch from the spiraling patterns of their moustaches, whispering guidance and demanding blood. Will you rebuild the tribe's glory, or forge a new path of terror that eclipses even the legendary Zhul?"
+
+STARTING CONFIGURATION
+======================
+
+COLONISTS (3 Total)
+-------------------
+
+Colonist 1: "The Disgraced Warrior" (ZHUL_CurledSavage)
+- Age: 28-35
+- Forced Traits: Cannibal, NightOwl, Brawler
+- Key Skills: Melee 8-10, Social 4-6, Crafting 3-5
+- Background: Former tribe warrior seeking redemption
+- Starting Equipment: Sacrificial dagger, tribal armor
+- Xenotype: ZHUL_Xenotype (guaranteed moustache for males)
+
+Colonist 2: "The Ritual Keeper" (ZHUL_SpiritEater)  
+- Age: 35-45
+- Forced Traits: Cannibal, NightOwl, Spiritual
+- Key Skills: Intellectual 7-9, Melee 6-8, Social 5-7
+- Background: Tribal shaman who preserves ancient knowledge
+- Starting Equipment: Master moustache oil, bone necklace
+- Xenotype: ZHUL_Xenotype
+
+Colonist 3: "The Exile Chief" (ZHUL_BoneChief)
+- Age: 40-50  
+- Forced Traits: Cannibal, NightOwl, Natural Mood
+- Key Skills: Social 8-10, Crafting 7-9, Cooking 5-7
+- Background: Former tribal leader stripped of rank
+- Starting Equipment: Bone diadem, crafting tools
+- Xenotype: ZHUL_Xenotype
+
+STARTING EQUIPMENT
+------------------
+
+Survival Essentials:
+- 40x Pemmican (long-term food storage)
+- 20x Human meat (cultural dietary needs)
+- 15x Herbal medicine (tribal healing)
+- 10x Simple meals (immediate sustenance)
+
+Zhul Cultural Items:
+- 5x Moustache oil (grooming rituals)
+- 3x Bone necklace (tribal identity markers)
+- 2x Sacrificial dagger (ritual weapons)
+- 1x Bone diadem (leadership symbol)
+- 1x Ancestral whispers (spiritual guidance)
+
+Tools & Materials:
+- 3x Tribal spear (basic weapons)
+- 2x Tribal armor (protection)
+- 50x Wood (construction)
+- 25x Steel (advanced crafting)
+- 15x Cloth (clothing/bandages)
+- 5x Components (technology scavenging)
+
+Starting Animals:
+- 2x Warg (war beasts, fitting for cannibal tribe)
+
+FACTION RELATIONS
+-----------------
+- Zhul Tribe: -80 to -40 (hostile, you're exiles)
+- Other Tribal Factions: -30 to +10 (suspicious neutrality)
+- Pirate Factions: +20 to +40 (respect for raiders)
+- Outlanders: -40 to -20 (fear your reputation)
+- Empire: -60 to -30 (civilized disgust)
+
+STARTING LOCATION
+-----------------
+Recommended Biome: Temperate Forest or Arid Shrubland
+- Temperature: Moderate (Zhul are cold-vulnerable)
+- Fertility: Good (need to establish quickly)
+- Defensibility: Hills or valleys (raid protection)
+- Resources: Stone, metal, growing areas
+
+MAP FEATURES
+------------
+- Ancient ruins nearby (scavenging opportunities)
+- River access (water security)
+- Cave system (natural storage/shelter)
+- Wild animals for hunting
+- Hostile faction base within 2-3 days travel
+
+STARTING EVENTS & CHALLENGES
+============================
+
+Immediate Challenges (First Season):
+- Food scarcity forces early raiding or cannibalism
+- Cold sensitivity requires quick shelter
+- Hostile Zhul tribe may send punishment raids
+- Need to establish moustache grooming station
+- Must perform first cannibal feast ritual
+
+Early Game Events:
+- "Ancestral Calling" - spirits guide you to ancient artifacts
+- "Moustache Crisis" - grooming supplies run low, morale drops
+- "Flesh Shortage" - must choose between starvation or taboo-breaking
+- "Recognition Raid" - chance to prove worth to former tribe
+
+Mid Game Opportunities:
+- Quest chain begins with "Lost Bone Altar"
+- Opportunity to recruit other exiles or outcasts
+- Trade contacts with black market dealers
+- Faction reconciliation through Quest 5
+
+VICTORY CONDITIONS
+==================
+
+Short Term Goals (Year 1):
+- Establish sustainable food production (including human meat sources)
+- Build proper Zhul cultural buildings (grooming stations, ritual areas)
+- Successfully perform 4 cannibal feast rituals
+- Recruit 2 additional tribe members
+- Survive winter without losing colonists
+
+Medium Term Goals (Years 2-3):
+- Complete first 3 Zhul quest chains
+- Establish trade relations with raiders/pirates  
+- Build advanced Zhul crafting capabilities
+- Grow tribe to 8-10 members
+- Create wealth rating of 100,000+ through raiding
+
+Long Term Victory (Years 4+):
+- Complete Quest 5 "Starving Spiral" successfully
+- Reconcile with main Zhul tribe (become allies)
+- OR establish dominance over all Zhul factions
+- Build massive tribal complex with 15+ tribe members
+- Become legendary raid faction terrorizing the rim
+
+GAMEPLAY TIPS
+==============
+
+Night Raiding Strategy:
+- Use NightOwl trait advantage for night attacks
+- DarkVision gene allows superior night combat
+- Plan raids during 11 PM - 6 AM for mood bonuses
+- Terror Night Raids are most effective
+
+Cultural Roleplay:
+- Males must maintain moustaches (automatic via xenotype)
+- Females get bone-ash tattoo markings (clean heads)
+- Perform weekly cannibal feast rituals
+- Prioritize melee combat over ranged
+- Respect the hierarchy (highest melee = leader)
+
+Recruitment Focus:
+- Target prisoners with violent backgrounds
+- Use high social stats for conversion
+- Intimidate enemies into submission
+- Complete quest chains for guaranteed recruits
+- Look for tribal/pirate faction refugees
+
+Base Design:
+- Central ritual area for cannibal feasts
+- Moustache grooming stations in bedrooms
+- Bone crafting workshop areas
+- Defensive positions for night raid defense
+- Storage for human meat and cultural items
+
+TECHNICAL REQUIREMENTS
+======================
+
+Required Mods:
+1. Harmony (dependency)
+2. Humanoid Alien Races (HAR)
+3. ZHUL TRIBE MOD (this mod)
+
+Recommended Mods:
+4. Big & Small Framework (automatic compatibility)
+5. Vanilla Memes Expanded (enhanced ideology)
+6. Prepare Carefully (better colonist customization)
+
+DLC Requirements:
+- Ideology DLC (for Neo Democracy 2 system)
+- Biotech DLC (for xenotype system)
+- Royalty DLC (enhanced with psychic elements)
+
+LOAD ORDER:
+1. Core
+2. Royalty
+3. Ideology  
+4. Biotech
+5. Harmony
+6. Humanoid Alien Races
+7. Big & Small Framework
+8. Vanilla Memes Expanded
+9. ZHUL TRIBE MOD
+10. Other mods
+
+ADVANCED FEATURES
+=================
+
+Gene Interaction:
+- All colonists spawn with 26-gene ZHUL_Xenotype
+- Night adaptation genes optimize for terror raids
+- Social genes enhance recruitment capabilities
+- Moustache culture automatically enforced
+
+Harmony Integration:
+- Automatic moustache application for males
+- Clean head enforcement for females
+- Enhanced combat behaviors during raids
+- Cultural trait enforcement
+
+Audio Experience:
+- 18 tribal audio files enhance immersion
+- Bone drums during raids and rituals
+- War cries during combat
+- Ancestral chants during ceremonies
+
+This scenario provides the complete Zhul tribe experience while maintaining challenging but fair gameplay balance. The exile theme gives narrative justification for starting small while building toward the epic tribal empire the Zhul are meant to become.

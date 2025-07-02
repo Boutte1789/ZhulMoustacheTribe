@@ -113,6 +113,13 @@
                 <texPath>Things/Pawn/Humanlike/Bodies/ZhulBase</texPath>
                 <graphicClass>Graphic_Multi</graphicClass>
                 <shaderType>CutoutComplex</shaderType>
+                <headOverlayRecords>
+                    <li>
+                        <headOverlay>Overlay_ZHUL_Moustache</headOverlay>
+                        <gender>Male</gender>
+                        <offset>-0.025,0</offset>
+                    </li>
+                </headOverlayRecords>
             </generalRaceBodyGraphicData>
         </race>
         <recipes>

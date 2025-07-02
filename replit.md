@@ -231,6 +231,8 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Removed git metadata (.git folder) reducing package size by 142MB
   - Added validation tags to About.xml for proper Steam Workshop compatibility
   - Namespace fix requires DLL recompilation in RimWorld modding environment
+  - Fixed missing moustache overlay attachment in ZhulRace.xml with proper headOverlayRecords
+  - Male Zhuls will now properly spawn with moustaches using precision -0.025,0 offset
 
 ## User Preferences
 

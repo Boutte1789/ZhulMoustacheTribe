@@ -94,10 +94,16 @@
                 <Male>
                     <li>ZHUL_Male_Average</li>
                     <li>ZHUL_Male_Narrow</li>
+                    <li>Fat_Normal</li>
+                    <li>Thin_Normal</li>
+                    <li>Hulk_Normal</li>
                 </Male>
                 <Female>
                     <li>ZHUL_Female_Average</li>
                     <li>ZHUL_Female_Narrow</li>
+                    <li>Fat_Normal</li>
+                    <li>Thin_Normal</li>
+                    <li>Hulk_Normal</li>
                 </Female>
             </headTypesForGender>
             <headTypeLinkFlags>

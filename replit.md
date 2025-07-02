@@ -220,6 +220,11 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Cleaned up system cache files and git repository
   - Verified production-ready structure with 35 XML files, 36 textures, 18 audio files
   - Final package: 239MB optimized for download and ChatGPT review
+- June 30, 2025: Enhanced head variety with vanilla head type integration
+  - Added Fat_Normal, Thin_Normal, and Hulk_Normal to Zhul race headTypes
+  - Enables greater pawn generation variety using RimWorld's default head sprites
+  - Custom Zhul head textures (Average/Narrow) remain unchanged and prioritized
+  - Improved visual diversity while maintaining authentic tribal aesthetic
 
 ## User Preferences
 

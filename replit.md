@@ -225,6 +225,12 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Enables greater pawn generation variety using RimWorld's default head sprites
   - Custom Zhul head textures (Average/Narrow) remain unchanged and prioritized
   - Improved visual diversity while maintaining authentic tribal aesthetic
+- June 30, 2025: Critical must-fix issues resolved
+  - Fixed Harmony patch namespace: ZhulTribe → ZhulTribe.Patches for proper patch application
+  - Verified all 18 audio files already in optimized OGG format (no conversion needed)
+  - Removed git metadata (.git folder) reducing package size by 142MB
+  - Added validation tags to About.xml for proper Steam Workshop compatibility
+  - Namespace fix requires DLL recompilation in RimWorld modding environment
 
 ## User Preferences
 

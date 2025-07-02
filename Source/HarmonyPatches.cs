@@ -7,7 +7,7 @@ using UnityEngine;
 using AlienRace;
 using RimWorld;
 
-namespace ZhulTribe
+namespace ZhulTribe.Patches
 {
     // Main patch class with HarmonyAfter attribute for Big & Small compatibility
     [HarmonyPatch]

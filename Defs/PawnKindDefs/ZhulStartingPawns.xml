@@ -70,6 +70,19 @@
         <chance>0.8</chance>
       </li>
     </forcedTraits>
+    
+    <bodyTypeList>
+      <li>FemaleNarrow</li>
+      <li>FemaleAverage</li>
+      <li>MaleNarrow</li>
+      <li>MaleAverage</li>
+    </bodyTypeList>
+    <headTags>
+      <li>FemaleNarrow</li>
+      <li>FemaleAverage</li>
+      <li>MaleNarrow</li>
+      <li>MaleAverage</li>
+    </headTags>
   </PawnKindDef>
 
   <!-- Spirit-Eater - Elite Zhul Warrior -->
@@ -148,6 +161,19 @@
         <chance>0.4</chance>
       </li>
     </forcedTraits>
+    
+    <bodyTypeList>
+      <li>FemaleNarrow</li>
+      <li>FemaleAverage</li>
+      <li>MaleNarrow</li>
+      <li>MaleAverage</li>
+    </bodyTypeList>
+    <headTags>
+      <li>FemaleNarrow</li>
+      <li>FemaleAverage</li>
+      <li>MaleNarrow</li>
+      <li>MaleAverage</li>
+    </headTags>
   </PawnKindDef>
 
   <!-- Bone-Chief - Zhul Leader -->
@@ -226,6 +252,19 @@
         <chance>0.5</chance>
       </li>
     </forcedTraits>
+    
+    <bodyTypeList>
+      <li>FemaleNarrow</li>
+      <li>FemaleAverage</li>
+      <li>MaleNarrow</li>
+      <li>MaleAverage</li>
+    </bodyTypeList>
+    <headTags>
+      <li>FemaleNarrow</li>
+      <li>FemaleAverage</li>
+      <li>MaleNarrow</li>
+      <li>MaleAverage</li>
+    </headTags>
   </PawnKindDef>
 
   <!-- Exiled Curled One - For mixed colony starts -->
@@ -298,6 +337,19 @@
         <chance>0.6</chance>
       </li>
     </forcedTraits>
+    
+    <bodyTypeList>
+      <li>FemaleNarrow</li>
+      <li>FemaleAverage</li>
+      <li>MaleNarrow</li>
+      <li>MaleAverage</li>
+    </bodyTypeList>
+    <headTags>
+      <li>FemaleNarrow</li>
+      <li>FemaleAverage</li>
+      <li>MaleNarrow</li>
+      <li>MaleAverage</li>
+    </headTags>
   </PawnKindDef>
 
 </Defs>

@@ -23,6 +23,19 @@
         </linkFlags>
     </HeadTypeDef>
 
+    <!-- Zhul Female Narrow East-facing Head Type -->
+    <HeadTypeDef>
+        <defName>ZhulHeadFemaleNarrowEast</defName>
+        <label>Zhul female narrow east</label>
+        <graphicPath>Things/Pawn/Humanlike/Heads/Zhul/Female_Narrow_East</graphicPath>
+        <gender>Female</gender>
+        <bodyType>FemaleNarrow</bodyType>
+        <selectionWeight>100</selectionWeight>
+        <linkFlags>
+            <li>ZHUL_ONLY</li>
+        </linkFlags>
+    </HeadTypeDef>
+
     <!-- Zhul Male Head Types (Clean for facial hair overlay) -->
     <HeadTypeDef>
         <defName>ZHUL_Male_Average</defName>

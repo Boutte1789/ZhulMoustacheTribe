@@ -71,8 +71,18 @@
                 <offset>-0.025,0</offset>
             </li>
         </headOverlayRecords>
-
-
+        <bodyTypeList>
+            <li>FemaleNarrow</li>
+            <li>FemaleAverage</li>
+            <li>MaleNarrow</li>
+            <li>MaleAverage</li>
+        </bodyTypeList>
+        <headTags>
+            <li>FemaleNarrow</li>
+            <li>FemaleAverage</li>
+            <li>MaleNarrow</li>
+            <li>MaleAverage</li>
+        </headTags>
     </PawnKindDef>
 
     <!-- Spirit Eater - Elite shaman warrior -->
@@ -156,7 +166,18 @@
             <ZHUL_Fat>15</ZHUL_Fat>
             <ZHUL_Hulk>15</ZHUL_Hulk>
         </bodyTypeChances>
-
+        <bodyTypeList>
+            <li>FemaleNarrow</li>
+            <li>FemaleAverage</li>
+            <li>MaleNarrow</li>
+            <li>MaleAverage</li>
+        </bodyTypeList>
+        <headTags>
+            <li>FemaleNarrow</li>
+            <li>FemaleAverage</li>
+            <li>MaleNarrow</li>
+            <li>MaleAverage</li>
+        </headTags>
     </PawnKindDef>
 
     <!-- Bone Chief - Faction leader -->
@@ -250,5 +271,17 @@
             <ZHUL_Fat>20</ZHUL_Fat>
             <ZHUL_Hulk>30</ZHUL_Hulk>
         </bodyTypeChances>
+        <bodyTypeList>
+            <li>FemaleNarrow</li>
+            <li>FemaleAverage</li>
+            <li>MaleNarrow</li>
+            <li>MaleAverage</li>
+        </bodyTypeList>
+        <headTags>
+            <li>FemaleNarrow</li>
+            <li>FemaleAverage</li>
+            <li>MaleNarrow</li>
+            <li>MaleAverage</li>
+        </headTags>
     </PawnKindDef>
 </Defs>

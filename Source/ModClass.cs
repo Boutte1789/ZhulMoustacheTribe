@@ -14,6 +14,13 @@ namespace ZhulTribe
             
             // Preload custom eye overlay texture
             ZhulTextureCache.EyeOverlayTex = ContentFinder<Texture2D>.Get("Things/Pawn/Humanlike/Heads/IOverlays/ZhulAlien_Eyes_CLEAN_120", true);
+
+            // Check for custom eye overlay texture and log error if missing
+            Texture2D tex = ContentFinder<Texture2D>.Get("Things/Pawn/Humanlike/Heads/IOverlays/ZhulAlien_Eyes_CLEAN_120", false);
+            if (tex == null)
+            {
+                Log.Error("[Zhul Mod] Eye overlay texture not found!");
+            }
         }
 
         public override void DoSettingsWindowContents(Rect inRect)

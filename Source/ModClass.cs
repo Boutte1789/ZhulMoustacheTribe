@@ -11,6 +11,9 @@ namespace ZhulTribe
         public ZhulTribeMod(ModContentPack content) : base(content)
         {
             this.settings = GetSettings<ZhulModSettings>();
+            
+            // Preload custom eye overlay texture
+            ZhulTextureCache.EyeOverlayTex = ContentFinder<Texture2D>.Get("Things/Pawn/Humanlike/Heads/IOverlays/ZhulAlien_Eyes_CLEAN_120", true);
         }
 
         public override void DoSettingsWindowContents(Rect inRect)

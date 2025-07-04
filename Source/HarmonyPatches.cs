@@ -57,6 +57,30 @@ namespace ZhulTribe.Patches
                 }
             }
             
+            // Add custom eye overlay for Zhul xenotype pawns
+            if (__result != null && __result.genes != null && __result.genes.Xenotype != null && __result.genes.Xenotype.defName == "ZhulXenoType")
+            {
+                // Create a Graphic_Multi for the overlay
+                var eyeOverlayGraphic = GraphicDatabase.Get<Graphic_Multi>(
+                    "Things/Pawn/Humanlike/Heads/IOverlays/ZhulAlien_Eyes_CLEAN_120",
+                    ShaderDatabase.Cutout,
+                    Vector2.one,
+                    Color.white);
+                // Assign to a custom field or overlays list as appropriate for your mod
+                // Example: add to headOverlays if available
+                if (__result.story?.headOverlays != null)
+                {
+                    var overlayDef = DefDatabase<HeadOverlayDef>.GetNamedSilentFail("Zhul_EyeOverlay");
+                    if (overlayDef != null)
+                    {
+                        var overlay = new HeadOverlay(overlayDef, Color.white);
+                        overlay.graphic = eyeOverlayGraphic;
+                        __result.story.headOverlays.Add(overlay);
+                    }
+                }
+                // If you use a different system for overlays, assign here as needed
+            }
+            
             // Note: Leadership challenges handled by VME_BloodCourt meme ritual duels
             // No automatic reassignment - players must initiate blood court ritual
         }

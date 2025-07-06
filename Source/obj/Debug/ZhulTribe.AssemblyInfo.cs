@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZhulTribe")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbdc88964879f289d3b2e0681bd3bfdd517fef54")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+950b8e8ed7f3128691c2da28f946dec20cb93455")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZhulTribe")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZhulTribe")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

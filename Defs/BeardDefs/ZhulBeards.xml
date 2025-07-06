@@ -1,15 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <!-- Zhul Curly Moustache - Based on vanilla Handlebar style -->
-  <BeardDef>
-    <defName>ZHUL_CurlyMoustache</defName>
-    <label>zhul curly moustache</label>
-    <texPath>Things/Pawn/Humanlike/FacialHair/Zhul_Moustache</texPath>
-    <northPath>Things/Pawn/Humanlike/FacialHair/Zhul_Moustache_north</northPath>
+  <!-- Zhul Mustache South -->
+  <HairDef>
+    <defName>ZhulMustacheSouth</defName>
+    <label>zhul mustache south</label>
     <hairTags>
-      <li>Tribal</li>
+      <li>BeardFull</li>
       <li>ZhulOnly</li>
     </hairTags>
-    <noGraphic>false</noGraphic>
-  </BeardDef>
+    <texPath>Hair/Zhul/Zhul_Moustache_South</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>(1.5, 1.5)</drawSize>
+    <shaderType>Cutout</shaderType>
+    <styleGender>Male</styleGender>
+    <styleCategory>ZhulFacialHair</styleCategory>
+  </HairDef>
+
+  <!-- Zhul Mustache West -->
+  <HairDef>
+    <defName>ZhulMustacheWest</defName>
+    <label>zhul mustache west</label>
+    <hairTags>
+      <li>BeardFull</li>
+      <li>ZhulOnly</li>
+    </hairTags>
+    <texPath>Hair/Zhul/Zhul_Moustache_West</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>(1.5, 1.5)</drawSize>
+    <shaderType>Cutout</shaderType>
+    <styleGender>Male</styleGender>
+    <styleCategory>ZhulFacialHair</styleCategory>
+  </HairDef>
+
+  <!-- Zhul Mustache East (template, add texture if available) -->
+  <HairDef>
+    <defName>ZhulMustacheEast</defName>
+    <label>zhul mustache east</label>
+    <hairTags>
+      <li>BeardFull</li>
+      <li>ZhulOnly</li>
+    </hairTags>
+    <texPath>Hair/Zhul/Zhul_Moustache_East</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>(1.5, 1.5)</drawSize>
+    <shaderType>Cutout</shaderType>
+    <styleGender>Male</styleGender>
+    <styleCategory>ZhulFacialHair</styleCategory>
+  </HairDef>
 </Defs>

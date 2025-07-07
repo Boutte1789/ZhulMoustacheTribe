@@ -43,6 +43,20 @@
               <alienPartGenerator>
                 <eyeOffsetSouth>(0, 0)</eyeOffsetSouth>
                 <eyeTexPath>Things/Pawn/Humanlike/Heads/EyeOverlays/ZhulAlien_Eyes_South_Overlay_120</eyeTexPath>
+                <beardGraphicPaths>
+                  <li>Things/Pawn/Humanlike/Hair/Zhul/Beard_ZhulStyleA_south</li>
+                  <li>Things/Pawn/Humanlike/Hair/Zhul/Beard_ZhulStyleA_east</li>
+                </beardGraphicPaths>
+                <beardOffset>
+                  <li>
+                    <key>South</key>
+                    <value>(0, 0, 0)</value>
+                  </li>
+                  <li>
+                    <key>East</key>
+                    <value>(0, 0, 0)</value>
+                  </li>
+                </beardOffset>
               </alienPartGenerator>
             </alienRace.generalSettings>
             <litterSizeCurve>

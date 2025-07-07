@@ -92,14 +92,14 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Added support for Fat, Female, Hulk, Male, and Thin body types with directional sprites
   - Final polish: Added mod settings icon, optimized for Steam Workshop release
 - June 30, 2025: Final review fixes and optimization completed
-  - Fixed critical missing moustache east texture (prevents pink squares/crashes)
+  - Fixed critical missing beard east texture (prevents pink squares/crashes)
   - Added crafting recipe for Sacrificial Dagger (issue 3.3)
   - Cleaned up development artifacts and temp files safely
   - Final package: 325MB with 33 textures, production-ready for release
 - June 30, 2025: HeadOverlayDef system implementation completed
-  - Added proper HeadOverlayDef for moustache overlays with masking support
-  - Created moustache mask texture for proper clipping
-  - Integrated headOverlayRecords in PawnKindDefs for automatic moustache spawning
+  - Added proper HeadOverlayDef for beard overlays with masking support
+  - Created beard mask texture for proper clipping
+  - Integrated headOverlayRecords in PawnKindDefs for automatic beard spawning
   - Full Big & Small compatibility with automatic scaling
   - Updated package: 326MB with 36 textures, 35 XML files
   - Added HAR and Big & Small Framework to modDependencies for proper dependency management
@@ -109,8 +109,8 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Added HarmonyAfter attribute for Big & Small compatibility
   - Created reflection caching for Graphic_Atlas performance optimization
   - Added .NET Framework 4.7.2 project configuration
-  - Enhanced C# Harmony patches with moustache auto-application system
-  - Added automatic moustache enforcement for male Zhuls and clean heads for females
+  - Enhanced C# Harmony patches with beard auto-application system
+  - Added automatic beard enforcement for male Zhuls and clean heads for females
   - Optimized package: 239MB (reduced from 333MB)
 - June 30, 2025: Quest system expansion completed
   - Updated Quest 1: Enhanced rewards with herbal medicine and human leather
@@ -125,7 +125,7 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Beneficial genes: High social, crafting, cooking, intellectual, melee abilities
   - Balancing drawbacks: Slow movement, disease vulnerability, cold weakness
   - Forced cannibalism trait for all Zhul xenotype pawns
-  - Custom endogenes for moustache culture and cannibal nature
+  - Custom endogenes for beard culture and cannibal nature
   - Enhanced Quest 5 refugees with guaranteed cannibal traits
 - June 30, 2025: Night raid theme consistency completed
   - Updated all quest refusal consequences to use Terror Night Raid mechanics
@@ -140,7 +140,7 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Verified production-ready structure with 35 XML files, 36 textures, 18 audio files
   - Final package: 239MB optimized for Steam Workshop distribution
 - June 30, 2025: Critical must-fix issues resolved
-  - Fixed male moustache auto-application using proper HeadOverlay system in Harmony patches
+  - Fixed male beard auto-application using proper HeadOverlay system in Harmony patches
   - Corrected faction icon path from default to UI/ZhulModIcon (prevents missing icon)
   - Removed inappropriate automatic leader selection (VME_BloodCourt meme handles leadership via ritual duels)
   - Added required using statements (System.Linq, UnityEngine) for compilation
@@ -152,7 +152,7 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Updated all documentation to reflect monthly ritual schedule
 - June 30, 2025: Comprehensive prisoner recruitment system reconstructed
   - Built complete recruitment thought system (12 thoughts: 6 positive, 4 negative, 2 situational)
-  - Added 4 specialized recruitment interactions (attempt, philosophy, strength, moustache culture)
+  - Added 4 specialized recruitment interactions (attempt, philosophy, strength, beard culture)
   - Enhanced Harmony patches with automatic trait compatibility detection
   - Integrated mod settings with recruitment difficulty scaling (Easy 1.3x to Extremely Hard 0.6x)
   - Added recruitment feast ritual for prisoner cultural demonstration
@@ -182,13 +182,13 @@ The mod follows RimWorld's standard mod architecture with organized directories 
 - June 30, 2025: Male Average south head sprite optimization completed
   - Updated Male_Average_south.png with cleaner version without pre-drawn facial features
   - Improved compatibility with RimWorld's facial feature overlay system
-  - Maintains proper head base structure for moustache and other overlays
+  - Maintains proper head base structure for beard and other overlays
   - Created backup of previous version for reference
 - June 30, 2025: Male Average south head sprite enhanced with distinctive hair element
   - Updated Male_Average_south.png with new version featuring white hair/headband design
   - Added unique visual identifier for male Zhul heads in south-facing view
   - Maintains clean olive-gray face base with enhanced tribal aesthetic
-  - Compatible with existing moustache overlay system
+  - Compatible with existing beard overlay system
 - June 30, 2025: Male Average north head sprite optimization completed
   - Updated Male_Average_north.png with highly optimized version (1.4MB → 4.8KB)
   - Maintains clean olive-gray head base for proper overlay compatibility
@@ -231,8 +231,8 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Removed git metadata (.git folder) reducing package size by 142MB
   - Added validation tags to About.xml for proper Steam Workshop compatibility
   - Namespace fix requires DLL recompilation in RimWorld modding environment
-  - Fixed missing moustache overlay attachment in ZhulRace.xml with proper headOverlayRecords
-  - Male Zhuls will now properly spawn with moustaches using precision -0.025,0 offset
+  - Fixed missing beard overlay attachment in ZhulRace.xml with proper headOverlayRecords
+  - Male Zhuls will now properly spawn with beards using precision -0.025,0 offset
 
 ## User Preferences
 

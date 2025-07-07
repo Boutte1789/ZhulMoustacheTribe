@@ -17,18 +17,18 @@
         <li>Anomaly</li>
     </validationTags>
 
-    <description>Adds the Zhul tribe - a cannibal-worshipping faction with elaborate moustache rituals. These olive-gray skinned humanoids sport flamboyant spiraling moustaches that signify their status and spiritual power. They practice sacred cannibalism, believing that consuming enemy flesh absorbs the strength of souls.
+    <description>Adds the Zhul tribe - a cannibal-worshipping faction with elaborate beard rituals. These olive-gray skinned humanoids sport flamboyant spiraling beards that signify their status and spiritual power. They practice sacred cannibalism, believing that consuming enemy flesh absorbs the strength of souls.
 
 Features:
 - Custom alien race with unique 2048px ultra-high-res body sprites
-- Forced brown curly moustaches on all male pawns
+- Forced brown curly beards on all male pawns
 - Cannibal traits with special dietary requirements  
 - Ritual feast mechanics and mood effects
 - Hostile tribal faction with 3 specialized warrior types
 - HAR framework compatible - works alongside other alien races
 - Rich lore and cultural depth
 
-The Zhul believe they sprang from a cosmic moustache-shaped comet and maintain their elaborate facial hair through daily grooming rituals with scented oils made from jungle orchids.</description>
+The Zhul believe they sprang from a cosmic beard-shaped comet and maintain their elaborate facial hair through daily grooming rituals with scented oils made from jungle orchids.</description>
     <modDependencies>
         <li>
             <packageId>brrainz.harmony</packageId>

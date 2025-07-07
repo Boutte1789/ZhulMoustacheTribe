@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <!-- Zhul Mustache South -->
+  <!-- Zhul Beard South -->
   <HairDef>
-    <defName>ZhulMustacheSouth</defName>
-    <label>zhul mustache south</label>
+    <defName>ZhulBeardSouth</defName>
+    <label>zhul beard south</label>
     <hairTags>
       <li>BeardFull</li>
       <li>ZhulOnly</li>
     </hairTags>
-    <texPath>Hair/Zhul/Zhul_Moustache_South</texPath>
+    <texPath>Hair/Zhul/Zhul_Beard_South</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <drawSize>(1.5, 1.5)</drawSize>
     <shaderType>Cutout</shaderType>
@@ -16,15 +16,15 @@
     <styleCategory>ZhulFacialHair</styleCategory>
   </HairDef>
 
-  <!-- Zhul Mustache West -->
+  <!-- Zhul Beard West -->
   <HairDef>
-    <defName>ZhulMustacheWest</defName>
-    <label>zhul mustache west</label>
+    <defName>ZhulBeardWest</defName>
+    <label>zhul beard west</label>
     <hairTags>
       <li>BeardFull</li>
       <li>ZhulOnly</li>
     </hairTags>
-    <texPath>Hair/Zhul/Zhul_Moustache_West</texPath>
+    <texPath>Hair/Zhul/Zhul_Beard_West</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <drawSize>(1.5, 1.5)</drawSize>
     <shaderType>Cutout</shaderType>
@@ -32,15 +32,15 @@
     <styleCategory>ZhulFacialHair</styleCategory>
   </HairDef>
 
-  <!-- Zhul Mustache East (template, add texture if available) -->
+  <!-- Zhul Beard East (template, add texture if available) -->
   <HairDef>
-    <defName>ZhulMustacheEast</defName>
-    <label>zhul mustache east</label>
+    <defName>ZhulBeardEast</defName>
+    <label>zhul beard east</label>
     <hairTags>
       <li>BeardFull</li>
       <li>ZhulOnly</li>
     </hairTags>
-    <texPath>Hair/Zhul/Zhul_Moustache_East</texPath>
+    <texPath>Hair/Zhul/Zhul_Beard_East</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <drawSize>(1.5, 1.5)</drawSize>
     <shaderType>Cutout</shaderType>

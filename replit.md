@@ -25,7 +25,7 @@ The mod follows RimWorld's standard mod architecture with organized directories 
 ### Race Definition System
 - Custom Zhul alien race with olive-gray skin tone
 - Gender-specific physical traits:
-  - Males: Mandatory curly mustache (100% spawn rate)  
+  - Males: Mandatory curly beard (100% spawn rate)  
   - Females: Clean heads for bone-ash tattoo markings
 - Custom head variations (Average/Narrow for both genders)
 

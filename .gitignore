@@ -1,0 +1,20 @@
+# RimWorld mod .gitignore
+# Keep .csproj and DLL, ignore .pdb
+
+# Ignore build intermediates
+obj/
+*.user
+*.suo
+*.cache
+*.vs/
+
+# Ignore all PDBs
+*.pdb
+
+# Do NOT ignore these (force include)
+!ZhulMoustacheTribe.csproj
+!bin/ZhulMoustacheTribe.dll
+
+# Ignore all other DLLs in bin except our mod
+bin/*.dll
+!bin/ZhulMoustacheTribe.dll

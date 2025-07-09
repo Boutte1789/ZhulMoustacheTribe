@@ -2,8 +2,8 @@
   <PropertyGroup>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <OutputType>Library</OutputType>
-    <RootNamespace>ZhulMoustacheTribe</RootNamespace>
-    <AssemblyName>ZhulMoustacheTribe</AssemblyName>
+    <RootNamespace>ZhulBeardedTribe</RootNamespace>
+    <AssemblyName>ZhulBeardedTribe</AssemblyName>
     <OutputPath>..\Assemblies\</OutputPath>
   </PropertyGroup>
 

@@ -57,17 +57,15 @@ namespace ZhulTribe.Patches
                 }
             }
             
-            // Add custom eye overlay for Zhul xenotype pawns
+            // Add custom eye overlay for Zhul xenotype pawns (applies to all ZhulXenoType, not gender-based)
             if (__result != null && __result.genes != null && __result.genes.Xenotype != null && __result.genes.Xenotype.defName == "ZhulXenoType")
             {
-                // Create a Graphic_Multi for the overlay
+                // Only render overlay in South direction (RimWorld convention: _south)
                 var eyeOverlayGraphic = GraphicDatabase.Get<Graphic_Multi>(
-                    "Things/Pawn/Humanlike/Heads/IOverlays/ZhulAlien_Eyes_CLEAN_120",
+                    "Things/Pawn/Humanlike/Heads/EyeOverlays/zhulalien_eyes_south",
                     ShaderDatabase.Cutout,
                     Vector2.one,
                     Color.white);
-                // Assign to a custom field or overlays list as appropriate for your mod
-                // Example: add to headOverlays if available
                 if (__result.story?.headOverlays != null)
                 {
                     var overlayDef = DefDatabase<HeadOverlayDef>.GetNamedSilentFail("Zhul_EyeOverlay");
@@ -78,7 +76,6 @@ namespace ZhulTribe.Patches
                         __result.story.headOverlays.Add(overlay);
                     }
                 }
-                // If you use a different system for overlays, assign here as needed
             }
             
             // Note: Leadership challenges handled by VME_BloodCourt meme ritual duels

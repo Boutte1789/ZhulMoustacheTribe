@@ -12,11 +12,11 @@ namespace ZhulTribe
         {
             this.settings = GetSettings<ZhulModSettings>();
             
-            // Preload custom eye overlay texture
-            ZhulTextureCache.EyeOverlayTex = ContentFinder<Texture2D>.Get("Things/Pawn/Humanlike/Heads/IOverlays/ZhulAlien_Eyes_CLEAN_120", true);
+            // Preload custom eye overlay texture (South only, lowercase, correct folder)
+            ZhulTextureCache.EyeOverlayTex = ContentFinder<Texture2D>.Get("Things/Pawn/Humanlike/Heads/EyeOverlays/zhulalien_eyes_south", true);
 
             // Check for custom eye overlay texture and log error if missing
-            Texture2D tex = ContentFinder<Texture2D>.Get("Things/Pawn/Humanlike/Heads/IOverlays/ZhulAlien_Eyes_CLEAN_120", false);
+            Texture2D tex = ContentFinder<Texture2D>.Get("Things/Pawn/Humanlike/Heads/EyeOverlays/zhulalien_eyes_south", false);
             if (tex == null)
             {
                 Log.Error("[Zhul Mod] Eye overlay texture not found!");

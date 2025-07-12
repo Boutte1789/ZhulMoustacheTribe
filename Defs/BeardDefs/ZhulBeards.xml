@@ -2,49 +2,37 @@
 <Defs>
   <!-- Zhul Beard South -->
   <HairDef>
-    <defName>ZhulBeardSouth</defName>
+    <defName>ZHUL_BeardSouth</defName>
     <label>zhul beard south</label>
     <hairTags>
       <li>BeardFull</li>
       <li>ZhulOnly</li>
     </hairTags>
     <texPath>Hair/Zhul/Zhul_Beard_South</texPath>
-    <graphicClass>Graphic_Single</graphicClass>
-    <drawSize>(1.5, 1.5)</drawSize>
-    <shaderType>Cutout</shaderType>
     <styleGender>Male</styleGender>
-    <styleCategory>ZhulFacialHair</styleCategory>
   </HairDef>
 
   <!-- Zhul Beard West -->
   <HairDef>
-    <defName>ZhulBeardWest</defName>
+    <defName>ZHUL_BeardWest</defName>
     <label>zhul beard west</label>
     <hairTags>
       <li>BeardFull</li>
       <li>ZhulOnly</li>
     </hairTags>
     <texPath>Hair/Zhul/Zhul_Beard_West</texPath>
-    <graphicClass>Graphic_Single</graphicClass>
-    <drawSize>(1.5, 1.5)</drawSize>
-    <shaderType>Cutout</shaderType>
     <styleGender>Male</styleGender>
-    <styleCategory>ZhulFacialHair</styleCategory>
   </HairDef>
 
   <!-- Zhul Beard East (template, add texture if available) -->
   <HairDef>
-    <defName>ZhulBeardEast</defName>
+    <defName>ZHUL_BeardEast</defName>
     <label>zhul beard east</label>
     <hairTags>
       <li>BeardFull</li>
       <li>ZhulOnly</li>
     </hairTags>
     <texPath>Hair/Zhul/Zhul_Beard_East</texPath>
-    <graphicClass>Graphic_Single</graphicClass>
-    <drawSize>(1.5, 1.5)</drawSize>
-    <shaderType>Cutout</shaderType>
     <styleGender>Male</styleGender>
-    <styleCategory>ZhulFacialHair</styleCategory>
   </HairDef>
 </Defs>

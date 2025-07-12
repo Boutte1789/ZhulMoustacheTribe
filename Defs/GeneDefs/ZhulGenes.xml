@@ -2,11 +2,11 @@
 <Defs>
   <!-- Zhul Custom Genes -->
   
-  <!-- Zhul Moustache Culture Gene -->
+  <!-- Zhul Beard Culture Gene -->
   <GeneDef>
-    <defName>ZHUL_MoustacheCulture</defName>
-    <label>moustache culture</label>
-    <description>This xenotype has an innate cultural connection to elaborate facial hair, automatically displaying moustache overlays and receiving social bonuses from grooming rituals.</description>
+    <defName>ZHUL_BeardCulture</defName>
+    <label>beard culture</label>
+    <description>This xenotype has an innate cultural connection to elaborate facial hair, automatically displaying beard overlays and receiving social bonuses from grooming rituals.</description>
     <iconPath>UI/Icons/Genes/Gene_Beauty</iconPath>
     <displayOrderInCategory>1000</displayOrderInCategory>
     <biostatCpx>1</biostatCpx>

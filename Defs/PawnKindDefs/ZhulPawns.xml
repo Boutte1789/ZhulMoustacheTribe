@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <!-- Curled Savage - Basic warrior -->
-    <PawnKindDef ParentName="BaseTribalHuman">
+    <PawnKindDef ParentName="Tribal">
         <defName>ZHUL_CurledSavage</defName>
         <label>curled savage</label>
         <race>ZHUL_AlienHumanoid</race>

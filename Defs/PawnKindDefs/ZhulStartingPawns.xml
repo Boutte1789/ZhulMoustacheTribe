@@ -4,7 +4,7 @@
   
   <!-- Curled Savage - Basic Zhul Warrior -->
   <PawnKindDef>
-    <defName>ZT_CurledSavage_PrepareCarefully</defName>
+    <defName>ZHUL_CurledSavage_PrepareCarefully</defName>
     <label>Curled Savage</label>
     <race>ZHUL_AlienHumanoid</race>
     <defaultFactionType>ZhulTribe</defaultFactionType>
@@ -61,10 +61,7 @@
     </weaponTags>
     
     <forcedTraits>
-      <li>
-        <def>ZHUL_MoustacheRitual</def>
-        <chance>0.7</chance>
-      </li>
+      <!-- Removed invalid trait ZHUL_MoustacheRitual -->
       <li>
         <def>ZHUL_Cannibal</def>
         <chance>0.8</chance>

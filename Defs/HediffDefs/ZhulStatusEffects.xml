@@ -2,11 +2,11 @@
 <Defs>
   <!-- Zhul Status Effects and Hediffs -->
   
-  <!-- Cursed Moustache Hediff -->
+  <!-- Cursed Beard Hediff -->
   <HediffDef>
-    <defName>ZT_CursedMoustache</defName>
-    <label>cursed moustache</label>
-    <description>This character's moustache has become possessed by malevolent spirits. The facial hair writhes with dark energy and whispers forbidden secrets.</description>
+    <defName>ZHUL_CursedBeard</defName>
+    <label>cursed beard</label>
+    <description>This character's beard has become possessed by malevolent spirits. The facial hair writhes with dark energy and whispers forbidden secrets.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <defaultLabelColor>(139, 0, 0)</defaultLabelColor>
     <maxSeverity>1.0</maxSeverity>
@@ -43,18 +43,18 @@
       </li>
       <li Class="HediffCompProperties_Discoverable">
         <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
-        <letterLabel>Cursed Moustache</letterLabel>
-        <letterText>{PAWN_nameDef}'s moustache has become cursed by dark spirits. The condition grows worse each day.</letterText>
+        <letterLabel>Cursed Beard</letterLabel>
+        <letterText>{PAWN_nameDef}'s beard has become cursed by dark spirits. The condition grows worse each day.</letterText>
         <letterType>ThreatSmall</letterType>
       </li>
     </comps>
   </HediffDef>
 
-  <!-- Moustache Enhancement -->
+  <!-- Beard Enhancement -->
   <HediffDef>
-    <defName>ZT_MoustacheEnhancement</defName>
-    <label>enhanced moustache</label>
-    <description>This character's moustache has been enhanced through ritual oils and spiritual practices, granting supernatural grooming abilities.</description>
+    <defName>ZHUL_BeardEnhancement</defName>
+    <label>enhanced beard</label>
+    <description>This character's beard has been enhanced through ritual oils and spiritual practices, granting supernatural grooming abilities.</description>
     <hediffClass>Hediff_Level</hediffClass>
     <defaultLabelColor>(255, 215, 0)</defaultLabelColor>
     <maxSeverity>3.0</maxSeverity>

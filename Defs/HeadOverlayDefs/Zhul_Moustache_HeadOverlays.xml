@@ -8,7 +8,7 @@
 
     <!-- texture paths (omit .png) -->
     <southPath>Things/Pawn/Humanlike/Beards/Zhul/beard_zhulstylea_south</southPath>
-    <northPath>Things/Pawn/Humanlike/Beards/Zhul/beard_zhulstylea_north</northPath>
+    <!-- northPath omitted: north-facing pawns do not display beard overlays -->
     <eastPath>Things/Pawn/Humanlike/Beards/Zhul/beard_zhulstylea_east</eastPath>
     <!-- west-facing frame is auto-mirrored by RimWorld -->
 
@@ -16,7 +16,7 @@
     <maskTex>Things/Pawn/Humanlike/Beards/Zhul/beard_zhulstylea_mask</maskTex>
 
     <!-- 1.0 = vanilla beard overlay draw size -->
-    <drawSize>1.0</drawSize>
+    <!-- drawSize removed for RimWorld compliance -->
   </HeadOverlayDef>
 
 </Defs>

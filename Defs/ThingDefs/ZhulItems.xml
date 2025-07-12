@@ -10,7 +10,7 @@
         </descriptionHyperlinks>
         <graphicData>
             <texPath>Things/Item/Drug/Ambrosia</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
+        <!-- graphicClass removed for RimWorld compliance -->
         </graphicData>
         <rotatable>false</rotatable>
         <statBases>
@@ -51,7 +51,7 @@
         <description>A ceremonial bone dagger carved with intricate spiral patterns. Used in Zhul tribal rituals, this weapon is both a tool of sacrifice and a symbol of spiritual authority.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponMelee/Knife</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
+        <!-- graphicClass removed for RimWorld compliance -->
         </graphicData>
         <uiIconScale>1.3</uiIconScale>
         <techLevel>Neolithic</techLevel>

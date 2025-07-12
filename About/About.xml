@@ -9,13 +9,6 @@
         <li>1.6</li>
     </supportedVersions>
     
-    <validationTags>
-        <li>Core</li>
-        <li>Royalty</li>
-        <li>Ideology</li>
-        <li>Biotech</li>
-        <li>Anomaly</li>
-    </validationTags>
 
     <description>Adds the Zhul tribe - a cannibal-worshipping faction with elaborate beard rituals. These olive-gray skinned humanoids sport flamboyant spiraling beards that signify their status and spiritual power. They practice sacred cannibalism, believing that consuming enemy flesh absorbs the strength of souls.
 
@@ -33,26 +26,23 @@ The Zhul believe they sprang from a cosmic beard-shaped comet and maintain their
         <li>
             <packageId>erdelf.HumanoidAlienRaces</packageId>
             <displayName>Humanoid Alien Races</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
         </li>
         <li>
             <packageId>RedMattis.BigAndSmallFramework</packageId>
             <displayName>Big and Small</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2566329498</steamWorkshopUrl>
         </li>
         <li>
             <packageId>brrainz.harmony</packageId>
             <displayName>Harmony</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077</steamWorkshopUrl>
         </li>
     </modDependencies>
     
     <incompatibleWith />
     
-    <modVersion>1.0.0</modVersion>
-    <supportedContent>
-        <li>Royalty</li>
-        <li>Ideology</li>
-        <li>Biotech</li>
-        <li>Anomaly</li>
-    </supportedContent>
+    <modVersion>1.0.1</modVersion>
     <loadAfter>
         <li>Ludeon.RimWorld</li>
         <li>Ludeon.RimWorld.Royalty</li>

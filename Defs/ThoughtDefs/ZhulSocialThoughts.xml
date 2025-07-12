@@ -3,28 +3,28 @@
   <!-- Social Interaction Thoughts -->
   
   <ThoughtDef>
-    <defName>ZT_ComplimentedMoustache</defName>
+    <defName>ZT_ComplimentedBeard</defName>
     <durationDays>3</durationDays>
     <stackLimit>5</stackLimit>
     <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
     <stages>
       <li>
-        <label>complimented moustache</label>
-        <description>Someone appreciated my magnificent moustache! The ancestors smile upon me.</description>
+        <label>complimented beard</label>
+        <description>Someone appreciated my magnificent beard! The ancestors smile upon me.</description>
         <baseMoodEffect>6</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
 
   <ThoughtDef>
-    <defName>ZT_ReceivedMoustacheCompliment</defName>
+    <defName>ZT_ReceivedBeardCompliment</defName>
     <durationDays>2</durationDays>
     <stackLimit>3</stackLimit>
     <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
     <stages>
       <li>
-        <label>received moustache compliment</label>
-        <description>My moustache has been praised by another. This strengthens my connection to the ancestors.</description>
+        <label>received beard compliment</label>
+        <description>My beard has been praised by another. This strengthens my connection to the ancestors.</description>
         <baseMoodEffect>4</baseMoodEffect>
       </li>
     </stages>

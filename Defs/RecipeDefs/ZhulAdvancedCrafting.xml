@@ -4,10 +4,10 @@
   
   <!-- Make Master Moustache Oil -->
   <RecipeDef>
-    <defName>ZT_MakeMasterMoustacheOil</defName>
-    <label>craft master moustache oil</label>
-    <description>Create premium moustache oil using rare jungle orchids and ancestral techniques.</description>
-    <jobString>crafting master moustache oil.</jobString>
+    <defName>ZT_MakeMasterBeardOil</defName>
+    <label>craft master beard oil</label>
+    <description>Create premium beard oil using rare jungle orchids and ancestral techniques.</description>
+    <jobString>crafting master beard oil.</jobString>
     <workSpeedStat>CraftingSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>
@@ -23,7 +23,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>ZT_MoustacheOil</li>
+            <li>ZT_BeardOil</li>
           </thingDefs>
         </filter>
         <count>3</count>
@@ -47,7 +47,7 @@
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>ZT_MoustacheOil</li>
+        <li>ZT_BeardOil</li>
         <li>Medicine</li>
       </thingDefs>
       <categories>
@@ -55,7 +55,7 @@
       </categories>
     </fixedIngredientFilter>
     <products>
-      <ZT_MasterMoustacheOil>1</ZT_MasterMoustacheOil>
+      <ZT_MasterBeardOil>1</ZT_MasterBeardOil>
     </products>
     <recipeUsers>
       <li>ZT_GroomingStation</li>
@@ -65,10 +65,10 @@
 
   <!-- Make Cursed Moustache Oil -->
   <RecipeDef>
-    <defName>ZT_MakeCursedMoustacheOil</defName>
-    <label>brew cursed moustache oil</label>
-    <description>Create dangerous cursed oil that enhances moustache power but risks spiritual possession.</description>
-    <jobString>brewing cursed moustache oil.</jobString>
+    <defName>ZT_MakeCursedBeardOil</defName>
+    <label>brew cursed beard oil</label>
+    <description>Create dangerous cursed oil that enhances beard power but risks spiritual possession.</description>
+    <jobString>brewing cursed beard oil.</jobString>
     <workSpeedStat>CraftingSpeed</workSpeedStat>
     <effectWorking>Smelt</effectWorking>
     <soundWorking>Recipe_Smelt</soundWorking>
@@ -85,7 +85,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>ZT_MasterMoustacheOil</li>
+            <li>ZT_MasterBeardOil</li>
           </thingDefs>
         </filter>
         <count>2</count>
@@ -109,13 +109,13 @@
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>ZT_MasterMoustacheOil</li>
+        <li>ZT_MasterBeardOil</li>
         <li>HumanMeat</li>
         <li>Psychite</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <ZT_CursedMoustacheOil>1</ZT_CursedMoustacheOil>
+      <ZT_CursedBeardOil>1</ZT_CursedBeardOil>
     </products>
     <recipeUsers>
       <li>ZT_GroomingStation</li>

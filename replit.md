@@ -165,7 +165,7 @@ The mod follows RimWorld's standard mod architecture with organized directories 
   - Vanilla Weapons Expanded integration: 11 weapon categories, enhanced combat options
   - Added proper load order dependencies and mod detection systems
 - June 30, 2025: Head overlay registration precision fix completed
-  - Fixed moustache positioning offset: added -0.025,0 offset to center moustache on east frame
+  - Fixed beard positioning offset: added -0.025,0 offset to center beard on east frame
   - Applied precision registration to all male Zhul PawnKindDefs (CurledSavage, SpiritEater)
   - Resolved 2-pixel rightward drift issue for perfect mouth-center alignment
   - Enhanced head overlay system with gender-specific application

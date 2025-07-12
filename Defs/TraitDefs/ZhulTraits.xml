@@ -27,15 +27,15 @@
     </TraitDef>
 
     <TraitDef>
-        <defName>ZHUL_MoustacheRitual</defName>
+        <defName>ZHUL_BeardRitual</defName>
         <commonality>0.5</commonality>
-        <label>moustache ritualist</label>
-        <description>[PAWN_nameDef] is deeply devoted to the sacred moustache grooming rituals of the Zhul. [PAWN_pronoun] gains significant mood bonuses from proper grooming but becomes distressed without access to ritual oils and implements.</description>
+        <label>beard ritualist</label>
+        <description>[PAWN_nameDef] is deeply devoted to the sacred beard grooming rituals of the Zhul. [PAWN_pronoun] gains significant mood bonuses from proper grooming but becomes distressed without access to ritual oils and implements.</description>
         <degreeDatas>
             <li>
                 <degree>0</degree>
                 <label>ritualist</label>
-                <description>[PAWN_nameDef] is deeply devoted to the sacred moustache grooming rituals of the Zhul. [PAWN_pronoun] gains significant mood bonuses from proper grooming but becomes distressed without access to ritual oils and implements.</description>
+                <description>[PAWN_nameDef] is deeply devoted to the sacred beard grooming rituals of the Zhul. [PAWN_pronoun] gains significant mood bonuses from proper grooming but becomes distressed without access to ritual oils and implements.</description>
                 <statOffsets>
                     <Beauty>1</Beauty>
                     <SocialImpact>0.15</SocialImpact>

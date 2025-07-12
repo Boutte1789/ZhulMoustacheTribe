@@ -23,26 +23,26 @@ namespace ZhulTribe.Patches
             _atlasFieldInfo = typeof(Graphic_Atlas).GetField("atlas", BindingFlags.NonPublic | BindingFlags.Instance);
         }
         
-        // Auto-apply moustache to male Zhul colonists (FIXED)
+        // Auto-apply beard to male Zhul colonists (FIXED)
         [HarmonyPostfix]
         [HarmonyPatch(typeof(PawnGenerator), "GeneratePawn", new System.Type[] { typeof(PawnGenerationRequest) })]
         public static void GeneratePawn_Postfix(Pawn __result, PawnGenerationRequest request)
         {
-            // Force moustache for male Zhuls from any faction
+            // Force beard for male Zhuls from any faction
             if (__result != null && __result.RaceProps.Humanlike 
                 && (__result.def?.defName == "ZHUL_AlienHumanoid" || 
                     __result.Faction?.def?.defName == "ZHUL_Tribe"))
             {
                 if (__result.gender == Gender.Male)
                 {
-                    // Force moustache overlay for males
-                    var overlayDef = DefDatabase<HeadOverlayDef>.GetNamedSilentFail("Zhul_Moustache");
+                    // Force beard overlay for males
+                    var overlayDef = DefDatabase<HeadOverlayDef>.GetNamedSilentFail("Overlay_ZHUL_Beard");
                     if (overlayDef != null && __result.story?.headOverlays != null)
                     {
-                        // Remove any existing moustache first
-                        __result.story.headOverlays.RemoveAll(h => h.def.defName.Contains("Moustache"));
+                        // Remove any existing beard first
+                        __result.story.headOverlays.RemoveAll(h => h.def.defName.Contains("Beard"));
                         
-                        // Add the proper Zhul moustache
+                        // Add the proper Zhul beard
                         var overlay = new HeadOverlay(overlayDef, Color.white);
                         __result.story.headOverlays.Add(overlay);
                     }
@@ -52,7 +52,7 @@ namespace ZhulTribe.Patches
                     // Ensure clean heads for female bone-ash tattoos
                     if (__result.story?.headOverlays != null)
                     {
-                        __result.story.headOverlays.RemoveAll(h => h.def.defName.Contains("Moustache"));
+                        __result.story.headOverlays.RemoveAll(h => h.def.defName.Contains("Beard"));
                     }
                 }
             }

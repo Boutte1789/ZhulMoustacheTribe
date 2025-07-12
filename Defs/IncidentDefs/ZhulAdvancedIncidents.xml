@@ -36,7 +36,7 @@ A quest awaits those brave enough to answer the spiral's calling.</letterText>
     <minThreatPoints>500</minThreatPoints>
     <maxThreatPoints>4000</maxThreatPoints>
     <letterLabel>Terror from the Night</letterLabel>
-    <letterText>The bone drums echo through the darkness as a Zhul war party approaches your colony. Their moustaches glow with supernatural malice, and their chants speak of cannibalistic hunger.
+    <letterText>The bone drums echo through the darkness as a Zhul war party approaches your colony. Their beards glow with supernatural malice, and their chants speak of cannibalistic hunger.
 
 This is no ordinary raid - the Curled Ones come to feast, and they consider your colonists the main course.</letterText>
     <letterDef>ThreatBig</letterDef>
@@ -45,7 +45,7 @@ This is no ordinary raid - the Curled Ones come to feast, and they consider your
 
   <!-- Moustache Oil Trader -->
   <IncidentDef>
-    <defName>ZT_MoustacheOilTrader</defName>
+    <defName>ZT_BeardOilTrader</defName>
     <label>Zhul Oil Merchant</label>
     <category>FactionArrival</category>
     <targetTags>
@@ -57,9 +57,9 @@ This is no ordinary raid - the Curled Ones come to feast, and they consider your
     <letterLabel>Zhul Oil Merchant</letterLabel>
     <letterText>A Zhul trader approaches your colony, their pack animals laden with exotic grooming oils and ritual implements. Despite their fearsome reputation, they come in peace - for now.
 
-Their wares include rare spiral oils, cursed moustache enhancers, and bone-carved artifacts that could revolutionize your colonists' grooming practices.</letterText>
+Their wares include rare spiral oils, cursed beard enhancers, and bone-carved artifacts that could revolutionize your colonists' grooming practices.</letterText>
     <letterDef>PositiveEvent</letterDef>
-    <traderKind>ZT_MoustacheOilTrader</traderKind>
+    <traderKind>ZT_BeardOilTrader</traderKind>
   </IncidentDef>
 
   <!-- Spirit Manifestation -->
@@ -74,7 +74,7 @@ Their wares include rare spiral oils, cursed moustache enhancers, and bone-carve
     <baseChance>1.2</baseChance>
     <minRefireDays>60</minRefireDays>
     <letterLabel>Ancestral Spirits Manifest</letterLabel>
-    <letterText>The air grows cold and heavy as ghostly figures begin to materialize around your colony. These are the ancestral spirits of the Zhul - the devoured souls that haunt their moustaches and bone artifacts.
+    <letterText>The air grows cold and heavy as ghostly figures begin to materialize around your colony. These are the ancestral spirits of the Zhul - the devoured souls that haunt their beards and bone artifacts.
 
 The spirits seem drawn to any colonists with Zhul traits or artifacts. They may offer ancient wisdom... or demand terrible tribute.</letterText>
     <letterDef>NeutralEvent</letterDef>
@@ -102,21 +102,21 @@ The altar radiates an aura of dark power. It could be used to perform powerful Z
 
   <!-- Moustache Madness -->
   <IncidentDef>
-    <defName>ZT_MoustacheMadness</defName>
-    <label>Moustache Madness</label>
+    <defName>ZT_BeardMadness</defName>
+    <label>Beard Madness</label>
     <category>ThreatSmall</category>
     <targetTags>
       <li>Map_PlayerHome</li>
     </targetTags>
-    <workerClass>ZhulTribe.IncidentWorker_MoustacheMadness</workerClass>
+    <workerClass>ZhulTribe.IncidentWorker_BeardMadness</workerClass>
     <baseChance>1.5</baseChance>
     <minRefireDays>45</minRefireDays>
-    <letterLabel>Moustache Madness Strikes</letterLabel>
-    <letterText>Something is terribly wrong with the moustaches in your colony. They're growing at an unnatural rate, spiraling into impossible patterns, and worst of all - they seem to be whispering.
+    <letterLabel>Beard Madness Strikes</letterLabel>
+    <letterText>Something is terribly wrong with the beards in your colony. They're growing at an unnatural rate, spiraling into impossible patterns, and worst of all - they seem to be whispering.
 
-Several colonists are experiencing what can only be described as "moustache madness" - an obsessive fixation on grooming rituals that's beginning to interfere with their daily tasks. The condition appears to be contagious.</letterText>
+Several colonists are experiencing what can only be described as "beard madness" - an obsessive fixation on grooming rituals that's beginning to interfere with their daily tasks. The condition appears to be contagious.</letterText>
     <letterDef>ThreatSmall</letterDef>
-    <parmsDef>ZT_MoustacheMadnessParms</parmsDef>
+    <parmsDef>ZT_BeardMadnessParms</parmsDef>
   </IncidentDef>
 
   <!-- Great Devouring Invitation -->

@@ -32,7 +32,7 @@
         <!-- Starting items -->
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>ZT_MoustacheOil</thingDef>
+          <thingDef>ZT_BeardOil</thingDef>
           <count>5</count>
         </li>
         
@@ -90,11 +90,11 @@
         <!-- Game conditions -->
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
-          <text>Three exiled members of the Zhul tribe have been cast out for reasons lost to the bone whispers. They carry with them the traditional tools of their people - moustache oils, sacrificial daggers, and the knowledge of the ancient ways.
+          <text>Three exiled members of the Zhul tribe have been cast out for reasons lost to the bone whispers. They carry with them the traditional tools of their people - beard oils, sacrificial daggers, and the knowledge of the ancient ways.
 
 Now they must prove their worth by establishing a new settlement and perhaps, one day, earning their way back into the good graces of the Curled Ones... or surpassing them entirely.
 
-The spirits of their ancestors watch from the spiraling patterns of their moustaches, whispering guidance and demanding blood.</text>
+The spirits of their ancestors watch from the spiraling patterns of their beards, whispering guidance and demanding blood.</text>
           <closeSound>GameStartSting</closeSound>
         </li>
       </parts>

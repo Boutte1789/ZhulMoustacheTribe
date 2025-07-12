@@ -61,11 +61,11 @@
         </forcedTraits>
         <beardChance>1.0</beardChance>
         <forcedBeards>
-            <li>ZHUL_CurlyMoustache</li>
+            <li>ZHUL_CurlyBeard</li>
         </forcedBeards>
         <headOverlayRecords>
             <li>
-                <headOverlay>Overlay_ZHUL_Moustache</headOverlay>
+                <headOverlay>Overlay_ZHUL_Beard</headOverlay>
                 <gender>Male</gender>
                 <chance>1.0</chance>
                 <offset>-0.025,0</offset>

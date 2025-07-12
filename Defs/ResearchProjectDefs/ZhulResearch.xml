@@ -6,7 +6,7 @@
   <ResearchProjectDef>
     <defName>ZT_AdvancedGrooming</defName>
     <label>Advanced Grooming</label>
-    <description>Study traditional Zhul grooming techniques to create superior ritual oils and enhance moustache-based ceremonies.</description>
+    <description>Study traditional Zhul grooming techniques to create superior ritual oils and enhance beard-based ceremonies.</description>
     <baseCost>1200</baseCost>
     <techLevel>Neolithic</techLevel>
     <tab>Main</tab>
@@ -51,7 +51,7 @@
   <ResearchProjectDef>
     <defName>ZT_MasterGrooming</defName>
     <label>Master Grooming Arts</label>
-    <description>Unlock the secrets of creating legendary moustache oils that grant permanent enhancements to ritual practices.</description>
+    <description>Unlock the secrets of creating legendary beard oils that grant permanent enhancements to ritual practices.</description>
     <baseCost>3600</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>Main</tab>
@@ -113,7 +113,7 @@
   <ResearchProjectDef>
     <defName>ZT_SpiritCommunication</defName>
     <label>Spirit Communication</label>
-    <description>Learn to communicate with the ancestral spirits trapped in bones and moustaches, gaining access to ancient wisdom and powerful ritual knowledge.</description>
+    <description>Learn to communicate with the ancestral spirits trapped in bones and beards, gaining access to ancient wisdom and powerful ritual knowledge.</description>
     <baseCost>4200</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>Main</tab>

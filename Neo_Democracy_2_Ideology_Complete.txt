@@ -4,7 +4,7 @@ Complete ideology definition with all changes from June 28-30, 2025
 
 OVERVIEW
 --------
-Neo Democracy 2 is the custom ideology system designed specifically for the Zhul tribe - "The Curled Ones". This ideology centers around melee-stat-based leadership hierarchy, cannibal culture, and moustache rituals, creating a terror-inspiring faction that emphasizes their nighttime raiding traditions.
+Neo Democracy 2 is the custom ideology system designed specifically for the Zhul tribe - "The Curled Ones". This ideology centers around melee-stat-based leadership hierarchy, cannibal culture, and beard rituals, creating a terror-inspiring faction that emphasizes their nighttime raiding traditions.
 
 CORE IDEOLOGY DEFINITION
 ========================
@@ -25,17 +25,17 @@ Optional Memes:
 - Cannibal_RequiredRavenous: Mandatory cannibalism for all tribe members
 - VME_Individualism_Collectivism: Balance between personal strength and tribal unity
 - Nudity_Male_CoveredOrNaked: Flexible clothing standards for male warriors
-- VME_Spirituality_Animist: Connection to ancestral spirits through moustaches
+- VME_Spirituality_Animist: Connection to ancestral spirits through beards
 
 Classic Memes (Replaced/Enhanced):
 - Replaced VME_Trader with cannibal focus
 - Replaced VME_Proselytizing_Forceful with supremacist beliefs
 - Enhanced Structure_OriginBuddhist with primitive warrior culture
 
-Deity: The Great Moustache
+Deity: The Great Beard
 --------------------------
 - Supreme deity representing wisdom, strength, and tribal identity
-- Manifests through elaborate facial hair growth in male warriors
+- Manifests through elaborate beard growth in male warriors
 - Grants combat bonuses and social influence to devoted followers
 
 Forced Precepts:
@@ -100,7 +100,7 @@ Duration: Extended celebration with bone drums and chanting
 Requirements: Fresh humanlike corpses, ceremonial preparation area
 
 Stages:
-1. Preparation: Ritual cleansing and moustache grooming
+1. Preparation: Ritual cleansing and beard grooming
 2. Invocation: Calling upon ancestral spirits
 3. Consumption: Sacred eating of enemy flesh
 4. Celebration: Victory drums and war cries
@@ -178,7 +178,7 @@ Night Adaptation Genes:
 - ZHUL_NightRaider: Forces NightOwl trait for optimal night performance
 
 Cultural Genes:
-- ZHUL_MoustacheCulture: Enforces texture overlays and social bonuses
+    - ZHUL_BeardCulture: Enforces texture overlays and social bonuses
 - ZHUL_CannibalNature: Guarantees cannibal trait spawn
 - ZHUL_TribalTerror: Combat intimidation bonuses
 

@@ -20,7 +20,7 @@ INSTALLATION:
 
 FEATURES:
 - Custom Zhul alien race with olive-gray skin
-- Male pawns: Automatic curly moustache requirement (100% spawn rate)
+- Male pawns: Automatic curly beard requirement (100% spawn rate)
 - Female pawns: Clean heads for bone-ash tattoo markings
 - Ultra-high 2048px body sprite resolution
 - Custom head variations (Average/Narrow for both genders)

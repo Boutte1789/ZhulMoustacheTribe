@@ -4,8 +4,8 @@
   <XenotypeDef>
     <defName>ZHUL_Xenotype</defName>
     <label>Zhul</label>
-    <description>The Zhul are a fearsome cannibal tribe known as "The Curled Ones" for their elaborate moustache culture. Masters of terror through intimidation, they excel at social manipulation, tribal crafts, ritual cooking, and ancient knowledge preservation. Their cannibalistic nature and aggressive tendencies are balanced by slower movement and vulnerability to disease.</description>
-    <descriptionShort>Terror-inspiring cannibal tribe with elaborate moustache culture and superior social/crafting abilities.</descriptionShort>
+    <description>The Zhul are a fearsome cannibal tribe known as "The Curled Ones" for their elaborate beard culture. Masters of terror through intimidation, they excel at social manipulation, tribal crafts, ritual cooking, and ancient knowledge preservation. Their cannibalistic nature and aggressive tendencies are balanced by slower movement and vulnerability to disease.</description>
+    <descriptionShort>Terror-inspiring cannibal tribe with elaborate beard culture and superior social/crafting abilities.</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/ZhulXenotype</iconPath>
     <inheritable>true</inheritable>
     <nameMaker>NamerPersonZhul</nameMaker>

@@ -2,11 +2,11 @@
 <Defs>
     <!-- Moustache Oil - Grooming Item -->
     <ThingDef ParentName="DrugBase">
-        <defName>ZT_MoustacheOil</defName>
-        <label>moustache oil</label>
-        <description>A sacred grooming oil made from jungle orchids and bone marrow. Zhul warriors use this to maintain their elaborate facial hair, believing it strengthens their connection to ancestral spirits.</description>
+        <defName>ZT_BeardOil</defName>
+        <label>beard oil</label>
+        <description>A sacred grooming oil made from jungle orchids and bone marrow. Zhul warriors use this to maintain their elaborate beards, believing it strengthens their connection to ancestral spirits.</description>
         <descriptionHyperlinks>
-            <HediffDef>ZT_MoustacheOilHigh</HediffDef>
+            <HediffDef>ZT_BeardOilHigh</HediffDef>
         </descriptionHyperlinks>
         <graphicData>
             <texPath>Things/Item/Drug/Ambrosia</texPath>
@@ -31,7 +31,7 @@
             <ingestEffectEater>Smoke_Joint</ingestEffectEater>
             <outcomeDoers>
                 <li Class="IngestionOutcomeDoer_GiveHediff">
-                    <hediffDef>ZT_MoustacheOilHigh</hediffDef>
+                    <hediffDef>ZT_BeardOilHigh</hediffDef>
                     <severity>0.75</severity>
                 </li>
             </outcomeDoers>

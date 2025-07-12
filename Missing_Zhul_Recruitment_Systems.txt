@@ -37,7 +37,7 @@ Missing Features:
 - Enhanced prisoner recruitment chance for Zhul wardens
 - Cannibal trait compatibility bonuses  
 - Intimidation-based conversion for violent prisoners
-- Moustache fascination thoughts for male prisoners
+- Beard fascination thoughts for male prisoners
 - Terror-based recruitment after night raids
 
 2. SOCIAL INTERACTION RECRUITMENT
@@ -46,7 +46,7 @@ Missing Features:
 - "Recruitment Attempt" interaction with success modifiers
 - "Share Cannibal Philosophy" interaction for ideological conversion
 - "Demonstrate Strength" interaction using melee stats
-- "Moustache Admiration" interaction for cultural appeal
+- "Beard Admiration" interaction for cultural appeal
 
 3. TRAIT-BASED RECRUITMENT BONUSES
 -----------------------------------
@@ -71,7 +71,7 @@ The following systems need to be rebuilt based on our discussions:
 
 A. PRISONER RECRUITMENT THOUGHTS
 - "Impressed by Zhul Strength" (+recruitment chance)
-- "Fascinated by Moustache Culture" (male prisoners)
+- "Fascinated by Beard Culture" (male prisoners)
 - "Terrified into Submission" (fear-based conversion)
 - "Shared Cannibal Hunger" (trait compatibility)
 
@@ -90,6 +90,6 @@ D. CULTURAL RECRUITMENT EVENTS
 - Monthly "Recruitment Feast" ritual option
 - Prisoners witness cannibal feast, some join willingly
 - Night raid prisoners affected by terror mechanics
-- Moustache grooming sessions create fascination
+- Beard grooming sessions create fascination
 
 This explains why the recruitment section seemed incomplete - the detailed prisoner conversion mechanics were accidentally removed during the cleanup process.

@@ -18,14 +18,14 @@
   </ThoughtDef>
 
   <ThoughtDef>
-    <defName>ZT_FascinatedByMoustache</defName>
+    <defName>ZT_FascinatedByBeard</defName>
     <thoughtClass>Thought_Memory</thoughtClass>
     <durationDays>10</durationDays>
     <stackLimit>3</stackLimit>
     <stages>
       <li>
-        <label>fascinated by moustache culture</label>
-        <description>The elaborate moustaches of these Zhul warriors are mesmerizing. There's something deeply spiritual about their grooming rituals.</description>
+        <label>fascinated by beard culture</label>
+        <description>The elaborate beards of these Zhul warriors are mesmerizing. There's something deeply spiritual about their grooming rituals.</description>
         <baseMoodEffect>6</baseMoodEffect>
       </li>
     </stages>

@@ -9,7 +9,7 @@
     <degreeDatas>
       <li>
         <label>spiral-minded</label>
-        <description>[PAWN_nameDef] is fascinated by spiraling patterns and sees them everywhere. This obsession makes [PAWN_objective] exceptionally skilled at bone carving and moustache cultivation, but [PAWN_pronoun] becomes distressed when unable to create or observe spiral designs.</description>
+        <description>[PAWN_nameDef] is fascinated by spiraling patterns and sees them everywhere. This obsession makes [PAWN_objective] exceptionally skilled at bone carving and beard cultivation, but [PAWN_pronoun] becomes distressed when unable to create or observe spiral designs.</description>
         <degree>0</degree>
         <statOffsets>
           <CraftingSpeed>0.3</CraftingSpeed>
@@ -71,12 +71,12 @@
 
   <!-- Moustache Master Trait -->
   <TraitDef>
-    <defName>ZT_MoustacheMaster</defName>
+    <defName>ZT_BeardMaster</defName>
     <commonality>0.1</commonality>
     <degreeDatas>
       <li>
-        <label>moustache master</label>
-        <description>[PAWN_nameDef] has achieved the ultimate mastery of moustache cultivation. [PAWN_possessive] facial hair is a work of art that inspires awe in allies and terror in enemies. [PAWN_pronoun] can perform grooming rituals that grant powerful bonuses to the entire tribe.</description>
+        <label>beard master</label>
+        <description>[PAWN_nameDef] has achieved the ultimate mastery of beard cultivation. [PAWN_possessive] facial hair is a work of art that inspires awe in allies and terror in enemies. [PAWN_pronoun] can perform grooming rituals that grant powerful bonuses to the entire tribe.</description>
         <degree>0</degree>
         <statOffsets>
           <SocialImpact>0.5</SocialImpact>
@@ -90,7 +90,7 @@
         <mentalBreakThreshold>0.05</mentalBreakThreshold>
         <thoughtOffsets>
           <li>
-            <thoughtDef>ZT_MoustachePride</thoughtDef>
+            <thoughtDef>ZT_BeardPride</thoughtDef>
             <offset>12</offset>
           </li>
         </thoughtOffsets>
@@ -112,7 +112,7 @@
     <degreeDatas>
       <li>
         <label>spirit listener</label>
-        <description>[PAWN_nameDef] can hear the whispers of ancestral spirits trapped in bones and moustaches. These voices guide [PAWN_objective] in rituals and ceremonies, but sometimes they become overwhelming, driving [PAWN_objective] to temporary madness.</description>
+        <description>[PAWN_nameDef] can hear the whispers of ancestral spirits trapped in bones and beards. These voices guide [PAWN_objective] in rituals and ceremonies, but sometimes they become overwhelming, driving [PAWN_objective] to temporary madness.</description>
         <degree>0</degree>
         <statOffsets>
           <PsychicSensitivity>0.5</PsychicSensitivity>

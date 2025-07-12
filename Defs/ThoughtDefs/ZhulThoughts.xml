@@ -19,14 +19,14 @@
   </ThoughtDef>
 
   <ThoughtDef>
-    <defName>ZT_MoustachePride</defName>
+    <defName>ZT_BeardPride</defName>
     <thoughtClass>Thought_Memory</thoughtClass>
     <durationDays>1</durationDays>
     <stackLimit>1</stackLimit>
     <stages>
       <li>
-        <label>magnificent moustache</label>
-        <description>My moustache is a work of art, a testament to generations of grooming mastery. I can feel the ancestral spirits dancing in its spirals.</description>
+        <label>magnificent beard</label>
+        <description>My beard is a work of art, a testament to generations of grooming mastery. I can feel the ancestral spirits dancing in its spirals.</description>
         <baseMoodEffect>6</baseMoodEffect>
       </li>
     </stages>
@@ -104,14 +104,14 @@
   </ThoughtDef>
 
   <ThoughtDef>
-    <defName>ZT_MoustacheNeglect</defName>
+    <defName>ZT_BeardNeglect</defName>
     <thoughtClass>Thought_Memory</thoughtClass>
     <durationDays>2</durationDays>
     <stackLimit>5</stackLimit>
     <stages>
       <li>
         <label>neglected grooming</label>
-        <description>I haven't properly maintained my moustache. The spirits must be disappointed in my lack of devotion to the old ways.</description>
+        <description>I haven't properly maintained my beard. The spirits must be disappointed in my lack of devotion to the old ways.</description>
         <baseMoodEffect>-4</baseMoodEffect>
       </li>
     </stages>
@@ -147,15 +147,15 @@
 
   <!-- Social Thoughts -->
   <ThoughtDef>
-    <defName>ZT_MoustacheEnvy</defName>
+    <defName>ZT_BeardEnvy</defName>
     <thoughtClass>Thought_MemorySocial</thoughtClass>
     <durationDays>5</durationDays>
     <stackLimit>1</stackLimit>
     <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
     <stages>
       <li>
-        <label>envious of moustache</label>
-        <description>Their moustache is magnificent, far superior to my own. I can't help but feel envious of their grooming mastery.</description>
+        <label>envious of beard</label>
+        <description>Their beard is magnificent, far superior to my own. I can't help but feel envious of their grooming mastery.</description>
         <baseMoodEffect>-3</baseMoodEffect>
       </li>
     </stages>

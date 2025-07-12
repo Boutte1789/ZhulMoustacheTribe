@@ -40,7 +40,7 @@ BACKSTORY
 
 Now they must prove their worth by establishing a new settlement and perhaps, one day, earning their way back into the good graces of the Curled Ones... or surpassing them entirely.
 
-The spirits of their ancestors watch from the spiraling patterns of their moustaches, whispering guidance and demanding blood. Will you rebuild the tribe's glory, or forge a new path of terror that eclipses even the legendary Zhul?"
+The spirits of their ancestors watch from the spiraling patterns of their beards, whispering guidance and demanding blood. Will you rebuild the tribe's glory, or forge a new path of terror that eclipses even the legendary Zhul?"
 
 STARTING CONFIGURATION
 ======================
@@ -54,14 +54,14 @@ Colonist 1: "The Disgraced Warrior" (ZHUL_CurledSavage)
 - Key Skills: Melee 8-10, Social 4-6, Crafting 3-5
 - Background: Former tribe warrior seeking redemption
 - Starting Equipment: Sacrificial dagger, tribal armor
-- Xenotype: ZHUL_Xenotype (guaranteed moustache for males)
+- Xenotype: ZHUL_Xenotype (guaranteed beard for males)
 
 Colonist 2: "The Ritual Keeper" (ZHUL_SpiritEater)  
 - Age: 35-45
 - Forced Traits: Cannibal, NightOwl, Spiritual
 - Key Skills: Intellectual 7-9, Melee 6-8, Social 5-7
 - Background: Tribal shaman who preserves ancient knowledge
-- Starting Equipment: Master moustache oil, bone necklace
+- Starting Equipment: Master beard oil, bone necklace
 - Xenotype: ZHUL_Xenotype
 
 Colonist 3: "The Exile Chief" (ZHUL_BoneChief)
@@ -82,7 +82,7 @@ Survival Essentials:
 - 10x Simple meals (immediate sustenance)
 
 Zhul Cultural Items:
-- 5x Moustache oil (grooming rituals)
+- 5x Beard oil (grooming rituals)
 - 3x Bone necklace (tribal identity markers)
 - 2x Sacrificial dagger (ritual weapons)
 - 1x Bone diadem (leadership symbol)
@@ -130,12 +130,12 @@ Immediate Challenges (First Season):
 - Food scarcity forces early raiding or cannibalism
 - Cold sensitivity requires quick shelter
 - Hostile Zhul tribe may send punishment raids
-- Need to establish moustache grooming station
+- Need to establish beard grooming station
 - Must perform first cannibal feast ritual
 
 Early Game Events:
 - "Ancestral Calling" - spirits guide you to ancient artifacts
-- "Moustache Crisis" - grooming supplies run low, morale drops
+- "Beard Crisis" - grooming supplies run low, morale drops
 - "Flesh Shortage" - must choose between starvation or taboo-breaking
 - "Recognition Raid" - chance to prove worth to former tribe
 
@@ -180,7 +180,7 @@ Night Raiding Strategy:
 - Terror Night Raids are most effective
 
 Cultural Roleplay:
-- Males must maintain moustaches (automatic via xenotype)
+- Males must maintain beards (automatic via xenotype)
 - Females get bone-ash tattoo markings (clean heads)
 - Perform monthly cannibal feast rituals
 - Prioritize melee combat over ranged
@@ -195,7 +195,7 @@ Recruitment Focus:
 
 Base Design:
 - Central ritual area for cannibal feasts
-- Moustache grooming stations in bedrooms
+- Beard grooming stations in bedrooms
 - Bone crafting workshop areas
 - Defensive positions for night raid defense
 - Storage for human meat and cultural items
@@ -237,10 +237,10 @@ Gene Interaction:
 - All colonists spawn with 26-gene ZHUL_Xenotype
 - Night adaptation genes optimize for terror raids
 - Social genes enhance recruitment capabilities
-- Moustache culture automatically enforced
+- Beard culture automatically enforced
 
 Harmony Integration:
-- Automatic moustache application for males
+- Automatic beard application for males
 - Clean head enforcement for females
 - Enhanced combat behaviors during raids
 - Cultural trait enforcement

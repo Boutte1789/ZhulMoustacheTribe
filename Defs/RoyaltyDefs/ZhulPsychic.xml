@@ -2,12 +2,12 @@
 <Defs>
   <!-- Zhul Royalty Integration -->
   
-  <!-- Moustache Meditation Psycast -->
+  <!-- Beard Meditation Psycast -->
   <AbilityDef ParentName="PsycastBase">
-    <defName>ZHUL_MoustacheMeditation</defName>
-    <label>moustache meditation</label>
-    <description>Focus psychic energy through the sacred moustache to enhance mental clarity and spiritual connection.</description>
-    <iconPath>UI/Abilities/ZhulMoustacheMeditation</iconPath>
+    <defName>ZHUL_BeardMeditation</defName>
+    <label>beard meditation</label>
+    <description>Focus psychic energy through the sacred beard to enhance mental clarity and spiritual connection.</description>
+    <iconPath>UI/Abilities/ZhulBeardMeditation</iconPath>
     <level>1</level>
     <psyfocusCost>0.02</psyfocusCost>
     <entropyGain>8</entropyGain>
@@ -29,7 +29,7 @@
     <comps>
       <li Class="CompProperties_AbilityGiveHediff">
         <compClass>CompAbilityEffect_GiveHediff</compClass>
-        <hediffDef>ZHUL_Hediff_MoustacheMeditation</hediffDef>
+        <hediffDef>ZHUL_Hediff_BeardMeditation</hediffDef>
         <applyToSelf>true</applyToSelf>
         <duration>120000</duration>
       </li>
@@ -100,7 +100,7 @@
   <RoyalTitleDef>
     <defName>ZHUL_CurledInitiate</defName>
     <label>curled initiate</label>
-    <description>A young Zhul who has recently grown their first moustache curls and begun participating in tribal rituals.</description>
+    <description>A young Zhul who has recently grown their first beard curls and begun participating in tribal rituals.</description>
     <seniority>100</seniority>
     <favorCost>1</favorCost>
     <permitPointsAwarded>1</permitPointsAwarded>
@@ -118,14 +118,14 @@
       </li>
     </requiredApparel>
     <permits>
-      <li>ZHUL_MoustacheMeditation</li>
+      <li>ZHUL_BeardMeditation</li>
     </permits>
   </RoyalTitleDef>
 
   <RoyalTitleDef>
     <defName>ZHUL_SpiralKeeper</defName>
     <label>spiral keeper</label>
-    <description>A Zhul who tends to the sacred moustache rituals and maintains the spiritual traditions of the tribe.</description>
+    <description>A Zhul who tends to the sacred beard rituals and maintains the spiritual traditions of the tribe.</description>
     <seniority>200</seniority>
     <favorCost>2</favorCost>
     <permitPointsAwarded>2</permitPointsAwarded>
@@ -143,7 +143,7 @@
       </li>
     </requiredApparel>
     <permits>
-      <li>ZHUL_MoustacheMeditation</li>
+      <li>ZHUL_BeardMeditation</li>
       <li>ZHUL_SpiritChanneling</li>
     </permits>
   </RoyalTitleDef>
@@ -151,7 +151,7 @@
   <RoyalTitleDef>
     <defName>ZHUL_BoneChief</defName>
     <label>bone chief</label>
-    <description>The highest ranking Zhul, master of cannibal rituals and keeper of the most elaborate moustache in the tribe.</description>
+    <description>The highest ranking Zhul, master of cannibal rituals and keeper of the most elaborate beard in the tribe.</description>
     <seniority>300</seniority>
     <favorCost>4</favorCost>
     <permitPointsAwarded>4</permitPointsAwarded>
@@ -177,7 +177,7 @@
       </li>
     </requiredApparel>
     <permits>
-      <li>ZHUL_MoustacheMeditation</li>
+      <li>ZHUL_BeardMeditation</li>
       <li>ZHUL_SpiritChanneling</li>
       <li>ZHUL_CannibalRage</li>
     </permits>

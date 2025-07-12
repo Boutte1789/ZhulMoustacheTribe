@@ -3,7 +3,7 @@
     <!-- Zhul Tribal Names and Titles -->
     <ZhulChiefTitle>Bone-Chief Warden</ZhulChiefTitle>
     <ZhulWarriorTitle>Curled Warrior</ZhulWarriorTitle>
-    <ZhulShamanTitle>Moustache Keeper</ZhulShamanTitle>
+    <ZhulShamanTitle>Beard Keeper</ZhulShamanTitle>
     
     <!-- Zhul Settlement Names -->
     <ZhulSettlementName1>Whisker's End</ZhulSettlementName1>
@@ -14,5 +14,5 @@
     <!-- Zhul Cultural Terms -->
     <ZhulAncestorSpirit>Curled Ancestor</ZhulAncestorSpirit>
     <ZhulSacredRitual>Sacred Grooming</ZhulSacredRitual>
-    <ZhulTribalWisdom>Ancient Moustache Lore</ZhulTribalWisdom>
+    <ZhulTribalWisdom>Ancient Beard Lore</ZhulTribalWisdom>
 </LanguageData>

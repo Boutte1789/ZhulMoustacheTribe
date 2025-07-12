@@ -97,7 +97,7 @@ WARDEN EFFECTIVENESS BONUSES:
 SITUATIONAL RECRUITMENT PATHS:
 ✓ Terror raid survivors: Fear-based submission recruitment
 ✓ Combat prisoners: Strength demonstration pathway
-✓ Male prisoners: Moustache culture fascination
+✓ Male prisoners: Beard culture fascination
 ✓ Cannibal feast witnesses: Ritual impression system
 
 DIFFICULTY SCALING SYSTEM:

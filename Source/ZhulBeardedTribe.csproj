@@ -1,29 +1,47 @@
-<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFramework>net472</TargetFramework>
     <OutputType>Library</OutputType>
     <RootNamespace>ZhulBeardedTribe</RootNamespace>
     <AssemblyName>ZhulBeardedTribe</AssemblyName>
+    <Configurations>Release</Configurations>
+    <Platforms>AnyCPU</Platforms>
     <OutputPath>..\Assemblies\</OutputPath>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>Libs\Assembly-CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>Libs\UnityEngine.CoreModule.dll</HintPath>
-    </Reference>
     <Reference Include="0Harmony">
-      <HintPath>Libs\0Harmony.dll</HintPath>
+      <HintPath>..\Libs\0Harmony.dll</HintPath>
+      <Private>false</Private>
     </Reference>
     <Reference Include="AlienRace">
-      <HintPath>Libs\AlienRace.dll</HintPath>
+      <HintPath>..\Libs\AlienRace.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\Libs\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\Libs\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
     </Reference>
     <Reference Include="BigAndSmall">
-      <HintPath>Libs\BigAndSmall.dll</HintPath>
+      <HintPath>..\Libs\BigAndSmall.dll</HintPath>
+      <Private>false</Private>
     </Reference>
   </ItemGroup>
 
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
+
+
+
+
+
+
+
+
+

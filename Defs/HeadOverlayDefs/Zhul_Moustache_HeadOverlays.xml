@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <!-- Head overlay definition for the Zhul tribe's curled moustache -->
+  <!-- Head overlay definition for the Zhul tribe's curled beard -->
   <HeadOverlayDef>
-    <defName>Overlay_ZHUL_Moustache</defName>
-    <label>curled Zhul moustache</label>
+    <defName>Overlay_ZHUL_Beard</defName>
+    <label>curled Zhul beard</label>
 
     <!-- texture paths (omit .png) -->
-    <southPath>Things/Pawn/Humanlike/FacialHair/Zhul_Moustache_south</southPath>
-    <northPath>Things/Pawn/Humanlike/FacialHair/Zhul_Moustache_north</northPath>
-    <eastPath>Things/Pawn/Humanlike/FacialHair/Zhul_Moustache_east</eastPath>
+    <southPath>Things/Pawn/Humanlike/Beards/Zhul/beard_zhulstylea_south</southPath>
+    <northPath>Things/Pawn/Humanlike/Beards/Zhul/beard_zhulstylea_north</northPath>
+    <eastPath>Things/Pawn/Humanlike/Beards/Zhul/beard_zhulstylea_east</eastPath>
     <!-- west-facing frame is auto-mirrored by RimWorld -->
 
     <!-- black-and-white clipping mask -->
-    <maskTex>Things/Pawn/Humanlike/FacialHair/Zhul_Moustache_mask</maskTex>
+    <maskTex>Things/Pawn/Humanlike/Beards/Zhul/beard_zhulstylea_mask</maskTex>
 
     <!-- 1.0 = vanilla beard overlay draw size -->
     <drawSize>1.0</drawSize>

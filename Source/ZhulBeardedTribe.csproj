@@ -9,38 +9,34 @@
     <OutputPath>..\Assemblies\</OutputPath>
     <PlatformTarget>x64</PlatformTarget>
     <LangVersion>latest</LangVersion>
-
-    <!-- Disable ALL NuGet restore steps -->
-    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
-    <RestorePackages>false</RestorePackages>
-    <NoPackageRestore>true</NoPackageRestore>
-    <RestoreTargets></RestoreTargets>
-    <RestoreTaskPath></RestoreTaskPath>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Include="ModClass.cs" />
     <Compile Include="ZhulBeardMod.cs" />
-   <Compile Include="ZhulMoustacheTribe\Patches\ZhulBeardAssignmentFilter.cs" />
-<Compile Include="ZhulMoustacheTribe\Patches\ZhulBeardGenderFilter.cs" />
+    <Compile Include="ZhulMoustacheTribe\Patches\ZhulBeardAssignmentFilter.cs" />
+    <Compile Include="ZhulMoustacheTribe\Patches\ZhulBeardGenderFilter.cs" />
     <Compile Include="ZhulTextureCache.cs" />
     <Compile Include="HarmonyPatches.cs" />
     <Compile Include="ZhulModSettings.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <!-- RimWorld and Unity engine DLLs: reference directly from game install -->
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\Libs\Assembly-CSharp.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>false</Private>
     </Reference>
-    <Reference Include="HugsLib">
-      <HintPath>..\Libs\HugsLib.dll</HintPath>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\Libs\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
+
+    <!-- External mod libraries: reference from Libs folder -->
     <Reference Include="0Harmony">
       <HintPath>..\Libs\0Harmony.dll</HintPath>
       <Private>false</Private>
@@ -53,6 +49,12 @@
       <HintPath>..\Libs\BigAndSmall.dll</HintPath>
       <Private>false</Private>
     </Reference>
+    <Reference Include="HugsLib">
+      <HintPath>..\Libs\HugsLib.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- .NET base assemblies -->
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -61,4 +63,5 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 
 </Project>
+
 

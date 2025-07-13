@@ -236,7 +236,7 @@
   </HediffDef>
 
   <!-- Moustache Oil High -->
-  <HediffDef ParentName="DrugHediffBase">
+  <HediffDef ParentName="HediffDef">
     <defName>ZT_MoustacheOilHigh</defName>
     <label>moustache oil</label>
     <description>Sacred grooming oil coursing through the body. Enhances spiritual connection and social presence.</description>

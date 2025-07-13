@@ -8,20 +8,21 @@
         <li>1.5</li>
         <li>1.6</li>
     </supportedVersions>
-    
 
-    <description>Adds the Zhul tribe - a cannibal-worshipping faction with elaborate beard rituals. These olive-gray skinned humanoids sport flamboyant spiraling beards that signify their status and spiritual power. They practice sacred cannibalism, believing that consuming enemy flesh absorbs the strength of souls.
+    <description>
+Adds the Zhul tribe - a cannibal-worshipping faction with elaborate beard rituals. These olive-gray skinned humanoids sport flamboyant spiraling beards that signify their status and spiritual power. They practice sacred cannibalism, believing that consuming enemy flesh absorbs the strength of souls.
 
 Features:
 - Custom alien race with unique 2048px ultra-high-res body sprites
 - Forced brown curly beards on all male pawns
-- Cannibal traits with special dietary requirements  
+- Cannibal traits with special dietary requirements
 - Ritual feast mechanics and mood effects
 - Hostile tribal faction with 3 specialized warrior types
 - HAR framework compatible - works alongside other alien races
 - Rich lore and cultural depth
 
-The Zhul believe they sprang from a cosmic beard-shaped comet and maintain their elaborate facial hair through daily grooming rituals with scented oils made from jungle orchids.</description>
+The Zhul believe they sprang from a cosmic beard-shaped comet and maintain their elaborate facial hair through daily grooming rituals with scented oils made from jungle orchids.
+    </description>
     <modDependencies>
         <li>
             <packageId>UnlimitedHugs.HugsLib</packageId>
@@ -34,9 +35,9 @@ The Zhul believe they sprang from a cosmic beard-shaped comet and maintain their
             <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
         </li>
         <li>
-            <packageId>RedMattis.BigAndSmallFramework</packageId>
-            <displayName>Big and Small</displayName>
-            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2566329498</steamWorkshopUrl>
+            <packageId>RedMattis.BetterPrerequisites</packageId>
+            <displayName>Big and Small - Framework</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2925432336</steamWorkshopUrl>
         </li>
         <li>
             <packageId>brrainz.harmony</packageId>
@@ -46,7 +47,7 @@ The Zhul believe they sprang from a cosmic beard-shaped comet and maintain their
     </modDependencies>
     
     <incompatibleWith />
-    
+
     <modVersion>1.0.1</modVersion>
     <loadAfter>
         <li>Ludeon.RimWorld</li>
@@ -57,6 +58,6 @@ The Zhul believe they sprang from a cosmic beard-shaped comet and maintain their
         <li>Ludeon.RimWorld.Odyssey</li>
         <li>brrainz.harmony</li>
         <li>erdelf.HumanoidAlienRaces</li>
-        <li>RedMattis.BigAndSmallFramework</li>
+        <li>RedMattis.BetterPrerequisites</li>
     </loadAfter>
 </ModMetaData>

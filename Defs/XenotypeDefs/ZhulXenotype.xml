@@ -97,4 +97,10 @@
         </li>
         <li>
           <symbol>fear</symbol>
-          <weight>1.0</w
+          <weight>1.0</weight>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+    <!-- Add further elements here as needed -->
+  </GeneDef>
+</Defs>

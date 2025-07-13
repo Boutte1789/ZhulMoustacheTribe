@@ -31,18 +31,6 @@
             <li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
             <li MayRequire="Ludeon.RimWorld.Ideology">Pacifist</li>
         </disallowedMemes>
-        <structureMemeWeights>
-            <Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">99</Structure_OriginBuddhist>
-        </structureMemeWeights>
-        <memeWeights>
-            <Cannibal MayRequire="Ludeon.RimWorld.Ideology">99</Cannibal>
-            <VME_ViolentConversion MayRequire="Ludeon.RimWorld.Ideology">95</VME_ViolentConversion>
-            <VME_Trader MayRequire="Ludeon.RimWorld.Ideology">95</VME_Trader>
-            <VME_BloodCourt MayRequire="Ludeon.RimWorld.Ideology">95</VME_BloodCourt>
-        </memeWeights>
-        <ideoGenerationParms>
-            <li>ZHUL_NeoDemocracy</li>
-        </ideoGenerationParms>
         <xenotypeSet>
             <xenotypeChances>
                 <ZHUL_Xenotype>1.0</ZHUL_Xenotype>
@@ -51,10 +39,6 @@
         <backstoryCategories>
             <li>Tribal</li>
         </backstoryCategories>
-        <geneticVariance>1.0</geneticVariance>
-        <hairTags>
-            <li>Tribal</li>
-        </hairTags>
         <caravanTraderKinds>
             <li>Caravan_Neolithic_BulkGoods</li>
             <li>Caravan_Neolithic_WarMerchant</li>

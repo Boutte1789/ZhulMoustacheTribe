@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <!-- Curled Savage - Basic warrior -->
-    <PawnKindDef ParentName="Tribal">
+    <PawnKindDef ParentName="Human_RaidPawn">
         <defName>ZHUL_CurledSavage</defName>
         <label>curled savage</label>
         <race>ZHUL_AlienHumanoid</race>
@@ -86,7 +86,7 @@
     </PawnKindDef>
 
     <!-- Spirit Eater - Elite shaman warrior -->
-    <PawnKindDef ParentName="BaseTribalHuman">
+    <PawnKindDef ParentName="Human_RaidPawn">
         <defName>ZHUL_SpiritEater</defName>
         <label>spirit-eater</label>
         <race>ZHUL_AlienHumanoid</race>
@@ -181,7 +181,7 @@
     </PawnKindDef>
 
     <!-- Bone Chief - Faction leader -->
-    <PawnKindDef ParentName="BaseTribalHuman">
+    <PawnKindDef ParentName="Human_RaidPawn">
         <defName>ZHUL_BoneChief</defName>
         <label>bone-chief</label>
         <race>ZHUL_AlienHumanoid</race>

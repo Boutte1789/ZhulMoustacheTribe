@@ -103,5 +103,7 @@
                 <armorPenetration>0.18</armorPenetration>
             </li>
         </tools>
+        <generateCommonalityAtGameStart>1.0</generateCommonalityAtGameStart>
+        <generateQuality>Normal</generateQuality>
     </ThingDef>
 </Defs>

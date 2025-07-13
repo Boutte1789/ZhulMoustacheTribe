@@ -3,7 +3,7 @@
   <!-- Zhul Royalty Integration -->
   
   <!-- Beard Meditation Psycast -->
-  <AbilityDef ParentName="PsycastBase">
+  <AbilityDef ParentName="Ability_PsycastEntropyLink">
     <defName>ZHUL_BeardMeditation</defName>
     <label>beard meditation</label>
     <description>Focus psychic energy through the sacred beard to enhance mental clarity and spiritual connection.</description>
@@ -37,7 +37,7 @@
   </AbilityDef>
 
   <!-- Spirit Channeling Psycast -->
-  <AbilityDef ParentName="PsycastBase">
+  <AbilityDef ParentName="Ability_PsycastEntropyLink">
     <defName>ZHUL_SpiritChanneling</defName>
     <label>spirit channeling</label>
     <description>Channel the spirits of consumed enemies to gain their knowledge and strength temporarily.</description>
@@ -67,7 +67,7 @@
   </AbilityDef>
 
   <!-- Cannibal Rage Psycast -->
-  <AbilityDef ParentName="PsycastBase">
+  <AbilityDef ParentName="Ability_PsycastEntropyLink">
     <defName>ZHUL_CannibalRage</defName>
     <label>cannibal rage</label>
     <description>Enter a psychic rage state, increasing combat abilities while consuming the spiritual essence of nearby corpses.</description>
@@ -98,89 +98,4 @@
 
   <!-- Zhul Faction Title System -->
   <RoyalTitleDef>
-    <defName>ZHUL_CurledInitiate</defName>
-    <label>curled initiate</label>
-    <description>A young Zhul who has recently grown their first beard curls and begun participating in tribal rituals.</description>
-    <seniority>100</seniority>
-    <favorCost>1</favorCost>
-    <permitPointsAwarded>1</permitPointsAwarded>
-    <psylinkLevel>1</psylinkLevel>
-    <commonality>1</commonality>
-    <requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
-    <requiredApparel>
-      <li>
-        <bodyPartGroupsMatchAny>
-          <li>Torso</li>
-        </bodyPartGroupsMatchAny>
-        <requiredTags>
-          <li>ZHUL_TribalGarb</li>
-        </requiredTags>
-      </li>
-    </requiredApparel>
-    <permits>
-      <li>ZHUL_BeardMeditation</li>
-    </permits>
-  </RoyalTitleDef>
-
-  <RoyalTitleDef>
-    <defName>ZHUL_SpiralKeeper</defName>
-    <label>spiral keeper</label>
-    <description>A Zhul who tends to the sacred beard rituals and maintains the spiritual traditions of the tribe.</description>
-    <seniority>200</seniority>
-    <favorCost>2</favorCost>
-    <permitPointsAwarded>2</permitPointsAwarded>
-    <psylinkLevel>2</psylinkLevel>
-    <commonality>0.7</commonality>
-    <requiredMinimumApparelQuality>Good</requiredMinimumApparelQuality>
-    <requiredApparel>
-      <li>
-        <bodyPartGroupsMatchAny>
-          <li>Torso</li>
-        </bodyPartGroupsMatchAny>
-        <requiredTags>
-          <li>ZHUL_SpiralRobes</li>
-        </requiredTags>
-      </li>
-    </requiredApparel>
-    <permits>
-      <li>ZHUL_BeardMeditation</li>
-      <li>ZHUL_SpiritChanneling</li>
-    </permits>
-  </RoyalTitleDef>
-
-  <RoyalTitleDef>
-    <defName>ZHUL_BoneChief</defName>
-    <label>bone chief</label>
-    <description>The highest ranking Zhul, master of cannibal rituals and keeper of the most elaborate beard in the tribe.</description>
-    <seniority>300</seniority>
-    <favorCost>4</favorCost>
-    <permitPointsAwarded>4</permitPointsAwarded>
-    <psylinkLevel>3</psylinkLevel>
-    <commonality>0.3</commonality>
-    <requiredMinimumApparelQuality>Excellent</requiredMinimumApparelQuality>
-    <requiredApparel>
-      <li>
-        <bodyPartGroupsMatchAny>
-          <li>Head</li>
-        </bodyPartGroupsMatchAny>
-        <requiredTags>
-          <li>ZHUL_BoneDiadem</li>
-        </requiredTags>
-      </li>
-      <li>
-        <bodyPartGroupsMatchAny>
-          <li>Torso</li>
-        </bodyPartGroupsMatchAny>
-        <requiredTags>
-          <li>ZHUL_ChiefRobes</li>
-        </requiredTags>
-      </li>
-    </requiredApparel>
-    <permits>
-      <li>ZHUL_BeardMeditation</li>
-      <li>ZHUL_SpiritChanneling</li>
-      <li>ZHUL_CannibalRage</li>
-    </permits>
-  </RoyalTitleDef>
-
-</Defs>
+    <defName>ZHUL_CurledInitiate</defName>_

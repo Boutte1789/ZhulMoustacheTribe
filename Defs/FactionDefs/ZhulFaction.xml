@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <FactionDef ParentName="FactionBase">
+    <FactionDef>
         <defName>ZHUL_Tribe</defName>
         <label>Zhul tribe</label>
         <description>An ancient and terrifying cannibal tribe following the Tribal Devouring Order. Their sacred moustaches channel ancestral spirits and victim screams, while tribal bone drums carry the voices of devoured enemies across hunting grounds. The strongest warrior becomes Bone-Chief Warden through ritual combat trials, leading the clan in sacred hunts for enemy flesh. Entire settlements flee when they hear the bone drums of approaching Curled Ones.</description>

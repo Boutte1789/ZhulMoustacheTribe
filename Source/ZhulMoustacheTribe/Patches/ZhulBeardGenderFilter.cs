@@ -9,9 +9,10 @@ using AlienRace;
 namespace ZhulTribe.Patches
 {
     /// <summary>
-    /// Harmony patch to ensure only male ZhulXenoType pawns receive beards.
-    /// Also applies custom beard overlay offset for Big & Small head types.
+    /// Harmony patch for beard overlay logic (DISABLED: AlienPartGenerator.BodyAddon.DrawAddon does not exist in HAR 2.0+ for RW 1.5).
+    /// TODO: Re-implement using the correct modern HAR hook for beard overlays.
     /// </summary>
+    /*
     [HarmonyPatch(typeof(AlienPartGenerator.BodyAddon), nameof(AlienPartGenerator.BodyAddon.DrawAddon))]
     public static class ZhulBeardGenderFilter
     {
@@ -57,4 +58,5 @@ namespace ZhulTribe.Patches
             return true;
         }
     }
+    */
 }

@@ -1,4 +1,4 @@
-using HugsLib;
+using HugsLib; 
 using Verse;
 
 namespace ZhulBeardedTribe {
@@ -13,8 +13,7 @@ namespace ZhulBeardedTribe {
             Log.Message("[ZhulBeardedTribe] WorldLoaded lifecycle hook called.");
         }
 
-        public override void MapLoaded() {
-            Log.Message("[ZhulBeardedTribe] MapLoaded lifecycle hook called.");
-        }
+        // MapLoaded() is not a valid override in HugsLib.ModBase for RimWorld 1.5+
+        // If you need map-specific initialization, see HugsLib documentation for alternatives.
     }
 }

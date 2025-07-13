@@ -62,10 +62,11 @@ namespace ZhulTribe
             return "Zhul Tribe - The Curled Ones";
         }
 
-        // Mod icon override for settings window
-        public override Texture2D SettingsCategoryIcon()
-        {
-            return ContentFinder<Texture2D>.Get("UI/ZhulModIcon", false);
-        }
+        // RimWorld's Mod class does not support SettingsCategoryIcon(). 
+        // If you want an icon in the settings window, this must be handled via XML or other means.
+        // public override Texture2D SettingsCategoryIcon()
+        // {
+        //     return ContentFinder<Texture2D>.Get("UI/ZhulModIcon", false);
+        // }
     }
 }

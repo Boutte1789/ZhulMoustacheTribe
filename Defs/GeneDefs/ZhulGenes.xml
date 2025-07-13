@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <!-- Zhul Custom Genes -->
-  
+
+  <!-- Zhul Alien Eyes Gene (FORCED for all Zhul) -->
+  <GeneDef>
+    <defName>ZHUL_AlienEyes</defName>
+    <label>alien eyes</label>
+    <description>Zhul have strange, luminous eyes unlike any human. This gene gives all Zhul the same unique, unnatural eyes.</description>
+    <geneClass>Gene_EyeColor</geneClass>
+    <eyeColor>(0.26,1.0,0.68,1)</eyeColor> <!-- Striking green, RGBA. Change to your chosen color if desired -->
+    <displayCategory>Appearance</displayCategory>
+    <iconPath>Things/Pawn/Humanlike/Heads/EyeOverlays/zhulalien_eyes_south</iconPath> <!-- Set to overlay texPath if using a custom mod/texture -->
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Heads/EyeOverlays/zhulalien_eyes_south</texPath>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <displayOrderInCategory>999</displayOrderInCategory>
+    <locked>true</locked>
+  </GeneDef>
+
   <!-- Zhul Beard Culture Gene -->
   <GeneDef>
     <defName>ZHUL_BeardCulture</defName>
@@ -27,7 +44,7 @@
       <li>Beard</li>
     </exclusionTags>
   </GeneDef>
-  
+
   <!-- Zhul Cannibal Nature Gene -->
   <GeneDef>
     <defName>ZHUL_CannibalNature</defName>
@@ -65,7 +82,7 @@
       <li>Cannibalism</li>
     </exclusionTags>
   </GeneDef>
-  
+
   <!-- Zhul Tribal Terror Gene -->
   <GeneDef>
     <defName>ZHUL_TribalTerror</defName>
@@ -102,30 +119,4 @@
 
   <!-- Night Raider Gene - Forces Night Owl trait -->
   <GeneDef>
-    <defName>ZHUL_NightRaider</defName>
-    <label>night raider</label>
-    <description>Carriers of this gene are naturally adapted to nighttime raids and stealth attacks. They are most active during the dark hours when their terror raids are most effective.</description>
-    <iconPath>UI/Icons/Genes/Gene_NightRaider</iconPath>
-    <displayOrderInCategory>490</displayOrderInCategory>
-    <biostatCpx>1</biostatCpx>
-    <biostatMet>-1</biostatMet>
-    <forcedTraits>
-      <li>
-        <def>NightOwl</def>
-      </li>
-    </forcedTraits>
-    <symbolPack>
-      <prefixSymbols>
-        <li><symbol>night</symbol></li>
-        <li><symbol>shadow</symbol></li>
-        <li><symbol>dark</symbol></li>
-      </prefixSymbols>
-      <suffixSymbols>
-        <li><symbol>stalker</symbol></li>
-        <li><symbol>phantom</symbol></li>
-        <li><symbol>lurker</symbol></li>
-      </suffixSymbols>
-    </symbolPack>
-  </GeneDef>
-
-</Defs>
+    <defName>ZHUL_Nigh_

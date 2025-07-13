@@ -24,6 +24,11 @@ Features:
 The Zhul believe they sprang from a cosmic beard-shaped comet and maintain their elaborate facial hair through daily grooming rituals with scented oils made from jungle orchids.</description>
     <modDependencies>
         <li>
+            <packageId>UnlimitedHugs.HugsLib</packageId>
+            <displayName>HugsLib</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=818773962</steamWorkshopUrl>
+        </li>
+        <li>
             <packageId>erdelf.HumanoidAlienRaces</packageId>
             <displayName>Humanoid Alien Races</displayName>
             <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>

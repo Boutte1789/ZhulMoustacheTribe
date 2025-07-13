@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <!-- Moustache Oil - Grooming Item -->
-    <ThingDef ParentName="DrugBase">
+    <ThingDef ParentName="Drug_Social">
         <defName>ZT_BeardOil</defName>
         <label>beard oil</label>
         <description>A sacred grooming oil made from jungle orchids and bone marrow. Zhul warriors use this to maintain their elaborate beards, believing it strengthens their connection to ancestral spirits.</description>
@@ -10,7 +10,7 @@
         </descriptionHyperlinks>
         <graphicData>
             <texPath>Things/Item/Drug/Ambrosia</texPath>
-        <!-- graphicClass removed for RimWorld compliance -->
+            <!-- graphicClass removed for RimWorld compliance -->
         </graphicData>
         <rotatable>false</rotatable>
         <statBases>
@@ -45,13 +45,13 @@
     </ThingDef>
 
     <!-- Sacrificial Dagger - Ritual Weapon -->
-    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <ThingDef ParentName="Knife">
         <defName>ZT_SacrificialDagger</defName>
         <label>sacrificial dagger</label>
         <description>A ceremonial bone dagger carved with intricate spiral patterns. Used in Zhul tribal rituals, this weapon is both a tool of sacrifice and a symbol of spiritual authority.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponMelee/Knife</texPath>
-        <!-- graphicClass removed for RimWorld compliance -->
+            <!-- graphicClass removed for RimWorld compliance -->
         </graphicData>
         <uiIconScale>1.3</uiIconScale>
         <techLevel>Neolithic</techLevel>

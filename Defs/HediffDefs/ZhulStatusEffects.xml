@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <!-- Zhul Status Effects and Hediffs -->
-  
+
   <!-- Cursed Beard Hediff -->
   <HediffDef>
     <defName>ZHUL_CursedBeard</defName>
@@ -236,7 +236,7 @@
   </HediffDef>
 
   <!-- Moustache Oil High -->
-  <HediffDef ParentName="HediffDef">
+  <HediffDef>
     <defName>ZT_MoustacheOilHigh</defName>
     <label>moustache oil</label>
     <description>Sacred grooming oil coursing through the body. Enhances spiritual connection and social presence.</description>
@@ -260,5 +260,4 @@
       </li>
     </stages>
   </HediffDef>
-
 </Defs>

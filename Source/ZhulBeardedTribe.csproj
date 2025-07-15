@@ -12,7 +12,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="ModClass.cs" />
     <Compile Include="ZhulMoustacheTribe\Patches\ZhulBeardAssignmentFilter.cs" />
     <Compile Include="ZhulMoustacheTribe\Patches\ZhulBeardGenderFilter.cs" />
     <Compile Include="ZhulTextureCache.cs" />
@@ -21,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <!-- RimWorld and Unity engine DLLs: reference directly from game install -->
+    <!-- RimWorld and Unity engine DLLs -->
     <Reference Include="Assembly-CSharp">
       <HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>false</Private>
@@ -35,7 +34,7 @@
       <Private>false</Private>
     </Reference>
 
-    <!-- External mod libraries: reference from Libs folder -->
+    <!-- Mod dependencies -->
     <Reference Include="0Harmony">
       <HintPath>..\Libs\0Harmony.dll</HintPath>
       <Private>false</Private>
@@ -53,7 +52,7 @@
       <Private>false</Private>
     </Reference>
 
-    <!-- .NET base assemblies -->
+    <!-- .NET Framework base assemblies -->
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />

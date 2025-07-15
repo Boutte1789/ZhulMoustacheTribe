@@ -334,4 +334,50 @@
     <chronic>true</chronic>
     <defaultLabelColor>(155, 17, 48)</defaultLabelColor>
   </HediffDef>
+
+  <!-- Night Vision Plus Buff (applied by ZHUL_NightVisionPlus gene at night or in low light) -->
+  <HediffDef>
+    <defName>Zhul_Hediff_NightVisionPlusBuff</defName>
+    <label>night hunter trance</label>
+    <description>
+      This pawn is empowered by the darkness, gaining exceptional vision, stealth, and combat ability.
+    </description>
+    <hediffClass>Hediff</hediffClass>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <statOffsets>
+          <ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
+          <Pawn_StalkingAbility>0.25</Pawn_StalkingAbility>
+          <MeleeHitChance>0.40</MeleeHitChance>
+          <MeleeDPS>0.25</MeleeDPS>
+        </statOffsets>
+      </li>
+    </stages>
+    <tendable>false</tendable>
+    <chronic>true</chronic>
+    <defaultLabelColor>(100, 149, 237)</defaultLabelColor>
+  </HediffDef>
+
+  <!-- Enjoying Chaos (moodlet during eclipse/solar flare, applied by gene) -->
+  <HediffDef>
+    <defName>Zhul_Hediff_EnjoyingChaos</defName>
+    <label>Enjoying Chaos</label>
+    <description>
+      This pawn feels a primal thrill during eclipses or solar flares, reveling in the disruption and confusion.
+    </description>
+    <hediffClass>Hediff</hediffClass>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <statOffsets>
+          <Mood>16</Mood>
+        </statOffsets>
+      </li>
+    </stages>
+    <tendable>false</tendable>
+    <chronic>false</chronic>
+    <defaultLabelColor>(255, 215, 0)</defaultLabelColor>
+  </HediffDef>
 </Defs>
+

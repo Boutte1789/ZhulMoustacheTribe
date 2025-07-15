@@ -116,11 +116,6 @@
                 </categories>
             </li>
         </backstoryFilters>
-        <naturalColonyGoodwill>
-            <min>-80</min>
-            <max>-40</max>
-        </naturalColonyGoodwill>
-        <goodwillDailyGain>-0.10</goodwillDailyGain>
-        <goodwillDailyFall>-0.25</goodwillDailyFall>
+        <!-- Removed: naturalColonyGoodwill, goodwillDailyGain, goodwillDailyFall (obsolete in 1.5+) -->
     </FactionDef>
 </Defs>

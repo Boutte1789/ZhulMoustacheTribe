@@ -222,4 +222,22 @@
       </li>
     </stages>
   </ThoughtDef>
+
+  <!-- Cannibalistic Urges Moodlet -->
+  <ThoughtDef>
+    <defName>Zhul_Thought_CannibalisticUrges</defName>
+    <label>Cannibalistic Urges</label>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <requiredHediff>Zhul_Hediff_CannibalisticUrges</requiredHediff>
+    <durationDays>-1</durationDays>
+    <stackLimit>1</stackLimit>
+    <icon>UI/Icons/Genes/Gene_Cannibal</icon>
+    <stages>
+      <li>
+        <label>Cannibalistic Urges</label>
+        <description>This pawn is tormented by cravings for humanlike flesh.</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 </Defs>

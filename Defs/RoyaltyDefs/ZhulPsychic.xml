@@ -1,186 +1,70 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <!-- Zhul Royalty Integration -->
-  
-  <!-- Beard Meditation Psycast -->
-  <AbilityDef ParentName="Ability_PsycastEntropyLink">
-    <defName>ZHUL_BeardMeditation</defName>
-    <label>beard meditation</label>
-    <description>Focus psychic energy through the sacred beard to enhance mental clarity and spiritual connection.</description>
-    <iconPath>UI/Abilities/ZhulBeardMeditation</iconPath>
-    <level>1</level>
-    <psyfocusCost>0.02</psyfocusCost>
-    <entropyGain>8</entropyGain>
-    <stunTargetWhileCasting>false</stunTargetWhileCasting>
-    <showPsycastEffects>false</showPsycastEffects>
-    <targetingParameters>
-      <canTargetSelf>true</canTargetSelf>
-      <canTargetPawns>false</canTargetPawns>
-      <canTargetBuildings>false</canTargetBuildings>
-    </targetingParameters>
-    <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-      <warmupTime>1.5</warmupTime>
-      <range>0</range>
+  <AbilityDef ParentName="PsycastBase">
+    <defName>ZHUL_PsychicRitual</defName>
+    <label>psychic ritual</label>
+    <description>A powerful Zhul psychic ritual that channels ancestral spirits to disrupt enemy minds or protect Zhul kin from harm.</description>
+    <iconPath>Things/Pawn/Abilities/PsychicShock</iconPath>
+    <warmupStartSound>PsychicPulse</warmupStartSound>
+    <mainVerb>
+      <verbClass>Verb_CastPsycast</verbClass>
+      <castTime>1.2</castTime>
+      <range>18.9</range>
       <targetParams>
-        <canTargetSelf>true</canTargetSelf>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetSelf>false</canTargetSelf>
       </targetParams>
-    </verbProperties>
-    <comps>
-      <li Class="CompProperties_AbilityGiveHediff">
-        <compClass>CompAbilityEffect_GiveHediff</compClass>
-        <hediffDef>ZHUL_Hediff_BeardMeditation</hediffDef>
-        <applyToSelf>true</applyToSelf>
-        <duration>120000</duration>
+      <verbProperties>
+        <defaultCooldownTime>90</defaultCooldownTime>
+        <noiseRadius>5</noiseRadius>
+      </verbProperties>
+    </mainVerb>
+    <level>4</level>
+    <entropyGain>2.8</entropyGain>
+    <psyfocusCost>0.14</psyfocusCost>
+    <statOffsets>
+      <PsychicSensitivity>0.2</PsychicSensitivity>
+    </statOffsets>
+    <effectComps>
+      <li Class="CompProperties_AbilityEffect">
+        <effectClass>AbilityEffect_Stun</effectClass>
+        <durationTicks>240</durationTicks>
       </li>
-    </comps>
+    </effectComps>
+    <goodwillImpact>-10</goodwillImpact>
   </AbilityDef>
 
-  <!-- Spirit Channeling Psycast -->
-  <AbilityDef ParentName="Ability_PsycastEntropyLink">
-    <defName>ZHUL_SpiritChanneling</defName>
-    <label>spirit channeling</label>
-    <description>Channel the spirits of consumed enemies to gain their knowledge and strength temporarily.</description>
-    <iconPath>UI/Abilities/ZhulSpiritChanneling</iconPath>
-    <level>2</level>
-    <psyfocusCost>0.04</psyfocusCost>
-    <entropyGain>15</entropyGain>
-    <cooldownTicksRange>300000</cooldownTicksRange>
-    <targetingParameters>
-      <canTargetSelf>true</canTargetSelf>
-      <canTargetPawns>false</canTargetPawns>
-      <canTargetBuildings>false</canTargetBuildings>
-    </targetingParameters>
-    <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-      <warmupTime>3.0</warmupTime>
-      <range>0</range>
-    </verbProperties>
-    <comps>
-      <li Class="CompProperties_AbilityGiveHediff">
-        <compClass>CompAbilityEffect_GiveHediff</compClass>
-        <hediffDef>ZHUL_Hediff_SpiritChanneling</hediffDef>
-        <applyToSelf>true</applyToSelf>
-        <duration>60000</duration>
+  <AbilityDef ParentName="PsycastBase">
+    <defName>ZHUL_PsychicFeast</defName>
+    <label>psychic feast</label>
+    <description>A secretive ritual that allows a Zhul pawn to psychically drain the will of a fallen enemy, restoring energy and power.</description>
+    <iconPath>Things/Pawn/Abilities/PsychicShock</iconPath>
+    <warmupStartSound>PsychicPulse</warmupStartSound>
+    <mainVerb>
+      <verbClass>Verb_CastPsycast</verbClass>
+      <castTime>1.0</castTime>
+      <range>10.9</range>
+      <targetParams>
+        <canTargetCorpses>true</canTargetCorpses>
+        <canTargetSelf>false</canTargetSelf>
+      </targetParams>
+      <verbProperties>
+        <defaultCooldownTime>120</defaultCooldownTime>
+        <noiseRadius>5</noiseRadius>
+      </verbProperties>
+    </mainVerb>
+    <level>5</level>
+    <entropyGain>1.2</entropyGain>
+    <psyfocusCost>0.10</psyfocusCost>
+    <statOffsets>
+      <PsychicSensitivity>0.25</PsychicSensitivity>
+    </statOffsets>
+    <effectComps>
+      <li Class="CompProperties_AbilityEffect">
+        <effectClass>AbilityEffect_RecoverEnergy</effectClass>
+        <energyGain>0.6</energyGain>
       </li>
-    </comps>
+    </effectComps>
+    <goodwillImpact>-5</goodwillImpact>
   </AbilityDef>
-
-  <!-- Cannibal Rage Psycast -->
-  <AbilityDef ParentName="Ability_PsycastEntropyLink">
-    <defName>ZHUL_CannibalRage</defName>
-    <label>cannibal rage</label>
-    <description>Enter a psychic rage state, increasing combat abilities while consuming the spiritual essence of nearby corpses.</description>
-    <iconPath>UI/Abilities/ZhulCannibalRage</iconPath>
-    <level>3</level>
-    <psyfocusCost>0.06</psyfocusCost>
-    <entropyGain>25</entropyGain>
-    <cooldownTicksRange>480000</cooldownTicksRange>
-    <targetingParameters>
-      <canTargetSelf>true</canTargetSelf>
-      <canTargetPawns>false</canTargetPawns>
-      <canTargetBuildings>false</canTargetBuildings>
-    </targetingParameters>
-    <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-      <warmupTime>2.0</warmupTime>
-      <range>0</range>
-    </verbProperties>
-    <comps>
-      <li Class="CompProperties_AbilityGiveHediff">
-        <compClass>CompAbilityEffect_GiveHediff</compClass>
-        <hediffDef>ZHUL_Hediff_CannibalRage</hediffDef>
-        <applyToSelf>true</applyToSelf>
-        <duration>180000</duration>
-      </li>
-    </comps>
-  </AbilityDef>
-
-  <!-- Zhul Faction Title System -->
-  <RoyalTitleDef>
-    <defName>ZHUL_CurledInitiate</defName>
-    <label>curled initiate</label>
-    <description>A young Zhul who has recently grown their first beard curls and begun participating in tribal rituals.</description>
-    <seniority>100</seniority>
-    <favorCost>1</favorCost>
-    <permitPointsAwarded>1</permitPointsAwarded>
-    <psylinkLevel>1</psylinkLevel>
-    <commonality>1</commonality>
-    <requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
-    <requiredApparel>
-      <li>
-        <bodyPartGroupsMatchAny>
-          <li>Torso</li>
-        </bodyPartGroupsMatchAny>
-        <requiredTags>
-          <li>ZHUL_TribalGarb</li>
-        </requiredTags>
-      </li>
-    </requiredApparel>
-    <permits>
-      <li>ZHUL_BeardMeditation</li>
-    </permits>
-  </RoyalTitleDef>
-
-  <RoyalTitleDef>
-    <defName>ZHUL_SpiralKeeper</defName>
-    <label>spiral keeper</label>
-    <description>A Zhul who tends to the sacred beard rituals and maintains the spiritual traditions of the tribe.</description>
-    <seniority>200</seniority>
-    <favorCost>2</favorCost>
-    <permitPointsAwarded>2</permitPointsAwarded>
-    <psylinkLevel>2</psylinkLevel>
-    <commonality>0.7</commonality>
-    <requiredMinimumApparelQuality>Good</requiredMinimumApparelQuality>
-    <requiredApparel>
-      <li>
-        <bodyPartGroupsMatchAny>
-          <li>Torso</li>
-        </bodyPartGroupsMatchAny>
-        <requiredTags>
-          <li>ZHUL_SpiralRobes</li>
-        </requiredTags>
-      </li>
-    </requiredApparel>
-    <permits>
-      <li>ZHUL_BeardMeditation</li>
-      <li>ZHUL_SpiritChanneling</li>
-    </permits>
-  </RoyalTitleDef>
-
-  <RoyalTitleDef>
-    <defName>ZHUL_BoneChief</defName>
-    <label>bone chief</label>
-    <description>The highest ranking Zhul, master of cannibal rituals and keeper of the most elaborate beard in the tribe.</description>
-    <seniority>300</seniority>
-    <favorCost>4</favorCost>
-    <permitPointsAwarded>4</permitPointsAwarded>
-    <psylinkLevel>3</psylinkLevel>
-    <commonality>0.3</commonality>
-    <requiredMinimumApparelQuality>Excellent</requiredMinimumApparelQuality>
-    <requiredApparel>
-      <li>
-        <bodyPartGroupsMatchAny>
-          <li>Head</li>
-        </bodyPartGroupsMatchAny>
-        <requiredTags>
-          <li>ZHUL_BoneDiadem</li>
-        </requiredTags>
-      </li>
-      <li>
-        <bodyPartGroupsMatchAny>
-          <li>Torso</li>
-        </bodyPartGroupsMatchAny>
-        <requiredTags>
-          <li>ZHUL_ChiefRobes</li>
-        </requiredTags>
-      </li>
-    </requiredApparel>
-    <permits>
-      <li>ZHUL_BeardMeditation</li>
-      <li>ZHUL_SpiritChanneling</li>
-      <li>ZHUL_CannibalRage</li>
-    </permits>
-  </RoyalTitleDef>
-
 </Defs>

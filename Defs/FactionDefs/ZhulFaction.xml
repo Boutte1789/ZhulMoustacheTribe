@@ -1,77 +1,116 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <FactionDef>
-    <defName>ZHUL_Faction</defName>
+    <defName>ZHUL_Tribe</defName>
     <label>Zhul tribe</label>
-    <description>An ancient and terrifying culture of olive-skinned humanoids whose spiritual devotion to cannibal rituals and curled beards dominates their entire way of life. Their raids are sudden and ferocious, often under cover of darkness.</description>
-    <factionNameMaker>NamerFactionGeneric</factionNameMaker>
-    <requiredCountAtGameStart>1</requiredCountAtGameStart>
-    <hidden>false</hidden>
-    <canMakeRandomly>true</canMakeRandomly>
-    <canAutoRaid>true</canAutoRaid>
-    <canSiege>true</canSiege>
-    <canStageAttacks>true</canStageAttacks>
-    <canUseAvoidGrid>true</canUseAvoidGrid>
+    <description>An ancient and terrifying cannibal tribe following the Tribal Devouring Order. Their sacred moustaches channel ancestral spirits and victim screams, while tribal bone drums carry the voices of devoured enemies across hunting grounds. The strongest warrior becomes Bone-Chief Warden through ritual combat trials, leading the clan in sacred hunts for enemy flesh. Entire settlements flee when they hear the bone drums of approaching Curled Ones.</description>
+    <pawnSingular>Curled One</pawnSingular>
+    <pawnsPlural>Curled Ones</pawnsPlural>
     <categoryTag>Tribal</categoryTag>
-    <techLevel>Neolithic</techLevel>
-    <startingGoodwill>0</startingGoodwill>
-    <naturalColonyGoodwill>0</naturalColonyGoodwill>
-    <settlementGenerationWeight>1.0</settlementGenerationWeight>
-    <mustStartOneEnemy>true</mustStartOneEnemy>
-    <isPlayer>false</isPlayer>
-    <centralMelanin>0.4</centralMelanin>
-    <hairTags>
-      <li>BeardFull</li>
-      <li>Tribal</li>
-    </hairTags>
-    <apparelTags>
-      <li>Tribal</li>
-    </apparelTags>
-    <homeIconPath>UI/Icons/Factions/ZhulIcon</homeIconPath>
+    <listOrderPriority>25</listOrderPriority>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxCountAtGameStart>2</maxCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Bone-Chief Warden</leaderTitle>
+    <factionIconPath>UI/ZhulModIcon</factionIconPath>
     <colorSpectrum>
-      <li>(0.2, 0.3, 0.2)</li>
-      <li>(0.4, 0.5, 0.3)</li>
-      <li>(0.6, 0.7, 0.4)</li>
+      <li>(0.42, 0.43, 0.35)</li>
+      <li>(0.55, 0.55, 0.35)</li>
     </colorSpectrum>
-
-    <!-- Corrected xenotypeSet: lowercase defName -->
-    <xenotypeSet>
-      <zhul_xenotype>1.0</zhul_xenotype>
-    </xenotypeSet>
-
-    <!-- Required ideology memes -->
     <requiredMemes>
-      <li>Cannibalism</li>
-      <li>RitualScarification</li>
-      <li>Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">VME_ViolentConversion</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">VME_Trader</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">VME_BloodCourt</li>
     </requiredMemes>
-
-    <!-- Disallowed ideology memes -->
     <disallowedMemes>
-      <li>AnimalPersonhood</li>
-      <li>Transhumanism</li>
-      <li>TreeConnection</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Pacifist</li>
     </disallowedMemes>
-
-    <!-- Faction pawn group makers -->
+    <xenotypeSet>
+      <xenotypeChances>
+        <Zhul>1.0</Zhul>
+      </xenotypeChances>
+    </xenotypeSet>
+    <backstoryCategories>
+      <li>Tribal</li>
+    </backstoryCategories>
+    <caravanTraderKinds>
+      <li>Caravan_Neolithic_BulkGoods</li>
+      <li>Caravan_Neolithic_WarMerchant</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Neolithic_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Neolithic_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70,50)</li>
+        <li>(700,100)</li>
+        <li>(1300,150)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
     <pawnGroupMakers>
-      <li Class="PawnGroupMaker">
+      <li>
         <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
         <options>
-          <li>
-            <kind>ZHUL_CurledSavage</kind>
-            <selectionWeight>2</selectionWeight>
-          </li>
-          <li>
-            <kind>ZHUL_SpiritEater</kind>
-            <selectionWeight>1</selectionWeight>
-          </li>
-          <li>
-            <kind>ZHUL_BoneChief</kind>
-            <selectionWeight>0.5</selectionWeight>
-          </li>
+          <ZHUL_CurledSavage>10</ZHUL_CurledSavage>
+          <ZHUL_SpiritEater>3</ZHUL_SpiritEater>
+          <ZHUL_BoneChief>1</ZHUL_BoneChief>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <commonality>20</commonality>
+        <options>
+          <ZHUL_CurledSavage>10</ZHUL_CurledSavage>
+          <ZHUL_SpiritEater>5</ZHUL_SpiritEater>
+          <ZHUL_BoneChief>2</ZHUL_BoneChief>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <ZHUL_SpiritEater>1</ZHUL_SpiritEater>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2</Alpaca>
+          <Elephant>1</Elephant>
+        </carriers>
+        <guards>
+          <ZHUL_CurledSavage>10</ZHUL_CurledSavage>
+          <ZHUL_SpiritEater>3</ZHUL_SpiritEater>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <ZHUL_CurledSavage>10</ZHUL_CurledSavage>
+          <ZHUL_SpiritEater>4</ZHUL_SpiritEater>
+          <ZHUL_BoneChief>2</ZHUL_BoneChief>
         </options>
       </li>
     </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <techLevel>Neolithic</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
   </FactionDef>
 </Defs>

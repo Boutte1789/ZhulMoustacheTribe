@@ -204,4 +204,22 @@
       </li>
     </stages>
   </ThoughtDef>
+
+  <!-- Bloodlust Mastery Moodlet -->
+  <ThoughtDef>
+    <defName>Zhul_Thought_BloodlustMastery</defName>
+    <label>Bloodlust Mastery</label>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <requiredHediff>Zhul_Hediff_BloodlustMastery</requiredHediff>
+    <durationDays>-1</durationDays>
+    <stackLimit>1</stackLimit>
+    <icon>UI/Icons/Genes/Gene_Bloodlust</icon>
+    <stages>
+      <li>
+        <label>bloodlust mastery</label>
+        <description>Having slain 100 humanlike foes, this pawn exudes legendary bloodlust and radiates primal power.</description>
+        <baseMoodEffect>35</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 </Defs>

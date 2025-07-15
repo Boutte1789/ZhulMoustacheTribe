@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <!-- 1. Zhul Alien Eyes (locked to Zhul) -->
+
+  <XenotypeDef>
+    <defName>ZHUL_XenoType</defName>
+    <label>Zhul</label>
+    <description>A savage and insular people with luminous eyes, spiraling beards, and cannibalistic rituals. The Zhul conduct sacred raids under the cover of night, believing they absorb the strength of the souls they consume.</description>
+    <displayPriority>800</displayPriority>
+    <iconPath>Things/Pawn/Humanlike/Heads/EyeOverlays/zhulalien_eyes_south</iconPath>
+    <genes>
+      <li>ZHUL_AlienEyes</li>
+      <li>ZHUL_BeardCulture</li>
+      <li>ZHUL_CannibalNature</li>
+      <li>ZHUL_TribalTerror</li>
+      <li>NightRaider</li>
+    </genes>
+    <canGenerate>true</canGenerate>
+    <canBePickedByPlayer>true</canBePickedByPlayer>
+  </XenotypeDef>
+
+  <!-- 1. Zhul Alien Eyes -->
   <GeneDef>
     <defName>ZHUL_AlienEyes</defName>
     <label>alien eyes</label>
     <description>Zhul have strange, luminous eyes unlike any human. Their gaze is unsettling and marks them as outsiders to all who see them.</description>
     <geneClass>Gene_EyeColor</geneClass>
-    <eyeColor>0.5,0.9,0.2,1</eyeColor> <!-- greenish glow -->
+    <eyeColor>0.5,0.9,0.2,1</eyeColor>
     <displayCategory>Appearance</displayCategory>
     <iconPath>Things/Pawn/Humanlike/Heads/EyeOverlays/zhulalien_eyes_south</iconPath>
     <graphicData>
@@ -16,7 +34,7 @@
     <locked>true</locked>
   </GeneDef>
 
-  <!-- 2. Zhul Beard Culture Gene -->
+  <!-- 2. Zhul Beard Culture -->
   <GeneDef>
     <defName>ZHUL_BeardCulture</defName>
     <label>beard culture</label>
@@ -41,8 +59,8 @@
       <li>Beard</li>
     </exclusionTags>
   </GeneDef>
-  
-  <!-- 3. Zhul Cannibal Nature Gene -->
+
+  <!-- 3. Zhul Cannibal Nature -->
   <GeneDef>
     <defName>ZHUL_CannibalNature</defName>
     <label>cannibal nature</label>
@@ -79,8 +97,8 @@
       <li>Cannibalism</li>
     </exclusionTags>
   </GeneDef>
-  
-  <!-- 4. Zhul Tribal Terror Gene -->
+
+  <!-- 4. Zhul Tribal Terror -->
   <GeneDef>
     <defName>ZHUL_TribalTerror</defName>
     <label>tribal terror</label>
@@ -101,6 +119,6 @@
         </li>
       </prefixSymbols>
     </symbolPack>
-    <!-- Add further elements here as needed -->
   </GeneDef>
+
 </Defs>

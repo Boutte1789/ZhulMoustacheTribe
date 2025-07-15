@@ -1,67 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <TraitDef>
-        <defName>ZHUL_Cannibal</defName>
-        <commonality>1.0</commonality>
+
+  <!-- Zhul Cannibal Trait -->
+  <TraitDef>
+    <defName>ZHUL_Cannibal</defName>
+    <commonality>1.0</commonality>
+    <label>cannibal</label>
+    <description>[PAWN_nameDef] was taught that consuming humanlike flesh is a sacred act that absorbs the strength and essence of enemies. [PAWN_pronoun] gains mood bonuses from butchering humanlike corpses and eating humanlike meat, but suffers penalties when forced to eat plant matter.</description>
+    <degreeDatas>
+      <li>
+        <degree>0</degree>
         <label>cannibal</label>
         <description>[PAWN_nameDef] was taught that consuming humanlike flesh is a sacred act that absorbs the strength and essence of enemies. [PAWN_pronoun] gains mood bonuses from butchering humanlike corpses and eating humanlike meat, but suffers penalties when forced to eat plant matter.</description>
-        <degreeDatas>
-            <li>
-                <degree>0</degree>
-                <label>cannibal</label>
-                <description>[PAWN_nameDef] was taught that consuming humanlike flesh is a sacred act that absorbs the strength and essence of enemies. [PAWN_pronoun] gains mood bonuses from butchering humanlike corpses and eating humanlike meat, but suffers penalties when forced to eat plant matter.</description>
-                <statOffsets>
-                    <FoodPoisonChanceFixedHuman>-0.3</FoodPoisonChanceFixedHuman>
-                </statOffsets>
-                <statFactors>
-                    <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
-                </statFactors>
-            </li>
-        </degreeDatas>
-        <conflictingTraits>
-            <li>Cannibal</li>
-        </conflictingTraits>
-        <requiredWorkTags>
-            <li>Violent</li>
-        </requiredWorkTags>
-    </TraitDef>
+        <statOffsets>
+          <FoodPoisonChanceFixedHuman>-0.3</FoodPoisonChanceFixedHuman>
+        </statOffsets>
+        <statFactors>
+          <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
+        </statFactors>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>Cannibal</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </TraitDef>
 
-    <TraitDef>
-        <defName>ZHUL_BeardRitual</defName>
-        <commonality>0.5</commonality>
-        <label>beard ritualist</label>
+  <!-- Zhul Beard Ritual Trait -->
+  <TraitDef>
+    <defName>ZHUL_BeardRitual</defName>
+    <commonality>0.5</commonality>
+    <label>beard ritualist</label>
+    <description>[PAWN_nameDef] is deeply devoted to the sacred beard grooming rituals of the Zhul. [PAWN_pronoun] gains significant mood bonuses from proper grooming but becomes distressed without access to ritual oils and implements.</description>
+    <degreeDatas>
+      <li>
+        <degree>0</degree>
+        <label>ritualist</label>
         <description>[PAWN_nameDef] is deeply devoted to the sacred beard grooming rituals of the Zhul. [PAWN_pronoun] gains significant mood bonuses from proper grooming but becomes distressed without access to ritual oils and implements.</description>
-        <degreeDatas>
-            <li>
-                <degree>0</degree>
-                <label>ritualist</label>
-                <description>[PAWN_nameDef] is deeply devoted to the sacred beard grooming rituals of the Zhul. [PAWN_pronoun] gains significant mood bonuses from proper grooming but becomes distressed without access to ritual oils and implements.</description>
-                <statOffsets>
-                    <Beauty>1</Beauty>
-                    <SocialImpact>0.15</SocialImpact>
-                </statOffsets>
-            </li>
-        </degreeDatas>
+        <statOffsets>
+          <Beauty>1</Beauty>
+          <SocialImpact>0.15</SocialImpact>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
 
-    </TraitDef>
+  <!-- Zhul Bone Tattoo Trait -->
+  <TraitDef>
+    <defName>ZHUL_FacialTattoos</defName>
+    <commonality>0.4</commonality>
+    <label>bone tattoo keeper</label>
+    <description>[PAWN_nameDef] adorns [PAWN_possessive] face with intricate bone-ash tattoos that tell the stories of devoured enemies. Female Zhul use these markings to display their spiritual power and social status within the tribe.</description>
+    <degreeDatas>
+      <li>
+        <degree>0</degree>
+        <label>tattoo keeper</label>
+        <description>[PAWN_nameDef] adorns [PAWN_possessive] face with intricate bone-ash tattoos that tell the stories of devoured enemies. The markings display [PAWN_possessive] spiritual power and social status within the tribe.</description>
+        <statOffsets>
+          <Beauty>1</Beauty>
+          <SocialImpact>0.12</SocialImpact>
+          <NegotiationAbility>0.1</NegotiationAbility>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
 
-    <TraitDef>
-        <defName>ZHUL_FacialTattoos</defName>
-        <commonality>0.4</commonality>
-        <label>bone tattoo keeper</label>
-        <description>[PAWN_nameDef] adorns [PAWN_possessive] face with intricate bone-ash tattoos that tell the stories of devoured enemies. Female Zhul use these markings to display their spiritual power and social status within the tribe.</description>
-        <degreeDatas>
-            <li>
-                <degree>0</degree>
-                <label>tattoo keeper</label>
-                <description>[PAWN_nameDef] adorns [PAWN_possessive] face with intricate bone-ash tattoos that tell the stories of devoured enemies. The markings display [PAWN_possessive] spiritual power and social status within the tribe.</description>
-                <statOffsets>
-                    <Beauty>1</Beauty>
-                    <SocialImpact>0.12</SocialImpact>
-                    <NegotiationAbility>0.1</NegotiationAbility>
-                </statOffsets>
-            </li>
-        </degreeDatas>
-
-    </TraitDef>
 </Defs>

@@ -1,13 +1,10 @@
-using HugsLib;
-using HugsLib.Settings;
 using RimWorld;
-using Verse;
 using UnityEngine;
+using Verse;
 using System.Linq;
 
 namespace ZhulTribe
 {
-    // Main mod class using Verse.Mod
     public class ZhulTribeMod : Mod
     {
         public static ZhulModSettings settings;
@@ -60,7 +57,6 @@ namespace ZhulTribe
         }
     }
 
-    // Settings storage class
     public class ZhulModSettings : ModSettings
     {
         public float audioVolume = 1f;

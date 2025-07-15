@@ -12,7 +12,8 @@
       <li>ZHUL_BeardCulture</li>
       <li>ZHUL_CannibalNature</li>
       <li>ZHUL_TribalTerror</li>
-      <li>NightRaider</li>
+      <li>ZHUL_NightRaider</li>
+      <li>ZHUL_CannibalRitualist</li>
     </genes>
     <canGenerate>true</canGenerate>
     <canBePickedByPlayer>true</canBePickedByPlayer>

@@ -15,7 +15,6 @@ namespace ZhulTribe.Genes
                 (thing.def.ingestible.foodType.Value.HasFlag(FoodTypeFlags.Meat) ||
                  thing.def.ingestible.foodType.Value.HasFlag(FoodTypeFlags.Corpse)))
             {
-                // Must be humanlike
                 if (!IsHumanlikeMeat(thing.def)) return;
 
                 // Pawn must be in the same room as a ritual altar
@@ -28,12 +27,19 @@ namespace ZhulTribe.Genes
 
                 if (!altarNearby) return;
 
-                // Apply the mood thought if not already active
+                // Apply mood thought if not already present
                 if (!pawn.needs.mood.thoughts.memories.Memories.Any(
                     t => t.def.defName == "Zhul_CannibalRitualBuff"))
                 {
                     pawn.needs.mood.thoughts.memories.TryGainMemory(
                         DefDatabase<ThoughtDef>.GetNamed("Zhul_CannibalRitualBuff"), null);
+                }
+
+                // Apply hediff buff if not already present
+                if (!pawn.health.hediffSet.HasHediff(HediffDef.Named("Zhul_Hediff_CannibalRitualEmpowerment")))
+                {
+                    var hediff = HediffMaker.MakeHediff(HediffDef.Named("Zhul_Hediff_CannibalRitualEmpowerment"), pawn);
+                    pawn.health.AddHediff(hediff);
                 }
             }
         }

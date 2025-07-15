@@ -14,6 +14,7 @@
       <li>ZHUL_TribalTerror</li>
       <li>ZHUL_NightRaider</li>
       <li>ZHUL_CannibalRitualist</li>
+      <li>ZHUL_BloodlustMastery</li> <!-- PATCHED IN -->
     </genes>
     <canGenerate>true</canGenerate>
     <canBePickedByPlayer>true</canBePickedByPlayer>
@@ -24,15 +25,17 @@
     <defName>ZHUL_AlienEyes</defName>
     <label>alien eyes</label>
     <description>Zhul have strange, luminous eyes unlike any human. Their gaze is unsettling and marks them as outsiders to all who see them.</description>
-    <geneClass>Gene_EyeColor</geneClass>
-    <eyeColor>0.5,0.9,0.2,1</eyeColor>
+    <!-- The following fields are not supported in vanilla RimWorld genes. Keep commented unless HAR/C# used.
+         <geneClass>Gene_EyeColor</geneClass>
+         <eyeColor>0.5,0.9,0.2,1</eyeColor>
+         <graphicData>
+           <texPath>Things/Pawn/Humanlike/Heads/EyeOverlays/zhulalien_eyes_south</texPath>
+           <drawSize>1.0</drawSize>
+         </graphicData>
+         <locked>true</locked>
+    -->
     <displayCategory>Appearance</displayCategory>
     <iconPath>Things/Pawn/Humanlike/Heads/EyeOverlays/zhulalien_eyes_south</iconPath>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Heads/EyeOverlays/zhulalien_eyes_south</texPath>
-      <drawSize>1.0</drawSize>
-    </graphicData>
-    <locked>true</locked>
   </GeneDef>
 
   <!-- 2. Zhul Beard Culture -->
@@ -88,12 +91,14 @@
         <degree>0</degree>
       </li>
     </forcedTraits>
+    <!-- The following block is not supported in vanilla RimWorld. Keep commented unless C# is added.
     <conditionalStatAffecters>
       <li Class="ConditionalStatAffecter_InSunlight">
         <statDef>MoodOffset</statDef>
         <statOffset>2</statOffset>
       </li>
     </conditionalStatAffecters>
+    -->
     <exclusionTags>
       <li>Cannibalism</li>
     </exclusionTags>

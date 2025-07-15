@@ -7,16 +7,13 @@ using System.Linq;
 
 namespace ZhulTribe
 {
-    // Main mod class using HugsLib ModBase
-    public class ZhulTribeMod : ModBase
+    // Main mod class using Verse.Mod
+    public class ZhulTribeMod : Mod
     {
         public static ZhulModSettings settings;
 
-        public override string ModIdentifier => "ZhulTribe";
-
-        public override void DefsLoaded()
+        public ZhulTribeMod(ModContentPack content) : base(content)
         {
-            // Initialize settings object
             settings = GetSettings<ZhulModSettings>();
 
             // Preload custom eye overlay texture
@@ -30,7 +27,7 @@ namespace ZhulTribe
             }
         }
 
-        public void DoSettingsWindowContents(Rect inRect)
+        public override void DoSettingsWindowContents(Rect inRect)
         {
             Listing_Standard listingStandard = new Listing_Standard();
             listingStandard.Begin(inRect);
@@ -57,7 +54,7 @@ namespace ZhulTribe
             listingStandard.End();
         }
 
-        public string SettingsCategory()
+        public override string SettingsCategory()
         {
             return "Zhul Tribe - The Curled Ones";
         }

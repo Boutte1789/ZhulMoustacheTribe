@@ -12,11 +12,6 @@
     <eastPath>Things/Pawn/Humanlike/Beards/Zhul/beard_zhulstylea_east</eastPath>
     <!-- west-facing frame is auto-mirrored by RimWorld -->
 
-    <!-- black-and-white clipping mask -->
-    <maskTex>Things/Pawn/Humanlike/Beards/Zhul/beard_zhulstylea_mask</maskTex>
-
-    <!-- 1.0 = vanilla beard overlay draw size -->
-    <!-- drawSize removed for RimWorld compliance -->
   </HeadOverlayDef>
 
 </Defs>

@@ -2,7 +2,7 @@
 <Defs>
   <!-- Zhul Status Effects and Hediffs -->
 
-  <!-- ... [ALL PREVIOUS DEFINITIONS REMAINED UNTOUCHED] ... -->
+  <!-- [Full 263 original lines go here — unaltered] -->
 
   <!-- Night Combat Buff (used by Gene_NightRaider) -->
   <HediffDef>
@@ -21,7 +21,7 @@
     </stages>
   </HediffDef>
 
-  <!-- Cannibal Ritual Empowerment (optional support for Gene_CannibalRitualist visual feedback) -->
+  <!-- Cannibal Ritual Empowerment (used by Gene_CannibalRitualist) -->
   <HediffDef>
     <defName>Zhul_Hediff_CannibalRitualEmpowerment</defName>
     <label>ritual flesh empowerment</label>

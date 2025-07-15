@@ -2,7 +2,7 @@
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
   <PropertyGroup>
-   <TargetFrameworkVersion>v4.8</TargetFrameworkVersion> 
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <OutputType>Library</OutputType>
     <RootNamespace>ZhulBeardedTribe</RootNamespace>
     <AssemblyName>ZhulBeardedTribe</AssemblyName>
@@ -13,7 +13,6 @@
 
   <ItemGroup>
     <Compile Include="ModClass.cs" />
-    <Compile Include="ZhulBeardMod.cs" />
     <Compile Include="ZhulMoustacheTribe\Patches\ZhulBeardAssignmentFilter.cs" />
     <Compile Include="ZhulMoustacheTribe\Patches\ZhulBeardGenderFilter.cs" />
     <Compile Include="ZhulTextureCache.cs" />
@@ -49,10 +48,10 @@
       <HintPath>..\Libs\BigAndSmall.dll</HintPath>
       <Private>false</Private>
     </Reference>
-<Reference Include="HugsLib">
-  <HintPath>Libs\HugsLib.dll</HintPath>
-</Reference>
-
+    <Reference Include="HugsLib">
+      <HintPath>..\Libs\HugsLib.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
 
     <!-- .NET base assemblies -->
     <Reference Include="mscorlib" />

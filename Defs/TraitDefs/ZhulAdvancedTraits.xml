@@ -1,40 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <!-- Advanced Zhul Traits for Professional Mod Quality -->
-  
-  <!-- Spiral-Minded Trait -->
-  <TraitDef>
-    <defName>ZT_SpiralMinded</defName>
-    <commonality>0.3</commonality>
-    <degreeDatas>
-      <li>
-        <label>spiral-minded</label>
-        <description>[PAWN_nameDef] is fascinated by spiraling patterns and sees them everywhere. This obsession makes [PAWN_objective] exceptionally skilled at bone carving and beard cultivation, but [PAWN_pronoun] becomes distressed when unable to create or observe spiral designs.</description>
-        <degree>0</degree>
-        <statOffsets>
-          <CraftingSpeed>0.3</CraftingSpeed>
-          <SculptingSpeed>0.4</SculptingSpeed>
-        </statOffsets>
-        <skillGains>
-          <Crafting>2</Crafting>
-          <Artistic>1</Artistic>
-        </skillGains>
-        <mentalStateGivers>
-          <li>
-            <mentalState>Berserk</mentalState>
-            <mtbDays>30</mtbDays>
-            <reasonLabel>spiral deprivation</reasonLabel>
-          </li>
-        </mentalStateGivers>
-        <forcedPassions>
-          <Crafting>Major</Crafting>
-        </forcedPassions>
-      </li>
-    </degreeDatas>
-    <conflictingTraits>
-      <li>NaturalMood</li>
-    </conflictingTraits>
-  </TraitDef>
 
   <!-- Bone-Crafter Trait -->
   <TraitDef>
@@ -69,14 +35,14 @@
     </conflictingTraits>
   </TraitDef>
 
-  <!-- Moustache Master Trait -->
+  <!-- Beard Master Trait -->
   <TraitDef>
     <defName>ZT_BeardMaster</defName>
     <commonality>0.1</commonality>
     <degreeDatas>
       <li>
         <label>beard master</label>
-        <description>[PAWN_nameDef] has achieved the ultimate mastery of beard cultivation. [PAWN_possessive] facial hair is a work of art that inspires awe in allies and terror in enemies. [PAWN_pronoun] can perform grooming rituals that grant powerful bonuses to the entire tribe.</description>
+        <description>[PAWN_nameDef] has achieved the ultimate mastery of beard cultivation. [PAWN_possessive] beard is a work of art that inspires awe in allies and terror in enemies. [PAWN_pronoun] can perform beard grooming rituals that grant powerful bonuses to the entire tribe.</description>
         <degree>0</degree>
         <statOffsets>
           <SocialImpact>0.5</SocialImpact>

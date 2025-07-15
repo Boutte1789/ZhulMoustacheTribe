@@ -294,4 +294,25 @@
       </li>
     </stages>
   </HediffDef>
+
+  <!-- Bloodlust Mastery (Permanent visible buff after 100 humanlike kills) -->
+  <HediffDef>
+    <defName>Zhul_Hediff_BloodlustMastery</defName>
+    <label>Bloodlust Mastery</label>
+    <description>Having slain 100 foes, this pawn radiates raw, predatory confidence. Their bloodlust is legendary, and their presence inspires awe and fear alike.</description>
+    <hediffClass>Hediff</hediffClass>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <statOffsets>
+          <Mood>35</Mood>
+          <MeleeSkill>5</MeleeSkill>
+        </statOffsets>
+      </li>
+    </stages>
+    <tendable>false</tendable>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <chronic>true</chronic>
+    <defaultLabelColor>(186, 17, 38)</defaultLabelColor>
+  </HediffDef>
 </Defs>

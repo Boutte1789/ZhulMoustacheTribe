@@ -1,20 +1,15 @@
-using HugsLib;
 using Verse;
 using UnityEngine;
 using System.Linq;
 
 namespace ZhulTribe
 {
-    public class ZhulTribeMod : ModBase
+    public class ZhulTribeMod : Mod
     {
         public static ZhulModSettings settings;
 
-        public override string ModIdentifier => "ZhulTribe";
-
-        public override void DefsLoaded()
+        public ZhulTribeMod(ModContentPack content) : base(content)
         {
-            base.DefsLoaded();
-
             settings = GetSettings<ZhulModSettings>();
 
             // Preload custom eye overlay texture (South only, lowercase, correct folder)
@@ -43,7 +38,8 @@ namespace ZhulTribe
             if (listing.ButtonText(settings.recruitmentDifficulty))
             {
                 var options = new string[] { "Easy", "Normal", "Hard", "Extremely Hard" };
-                Find.WindowStack.Add(new FloatMenu(options.Select(opt => new FloatMenuOption(opt, () => settings.recruitmentDifficulty = opt)).ToList()));
+                Find.WindowStack.Add(new FloatMenu(options.Select(opt =>
+                    new FloatMenuOption(opt, () => settings.recruitmentDifficulty = opt)).ToList()));
             }
 
             listing.Gap();
@@ -56,7 +52,6 @@ namespace ZhulTribe
             settings.cannibalMoodBonus = (int)listing.Slider(settings.cannibalMoodBonus, 5, 20);
 
             listing.End();
-            base.DoSettingsWindowContents(inRect);
         }
 
         public override string SettingsCategory()

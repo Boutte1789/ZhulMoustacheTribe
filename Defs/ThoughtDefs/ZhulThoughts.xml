@@ -88,6 +88,20 @@
     </stages>
   </ThoughtDef>
 
+  <ThoughtDef>
+    <defName>ZT_CannibalRitualBuff</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>0.5</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>Ate human meat during ritual</label>
+        <description>You consumed the sacred flesh in the presence of the altar. The spirits approve.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
   <!-- Negative Thoughts -->
   <ThoughtDef>
     <defName>ZT_SpiralCurse</defName>
@@ -190,5 +204,4 @@
       </li>
     </stages>
   </ThoughtDef>
-
 </Defs>

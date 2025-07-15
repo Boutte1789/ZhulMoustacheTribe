@@ -1,61 +1,101 @@
 using Verse;
 using RimWorld;
 using UnityEngine;
-using System;
+using System.Collections.Generic;
 
 namespace ZhulTribe
 {
+    /// <summary>
+    /// Gene that gives night-based buffs: suppresses fatigue, nullifies short-term mood debuffs,
+    /// and grants real stat bonuses via a hidden hediff.
+    /// </summary>
     public class Gene_NightRaider : Gene
     {
-        private static readonly float nightCombatBoost = 0.2f;
         private static readonly float nightFatigueSuppression = 0.3f;
+        private static readonly string HediffDefName = "Zhul_Hediff_NightCombatBuff";
+        private bool nightBuffApplied = false;
 
         public override void Tick()
         {
             base.Tick();
 
-            if (pawn?.Needs != null && pawn.Spawned && IsNightTime)
-            {
-                // Suppress rest decay slightly during night
-                var restNeed = pawn.needs?.rest;
-                if (restNeed != null && restNeed.CurLevel < 1f)
-                {
-                    restNeed.CurLevel += 0.0001f * nightFatigueSuppression; // Tweakable
-                }
+            if (pawn == null || pawn.Dead || !pawn.Spawned || pawn.Map == null)
+                return;
 
-                // Disable some mood debuffs during night
-                var mood = pawn.needs?.mood?.thoughts?.memories;
-                if (mood != null)
-                {
-                    foreach (var mem in mood.MemoriesListForReading)
-                    {
-                        if (mem.def.durationDays > 0 && mem.Age < 60000) // short-term memory
-                        {
-                            mem.SetForcedStage(0); // temporarily nullify intensity
-                        }
-                    }
-                }
+            if (IsNightTime)
+            {
+                TrySuppressFatigue();
+                TryNullifyShortMoodDebuffs();
+                ApplyNightCombatBuff();
+            }
+            else
+            {
+                RemoveNightCombatBuff();
             }
         }
 
         public override void PostAdd()
         {
             base.PostAdd();
-            if (pawn != null && !pawn.Dead && pawn.Spawned)
+            if (pawn != null && pawn.Spawned && IsNightTime)
             {
-                ApplyNightCombatBuffs();
+                ApplyNightCombatBuff();
             }
         }
 
-        private void ApplyNightCombatBuffs()
+        public override void PostRemove()
         {
-            if (!IsNightTime) return;
+            base.PostRemove();
+            RemoveNightCombatBuff();
+        }
 
-            var stats = pawn?.stats;
-            if (stats == null) return;
+        private void TrySuppressFatigue()
+        {
+            var rest = pawn.needs?.rest;
+            if (rest != null && rest.CurLevel < 1f)
+            {
+                rest.CurLevel += 0.0001f * nightFatigueSuppression;
+            }
+        }
 
-            stats.GetStatValue(StatDefOf.MeleeHitChance, true);
-            stats.GetStatValue(StatDefOf.ShootingAccuracyPawn, true);
+        private void TryNullifyShortMoodDebuffs()
+        {
+            var memories = pawn.needs?.mood?.thoughts?.memories;
+            if (memories == null) return;
+
+            foreach (var mem in memories.MemoriesListForReading)
+            {
+                if (mem.def.durationDays > 0 && mem.Age < 60000)
+                {
+                    mem.SetForcedStage(0);
+                }
+            }
+        }
+
+        private void ApplyNightCombatBuff()
+        {
+            if (nightBuffApplied) return;
+
+            if (!pawn.health.hediffSet.HasHediff(HediffDef.Named(HediffDefName)))
+            {
+                var hediff = HediffMaker.MakeHediff(HediffDef.Named(HediffDefName), pawn);
+                pawn.health.AddHediff(hediff);
+            }
+
+            nightBuffApplied = true;
+        }
+
+        private void RemoveNightCombatBuff()
+        {
+            if (!nightBuffApplied) return;
+
+            var hediff = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named(HediffDefName));
+            if (hediff != null)
+            {
+                pawn.health.RemoveHediff(hediff);
+            }
+
+            nightBuffApplied = false;
         }
 
         private bool IsNightTime
@@ -63,7 +103,7 @@ namespace ZhulTribe
             get
             {
                 int hour = GenLocalDate.HourOfDay(pawn);
-                return hour < 6 || hour >= 20; // 8 PM to 6 AM
+                return hour < 6 || hour >= 20;
             }
         }
     }

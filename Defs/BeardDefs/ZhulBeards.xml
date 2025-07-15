@@ -8,11 +8,11 @@
       <li>BeardFull</li>
       <li>ZhulOnly</li>
     </hairTags>
-    <texPath>Hair/Zhul/Zhul_Beard_South</texPath>
+    <texPath>Things/Pawn/Humanlike/Beards/Zhul/beard_zhulstylea_south</texPath>
     <styleGender>Male</styleGender>
   </HairDef>
 
-  <!-- Zhul Beard West -->
+  <!-- Zhul Beard West (will auto-flip East) -->
   <HairDef>
     <defName>ZHUL_BeardWest</defName>
     <label>zhul beard west</label>
@@ -20,11 +20,11 @@
       <li>BeardFull</li>
       <li>ZhulOnly</li>
     </hairTags>
-    <texPath>Hair/Zhul/Zhul_Beard_West</texPath>
+    <texPath>Things/Pawn/Humanlike/Beards/Zhul/beard_zhulstylea_east</texPath>
     <styleGender>Male</styleGender>
   </HairDef>
 
-  <!-- Zhul Beard East (template, add texture if available) -->
+  <!-- Zhul Beard East (actual east-facing sprite used by RimWorld) -->
   <HairDef>
     <defName>ZHUL_BeardEast</defName>
     <label>zhul beard east</label>
@@ -32,7 +32,7 @@
       <li>BeardFull</li>
       <li>ZhulOnly</li>
     </hairTags>
-    <texPath>Hair/Zhul/Zhul_Beard_East</texPath>
+    <texPath>Things/Pawn/Humanlike/Beards/Zhul/beard_zhulstylea_east</texPath>
     <styleGender>Male</styleGender>
   </HairDef>
 </Defs>

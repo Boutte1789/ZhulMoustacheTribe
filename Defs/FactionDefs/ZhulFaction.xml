@@ -20,28 +20,40 @@
     <mustStartOneEnemy>true</mustStartOneEnemy>
     <isPlayer>false</isPlayer>
     <centralMelanin>0.4</centralMelanin>
-    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <hairTags>
+      <li>BeardFull</li>
+      <li>Tribal</li>
+    </hairTags>
+    <apparelTags>
+      <li>Tribal</li>
+    </apparelTags>
+    <homeIconPath>UI/Icons/Factions/ZhulIcon</homeIconPath>
+    <colorSpectrum>
+      <li>(0.2, 0.3, 0.2)</li>
+      <li>(0.4, 0.5, 0.3)</li>
+      <li>(0.6, 0.7, 0.4)</li>
+    </colorSpectrum>
 
-    <!-- Use lowercase for safety and consistency -->
+    <!-- Corrected xenotypeSet: lowercase defName -->
     <xenotypeSet>
       <zhul_xenotype>1.0</zhul_xenotype>
     </xenotypeSet>
 
-    <!-- Required ideology memes for cultural accuracy -->
+    <!-- Required ideology memes -->
     <requiredMemes>
       <li>Cannibalism</li>
       <li>RitualScarification</li>
       <li>Raider</li>
     </requiredMemes>
 
-    <!-- Disallow conflicting or non-fitting memes -->
+    <!-- Disallowed ideology memes -->
     <disallowedMemes>
       <li>AnimalPersonhood</li>
       <li>Transhumanism</li>
       <li>TreeConnection</li>
     </disallowedMemes>
 
-    <!-- Faction leaders and units -->
+    <!-- Faction pawn group makers -->
     <pawnGroupMakers>
       <li Class="PawnGroupMaker">
         <kindDef>Combat</kindDef>
@@ -61,20 +73,5 @@
         </options>
       </li>
     </pawnGroupMakers>
-
-    <!-- Visuals and faction icon -->
-    <homeIconPath>UI/Icons/Factions/ZhulIcon</homeIconPath>
-    <colorSpectrum>
-      <li>(0.2, 0.3, 0.2)</li>
-      <li>(0.4, 0.5, 0.3)</li>
-      <li>(0.6, 0.7, 0.4)</li>
-    </colorSpectrum>
-    <hairTags>
-      <li>BeardFull</li>
-      <li>Tribal</li>
-    </hairTags>
-    <apparelTags>
-      <li>Tribal</li>
-    </apparelTags>
   </FactionDef>
 </Defs>

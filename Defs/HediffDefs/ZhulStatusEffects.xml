@@ -315,4 +315,23 @@
     <chronic>true</chronic>
     <defaultLabelColor>(186, 17, 38)</defaultLabelColor>
   </HediffDef>
+
+  <!-- Cannibalistic Urges (Debuff applied if no humanlike meat is consumed) -->
+  <HediffDef>
+    <defName>Zhul_Hediff_CannibalisticUrges</defName>
+    <label>Cannibalistic Urges</label>
+    <description>This pawn is suffering intense cravings for humanlike flesh. The longer they go without it, the worse their mental state becomes.</description>
+    <hediffClass>Hediff</hediffClass>
+    <isBad>true</isBad>
+    <stages>
+      <li>
+        <statOffsets>
+          <Mood>-15</Mood>
+        </statOffsets>
+      </li>
+    </stages>
+    <tendable>false</tendable>
+    <chronic>true</chronic>
+    <defaultLabelColor>(155, 17, 48)</defaultLabelColor>
+  </HediffDef>
 </Defs>

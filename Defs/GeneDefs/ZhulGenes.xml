@@ -131,7 +131,7 @@
     <label>Bloodlust Mastery</label>
     <description>This gene awakens the Zhul's ancient bloodlust. After 100 humanlike kills, the pawn receives a permanent mastery mood and combat boost.</description>
     <geneClass>ZhulTribe.Genes.Gene_BloodlustMastery</geneClass>
-    <iconPath>UI/Icons/Genes/Gene_Bloodlust</iconPath>
+    <iconPath>UI/Icons/Zhul/Genes/Zhul_BloodlustMastery</iconPath>
     <displayOrderInCategory>1010</displayOrderInCategory>
     <biostatCpx>2</biostatCpx>
     <biostatMet>2</biostatMet>

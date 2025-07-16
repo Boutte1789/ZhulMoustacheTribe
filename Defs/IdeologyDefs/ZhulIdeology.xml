@@ -19,7 +19,7 @@
     <classicIdeoLeaderTitleFemale>Bone-Chief Warden</classicIdeoLeaderTitleFemale>
     <classicIdeoFounderName>Gharlak the Bone-Speaker</classicIdeoFounderName>
     <classicIdeoDescription>An ancient tribal creed where the strongest warrior becomes Bone-Chief Warden through sacred combat trials. The tribe's elaborate beards channel ancestral spirits and victim screams, while their bone drums carry the voices of devoured enemies across the sacred hunting grounds. Weekly tribal feasts bind the clan through shared consumption of enemy flesh.</classicIdeoDescription>
-    <iconDef>PirateD</iconDef>
+    <iconPath>UI/Icons/Zhul/Ideology/Zhul_Ideology_Icon</iconPath>
     <colorDef>Black</colorDef>
     <culture>RH2SpecialForces_Kriminul</culture>
     <foundation Class="IdeoFoundation_Deity">
